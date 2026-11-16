@@ -1,17 +1,203 @@
-import { cubes,puzzleTypes } from './data/cubes.js';
-import { cubeArt } from './components/art.js';
-import { mechanisms,initMechanisms } from './components/mechanisms.js';
-import { read,write } from './utils/storage.js';
-import { escapeHTML as esc,money,toast,openModal,closeModal } from './utils/ui.js';
-const ids=new Set(cubes.map(c=>c.id));
-let compare=read('sobik_compare',[],v=>Array.isArray(v)&&v.length<=2&&v.every(id=>ids.has(id)));
-const fields=[['Loại',c=>c.type],['Giá demo',c=>money(c.price_fake)],['Kích thước',c=>c.specs.size_mm==null?'':c.specs.size_mm+' mm'],['Trọng lượng',c=>c.specs.weight_g==null?'':c.specs.weight_g+' g'],...Object.entries({magnetic:'Nam châm',maglev:'MagLev',core_magnets:'Nam châm lõi',magnet_count:'Số nam châm',auto_homing_angle:'Auto-homing',adjustability:'Điều chỉnh',corner_cutting:'Corner cutting',release_year:'Năm ra mắt'}).map(([k,label])=>[label,c=>c.specs[k]===true?'Có':c.specs[k]===false?'Không':c.specs[k]??'']),['Rating',c=>c.reviews_summary.average_rating??'']];
-export function syncCompare(){document.querySelector('#compare-open span').textContent=compare.length;document.querySelectorAll('[data-compare]').forEach(b=>{const selected=compare.includes(b.dataset.compare);b.setAttribute('aria-pressed',String(selected));b.textContent=selected?'✓ Đã chọn':'＋ So sánh'})}
-export function addCompare(id){if(compare.includes(id))compare=compare.filter(x=>x!==id);else if(compare.length<2)compare.push(id);else return toast('Đã có 2 Rubik. Bỏ chọn một mẫu trước khi thêm mẫu khác.');if(!write('sobik_compare',compare))toast('Không lưu được lựa chọn. Bạn vẫn có thể so sánh trong phiên này.');syncCompare();}
-export function showCompare(){const selected=compare.map(id=>cubes.find(c=>c.id===id));if(selected.length!==2){openModal(`<small>SO SÁNH RUBIK</small><h2>Chọn hai cá tính.</h2><p>Đã chọn ${selected.length}/2 mẫu. Chọn thêm từ bộ sưu tập để xem các khác biệt.</p>${selected.map(c=>`<p>${esc(c.name)} <button data-remove="${c.id}" class="small-button">Bỏ chọn</button></p>`).join('')}<a href="#/catalog" class="button primary" data-exit>Đến bộ sưu tập ↗</a>`,el=>{el.querySelector('[data-exit]').onclick=closeModal;el.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{addCompare(b.dataset.remove);showCompare()})});return;}
- openModal(`<small>HAI KHỐI RUBIK / MỘT GÓC NHÌN</small><h2>Khác nhau ở đâu?</h2><p>Hàng tô màu có thông số khác nhau. Ô trống là dữ liệu chưa xác minh.</p><div class="table-wrap"><table class="comparison"><thead><tr><th>Thông số</th>${selected.map(c=>`<th>${esc(c.name)}<button class="small-button" data-remove="${c.id}">Bỏ chọn</button></th>`).join('')}</tr></thead><tbody>${fields.map(([label,get])=>{const a=get(selected[0]),b=get(selected[1]);return `<tr class="${String(a)!==String(b)?'different':''}"><th>${label}</th><td>${esc(a)}</td><td>${esc(b)}</td></tr>`}).join('')}</tbody></table></div>`,el=>el.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{addCompare(b.dataset.remove);showCompare()}));}
-export function checkout(id){const c=cubes.find(c=>c.id===id);if(!c)return;openModal(`<div class="demo-banner">Mô phỏng — Không có giao dịch thật</div><small>CUBE CLUB / DEMO CHECKOUT</small><h2>Một vòng xoay<br>đến tay bạn.</h2><div class="checkout-product">${cubeArt(c.type)}<div><h3>${esc(c.name)}</h3><p>${money(c.price_fake)} · giá demo</p></div></div><p>Đơn hàng mô phỏng được tạo tự động. Không cần địa chỉ hay thông tin thanh toán.</p><button id="confirm-demo" class="button primary">Xác nhận đặt hàng (Demo)</button>`,el=>{let timeout,interval;el.querySelector('#confirm-demo').onclick=e=>{e.target.disabled=true;e.target.textContent='Đang tạo đơn mô phỏng…';timeout=setTimeout(()=>{const order='DEMO-'+Date.now().toString(36).toUpperCase();el.innerHTML=`<div class="demo-banner">Mô phỏng — Không có giao dịch thật</div><small>${order}</small><h2>Đơn demo đã được xác nhận!</h2><p>${esc(c.name)} · không phát sinh giao dịch hay giao hàng.</p><svg class="delivery" viewBox="0 0 500 180" role="img" aria-label="Hộp hàng mô phỏng di chuyển từ kho tới nhà"><path d="M55 130 Q250 -30 445 130" fill="none" stroke="#a59abb" stroke-width="3" stroke-dasharray="7 9"/><text x="30" y="170" font-size="16">KHO</text><text x="420" y="170" font-size="16">NHÀ</text><g class="parcel"><rect x="-17" y="-17" width="34" height="34" rx="5" fill="#ffcf61" stroke="#292339" stroke-width="2"/><path d="M0 -17V17M-17 -5H17" stroke="#292339" stroke-width="2"/></g></svg><ol class="delivery-steps">${['Đang đóng gói','Đã giao cho đơn vị vận chuyển','Đang trên đường','Đã giao (mô phỏng)'].map((s,i)=>`<li class="${i===0?'done':''}">${s}</li>`).join('')}</ol><p class="delivery-status" role="status">Đang đóng gói…</p><button class="button secondary" data-done>Tiếp tục khám phá</button>`;let step=0;el.querySelector('[data-done]').onclick=closeModal;interval=setInterval(()=>{step++;el.querySelectorAll('.delivery-steps li').forEach((li,i)=>li.classList.toggle('done',i<=step));const status=['Đang đóng gói…','Đã giao cho đơn vị vận chuyển…','Đang trên đường…','Đã giao — kết thúc mô phỏng.'];el.querySelector('.delivery-status').textContent=status[Math.min(step,3)];if(step>=3)clearInterval(interval)},1800)},1500)};return()=>{clearTimeout(timeout);clearInterval(interval)}})}
-export function card(c){return `<article class="product-card"><a href="#/cube/${c.id}" class="product-image tone-${cubes.indexOf(c)%5}">${cubeArt(c.type,cubes.indexOf(c))}<span class="type-chip">${c.type}</span></a><div class="product-info"><small>${esc(c.brand)}</small><a href="#/cube/${c.id}"><h3>${esc(c.name)}</h3></a><p>${esc(c.summary)}</p><div class="product-tags">${c.specs.maglev?'<span>MagLev</span>':''}${c.specs.core_magnets?'<span>Lõi từ</span>':''}${c.specs.magnetic?'<span>Nam châm</span>':''}</div><div class="price">${money(c.price_fake)} <small>DEMO</small></div><div class="product-actions"><button class="small-button" data-compare="${c.id}">＋ So sánh</button><button class="small-button primary" data-buy="${c.id}">Mua demo ↗</button></div><a class="source-link" href="${c.sources[0].url}" target="_blank" rel="noopener">ⓘ Nguồn: ${c.sources[0].name}</a></div></article>`}
-export function bindProductActions(root){root.querySelectorAll('[data-buy]').forEach(b=>b.onclick=()=>checkout(b.dataset.buy));root.querySelectorAll('[data-compare]').forEach(b=>b.onclick=()=>addCompare(b.dataset.compare));syncCompare()}
-export function catalog(root,params){root.innerHTML=`<section class="page-shell"><div class="page-heading"><div><small>THE CUBE CLUB / BỘ SƯU TẬP</small><h1>Đúng gu.<br><em>Đúng vòng xoay.</em></h1></div><p>Tìm hiểu, đặt cạnh nhau và chọn cá tính của bạn.<br>Toàn bộ giá và đặt hàng trên website là mô phỏng.</p></div><div class="filter-bar"><label>Tìm Rubik<input type="search" id="cube-search" placeholder="Tên mẫu hoặc thương hiệu…"></label><label>Thương hiệu<select id="brand-filter"><option value="">Tất cả hãng</option>${[...new Set(cubes.map(c=>c.brand))].map(b=>`<option>${esc(b)}</option>`).join('')}</select></label><label>Loại<select id="type-filter"><option value="">Tất cả hình khối</option>${puzzleTypes.map(t=>`<option>${t}</option>`).join('')}</select></label><label>Sắp xếp<select id="sort-filter"><option value="featured">Nổi bật</option><option value="asc">Giá demo tăng dần</option><option value="desc">Giá demo giảm dần</option></select></label></div><div class="results-line"><span id="result-count" role="status"></span><button id="clear-filters" class="text-button">Xóa bộ lọc</button></div><div class="product-grid" id="cube-grid"></div></section>`;const query=root.querySelector('#cube-search'),brand=root.querySelector('#brand-filter'),type=root.querySelector('#type-filter'),sort=root.querySelector('#sort-filter');brand.value=params.get('brand')||'';type.value=params.get('type')||'';function render(){let list=cubes.filter(c=>(!brand.value||c.brand===brand.value)&&(!type.value||c.type===type.value)&&(c.name+' '+c.brand).toLocaleLowerCase('vi').includes(query.value.toLocaleLowerCase('vi')));if(sort.value!=='featured')list.sort((a,b)=>(a.price_fake-b.price_fake)*(sort.value==='asc'?1:-1));root.querySelector('#result-count').textContent=`${list.length} Rubik để khám phá`;root.querySelector('#cube-grid').innerHTML=list.length?list.map(card).join(''):'<div class="empty-state"><h2>Chưa tìm thấy khối Rubik này.</h2><p>Thử tên khác hoặc xóa bộ lọc.</p></div>';bindProductActions(root)}[query,brand,type,sort].forEach(el=>el.addEventListener('input',render));root.querySelector('#clear-filters').onclick=()=>{query.value=brand.value=type.value='';sort.value='featured';render()};render();}
-export function detail(root,id){const c=cubes.find(c=>c.id===id);if(!c){root.innerHTML='<section class="page-shell"><h1>Không tìm thấy Rubik.</h1><a href="#/catalog">Quay lại bộ sưu tập</a></section>';return}root.innerHTML=`<section class="page-shell"><a href="#/catalog" class="back-link">← Bộ sưu tập</a><div class="detail-hero"><div class="detail-art tone-${cubes.indexOf(c)%5}">${cubeArt(c.type)}<small>MINH HỌA HÌNH KHỐI · KHÔNG PHẢI ẢNH SẢN PHẨM</small></div><div><small>${esc(c.brand)} / ${c.type}</small><h1>${esc(c.name)}</h1><p>${esc(c.summary)}</p><div class="detail-price">${money(c.price_fake)} <span>Giá demo</span></div><p class="muted">${c.price_note}</p><div class="actions"><button class="button primary" data-buy="${c.id}">Mua (Demo) ↗</button><button class="button secondary" data-compare="${c.id}">＋ So sánh</button></div></div></div><section class="spec-section"><div><small>HỒ SƠ HÌNH KHỐI</small><h2>Thông số rõ ràng.</h2><p>Ô trống là thông số chưa xác minh. Kiểm tra đúng phiên bản tại nguồn trước khi mua thật.</p></div><dl class="specs">${fields.map(([label,get])=>`<div><dt>${label}</dt><dd>${esc(get(c))}</dd></div>`).join('')}</dl></section>${mechanisms(c)}<section class="review-section"><div><small>GÓC NHÌN TỔNG QUAN</small><h2>Điểm mạnh & lưu ý.</h2><p>${c.reviews_summary.source}</p></div><div class="pros-cons"><article><h3>＋ Điểm đáng chú ý</h3><ul>${c.reviews_summary.pros.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></article><article><h3>↳ Điều cần cân nhắc</h3><ul>${c.reviews_summary.cons.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></article></div></section><section class="source-panel"><small>THÔNG TIN & NGUỒN</small><h3>${esc(c.brand)} nói gì về cơ chế?</h3><p>${esc(c.manufacturer_info)}</p><p>Ngày đối chiếu: ${c.checked}. Thông số có thể khác giữa các phiên bản.</p>${c.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.name} — ${esc(s.url)} ↗</a>`).join('')}</section><div class="section-heading"><h2>Thêm một cá tính?</h2><a href="#/catalog">Xem tất cả ↗</a></div><div class="product-grid">${cubes.filter(x=>x.id!==id&&x.type===c.type).slice(0,3).map(card).join('')}</div></section>`;bindProductActions(root);initMechanisms(root)}
+// "Kệ Rubik": a showcase without prices. Products come from public/catalog/brands/<brand>/<category>/<model>/
+// through the paged manifest made by scripts/build-catalog.mjs; pages and images load while scrolling.
+import { brands } from './data/brands.js';
+import { CATEGORIES, categoryOf, brandFamily } from './data/catalog-schema.js';
+import { mechanisms, initMechanisms } from './components/mechanisms.js';
+import { escapeHTML as esc } from './utils/ui.js';
+
+const BASE = import.meta.env.BASE_URL;
+const cache = new Map();
+export async function getJSON(path) {
+  if (!cache.has(path)) cache.set(path, fetch(BASE + path).then(r => { if (!r.ok) throw new Error(r.status + ' ' + path); return r.json(); }).catch(e => { cache.delete(path); throw e; }));
+  return cache.get(path);
+}
+export const catalogIndex = () => getJSON('catalog/index.json');
+const brandById = id => brands.find(b => b.id === id);
+const imageURL = src => (/^https?:\/\//.test(src) ? src : BASE + src);
+const TYPE_ALIASES = { Megaminx: 'megaminx', Pyraminx: 'pyraminx', Skewb: 'skewb', 'Square-1': 'square-1', Clock: 'clock' };
+
+/** Brand wordmark as inline SVG (falls back to the name in the brand color). */
+export function brandLogo(b, cls = 'brand-logo') {
+  if (!b) return '';
+  if (!b.logo) return `<span class="${cls} text" style="--brand:${b.color}">${esc(b.name)}</span>`;
+  return `<svg class="${cls}" viewBox="0 0 ${b.logo.width} ${b.logo.height}" role="img" aria-label="${esc(b.name)}" style="--brand:${b.color}"><path d="${b.logo.path}" fill="currentColor"/></svg>`;
+}
+
+/** 4:3 placeholder in the style of placehold.co, drawn locally so it never depends on another site. */
+export const placeholder = (name, big = false) => `<div class="ph${big ? ' big' : ''}" role="img" aria-label="Chưa có ảnh ${esc(name)}"><span>${esc(name)}</span><small>800 × 600</small></div>`;
+
+function productImage(p, big = false) {
+  if (!p.image) return placeholder(p.name, big);
+  return `<img src="${esc(imageURL(p.image))}" alt="${esc(p.name)}" loading="lazy" decoding="async" width="800" height="600" data-fallback="${esc(p.name)}"${big ? ' data-big' : ''}>`;
+}
+function wireFallbacks(el) {
+  el.querySelectorAll('img[data-fallback]').forEach(img => {
+    const swap = () => { const d = document.createElement('div'); d.innerHTML = placeholder(img.dataset.fallback, img.hasAttribute('data-big')); img.replaceWith(d.firstChild); };
+    if (img.complete && img.naturalWidth === 0 && img.src) swap(); else img.addEventListener('error', swap, { once: true });
+  });
+}
+
+function cardHTML(p) {
+  const b = brandById(p.brand), cat = categoryOf(p.category);
+  return `<a class="product-card" href="#/cube/${p.brand}/${p.id}"><div class="product-image">${productImage(p)}</div>
+   <div class="product-meta">${brandLogo(b)}<strong>${esc(p.name)}</strong><span class="product-sub">${esc(cat?.label || p.category)}${b ? ' · ' + esc(b.name) : ''}</span>
+   ${p.tags.length ? `<span class="product-tags">${p.tags.slice(0, 2).map(t => `<i>${esc(t)}</i>`).join('')}</span>` : ''}</div></a>`;
+}
+
+export function catalog(root, params) {
+  let brand = brandById(params.get('brand'))?.id || '';
+  const t = params.get('cat') || TYPE_ALIASES[params.get('type')] || params.get('type') || '';
+  let cat = categoryOf(t) ? t : '';
+  let term = params.get('q') || '';
+  let session = 0, io = null, timer;
+  const ordered = [...brands.filter(b => !b.parent), ...brands.filter(b => b.parent)];
+
+  root.innerHTML = `<section class="page-shell catalog-page"><div class="page-heading"><div><small>KỆ RUBIK / BỘ SƯU TẬP</small><h1>Một kệ trưng bày.<br><em>Không có giá.</em></h1></div>
+   <p>Chọn hãng hoặc loại để xem. Ảnh và thông tin tải dần khi bạn cuộn. Đây là kệ tham khảo, không bán hàng.</p></div>
+   <div class="brand-strip" role="group" aria-label="Lọc theo hãng"><button data-brand="" class="brand-chip all"><b>Tất cả</b><span></span></button>${ordered.map(b => `<button data-brand="${b.id}" class="brand-chip" title="${esc(b.name)}${b.parent ? ' · thuộc ' + esc(brandById(b.parent)?.name || '') : ''}">${brandLogo(b)}<span></span></button>`).join('')}</div>
+   <div class="catalog-tools"><div class="cat-chips" role="group" aria-label="Lọc theo loại"><button data-cat="">Tất cả loại</button>${CATEGORIES.map(c => `<button data-cat="${c.folder}">${c.label} <span></span></button>`).join('')}</div>
+   <label class="catalog-search">Tìm mẫu<input type="search" id="q" placeholder="WRM V11, Tornado, MGC…" value="${esc(term)}"></label></div>
+   <div id="brand-info"></div><p class="case-count" id="count" aria-live="polite"></p>
+   <div id="grid" class="product-grid"></div><div id="more" class="load-more"><span>Đang tải thêm…</span></div>
+   <p class="muted catalog-note">Ảnh thuộc về chủ sở hữu (ghi công ở trang chi tiết). Mẫu chưa có ảnh hiển thị ảnh chờ. Logo là chữ thương hiệu dạng vector dựng lại, không phải tác phẩm logo chính thức. <a href="#/sources">Nguồn dữ liệu ↗</a></p></section>`;
+
+  const $ = s => root.querySelector(s);
+  const grid = $('#grid'), more = $('#more'), count = $('#count');
+
+  function syncURL() {
+    const q = new URLSearchParams();
+    if (brand) q.set('brand', brand);
+    if (cat) q.set('cat', cat);
+    if (term.trim()) q.set('q', term.trim());
+    const h = '#/catalog' + (q.toString() ? '?' + q : '');
+    if (location.hash !== h) history.replaceState(null, '', h);
+  }
+  function append(items) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = items.map(cardHTML).join('');
+    wireFallbacks(tmp);
+    grid.append(...tmp.children);
+  }
+
+  async function load() {
+    const my = ++session;
+    io?.disconnect();
+    grid.innerHTML = ''; more.hidden = false;
+    root.querySelectorAll('[data-brand]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.brand === brand)));
+    const chip = root.querySelector(`[data-brand="${brand}"]`), strip = chip?.parentElement;
+    if (chip && strip) strip.scrollTo({ left: chip.offsetLeft - strip.offsetLeft - 16, behavior: 'smooth' });
+    root.querySelectorAll('[data-cat]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cat === cat)));
+    syncURL();
+    let index;
+    try { index = await catalogIndex(); } catch { count.textContent = 'Chưa tải được danh mục. Hãy chạy “npm run catalog” rồi tải lại trang.'; more.hidden = true; return; }
+    if (my !== session) return;
+    root.querySelectorAll('[data-brand]').forEach(b => { b.querySelector('span').textContent = b.dataset.brand ? index.brandCounts[b.dataset.brand] || 0 : index.total; });
+    root.querySelectorAll('[data-cat]').forEach(b => { const c = index.categories.find(x => x.folder === b.dataset.cat); if (c) b.querySelector('span').textContent = c.count; });
+    const b = brandById(brand);
+    const family = b ? [...brandFamily(brands, b.id)].filter(id => id !== b.id) : [];
+    $('#brand-info').innerHTML = b ? `<div class="brand-panel" style="--brand:${b.color}">${brandLogo(b, 'brand-logo big')}<div><h2>${esc(b.name)}</h2><p>${esc(b.summary || '')}${b.country ? ` <span class="muted">· ${esc(b.country)}</span>` : ''}</p>
+      ${family.length ? `<p class="muted">Gồm cả: ${family.map(id => esc(brandById(id).name)).join(', ')}.</p>` : ''}${b.parent ? `<p class="muted">Thương hiệu thuộc ${esc(brandById(b.parent).name)}.</p>` : ''}</div></div>` : '';
+
+    if (term.trim()) {
+      // Search uses the light index, still rendered page by page.
+      const rows = await getJSON('catalog/search.json');
+      if (my !== session) return;
+      const fam = brand ? brandFamily(brands, brand) : null;
+      const q = term.trim().toLowerCase();
+      const hits = rows.filter(r => (!fam || fam.has(r.brand)) && (!cat || r.category === cat) && `${r.name} ${r.id} ${r.tags.join(' ')} ${brandById(r.brand)?.name}`.toLowerCase().includes(q));
+      count.textContent = `${hits.length} mẫu khớp “${term.trim()}”`;
+      let shown = 0;
+      const step = () => { append(hits.slice(shown, shown + index.pageSize)); shown = Math.min(hits.length, shown + index.pageSize); more.hidden = shown >= hits.length; };
+      step();
+      if (!hits.length) grid.innerHTML = '<p class="empty-state">Không có mẫu phù hợp. Thử từ khóa khác hoặc bỏ bớt bộ lọc.</p>';
+      io = new IntersectionObserver(e => { if (e.some(x => x.isIntersecting) && shown < hits.length) step(); }, { rootMargin: '800px' });
+      io.observe(more);
+      return;
+    }
+    const viewKey = brand ? `brand-${brand}` : cat ? `cat-${cat}` : 'all';
+    const view = index.views[viewKey];
+    if (!view) {
+      count.textContent = '0 mẫu'; more.hidden = true;
+      grid.innerHTML = `<p class="empty-state">Chưa có mẫu nào. Thêm thư mục vào <code>public/catalog/brands/${esc(brand || '…')}/</code> để mẫu xuất hiện ở đây.</p>`;
+      return;
+    }
+    const filterCat = !!(brand && cat);
+    count.textContent = filterCat ? `Đang tìm ${categoryOf(cat).label} của ${b.name}…` : `${view.total} mẫu`;
+    let page = 0, busy = false, shownCount = 0;
+    async function next() {
+      if (busy || page >= view.pages || my !== session) return;
+      busy = true;
+      try {
+        const items = await getJSON(`catalog/pages/${viewKey}/${page}.json`);
+        if (my !== session) return;
+        page++;
+        const part = filterCat ? items.filter(p => p.category === cat) : items;
+        shownCount += part.length;
+        append(part);
+        if (filterCat) count.textContent = `${shownCount} mẫu ${categoryOf(cat).label} của ${b.name}${page < view.pages ? '…' : ''}`;
+      } catch {
+        count.textContent = 'Lỗi tải trang danh mục. Kéo xuống để thử lại.';
+      } finally {
+        busy = false;
+        if (my === session) {
+          more.hidden = page >= view.pages;
+          if (page >= view.pages && !grid.children.length) grid.innerHTML = '<p class="empty-state">Không có mẫu phù hợp bộ lọc.</p>';
+          // A sparse filtered page may leave the sentinel on screen: keep filling.
+          else if (page < view.pages && more.getBoundingClientRect().top < innerHeight + 800) setTimeout(next, 0);
+        }
+      }
+    }
+    io = new IntersectionObserver(e => { if (e.some(x => x.isIntersecting)) next(); }, { rootMargin: '800px' });
+    io.observe(more);
+    next();
+  }
+
+  root.querySelectorAll('[data-brand]').forEach(b => b.addEventListener('click', () => { brand = b.dataset.brand; load(); }));
+  root.querySelectorAll('[data-cat]').forEach(b => b.addEventListener('click', () => { cat = b.dataset.cat; load(); }));
+  $('#q').addEventListener('input', e => { clearTimeout(timer); timer = setTimeout(() => { term = e.target.value; load(); }, 200); });
+  load();
+  return () => { session++; io?.disconnect(); clearTimeout(timer); };
+}
+
+const MECH_IDS = { 'gan-17-magdrive': 'gan17', 'gan-16-maglev': 'gan16' };
+
+/** Finds a product by brand + folder name through the brand's paged view. */
+async function findProduct(brandId, id) {
+  try {
+    const view = (await catalogIndex()).views[`brand-${brandId}`];
+    if (!view) return null;
+    for (let i = 0; i < view.pages; i++) {
+      const hit = (await getJSON(`catalog/pages/brand-${brandId}/${i}.json`)).find(p => p.id === id && p.brand === brandId);
+      if (hit) return hit;
+    }
+  } catch { /* not found */ }
+  return null;
+}
+
+export async function detail(root, brandId, id) {
+  root.innerHTML = '<section class="page-shell"><p>Đang mở mẫu…</p></section>';
+  const b = brandById(brandId);
+  const p = b ? await findProduct(brandId, id) : null;
+  if (!p) {
+    root.innerHTML = '<section class="page-shell"><small>404 / KHÔNG TÌM THẤY</small><h1>Mẫu này chưa có trên kệ.</h1><a class="button primary" href="#/catalog">Về Kệ Rubik ↗</a></section>';
+    return;
+  }
+  document.title = `${p.name} — SOBIK99`;
+  const c = categoryOf(p.category);
+  const credit = p.imageCredit ? `<p class="credit">Ảnh: ${p.imageCredit.url ? `<a href="${esc(p.imageCredit.url)}" target="_blank" rel="noopener">${esc(p.imageCredit.name || p.imageCredit.url)}</a>` : esc(p.imageCredit.name || '')}</p>` : '';
+  root.innerHTML = `<section class="page-shell product-page"><a class="source-link" href="#/catalog?brand=${b.id}">← Kệ ${esc(b.name)}</a>
+   <div class="product-layout"><div class="product-hero">${productImage(p, true)}${credit}</div>
+   <div class="product-info">${brandLogo(b, 'brand-logo big')}<small>${esc(c?.label || p.category)} · ${esc(b.name)}</small><h1>${esc(p.name)}</h1>
+   ${p.tags.length ? `<div class="product-tags">${p.tags.map(t => `<i>${esc(t)}</i>`).join('')}</div>` : ''}
+   ${p.description ? `<p>${esc(p.description)}</p>` : ''}
+   ${p.features.length ? `<h3>Đặc điểm nổi bật</h3><ul>${p.features.map(f => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
+   ${p.reviews.length ? `<h3>Nhận xét phổ biến</h3><ul>${p.reviews.map(f => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
+   ${p.audience ? `<p><b>Phù hợp:</b> ${esc(p.audience)}</p>` : ''}
+   ${!p.features.length && !p.reviews.length && !p.description ? '<p class="muted">Thông tin chi tiết đang được cập nhật.</p>' : ''}
+   ${p.sources.length ? `<h3>Nguồn</h3><ul>${p.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name || s.url)} ↗</a></li>`).join('')}</ul>` : ''}
+   <div class="brand-panel small" style="--brand:${b.color}"><div><b>${esc(b.name)}</b><p>${esc(b.summary || '')}</p></div></div>
+   <p class="muted">Kệ trưng bày tham khảo — không bán hàng, không có giá.</p></div></div>
+   ${c?.shape === 'cube' ? mechanisms({ name: p.name, brand: b.id === 'gan' ? 'GAN' : b.name, id: MECH_IDS[p.id] || p.id }) : ''}</section>`;
+  wireFallbacks(root);
+  initMechanisms(root);
+}

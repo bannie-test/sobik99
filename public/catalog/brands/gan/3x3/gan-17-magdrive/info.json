@@ -1,0 +1,18 @@
+{
+  "name": "GAN17 MagDrive",
+  "tags": [
+    "Flagship",
+    "MagLev",
+    "Lõi từ"
+  ],
+  "features": [
+    "MagDrive hướng lực từ xuyên suốt vòng xoay, kết hợp MagLev và lõi từ",
+    "196 nam châm (theo hãng)"
+  ],
+  "sources": [
+    {
+      "name": "GANCUBE",
+      "url": "https://www.gancube.com/products/gan17-magdrive-3x3-speed-cube"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "GAN Megaminx MagLev",
+  "tags": [
+    "MagLev"
+  ],
+  "features": [
+    "12 mặt màu, cơ chế MagLev"
+  ],
+  "sources": [
+    {
+      "name": "GANCUBE",
+      "url": "https://www.gancube.com/products/gan-megaminx-maglev"
+    }
+  ]
+}
