@@ -1,0 +1,4 @@
+export const effective=s=>s.penalty==='DNF'?Infinity:s.ms+(s.penalty==='+2'?2000:0);
+export function averageOf(solves,n){if(solves.length<n)return null;const a=solves.slice(-n).map(effective).sort((a,b)=>a-b).slice(1,-1);return a.some(x=>!Number.isFinite(x))?Infinity:a.reduce((a,b)=>a+b,0)/a.length;}
+export function formatTime(ms){if(ms===null||ms===undefined)return '—';if(!Number.isFinite(ms))return 'DNF';const cs=Math.floor(ms/10);return `${String(Math.floor(cs/6000)).padStart(2,'0')}:${String(Math.floor(cs/100)%60).padStart(2,'0')}.${String(cs%100).padStart(2,'0')}`;}
+export function statistics(solves){const times=solves.map(effective),valid=times.filter(Number.isFinite);return{best:valid.length?Math.min(...valid):null,worst:times.length?Math.max(...times):null,ao5:averageOf(solves,5),ao12:averageOf(solves,12)};}

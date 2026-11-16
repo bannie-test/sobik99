@@ -1,0 +1,3362 @@
+[
+  {
+    "name": 1,
+    "type": "f2l",
+    "group": "Basic Insert",
+    "moves": [
+      "U (R U' R')",
+      "y U (R U' R') y'"
+    ],
+    "id": "f2l-1",
+    "group_vi": "Chèn cơ bản",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "U (R U' R')",
+        "setup": "(R U' R')' U'",
+        "image": "cases/f2l-1-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y U (R U' R') y'",
+        "setup": "y (R U' R')' U' y'",
+        "image": "cases/f2l-1-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 2,
+    "type": "f2l",
+    "group": "Basic Insert",
+    "moves": [
+      "y' U' (R' U R)",
+      "y U' (L' U L)"
+    ],
+    "id": "f2l-2",
+    "group_vi": "Chèn cơ bản",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "y' U' (R' U R)",
+        "setup": "(R' U R)' U y",
+        "image": "cases/f2l-2-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y U' (L' U L)",
+        "setup": "(L' U L)' U y'",
+        "image": "cases/f2l-2-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 3,
+    "type": "f2l",
+    "group": "Basic Insert",
+    "moves": [
+      "y' (R' U' R)",
+      "y (L' U' L)"
+    ],
+    "id": "f2l-3",
+    "group_vi": "Chèn cơ bản",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "y' (R' U' R)",
+        "setup": "(R' U' R)' y",
+        "image": "cases/f2l-3-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (L' U' L)",
+        "setup": "(L' U' L)' y'",
+        "image": "cases/f2l-3-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 4,
+    "type": "f2l",
+    "group": "Basic Insert",
+    "moves": [
+      "(R U R')",
+      "y (R U R') y'"
+    ],
+    "id": "f2l-4",
+    "group_vi": "Chèn cơ bản",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(R U R')",
+        "setup": "(R U R')'",
+        "image": "cases/f2l-4-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (R U R') y'",
+        "setup": "y (R U R')' y'",
+        "image": "cases/f2l-4-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 5,
+    "type": "f2l",
+    "group": "Different Facing Up",
+    "moves": [
+      "U' (R U' R' U) y' (R' U' R)",
+      "y' U (R' U' R U') (R' U' R)"
+    ],
+    "id": "f2l-5",
+    "group_vi": "Khác màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "U' (R U' R' U) y' (R' U' R)",
+        "setup": "(R' U' R)' y (R U' R' U)' U",
+        "image": "cases/f2l-5-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y' U (R' U' R U') (R' U' R)",
+        "setup": "(R' U' R)' (R' U' R U')' U' y",
+        "image": "cases/f2l-5-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 6,
+    "type": "f2l",
+    "group": "Different Facing Up",
+    "moves": [
+      "U' (R U R' U) (R U R')",
+      "y U' (R U R' U) (R U R') y'"
+    ],
+    "id": "f2l-6",
+    "group_vi": "Khác màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "U' (R U R' U) (R U R')",
+        "setup": "(R U R')' (R U R' U)' U",
+        "image": "cases/f2l-6-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y U' (R U R' U) (R U R') y'",
+        "setup": "y (R U R')' (R U R' U)' U y'",
+        "image": "cases/f2l-6-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 7,
+    "type": "f2l",
+    "group": "Different Facing Up",
+    "moves": [
+      "U' (R U2' R' U) y' (R' U' R)",
+      "U' (R U2' R') d (R' U' R)"
+    ],
+    "id": "f2l-7",
+    "group_vi": "Khác màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "U' (R U2' R' U) y' (R' U' R)",
+        "setup": "(R' U' R)' y (R U2' R' U)' U",
+        "image": "cases/f2l-7-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "U' (R U2' R') d (R' U' R)",
+        "setup": "(R' U' R)' d' (R U2' R')' U",
+        "image": "cases/f2l-7-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 8,
+    "type": "f2l",
+    "group": "Different Facing Up",
+    "moves": [
+      "R' U2' R2 U R2' U R",
+      "y' U (R' U2 R) U' y (R U R')",
+      "(R U' R' U) (R U' R') U2 (R U' R')"
+    ],
+    "id": "f2l-8",
+    "group_vi": "Khác màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R' U2' R2 U R2' U R",
+        "setup": "R' U' R2 U' R2' U2 R",
+        "image": "cases/f2l-8-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y' U (R' U2 R) U' y (R U R')",
+        "setup": "(R U R')' y' U (R' U2 R)' U' y",
+        "image": "cases/f2l-8-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "(R U' R' U) (R U' R') U2 (R U' R')",
+        "setup": "(R U' R')' U2' (R U' R')' (R U' R' U)'",
+        "image": "cases/f2l-8-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 9,
+    "type": "f2l",
+    "group": "Different Facing Up",
+    "moves": [
+      "y' U (R' U R U') (R' U' R)",
+      "y y' U (R' U R U') (R' U' R) y'"
+    ],
+    "id": "f2l-9",
+    "group_vi": "Khác màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "y' U (R' U R U') (R' U' R)",
+        "setup": "(R' U' R)' (R' U R U')' U' y",
+        "image": "cases/f2l-9-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y y' U (R' U R U') (R' U' R) y'",
+        "setup": "y (R' U' R)' (R' U R U')' U' y y'",
+        "image": "cases/f2l-9-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 10,
+    "type": "f2l",
+    "group": "Different Facing Up",
+    "moves": [
+      "U' (R U' R' U) (R U R')",
+      "y U' (R U' R' U) (R U R') y'"
+    ],
+    "id": "f2l-10",
+    "group_vi": "Khác màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "U' (R U' R' U) (R U R')",
+        "setup": "(R U R')' (R U' R' U)' U",
+        "image": "cases/f2l-10-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y U' (R U' R' U) (R U R') y'",
+        "setup": "y (R U R')' (R U' R' U)' U y'",
+        "image": "cases/f2l-10-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 11,
+    "type": "f2l",
+    "group": "Same Facing Up",
+    "moves": [
+      "(U' R U R') U2 (R U' R')",
+      "y (U' R U R') U2 (R U' R') y'"
+    ],
+    "id": "f2l-11",
+    "group_vi": "Cùng màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(U' R U R') U2 (R U' R')",
+        "setup": "(R U' R')' U2' (U' R U R')'",
+        "image": "cases/f2l-11-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (U' R U R') U2 (R U' R') y'",
+        "setup": "y (R U' R')' U2' (U' R U R')' y'",
+        "image": "cases/f2l-11-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 12,
+    "type": "f2l",
+    "group": "Same Facing Up",
+    "moves": [
+      "y' (U R' U' R) U2' (R' U R)",
+      "d (R' U' R) U2' (R' U R)"
+    ],
+    "id": "f2l-12",
+    "group_vi": "Cùng màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "y' (U R' U' R) U2' (R' U R)",
+        "setup": "(R' U R)' U2 (U R' U' R)' y",
+        "image": "cases/f2l-12-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "d (R' U' R) U2' (R' U R)",
+        "setup": "(R' U R)' U2 (R' U' R)' d'",
+        "image": "cases/f2l-12-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 13,
+    "type": "f2l",
+    "group": "Same Facing Up",
+    "moves": [
+      "U' (R U2' R') U2 (R U' R')",
+      "y U' (R U2' R') U2 (R U' R') y'"
+    ],
+    "id": "f2l-13",
+    "group_vi": "Cùng màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "U' (R U2' R') U2 (R U' R')",
+        "setup": "(R U' R')' U2' (R U2' R')' U",
+        "image": "cases/f2l-13-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y U' (R U2' R') U2 (R U' R') y'",
+        "setup": "y (R U' R')' U2' (R U2' R')' U y'",
+        "image": "cases/f2l-13-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 14,
+    "type": "f2l",
+    "group": "Same Facing Up",
+    "moves": [
+      "y' U (R' U2 R) U2' (R' U R)",
+      "d (R' U2 R) U2' (R' U R)"
+    ],
+    "id": "f2l-14",
+    "group_vi": "Cùng màu hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "y' U (R' U2 R) U2' (R' U R)",
+        "setup": "(R' U R)' U2 (R' U2 R)' U' y",
+        "image": "cases/f2l-14-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "d (R' U2 R) U2' (R' U R)",
+        "setup": "(R' U R)' U2 (R' U2 R)' d'",
+        "image": "cases/f2l-14-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 15,
+    "type": "f2l",
+    "group": "White Facing Up",
+    "moves": [
+      "U (R U2 R') U (R U' R')",
+      "y U (R U2 R') U (R U' R') y'"
+    ],
+    "id": "f2l-15",
+    "group_vi": "Trắng hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "U (R U2 R') U (R U' R')",
+        "setup": "(R U' R')' U' (R U2 R')' U'",
+        "image": "cases/f2l-15-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y U (R U2 R') U (R U' R') y'",
+        "setup": "y (R U' R')' U' (R U2 R')' U' y'",
+        "image": "cases/f2l-15-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 16,
+    "type": "f2l",
+    "group": "White Facing Up",
+    "moves": [
+      "y' U' (R' U2 R) U' (R' U R)",
+      "y y' U' (R' U2 R) U' (R' U R) y'"
+    ],
+    "id": "f2l-16",
+    "group_vi": "Trắng hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "y' U' (R' U2 R) U' (R' U R)",
+        "setup": "(R' U R)' U (R' U2 R)' U y",
+        "image": "cases/f2l-16-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y y' U' (R' U2 R) U' (R' U R) y'",
+        "setup": "y (R' U R)' U (R' U2 R)' U y y'",
+        "image": "cases/f2l-16-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 17,
+    "type": "f2l",
+    "group": "White Facing Up",
+    "moves": [
+      "U2 (R U R' U) (R U' R')",
+      "(R U' R') U2 (R U R')"
+    ],
+    "id": "f2l-17",
+    "group_vi": "Trắng hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "U2 (R U R' U) (R U' R')",
+        "setup": "(R U' R')' (R U R' U)' U2'",
+        "image": "cases/f2l-17-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "(R U' R') U2 (R U R')",
+        "setup": "(R U R')' U2' (R U' R')'",
+        "image": "cases/f2l-17-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 18,
+    "type": "f2l",
+    "group": "White Facing Up",
+    "moves": [
+      "y' U2 (R' U' R) U' (R' U R)",
+      "y y' U2 (R' U' R) U' (R' U R) y'"
+    ],
+    "id": "f2l-18",
+    "group_vi": "Trắng hướng lên",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "y' U2 (R' U' R) U' (R' U R)",
+        "setup": "(R' U R)' U (R' U' R)' U2' y",
+        "image": "cases/f2l-18-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y y' U2 (R' U' R) U' (R' U R) y'",
+        "setup": "y (R' U R)' U (R' U' R)' U2' y y'",
+        "image": "cases/f2l-18-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 19,
+    "type": "f2l",
+    "group": "Incorrectly Connected",
+    "moves": [
+      "y' (R' U R) U2' y (R U R')",
+      "(R U R') U2 (R U' R' U) (R U' R')"
+    ],
+    "id": "f2l-19",
+    "group_vi": "Ghép sai cặp",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "y' (R' U R) U2' y (R U R')",
+        "setup": "(R U R')' y' U2 (R' U R)' y",
+        "image": "cases/f2l-19-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "(R U R') U2 (R U' R' U) (R U' R')",
+        "setup": "(R U' R')' (R U' R' U)' U2' (R U R')'",
+        "image": "cases/f2l-19-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 20,
+    "type": "f2l",
+    "group": "Incorrectly Connected",
+    "moves": [
+      "(R U' R' U2) y' (R' U' R)",
+      "U F (R U R' U') F' (U R U' R')"
+    ],
+    "id": "f2l-20",
+    "group_vi": "Ghép sai cặp",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "(R U' R' U2) y' (R' U' R)",
+        "setup": "(R' U' R)' y (R U' R' U2)'",
+        "image": "cases/f2l-20-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "U F (R U R' U') F' (U R U' R')",
+        "setup": "(U R U' R')' F (R U R' U')' F' U'",
+        "image": "cases/f2l-20-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 21,
+    "type": "f2l",
+    "group": "Incorrectly Connected",
+    "moves": [
+      "(R U2 R') U' (R U R')",
+      "y (R U2 R') U' (R U R') y'"
+    ],
+    "id": "f2l-21",
+    "group_vi": "Ghép sai cặp",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(R U2 R') U' (R U R')",
+        "setup": "(R U R')' U (R U2 R')'",
+        "image": "cases/f2l-21-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (R U2 R') U' (R U R') y'",
+        "setup": "y (R U R')' U (R U2 R')' y'",
+        "image": "cases/f2l-21-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 22,
+    "type": "f2l",
+    "group": "Incorrectly Connected",
+    "moves": [
+      "y' (R' U2 R) U (R' U' R)",
+      "y y' (R' U2 R) U (R' U' R) y'"
+    ],
+    "id": "f2l-22",
+    "group_vi": "Ghép sai cặp",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "y' (R' U2 R) U (R' U' R)",
+        "setup": "(R' U' R)' U' (R' U2 R)' y",
+        "image": "cases/f2l-22-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y y' (R' U2 R) U (R' U' R) y'",
+        "setup": "y (R' U' R)' U' (R' U2 R)' y y'",
+        "image": "cases/f2l-22-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 23,
+    "type": "f2l",
+    "group": "Incorrectly Connected",
+    "moves": [
+      "U (R U' R' U') (R U' R' U) (R U' R')",
+      "(R U R' U2') (R U R' U') (R U R')"
+    ],
+    "id": "f2l-23",
+    "group_vi": "Ghép sai cặp",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "U (R U' R' U') (R U' R' U) (R U' R')",
+        "setup": "(R U' R')' (R U' R' U)' (R U' R' U')' U'",
+        "image": "cases/f2l-23-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "(R U R' U2') (R U R' U') (R U R')",
+        "setup": "(R U R')' (R U R' U')' (R U R' U2')'",
+        "image": "cases/f2l-23-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 24,
+    "type": "f2l",
+    "group": "Incorrectly Connected",
+    "moves": [
+      "y' U' (R' U R U) (R' U R U') (R' U R)",
+      "F (U R U' R') F' (R U' R')"
+    ],
+    "id": "f2l-24",
+    "group_vi": "Ghép sai cặp",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "y' U' (R' U R U) (R' U R U') (R' U R)",
+        "setup": "(R' U R)' (R' U R U')' (R' U R U)' U y",
+        "image": "cases/f2l-24-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "F (U R U' R') F' (R U' R')",
+        "setup": "(R U' R')' F (U R U' R')' F'",
+        "image": "cases/f2l-24-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 25,
+    "type": "f2l",
+    "group": "Corner In Edge Out",
+    "moves": [
+      "U' F' (R U R' U') R' F R",
+      "R' F' R U (R U' R') F"
+    ],
+    "id": "f2l-25",
+    "group_vi": "Góc trong, cạnh ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "U' F' (R U R' U') R' F R",
+        "setup": "R' F' R (R U R' U')' F U",
+        "image": "cases/f2l-25-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R' F' R U (R U' R') F",
+        "setup": "F' (R U' R')' U' R' F R",
+        "image": "cases/f2l-25-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 26,
+    "type": "f2l",
+    "group": "Corner In Edge Out",
+    "moves": [
+      "U (R U' R') U' (F' U F)",
+      "U (R U' R') (F R' F' R)"
+    ],
+    "id": "f2l-26",
+    "group_vi": "Góc trong, cạnh ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "U (R U' R') U' (F' U F)",
+        "setup": "(F' U F)' U (R U' R')' U'",
+        "image": "cases/f2l-26-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "U (R U' R') (F R' F' R)",
+        "setup": "(F R' F' R)' (R U' R')' U'",
+        "image": "cases/f2l-26-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 27,
+    "type": "f2l",
+    "group": "Corner In Edge Out",
+    "moves": [
+      "(R U' R' U) (R U' R')",
+      "y (R U' R' U) (R U' R') y'"
+    ],
+    "id": "f2l-27",
+    "group_vi": "Góc trong, cạnh ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(R U' R' U) (R U' R')",
+        "setup": "(R U' R')' (R U' R' U)'",
+        "image": "cases/f2l-27-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (R U' R' U) (R U' R') y'",
+        "setup": "y (R U' R')' (R U' R' U)' y'",
+        "image": "cases/f2l-27-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 28,
+    "type": "f2l",
+    "group": "Corner In Edge Out",
+    "moves": [
+      "y' (R' U R U') (R' U R)",
+      "y y' (R' U R U') (R' U R) y'"
+    ],
+    "id": "f2l-28",
+    "group_vi": "Góc trong, cạnh ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "y' (R' U R U') (R' U R)",
+        "setup": "(R' U R)' (R' U R U')' y",
+        "image": "cases/f2l-28-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y y' (R' U R U') (R' U R) y'",
+        "setup": "y (R' U R)' (R' U R U')' y y'",
+        "image": "cases/f2l-28-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 29,
+    "type": "f2l",
+    "group": "Corner In Edge Out",
+    "moves": [
+      "y' (R' U' R U) (R' U' R)",
+      "(R' F R F') U (R U' R')"
+    ],
+    "id": "f2l-29",
+    "group_vi": "Góc trong, cạnh ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "y' (R' U' R U) (R' U' R)",
+        "setup": "(R' U' R)' (R' U' R U)' y",
+        "image": "cases/f2l-29-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "(R' F R F') U (R U' R')",
+        "setup": "(R U' R')' U' (R' F R F')'",
+        "image": "cases/f2l-29-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 30,
+    "type": "f2l",
+    "group": "Corner In Edge Out",
+    "moves": [
+      "(R U R' U') (R U R')",
+      "y (R U R' U') (R U R') y'"
+    ],
+    "id": "f2l-30",
+    "group_vi": "Góc trong, cạnh ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(R U R' U') (R U R')",
+        "setup": "(R U R')' (R U R' U')'",
+        "image": "cases/f2l-30-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (R U R' U') (R U R') y'",
+        "setup": "y (R U R')' (R U R' U')' y'",
+        "image": "cases/f2l-30-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 31,
+    "type": "f2l",
+    "group": "Edge In Corner Out",
+    "moves": [
+      "(R U' R' U) y' (R' U R)",
+      "U' (R' F R F') (R U' R')"
+    ],
+    "id": "f2l-31",
+    "group_vi": "Cạnh trong, góc ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "(R U' R' U) y' (R' U R)",
+        "setup": "(R' U R)' y (R U' R' U)'",
+        "image": "cases/f2l-31-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "U' (R' F R F') (R U' R')",
+        "setup": "(R U' R')' (R' F R F')' U",
+        "image": "cases/f2l-31-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 32,
+    "type": "f2l",
+    "group": "Edge In Corner Out",
+    "moves": [
+      "(U R U' R') (U R U' R') (U R U' R')",
+      "y (U R U' R') (U R U' R') (U R U' R') y'"
+    ],
+    "id": "f2l-32",
+    "group_vi": "Cạnh trong, góc ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(U R U' R') (U R U' R') (U R U' R')",
+        "setup": "(U R U' R')' (U R U' R')' (U R U' R')'",
+        "image": "cases/f2l-32-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (U R U' R') (U R U' R') (U R U' R') y'",
+        "setup": "y (U R U' R')' (U R U' R')' (U R U' R')' y'",
+        "image": "cases/f2l-32-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 33,
+    "type": "f2l",
+    "group": "Edge In Corner Out",
+    "moves": [
+      "(U' R U' R') U2 (R U' R')",
+      "y (U' R U' R') U2 (R U' R') y'"
+    ],
+    "id": "f2l-33",
+    "group_vi": "Cạnh trong, góc ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(U' R U' R') U2 (R U' R')",
+        "setup": "(R U' R')' U2' (U' R U' R')'",
+        "image": "cases/f2l-33-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (U' R U' R') U2 (R U' R') y'",
+        "setup": "y (R U' R')' U2' (U' R U' R')' y'",
+        "image": "cases/f2l-33-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 34,
+    "type": "f2l",
+    "group": "Edge In Corner Out",
+    "moves": [
+      "U (R U R') U2 (R U R')",
+      "y U (R U R') U2 (R U R') y'"
+    ],
+    "id": "f2l-34",
+    "group_vi": "Cạnh trong, góc ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "U (R U R') U2 (R U R')",
+        "setup": "(R U R')' U2' (R U R')' U'",
+        "image": "cases/f2l-34-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y U (R U R') U2 (R U R') y'",
+        "setup": "y (R U R')' U2' (R U R')' U' y'",
+        "image": "cases/f2l-34-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 35,
+    "type": "f2l",
+    "group": "Edge In Corner Out",
+    "moves": [
+      "(U' R U R') U y' (R' U' R)",
+      "y (U' R U R') U y' (R' U' R) y'"
+    ],
+    "id": "f2l-35",
+    "group_vi": "Cạnh trong, góc ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(U' R U R') U y' (R' U' R)",
+        "setup": "(R' U' R)' y U' (U' R U R')'",
+        "image": "cases/f2l-35-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (U' R U R') U y' (R' U' R) y'",
+        "setup": "y (R' U' R)' y U' (U' R U R')' y'",
+        "image": "cases/f2l-35-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 36,
+    "type": "f2l",
+    "group": "Edge In Corner Out",
+    "moves": [
+      "U (F' U' F) U' (R U R')",
+      "y U (F' U' F) U' (R U R') y'"
+    ],
+    "id": "f2l-36",
+    "group_vi": "Cạnh trong, góc ngoài",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "U (F' U' F) U' (R U R')",
+        "setup": "(R U R')' U (F' U' F)' U'",
+        "image": "cases/f2l-36-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y U (F' U' F) U' (R U R') y'",
+        "setup": "y (R U R')' U (F' U' F)' U' y'",
+        "image": "cases/f2l-36-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 37,
+    "type": "f2l",
+    "group": "Both In Slot",
+    "moves": [
+      "(R U' R') d (R' U2 R) U2' (R' U R)",
+      "y (R U' R') d (R' U2 R) U2' (R' U R) y'"
+    ],
+    "id": "f2l-37",
+    "group_vi": "Cả hai ở trong khe",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(R U' R') d (R' U2 R) U2' (R' U R)",
+        "setup": "(R' U R)' U2 (R' U2 R)' d' (R U' R')'",
+        "image": "cases/f2l-37-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (R U' R') d (R' U2 R) U2' (R' U R) y'",
+        "setup": "y (R' U R)' U2 (R' U2 R)' d' (R U' R')' y'",
+        "image": "cases/f2l-37-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 38,
+    "type": "f2l",
+    "group": "Both In Slot",
+    "moves": [
+      "(R U' R' U') R U R' U2 (R U' R')",
+      "(R U R' U') R U2 R' U' (R U R')"
+    ],
+    "id": "f2l-38",
+    "group_vi": "Cả hai ở trong khe",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "(R U' R' U') R U R' U2 (R U' R')",
+        "setup": "(R U' R')' U2' R U' R' (R U' R' U')'",
+        "image": "cases/f2l-38-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "(R U R' U') R U2 R' U' (R U R')",
+        "setup": "(R U R')' U R U2' R' (R U R' U')'",
+        "image": "cases/f2l-38-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 39,
+    "type": "f2l",
+    "group": "Both In Slot",
+    "moves": [
+      "(R U' R' U) (R U2' R') U (R U' R')",
+      "(R U R') U2' (R U' R' U) (R U R')"
+    ],
+    "id": "f2l-39",
+    "group_vi": "Cả hai ở trong khe",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "(R U' R' U) (R U2' R') U (R U' R')",
+        "setup": "(R U' R')' U' (R U2' R')' (R U' R' U)'",
+        "image": "cases/f2l-39-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "(R U R') U2' (R U' R' U) (R U R')",
+        "setup": "(R U R')' (R U' R' U)' U2 (R U R')'",
+        "image": "cases/f2l-39-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 40,
+    "type": "f2l",
+    "group": "Both In Slot",
+    "moves": [
+      "(F' U F) U2 (R U R' U) (R U' R')",
+      "(R U' R') F (R U R' U') F' (R U' R')"
+    ],
+    "id": "f2l-40",
+    "group_vi": "Cả hai ở trong khe",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "(F' U F) U2 (R U R' U) (R U' R')",
+        "setup": "(R U' R')' (R U R' U)' U2' (F' U F)'",
+        "image": "cases/f2l-40-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "(R U' R') F (R U R' U') F' (R U' R')",
+        "setup": "(R U' R')' F (R U R' U')' F' (R U' R')'",
+        "image": "cases/f2l-40-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 41,
+    "type": "f2l",
+    "group": "Both In Slot",
+    "moves": [
+      "(R U R' U') (R U' R') U2 y' (R' U' R)",
+      "y (R U R' U') (R U' R') U2 y' (R' U' R) y'"
+    ],
+    "id": "f2l-41",
+    "group_vi": "Cả hai ở trong khe",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "(R U R' U') (R U' R') U2 y' (R' U' R)",
+        "setup": "(R' U' R)' y U2' (R U' R')' (R U R' U')'",
+        "image": "cases/f2l-41-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y (R U R' U') (R U' R') U2 y' (R' U' R) y'",
+        "setup": "y (R' U' R)' y U2' (R U' R')' (R U R' U')' y'",
+        "image": "cases/f2l-41-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 1,
+    "type": "oll",
+    "group": "Dot",
+    "probability": 2,
+    "moves": [
+      "R U2 R' R' F R F' U2 R' F R F'",
+      "y R U2 R' R' F R F' U2 R' F R F' y'"
+    ],
+    "id": "oll-1",
+    "group_vi": "Chấm",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U2 R' R' F R F' U2 R' F R F'",
+        "setup": "F R' F' R U2' F R' F' R R U2' R'",
+        "image": "cases/oll-1-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U2 R' R' F R F' U2 R' F R F' y'",
+        "setup": "y F R' F' R U2' F R' F' R R U2' R' y'",
+        "image": "cases/oll-1-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 2,
+    "type": "oll",
+    "group": "Dot",
+    "probability": 4,
+    "moves": [
+      "r U r' U2 r U2 R' U2 R U' r'",
+      "y' F R U R' U' F' f R U R' U' f'",
+      "y' F R U R' U' S R U R' U' f'"
+    ],
+    "id": "oll-2",
+    "group_vi": "Chấm",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "r U r' U2 r U2 R' U2 R U' r'",
+        "setup": "r U R' U2' R U2' r' U2' r U' r'",
+        "image": "cases/oll-2-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y' F R U R' U' F' f R U R' U' f'",
+        "setup": "f U R U' R' f' F U R U' R' F' y",
+        "image": "cases/oll-2-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y' F R U R' U' S R U R' U' f'",
+        "setup": "f U R U' R' S' U R U' R' F' y",
+        "image": "cases/oll-2-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 3,
+    "type": "oll",
+    "group": "Dot",
+    "probability": 4,
+    "moves": [
+      "r' R2 U R' U r U2 r' U M'",
+      "y F U R U' R' F' U F R U R' U' F'",
+      "y' f R U R' U' f' U' F R U R' U' F'"
+    ],
+    "id": "oll-3",
+    "group_vi": "Chấm",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "r' R2 U R' U r U2 r' U M'",
+        "setup": "M U' r U2' r' U' R U' R2' r",
+        "image": "cases/oll-3-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y F U R U' R' F' U F R U R' U' F'",
+        "setup": "F U R U' R' F' U' F R U R' U' F' y'",
+        "image": "cases/oll-3-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y' f R U R' U' f' U' F R U R' U' F'",
+        "setup": "F U R U' R' F' U f U R U' R' f' y",
+        "image": "cases/oll-3-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 4,
+    "type": "oll",
+    "group": "Dot",
+    "probability": 4,
+    "moves": [
+      "M U' r U2 r' U' R U' R' M'",
+      "y F U R U' R' F' U' F R U R' U' F'",
+      "y' f R U R' U' f' U F R U R' U' F'"
+    ],
+    "id": "oll-4",
+    "group_vi": "Chấm",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "M U' r U2 r' U' R U' R' M'",
+        "setup": "M R U R' U r U2' r' U M'",
+        "image": "cases/oll-4-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y F U R U' R' F' U' F R U R' U' F'",
+        "setup": "F U R U' R' F' U F R U R' U' F' y'",
+        "image": "cases/oll-4-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y' f R U R' U' f' U F R U R' U' F'",
+        "setup": "F U R U' R' F' U' f U R U' R' f' y",
+        "image": "cases/oll-4-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 5,
+    "type": "oll",
+    "group": "Square Shape",
+    "probability": 4,
+    "moves": [
+      "l' U2 L U L' U l",
+      "y2 r' U2 R U R' U r"
+    ],
+    "id": "oll-5",
+    "group_vi": "Hình vuông",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "l' U2 L U L' U l",
+        "setup": "l' U' L U' L' U2' l",
+        "image": "cases/oll-5-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 r' U2 R U R' U r",
+        "setup": "r' U' R U' R' U2' r y2'",
+        "image": "cases/oll-5-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 6,
+    "type": "oll",
+    "group": "Square Shape",
+    "probability": 4,
+    "moves": [
+      "r U2 R' U' R U' r'",
+      "y r U2 R' U' R U' r' y'"
+    ],
+    "id": "oll-6",
+    "group_vi": "Hình vuông",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "r U2 R' U' R U' r'",
+        "setup": "r U R' U R U2' r'",
+        "image": "cases/oll-6-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y r U2 R' U' R U' r' y'",
+        "setup": "y r U R' U R U2' r' y'",
+        "image": "cases/oll-6-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 7,
+    "type": "oll",
+    "group": "Small Lightning Bolt",
+    "probability": 4,
+    "moves": [
+      "r U R' U R U2 r'",
+      "y r U R' U R U2 r' y'"
+    ],
+    "id": "oll-7",
+    "group_vi": "Tia chớp nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "r U R' U R U2 r'",
+        "setup": "r U2' R' U' R U' r'",
+        "image": "cases/oll-7-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y r U R' U R U2 r' y'",
+        "setup": "y r U2' R' U' R U' r' y'",
+        "image": "cases/oll-7-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 8,
+    "type": "oll",
+    "group": "Small Lightning Bolt",
+    "probability": 4,
+    "moves": [
+      "l' U' L U' L' U2 l",
+      "R U2 R' U2 R' F R F'",
+      "y2 r' U' R U' R' U2 r"
+    ],
+    "id": "oll-8",
+    "group_vi": "Tia chớp nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "l' U' L U' L' U2 l",
+        "setup": "l' U2' L U L' U l",
+        "image": "cases/oll-8-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R U2 R' U2 R' F R F'",
+        "setup": "F R' F' R U2' R U2' R'",
+        "image": "cases/oll-8-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y2 r' U' R U' R' U2 r",
+        "setup": "r' U2' R U R' U r y2'",
+        "image": "cases/oll-8-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 9,
+    "type": "oll",
+    "group": "Fish Shape",
+    "probability": 4,
+    "moves": [
+      "R U R' U' R' F R2 U R' U' F'",
+      "y R U R' U' R' F R2 U R' U' F' y'"
+    ],
+    "id": "oll-9",
+    "group_vi": "Hình cá",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U R' U' R' F R2 U R' U' F'",
+        "setup": "F U R U' R2' F' R U R U' R'",
+        "image": "cases/oll-9-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' U' R' F R2 U R' U' F' y'",
+        "setup": "y F U R U' R2' F' R U R U' R' y'",
+        "image": "cases/oll-9-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 10,
+    "type": "oll",
+    "group": "Fish Shape",
+    "probability": 4,
+    "moves": [
+      "R U R' U R' F R F' R U2 R'",
+      "y2 r U R' U R U' R' U' r' R (U R U' R')"
+    ],
+    "id": "oll-10",
+    "group_vi": "Hình cá",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R U R' U R' F R F' R U2 R'",
+        "setup": "R U2' R' F R' F' R U' R U' R'",
+        "image": "cases/oll-10-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 r U R' U R U' R' U' r' R (U R U' R')",
+        "setup": "(U R U' R')' R' r U R U R' U' R U' r' y2'",
+        "image": "cases/oll-10-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 11,
+    "type": "oll",
+    "group": "Small Lightning Bolt",
+    "probability": 4,
+    "moves": [
+      "r U R' U R' F R F' R U2 r'",
+      "y2 r' R2 U R' U R U2 R' U M'"
+    ],
+    "id": "oll-11",
+    "group_vi": "Tia chớp nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "r U R' U R' F R F' R U2 r'",
+        "setup": "r U2' R' F R' F' R U' R U' r'",
+        "image": "cases/oll-11-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 r' R2 U R' U R U2 R' U M'",
+        "setup": "M U' R U2' R' U' R U' R2' r y2'",
+        "image": "cases/oll-11-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 12,
+    "type": "oll",
+    "group": "Small Lightning Bolt",
+    "probability": 4,
+    "moves": [
+      "M' R' U' R U' R' U2 R U' R r'",
+      "y M' R' U' R U' R' U2 R U' R r' y'"
+    ],
+    "id": "oll-12",
+    "group_vi": "Tia chớp nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "M' R' U' R U' R' U2 R U' R r'",
+        "setup": "r R' U R' U2' R U R' U R M",
+        "image": "cases/oll-12-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y M' R' U' R U' R' U2 R U' R r' y'",
+        "setup": "y r R' U R' U2' R U R' U R M y'",
+        "image": "cases/oll-12-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 13,
+    "type": "oll",
+    "group": "Knight Move Shape",
+    "probability": 4,
+    "moves": [
+      "F U R U' R2 F' R U R U' R'",
+      "r U' r' U' r U r' y' R' U R"
+    ],
+    "id": "oll-13",
+    "group_vi": "Bước mã",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F U R U' R2 F' R U R U' R'",
+        "setup": "R U R' U' R' F R2' U R' U' F'",
+        "image": "cases/oll-13-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "r U' r' U' r U r' y' R' U R",
+        "setup": "R' U' R y r U' r' U r U r'",
+        "image": "cases/oll-13-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 14,
+    "type": "oll",
+    "group": "Knight Move Shape",
+    "probability": 4,
+    "moves": [
+      "R' F R U R' F' R F U' F'",
+      "y R' F R U R' F' R F U' F' y'"
+    ],
+    "id": "oll-14",
+    "group_vi": "Bước mã",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R' F R U R' F' R F U' F'",
+        "setup": "F U F' R' F R U' R' F' R",
+        "image": "cases/oll-14-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R' F R U R' F' R F U' F' y'",
+        "setup": "y F U F' R' F R U' R' F' R y'",
+        "image": "cases/oll-14-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 15,
+    "type": "oll",
+    "group": "Knight Move Shape",
+    "probability": 4,
+    "moves": [
+      "l' U' l L' U' L U l' U l",
+      "y2 r' U' r R' U' R U r' U r"
+    ],
+    "id": "oll-15",
+    "group_vi": "Bước mã",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "l' U' l L' U' L U l' U l",
+        "setup": "l' U' l U' L' U L l' U l",
+        "image": "cases/oll-15-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 r' U' r R' U' R U r' U r",
+        "setup": "r' U' r U' R' U R r' U r y2'",
+        "image": "cases/oll-15-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 16,
+    "type": "oll",
+    "group": "Knight Move Shape",
+    "probability": 4,
+    "moves": [
+      "r U r' R U R' U' r U' r'",
+      "y r U r' R U R' U' r U' r' y'"
+    ],
+    "id": "oll-16",
+    "group_vi": "Bước mã",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "r U r' R U R' U' r U' r'",
+        "setup": "r U r' U R U' R' r U' r'",
+        "image": "cases/oll-16-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y r U r' R U R' U' r U' r' y'",
+        "setup": "y r U r' U R U' R' r U' r' y'",
+        "image": "cases/oll-16-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 17,
+    "type": "oll",
+    "group": "Dot",
+    "probability": 4,
+    "moves": [
+      "F R' F' R2 r' U R U' R' U' M'",
+      "y2 R U R' U R' F R F' U2 R' F R F'"
+    ],
+    "id": "oll-17",
+    "group_vi": "Chấm",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F R' F' R2 r' U R U' R' U' M'",
+        "setup": "M U R U R' U' r R2' F R F'",
+        "image": "cases/oll-17-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 R U R' U R' F R F' U2 R' F R F'",
+        "setup": "F R' F' R U2' F R' F' R U' R U' R' y2'",
+        "image": "cases/oll-17-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 18,
+    "type": "oll",
+    "group": "Dot",
+    "probability": 4,
+    "moves": [
+      "r U R' U R U2 r' r' U' R U' R' U2 r",
+      "y R U2 R' R' F R F' U2 M' (U R U' r')"
+    ],
+    "id": "oll-18",
+    "group_vi": "Chấm",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "r U R' U R U2 r' r' U' R U' R' U2 r",
+        "setup": "r' U2' R U R' U r r U2' R' U' R U' r'",
+        "image": "cases/oll-18-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U2 R' R' F R F' U2 M' (U R U' r')",
+        "setup": "(U R U' r')' M U2' F R' F' R R U2' R' y'",
+        "image": "cases/oll-18-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 19,
+    "type": "oll",
+    "group": "Dot",
+    "probability": 4,
+    "moves": [
+      "r' R U R U R' U' M' R' F R F'",
+      "y r' R U R U R' U' M' R' F R F' y'"
+    ],
+    "id": "oll-19",
+    "group_vi": "Chấm",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "r' R U R U R' U' M' R' F R F'",
+        "setup": "F R' F' R M U R U' R' U' R' r",
+        "image": "cases/oll-19-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y r' R U R U R' U' M' R' F R F' y'",
+        "setup": "y F R' F' R M U R U' R' U' R' r y'",
+        "image": "cases/oll-19-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 20,
+    "type": "oll",
+    "group": "Dot",
+    "probability": 1,
+    "moves": [
+      "r U R' U' M2 U R U' R' U' M'",
+      "r' R U (R U R' U') M2 U R U' r'"
+    ],
+    "id": "oll-20",
+    "group_vi": "Chấm",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "r U R' U' M2 U R U' R' U' M'",
+        "setup": "M U R U R' U' M2' U R U' r'",
+        "image": "cases/oll-20-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "r' R U (R U R' U') M2 U R U' r'",
+        "setup": "r U R' U' M2' (R U R' U')' U' R' r",
+        "image": "cases/oll-20-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 21,
+    "type": "oll",
+    "group": "Cross",
+    "probability": 2,
+    "moves": [
+      "R U2 R' U' R U R' U' R U' R'",
+      "y R U R' U R U' R' U R U2 R'"
+    ],
+    "id": "oll-21",
+    "group_vi": "Dấu thập",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R U2 R' U' R U R' U' R U' R'",
+        "setup": "R U R' U R U' R' U R U2' R'",
+        "image": "cases/oll-21-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' U R U' R' U R U2 R'",
+        "setup": "R U2' R' U' R U R' U' R U' R' y'",
+        "image": "cases/oll-21-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 22,
+    "type": "oll",
+    "group": "Cross",
+    "probability": 4,
+    "moves": [
+      "R U2 (R2 U' R2 U' R2) U2 R",
+      "y R U2 (R2 U' R2 U' R2) U2 R y'"
+    ],
+    "id": "oll-22",
+    "group_vi": "Dấu thập",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U2 (R2 U' R2 U' R2) U2 R",
+        "setup": "R' U2' (R2 U' R2 U' R2)' U2' R'",
+        "image": "cases/oll-22-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U2 (R2 U' R2 U' R2) U2 R y'",
+        "setup": "y R' U2' (R2 U' R2 U' R2)' U2' R' y'",
+        "image": "cases/oll-22-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 23,
+    "type": "oll",
+    "group": "Cross",
+    "probability": 4,
+    "moves": [
+      "R2 D' R U2 R' D R U2 R",
+      "y2 R2 D R' U2 R D' R' U2 R'"
+    ],
+    "id": "oll-23",
+    "group_vi": "Dấu thập",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R2 D' R U2 R' D R U2 R",
+        "setup": "R' U2' R' D' R U2' R' D R2'",
+        "image": "cases/oll-23-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 R2 D R' U2 R D' R' U2 R'",
+        "setup": "R U2' R D R' U2' R D' R2' y2'",
+        "image": "cases/oll-23-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 24,
+    "type": "oll",
+    "group": "Cross",
+    "probability": 4,
+    "moves": [
+      "r U R' U' r' F R F'",
+      "y R U R D R' U' R D' R2"
+    ],
+    "id": "oll-24",
+    "group_vi": "Dấu thập",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "r U R' U' r' F R F'",
+        "setup": "F R' F' r U R U' r'",
+        "image": "cases/oll-24-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R D R' U' R D' R2",
+        "setup": "R2' D R' U R D' R' U' R' y'",
+        "image": "cases/oll-24-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 25,
+    "type": "oll",
+    "group": "Cross",
+    "probability": 4,
+    "moves": [
+      "F' r U R' U' r' F R",
+      "y' R' F R B' R' F' R B"
+    ],
+    "id": "oll-25",
+    "group_vi": "Dấu thập",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F' r U R' U' r' F R",
+        "setup": "R' F' r U R U' r' F",
+        "image": "cases/oll-25-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y' R' F R B' R' F' R B",
+        "setup": "B' R' F R B R' F' R y",
+        "image": "cases/oll-25-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 26,
+    "type": "oll",
+    "group": "Cross",
+    "probability": 4,
+    "moves": [
+      "(R U2 R') U' R U' R'",
+      "y' R' U' R U' R' U2 R"
+    ],
+    "id": "oll-26",
+    "group_vi": "Dấu thập",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "(R U2 R') U' R U' R'",
+        "setup": "R U R' U (R U2 R')'",
+        "image": "cases/oll-26-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y' R' U' R U' R' U2 R",
+        "setup": "R' U2' R U R' U R y",
+        "image": "cases/oll-26-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 27,
+    "type": "oll",
+    "group": "Cross",
+    "probability": 4,
+    "moves": [
+      "R U R' U R U2 R'",
+      "y' R' U2 (R U R' U) R"
+    ],
+    "id": "oll-27",
+    "group_vi": "Dấu thập",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R U R' U R U2 R'",
+        "setup": "R U2' R' U' R U' R'",
+        "image": "cases/oll-27-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y' R' U2 (R U R' U) R",
+        "setup": "R' (R U R' U)' U2' R y",
+        "image": "cases/oll-27-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 28,
+    "type": "oll",
+    "group": "Corners Oriented",
+    "probability": 4,
+    "moves": [
+      "r U R' U' r' R U R U' R'",
+      "y r U R' U' r' R U R U' R' y'"
+    ],
+    "id": "oll-28",
+    "group_vi": "Góc đã định hướng",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "r U R' U' r' R U R U' R'",
+        "setup": "R U R' U' R' r U R U' r'",
+        "image": "cases/oll-28-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y r U R' U' r' R U R U' R' y'",
+        "setup": "y R U R' U' R' r U R U' r' y'",
+        "image": "cases/oll-28-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 29,
+    "type": "oll",
+    "group": "Awkward Shape",
+    "probability": 4,
+    "moves": [
+      "R U R' U' R U' R' F' U' F R U R'",
+      "y R U R' U' R U' R' F' U' F R U R' y'"
+    ],
+    "id": "oll-29",
+    "group_vi": "Hình đặc biệt",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U R' U' R U' R' F' U' F R U R'",
+        "setup": "R U' R' F' U F R U R' U R U' R'",
+        "image": "cases/oll-29-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' U' R U' R' F' U' F R U R' y'",
+        "setup": "y R U' R' F' U F R U R' U R U' R' y'",
+        "image": "cases/oll-29-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 30,
+    "type": "oll",
+    "group": "Awkward Shape",
+    "probability": 4,
+    "moves": [
+      "F R' F R2 U' R' U' R U R' F2",
+      "F U (R U2 R' U') R U2 R' U' F'"
+    ],
+    "id": "oll-30",
+    "group_vi": "Hình đặc biệt",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F R' F R2 U' R' U' R U R' F2",
+        "setup": "F2' R U' R' U R U R2' F' R F'",
+        "image": "cases/oll-30-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "F U (R U2 R' U') R U2 R' U' F'",
+        "setup": "F U R U2' R' (R U2 R' U')' U' F'",
+        "image": "cases/oll-30-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 31,
+    "type": "oll",
+    "group": "P Shape",
+    "probability": 4,
+    "moves": [
+      "R' U' F U R U' R' F' R",
+      "y R' U' F U R U' R' F' R y'"
+    ],
+    "id": "oll-31",
+    "group_vi": "Hình P",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R' U' F U R U' R' F' R",
+        "setup": "R' F R U R' U' F' U R",
+        "image": "cases/oll-31-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R' U' F U R U' R' F' R y'",
+        "setup": "y R' F R U R' U' F' U R y'",
+        "image": "cases/oll-31-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 32,
+    "type": "oll",
+    "group": "P Shape",
+    "probability": 4,
+    "moves": [
+      "L U F' U' L' U L F L'",
+      "y2 S R U R' U' R F R f'"
+    ],
+    "id": "oll-32",
+    "group_vi": "Hình P",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "L U F' U' L' U L F L'",
+        "setup": "L F' L' U' L U F U' L'",
+        "image": "cases/oll-32-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 S R U R' U' R F R f'",
+        "setup": "f R' F' R' U R U' R' S' y2'",
+        "image": "cases/oll-32-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 33,
+    "type": "oll",
+    "group": "T Shape",
+    "probability": 4,
+    "moves": [
+      "R U R' U' R' F R F'",
+      "y R U R' U' R' F R F' y'"
+    ],
+    "id": "oll-33",
+    "group_vi": "Hình T",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U R' U' R' F R F'",
+        "setup": "F R' F' R U R U' R'",
+        "image": "cases/oll-33-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' U' R' F R F' y'",
+        "setup": "y F R' F' R U R U' R' y'",
+        "image": "cases/oll-33-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 34,
+    "type": "oll",
+    "group": "C Shape",
+    "probability": 4,
+    "moves": [
+      "R U R2 U' R' F R U R U' F'",
+      "R U R' U' B' R' F R F' B"
+    ],
+    "id": "oll-34",
+    "group_vi": "Hình C",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R U R2 U' R' F R U R U' F'",
+        "setup": "F U R' U' R' F' R U R2' U' R'",
+        "image": "cases/oll-34-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R U R' U' B' R' F R F' B",
+        "setup": "B' F R' F' R B U R U' R'",
+        "image": "cases/oll-34-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 35,
+    "type": "oll",
+    "group": "Fish Shape",
+    "probability": 4,
+    "moves": [
+      "R U2 R' R' F R F' R U2 R'",
+      "y R U2 R' R' F R F' R U2 R' y'"
+    ],
+    "id": "oll-35",
+    "group_vi": "Hình cá",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U2 R' R' F R F' R U2 R'",
+        "setup": "R U2' R' F R' F' R R U2' R'",
+        "image": "cases/oll-35-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U2 R' R' F R F' R U2 R' y'",
+        "setup": "y R U2' R' F R' F' R R U2' R' y'",
+        "image": "cases/oll-35-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 36,
+    "type": "oll",
+    "group": "W Shape",
+    "probability": 4,
+    "moves": [
+      "L' U' L U' L' U L U L F' L' F",
+      "y2 R' U' R U' R' U R U R B' R' B"
+    ],
+    "id": "oll-36",
+    "group_vi": "Hình W",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "L' U' L U' L' U L U L F' L' F",
+        "setup": "F' L F L' U' L' U' L U L' U L",
+        "image": "cases/oll-36-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 R' U' R U' R' U R U R B' R' B",
+        "setup": "B' R B R' U' R' U' R U R' U R y2'",
+        "image": "cases/oll-36-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 37,
+    "type": "oll",
+    "group": "Fish Shape",
+    "probability": 4,
+    "moves": [
+      "F R' F' R U R U' R'",
+      "F R U' R' U' R U R' F'"
+    ],
+    "id": "oll-37",
+    "group_vi": "Hình cá",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F R' F' R U R U' R'",
+        "setup": "R U R' U' R' F R F'",
+        "image": "cases/oll-37-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "F R U' R' U' R U R' F'",
+        "setup": "F R U' R' U R U R' F'",
+        "image": "cases/oll-37-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 38,
+    "type": "oll",
+    "group": "W Shape",
+    "probability": 4,
+    "moves": [
+      "R U R' U R U' R' U' R' F R F'",
+      "y R U R' U R U' R' U' R' F R F' y'"
+    ],
+    "id": "oll-38",
+    "group_vi": "Hình W",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U R' U R U' R' U' R' F R F'",
+        "setup": "F R' F' R U R U R' U' R U' R'",
+        "image": "cases/oll-38-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' U R U' R' U' R' F R F' y'",
+        "setup": "y F R' F' R U R U R' U' R U' R' y'",
+        "image": "cases/oll-38-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 39,
+    "type": "oll",
+    "group": "Big Lightning Bolt",
+    "probability": 4,
+    "moves": [
+      "L F' L' U' L U F U' L'",
+      "y2 R B' R' U' R U B U' R'"
+    ],
+    "id": "oll-39",
+    "group_vi": "Tia chớp lớn",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "L F' L' U' L U F U' L'",
+        "setup": "L U F' U' L' U L F L'",
+        "image": "cases/oll-39-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 R B' R' U' R U B U' R'",
+        "setup": "R U B' U' R' U R B R' y2'",
+        "image": "cases/oll-39-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 40,
+    "type": "oll",
+    "group": "Big Lightning Bolt",
+    "probability": 4,
+    "moves": [
+      "R' F R U R' U' F' U R",
+      "y R' F R U R' U' F' U R y'"
+    ],
+    "id": "oll-40",
+    "group_vi": "Tia chớp lớn",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R' F R U R' U' F' U R",
+        "setup": "R' U' F U R U' R' F' R",
+        "image": "cases/oll-40-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R' F R U R' U' F' U R y'",
+        "setup": "y R' U' F U R U' R' F' R y'",
+        "image": "cases/oll-40-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 41,
+    "type": "oll",
+    "group": "Awkward Shape",
+    "probability": 4,
+    "moves": [
+      "R U R' U R U2 R' F R U R' U' F'",
+      "y R U R' U R U2 R' F R U R' U' F' y'"
+    ],
+    "id": "oll-41",
+    "group_vi": "Hình đặc biệt",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U R' U R U2 R' F R U R' U' F'",
+        "setup": "F U R U' R' F' R U2' R' U' R U' R'",
+        "image": "cases/oll-41-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' U R U2 R' F R U R' U' F' y'",
+        "setup": "y F U R U' R' F' R U2' R' U' R U' R' y'",
+        "image": "cases/oll-41-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 42,
+    "type": "oll",
+    "group": "Awkward Shape",
+    "probability": 4,
+    "moves": [
+      "R' U' R U' R' U2 R F R U R' U' F'",
+      "y R' U' R U' R' U2 R F R U R' U' F' y'"
+    ],
+    "id": "oll-42",
+    "group_vi": "Hình đặc biệt",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R' U' R U' R' U2 R F R U R' U' F'",
+        "setup": "F U R U' R' F' R' U2' R U R' U R",
+        "image": "cases/oll-42-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R' U' R U' R' U2 R F R U R' U' F' y'",
+        "setup": "y F U R U' R' F' R' U2' R U R' U R y'",
+        "image": "cases/oll-42-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 43,
+    "type": "oll",
+    "group": "P Shape",
+    "probability": 4,
+    "moves": [
+      "F' U' L' U L F",
+      "R' U' F R' F' R U R"
+    ],
+    "id": "oll-43",
+    "group_vi": "Hình P",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F' U' L' U L F",
+        "setup": "F' L' U' L U F",
+        "image": "cases/oll-43-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R' U' F R' F' R U R",
+        "setup": "R' U' R' F R F' U R",
+        "image": "cases/oll-43-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 44,
+    "type": "oll",
+    "group": "P Shape",
+    "probability": 4,
+    "moves": [
+      "F U R U' R' F'",
+      "y2 f R U R' U' f'"
+    ],
+    "id": "oll-44",
+    "group_vi": "Hình P",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F U R U' R' F'",
+        "setup": "F R U R' U' F'",
+        "image": "cases/oll-44-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 f R U R' U' f'",
+        "setup": "f U R U' R' f' y2'",
+        "image": "cases/oll-44-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 45,
+    "type": "oll",
+    "group": "T Shape",
+    "probability": 4,
+    "moves": [
+      "F R U R' U' F'",
+      "y F R U R' U' F' y'"
+    ],
+    "id": "oll-45",
+    "group_vi": "Hình T",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "F R U R' U' F'",
+        "setup": "F U R U' R' F'",
+        "image": "cases/oll-45-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y F R U R' U' F' y'",
+        "setup": "y F U R U' R' F' y'",
+        "image": "cases/oll-45-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 46,
+    "type": "oll",
+    "group": "C Shape",
+    "probability": 4,
+    "moves": [
+      "R' U' R' F R F' U R",
+      "y R' U' R' F R F' U R y'"
+    ],
+    "id": "oll-46",
+    "group_vi": "Hình C",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R' U' R' F R F' U R",
+        "setup": "R' U' F R' F' R U R",
+        "image": "cases/oll-46-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R' U' R' F R F' U R y'",
+        "setup": "y R' U' F R' F' R U R y'",
+        "image": "cases/oll-46-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 47,
+    "type": "oll",
+    "group": "Small L Shape",
+    "probability": 4,
+    "moves": [
+      "R' U' R' F R F' R' F R F' U R",
+      "F' L' U' L U L' U' L U F",
+      "y' F U R U' R' F' R U R' U R U2 R'"
+    ],
+    "id": "oll-47",
+    "group_vi": "Chữ L nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R' U' R' F R F' R' F R F' U R",
+        "setup": "R' U' F R' F' R F R' F' R U R",
+        "image": "cases/oll-47-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "F' L' U' L U L' U' L U F",
+        "setup": "F' U' L' U L U' L' U L F",
+        "image": "cases/oll-47-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y' F U R U' R' F' R U R' U R U2 R'",
+        "setup": "R U2' R' U' R U' R' F R U R' U' F' y",
+        "image": "cases/oll-47-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 48,
+    "type": "oll",
+    "group": "Small L Shape",
+    "probability": 4,
+    "moves": [
+      "F R U R' U' R U R' U' F'",
+      "y F R U R' U' R U R' U' F' y'"
+    ],
+    "id": "oll-48",
+    "group_vi": "Chữ L nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "F R U R' U' R U R' U' F'",
+        "setup": "F U R U' R' U R U' R' F'",
+        "image": "cases/oll-48-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y F R U R' U' R U R' U' F' y'",
+        "setup": "y F U R U' R' U R U' R' F' y'",
+        "image": "cases/oll-48-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 49,
+    "type": "oll",
+    "group": "Small L Shape",
+    "probability": 4,
+    "moves": [
+      "r U' r2 U r2 U r2 U' r",
+      "y r U' r2 U r2 U r2 U' r y'"
+    ],
+    "id": "oll-49",
+    "group_vi": "Chữ L nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "r U' r2 U r2 U r2 U' r",
+        "setup": "r' U r2' U' r2' U' r2' U r'",
+        "image": "cases/oll-49-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y r U' r2 U r2 U r2 U' r y'",
+        "setup": "y r' U r2' U' r2' U' r2' U r' y'",
+        "image": "cases/oll-49-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 50,
+    "type": "oll",
+    "group": "Small L Shape",
+    "probability": 4,
+    "moves": [
+      "r' U r2 U' r2 U' r2 U r'",
+      "y r' U r2 U' r2 U' r2 U r' y'"
+    ],
+    "id": "oll-50",
+    "group_vi": "Chữ L nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "r' U r2 U' r2 U' r2 U r'",
+        "setup": "r U' r2' U r2' U r2' U' r",
+        "image": "cases/oll-50-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y r' U r2 U' r2 U' r2 U r' y'",
+        "setup": "y r U' r2' U r2' U r2' U' r y'",
+        "image": "cases/oll-50-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": 51,
+    "type": "oll",
+    "group": "I Shape",
+    "probability": 4,
+    "moves": [
+      "F U R U' R' U R U' R' F'",
+      "y2 f R U R' U' R U R' U' f'"
+    ],
+    "id": "oll-51",
+    "group_vi": "Đường thẳng",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F U R U' R' U R U' R' F'",
+        "setup": "F R U R' U' R U R' U' F'",
+        "image": "cases/oll-51-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 f R U R' U' R U R' U' f'",
+        "setup": "f U R U' R' U R U' R' f' y2'",
+        "image": "cases/oll-51-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 52,
+    "type": "oll",
+    "group": "I Shape",
+    "probability": 4,
+    "moves": [
+      "R U R' U R U' B U' B' R'",
+      "R' F' U' F U' (R U R' U) R",
+      "R U R' U R U' y R U' R' F'"
+    ],
+    "id": "oll-52",
+    "group_vi": "Đường thẳng",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R U R' U R U' B U' B' R'",
+        "setup": "R B U B' U R' U' R U' R'",
+        "image": "cases/oll-52-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R' F' U' F U' (R U R' U) R",
+        "setup": "R' (R U R' U)' U F' U F R",
+        "image": "cases/oll-52-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "R U R' U R U' y R U' R' F'",
+        "setup": "F R U R' y' U R' U' R U' R'",
+        "image": "cases/oll-52-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 53,
+    "type": "oll",
+    "group": "Small L Shape",
+    "probability": 4,
+    "moves": [
+      "l' U2 L U L' U' L U L' U l",
+      "y2 r' U2 (R U R' U') R U R' U r",
+      "y r' U' R U' R' U R U' R' U2 r"
+    ],
+    "id": "oll-53",
+    "group_vi": "Chữ L nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "l' U2 L U L' U' L U L' U l",
+        "setup": "l' U' L U' L' U L U' L' U2' l",
+        "image": "cases/oll-53-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 r' U2 (R U R' U') R U R' U r",
+        "setup": "r' U' R U' R' (R U R' U')' U2' r y2'",
+        "image": "cases/oll-53-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y r' U' R U' R' U R U' R' U2 r",
+        "setup": "r' U2' R U R' U' R U R' U r y'",
+        "image": "cases/oll-53-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 54,
+    "type": "oll",
+    "group": "Small L Shape",
+    "probability": 4,
+    "moves": [
+      "(r U2 R' U') R U R' U' R U' r'",
+      "y r U R' U R U' R' U R U2 r'"
+    ],
+    "id": "oll-54",
+    "group_vi": "Chữ L nhỏ",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "(r U2 R' U') R U R' U' R U' r'",
+        "setup": "r U R' U R U' R' (r U2 R' U')'",
+        "image": "cases/oll-54-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y r U R' U R U' R' U R U2 r'",
+        "setup": "r U2' R' U' R U R' U' R U' r' y'",
+        "image": "cases/oll-54-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 55,
+    "type": "oll",
+    "group": "I Shape",
+    "probability": 2,
+    "moves": [
+      "R' F R U R U' R2 F' R2 U' R' U R U R'",
+      "y R U2 R2 U' R U' R' U2 F R F'"
+    ],
+    "id": "oll-55",
+    "group_vi": "Đường thẳng",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R' F R U R U' R2 F' R2 U' R' U R U R'",
+        "setup": "R U' R' U' R U R2' F R2' U R' U' R' F' R",
+        "image": "cases/oll-55-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U2 R2 U' R U' R' U2 F R F'",
+        "setup": "F R' F' U2' R U R' U R2' U2' R' y'",
+        "image": "cases/oll-55-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": 56,
+    "type": "oll",
+    "group": "I Shape",
+    "probability": 2,
+    "moves": [
+      "(r' U' r) U' R' U R U' R' U R r' U r",
+      "(r U r') U R U' R' U R U' R' (r U' r')",
+      "(r U r') U R U' R' U R U' M' U' r'"
+    ],
+    "id": "oll-56",
+    "group_vi": "Đường thẳng",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "(r' U' r) U' R' U R U' R' U R r' U r",
+        "setup": "r' U' r R' U' R U R' U' R U (r' U' r)'",
+        "image": "cases/oll-56-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "(r U r') U R U' R' U R U' R' (r U' r')",
+        "setup": "(r U' r')' R U R' U' R U R' U' (r U r')'",
+        "image": "cases/oll-56-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "(r U r') U R U' R' U R U' M' U' r'",
+        "setup": "r U M U R' U' R U R' U' (r U r')'",
+        "image": "cases/oll-56-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": 57,
+    "type": "oll",
+    "group": "Corners Oriented",
+    "probability": 2,
+    "moves": [
+      "R U R' U' M' U R U' r'",
+      "y R U R' U' M' U R U' r' y'"
+    ],
+    "id": "oll-57",
+    "group_vi": "Góc đã định hướng",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U R' U' M' U R U' r'",
+        "setup": "r U R' U' M U R U' R'",
+        "image": "cases/oll-57-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' U' M' U R U' r' y'",
+        "setup": "y r U R' U' M U R U' R' y'",
+        "image": "cases/oll-57-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": "H",
+    "type": "pll",
+    "group": "Edges Only",
+    "probability": 1,
+    "moves": [
+      "M2 U M2 U2 M2 U M2",
+      "M2 U' M2 U2 M2 U' M2"
+    ],
+    "id": "pll-H",
+    "group_vi": "Edges Only",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "M2 U M2 U2 M2 U M2",
+        "setup": "M2' U' M2' U2' M2' U' M2'",
+        "image": "cases/pll-H-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "M2 U' M2 U2 M2 U' M2",
+        "setup": "M2' U M2' U2' M2' U M2'",
+        "image": "cases/pll-H-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": "Z",
+    "type": "pll",
+    "group": "Edges Only",
+    "probability": 2,
+    "moves": [
+      "M' U M2 U M2 U M' U2 M2",
+      "y M' U' M2 U' M2 U' M' U2 M2",
+      "y M2 U M2 U M' U2 M2 U2 M'",
+      "M2 U' M2 U' M' U2 M2 U2 M'"
+    ],
+    "id": "pll-Z",
+    "group_vi": "Edges Only",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "M' U M2 U M2 U M' U2 M2",
+        "setup": "M2' U2' M U' M2' U' M2' U' M",
+        "image": "cases/pll-Z-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y M' U' M2 U' M2 U' M' U2 M2",
+        "setup": "M2' U2' M U M2' U M2' U M y'",
+        "image": "cases/pll-Z-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y M2 U M2 U M' U2 M2 U2 M'",
+        "setup": "M U2' M2' U2' M U' M2' U' M2' y'",
+        "image": "cases/pll-Z-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "Ua",
+    "type": "pll",
+    "group": "Edges Only",
+    "probability": 4,
+    "moves": [
+      "M2 U M U2 M' U M2",
+      "R U' R U R U R U' R' U' R2",
+      "y2 R2 U' R' U' R U R U R U' R"
+    ],
+    "id": "pll-Ua",
+    "group_vi": "Edges Only",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "M2 U M U2 M' U M2",
+        "setup": "M2' U' M U2' M' U' M2'",
+        "image": "cases/pll-Ua-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R U' R U R U R U' R' U' R2",
+        "setup": "R2' U R U R' U' R' U' R' U R'",
+        "image": "cases/pll-Ua-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y2 R2 U' R' U' R U R U R U' R",
+        "setup": "R' U R' U' R' U' R' U R U R2' y2'",
+        "image": "cases/pll-Ua-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "Ub",
+    "type": "pll",
+    "group": "Edges Only",
+    "probability": 4,
+    "moves": [
+      "M2 U' M U2 M' U' M2",
+      "R2 U (R U R' U') R' U' R' U R'",
+      "y2 R' U R' U' R' U' (R' U R U) R2",
+      "y2 R' U R' U' R3 U' (R' U R U) R2"
+    ],
+    "id": "pll-Ub",
+    "group_vi": "Edges Only",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "M2 U' M U2 M' U' M2",
+        "setup": "M2' U M U2' M' U M2'",
+        "image": "cases/pll-Ub-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R2 U (R U R' U') R' U' R' U R'",
+        "setup": "R U' R U R (R U R' U')' U' R2'",
+        "image": "cases/pll-Ub-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y2 R' U R' U' R' U' (R' U R U) R2",
+        "setup": "R2' (R' U R U)' U R U R U' R y2'",
+        "image": "cases/pll-Ub-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "Aa",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "x L2 D2 L' U' L D2 L' U L'",
+      "y' x' L' U L' D2 L U' L' D2 L2",
+      "y x R' U R' D2 R U' R' D2 R2",
+      "y2 x' R2 D2 R' U' R D2 R' U R'"
+    ],
+    "id": "pll-Aa",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "x L2 D2 L' U' L D2 L' U L'",
+        "setup": "L U' L D2' L' U L D2' L2' x'",
+        "image": "cases/pll-Aa-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y' x' L' U L' D2 L U' L' D2 L2",
+        "setup": "L2' D2' L U L' D2' L U' L x y",
+        "image": "cases/pll-Aa-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y x R' U R' D2 R U' R' D2 R2",
+        "setup": "R2' D2' R U R' D2' R U' R x' y'",
+        "image": "cases/pll-Aa-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "Ab",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "x' L2 D2 L U L' D2 L U' L",
+      "y x L U' L D2 L' U L D2 L2",
+      "y2 x R2 D2 R U R' D2 R U' R",
+      "y' x' R U' R D2 R' U R D2 R2"
+    ],
+    "id": "pll-Ab",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "x' L2 D2 L U L' D2 L U' L",
+        "setup": "L' U L' D2' L U' L' D2' L2' x",
+        "image": "cases/pll-Ab-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y x L U' L D2 L' U L D2 L2",
+        "setup": "L2' D2' L' U' L D2' L' U L' x' y'",
+        "image": "cases/pll-Ab-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y2 x R2 D2 R U R' D2 R U' R",
+        "setup": "R' U R' D2' R U' R' D2' R2' x' y2'",
+        "image": "cases/pll-Ab-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "E",
+    "type": "pll",
+    "group": "Diagonal Corner Swap",
+    "probability": 2,
+    "moves": [
+      "x' L' U L D' L' U' L D L' U' L D' L' U L D",
+      "x' R U' R' D R U R' D' R U R' D R U' R' D'"
+    ],
+    "id": "pll-E",
+    "group_vi": "Diagonal Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "x' L' U L D' L' U' L D L' U' L D' L' U L D",
+        "setup": "D' L' U' L D L' U L D' L' U L D L' U' L x",
+        "image": "cases/pll-E-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "x' R U' R' D R U R' D' R U R' D R U' R' D'",
+        "setup": "D R U R' D' R U' R' D R U' R' D' R U R' x",
+        "image": "cases/pll-E-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": "F",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
+      "y R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R y'"
+    ],
+    "id": "pll-F",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
+        "setup": "R' U' R U' R' U R U R2' F' R U R U' R' F U R",
+        "image": "cases/pll-F-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R y'",
+        "setup": "y R' U' R U' R' U R U R2' F' R U R U' R' F U R y'",
+        "image": "cases/pll-F-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": "Ja",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "x R2 F R F' R U2 r' U r U2",
+      "y2 L' U' L F L' U' L U L F' L2 U L",
+      "y' R' U L' U2 R U' R' U2 R L"
+    ],
+    "id": "pll-Ja",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "x R2 F R F' R U2 r' U r U2",
+        "setup": "U2' r' U' r U2' R' F R' F' R2' x'",
+        "image": "cases/pll-Ja-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 L' U' L F L' U' L U L F' L2 U L",
+        "setup": "L' U' L2' F L' U' L' U L F' L' U L y2'",
+        "image": "cases/pll-Ja-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y' R' U L' U2 R U' R' U2 R L",
+        "setup": "L' R' U2' R U R' U2' L U' R y",
+        "image": "cases/pll-Ja-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "Jb",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R U R' F' R U R' U' R' F R2 U' R'",
+      "y R U R' F' R U R' U' R' F R2 U' R' y'"
+    ],
+    "id": "pll-Jb",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U R' F' R U R' U' R' F R2 U' R'",
+        "setup": "R U R2' F' R U R U' R' F R U' R'",
+        "image": "cases/pll-Jb-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' F' R U R' U' R' F R2 U' R' y'",
+        "setup": "y R U R2' F' R U R U' R' F R U' R' y'",
+        "image": "cases/pll-Jb-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": "Ra",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R U' R' U' R U R D R' U' R D' R' U2 R'",
+      "R U R' F' R U2 R' U2 R' F R U R U2 R'",
+      "y' L U2 L' U2 L F' L' U' L U L F L2"
+    ],
+    "id": "pll-Ra",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R U' R' U' R U R D R' U' R D' R' U2 R'",
+        "setup": "R U2' R D R' U R D' R' U' R' U R U R'",
+        "image": "cases/pll-Ra-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R U R' F' R U2 R' U2 R' F R U R U2 R'",
+        "setup": "R U2' R' U' R' F' R U2' R U2' R' F R U' R'",
+        "image": "cases/pll-Ra-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "y' L U2 L' U2 L F' L' U' L U L F L2",
+        "setup": "L2' F' L' U' L' U L F L' U2' L U2' L' y",
+        "image": "cases/pll-Ra-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "Rb",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R2 F R U R U' R' F' R U2 R' U2 R",
+      "y' R' U2 R U2 R' F R U R' U' R' F' R2",
+      "R' U2 R' D' R U' R' D R U R U' R' U' R"
+    ],
+    "id": "pll-Rb",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R2 F R U R U' R' F' R U2 R' U2 R",
+        "setup": "R' U2' R U2' R' F R U R' U' R' F' R2'",
+        "image": "cases/pll-Rb-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y' R' U2 R U2 R' F R U R' U' R' F' R2",
+        "setup": "R2' F R U R U' R' F' R U2' R' U2' R y",
+        "image": "cases/pll-Rb-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "R' U2 R' D' R U' R' D R U R U' R' U' R",
+        "setup": "R' U R U R' U' R' D' R U R' D R U2' R",
+        "image": "cases/pll-Rb-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "T",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R U R' U' R' F R2 U' R' U' (R U R') F'",
+      "y R U R' U' R' F R2 U' R' U' (R U R') F' y'"
+    ],
+    "id": "pll-T",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "rotatedAlternative": true,
+    "variants": [
+      {
+        "alg": "R U R' U' R' F R2 U' R' U' (R U R') F'",
+        "setup": "F (R U R')' U R U R2' F' R U R U' R'",
+        "image": "cases/pll-T-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y R U R' U' R' F R2 U' R' U' (R U R') F' y'",
+        "setup": "y F (R U R')' U R U R2' F' R U R U' R' y'",
+        "image": "cases/pll-T-1.svg",
+        "label": "Đổi hướng cầm y"
+      }
+    ]
+  },
+  {
+    "name": "Y",
+    "type": "pll",
+    "group": "Diagonal Corner Swap",
+    "probability": 4,
+    "moves": [
+      "F R U' R' U' R U R' F' R U R' U' R' F R F'",
+      "F R' F R2 U' R' U' R U R' F' R U R' U' F'"
+    ],
+    "id": "pll-Y",
+    "group_vi": "Diagonal Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "F R U' R' U' R U R' F' R U R' U' R' F R F'",
+        "setup": "F R' F' R U R U' R' F R U' R' U R U R' F'",
+        "image": "cases/pll-Y-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "F R' F R2 U' R' U' R U R' F' R U R' U' F'",
+        "setup": "F U R U' R' F R U' R' U R U R2' F' R F'",
+        "image": "cases/pll-Y-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": "V",
+    "type": "pll",
+    "group": "Diagonal Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R' U R' U' y R' F' R2 U' R' U R' F R F",
+      "R' U R' U' R D' R' D R' U D' R2 U' R2 D R2",
+      "z D' R2 D R2 U R' D' R U' R U R' D R U' z'",
+      "R U2 R' D R U' R U' R U R2 D R' U' R D2",
+      "x' R' F R F' U R U2 R' U' R U' R' U2 R U R' U'"
+    ],
+    "id": "pll-V",
+    "group_vi": "Diagonal Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R' U R' U' y R' F' R2 U' R' U R' F R F",
+        "setup": "F' R' F' R U' R U R2' F R y' U R U' R",
+        "image": "cases/pll-V-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R' U R' U' R D' R' D R' U D' R2 U' R2 D R2",
+        "setup": "R2' D' R2' U R2' D U' R D' R D R' U R U' R",
+        "image": "cases/pll-V-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "z D' R2 D R2 U R' D' R U' R U R' D R U' z'",
+        "setup": "z U R' D' R U' R' U R' D R U' R2' D' R2' D z'",
+        "image": "cases/pll-V-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "Na",
+    "type": "pll",
+    "group": "Diagonal Corner Swap",
+    "probability": 1,
+    "moves": [
+      "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
+      "z U R' D R2 U' R D' U R' D R2 U' R D'"
+    ],
+    "id": "pll-Na",
+    "group_vi": "Diagonal Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
+        "setup": "R U R' U2' R U R2' F' R U R U' R' F R U' R' U' R U' R'",
+        "image": "cases/pll-Na-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "z U R' D R2 U' R D' U R' D R2 U' R D'",
+        "setup": "D R' U R2' D' R U' D R' U R2' D' R U' z'",
+        "image": "cases/pll-Na-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": "Nb",
+    "type": "pll",
+    "group": "Diagonal Corner Swap",
+    "probability": 1,
+    "moves": [
+      "R' (U R U' R') F' U' F R U R' F R' F' R U' R",
+      "z D' R U' R2 D R' U D' R U' R2 D R' U"
+    ],
+    "id": "pll-Nb",
+    "group_vi": "Diagonal Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R' (U R U' R') F' U' F R U R' F R' F' R U' R",
+        "setup": "R' U R' F R F' R U' R' F' U F (U R U' R')' R",
+        "image": "cases/pll-Nb-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "z D' R U' R2 D R' U D' R U' R2 D R' U",
+        "setup": "U' R D' R2' U R' D U' R D' R2' U R' D z'",
+        "image": "cases/pll-Nb-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": "Ga",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R2 U R' U R' U' R U' R2 (U' D) R' U R D'",
+      "R2 u R' U R' U' R u' R2 y' R' U R"
+    ],
+    "id": "pll-Ga",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R2 U R' U R' U' R U' R2 (U' D) R' U R D'",
+        "setup": "D R' U' R (U' D)' R2' U R' U R U' R U' R2'",
+        "image": "cases/pll-Ga-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R2 u R' U R' U' R u' R2 y' R' U R",
+        "setup": "R' U' R y R2' u R' U R U' R u' R2'",
+        "image": "cases/pll-Ga-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": "Gb",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R' U' R (U D') R2 U R' U R U' R U' R2 D",
+      "y F' U' F R2 u R' U R U' R u' R2"
+    ],
+    "id": "pll-Gb",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R' U' R (U D') R2 U R' U R U' R U' R2 D",
+        "setup": "D' R2' U R' U R' U' R U' R2' (U D')' R' U R",
+        "image": "cases/pll-Gb-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y F' U' F R2 u R' U R U' R u' R2",
+        "setup": "R2' u R' U R' U' R u' R2' F' U F y'",
+        "image": "cases/pll-Gb-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  },
+  {
+    "name": "Gc",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R2 U' R U' R U R' U R2 (U D') R U' R' D",
+      "y2 R2 F2 R U2 R U2 R' F R U R' U' R' F R2",
+      "R2 u' R U' R U R' u R2 y R U' R'"
+    ],
+    "id": "pll-Gc",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R2 U' R U' R U R' U R2 (U D') R U' R' D",
+        "setup": "D' R U R' (U D')' R2' U' R U' R' U R' U R2'",
+        "image": "cases/pll-Gc-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "y2 R2 F2 R U2 R U2 R' F R U R' U' R' F R2",
+        "setup": "R2' F' R U R U' R' F' R U2' R' U2' R' F2' R2' y2'",
+        "image": "cases/pll-Gc-1.svg",
+        "label": "Công thức 2"
+      },
+      {
+        "alg": "R2 u' R U' R U R' u R2 y R U' R'",
+        "setup": "R U R' y' R2' u' R U' R' U R' u R2'",
+        "image": "cases/pll-Gc-2.svg",
+        "label": "Công thức 3"
+      }
+    ]
+  },
+  {
+    "name": "Gd",
+    "type": "pll",
+    "group": "Adjacent Corner Swap",
+    "probability": 4,
+    "moves": [
+      "R U R' (U' D) R2 U' R U' R' U R' U R2 D'",
+      "R U R' y' R2 u' R U' R' U R' u R2"
+    ],
+    "id": "pll-Gd",
+    "group_vi": "Adjacent Corner Swap",
+    "source": "https://github.com/lukejacksonn/cube/blob/master/src/algorithms.ts",
+    "variants": [
+      {
+        "alg": "R U R' (U' D) R2 U' R U' R' U R' U R2 D'",
+        "setup": "D R2' U' R U' R U R' U R2' (U' D)' R U' R'",
+        "image": "cases/pll-Gd-0.svg",
+        "label": "Công thức 1"
+      },
+      {
+        "alg": "R U R' y' R2 u' R U' R' U R' u R2",
+        "setup": "R2' u' R U' R U R' u R2' y R U' R'",
+        "image": "cases/pll-Gd-1.svg",
+        "label": "Công thức 2"
+      }
+    ]
+  }
+]
