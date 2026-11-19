@@ -5,7 +5,7 @@ import { getJSON } from './pages-catalog.js';
 export async function sourcesPage(root) {
   root.innerHTML = `<section class="page-shell source-page"><small>CUBE CLUB / MINH BẠCH DỮ LIỆU</small><h1>Nguồn rõ ràng.<br><em>Khám phá an tâm.</em></h1>
   <h2>Một website cá nhân, phi thương mại.</h2><p>SOBIK99 không bán hàng, không có giá, không thu thập địa chỉ và không xử lý thanh toán. Kệ Rubik là kệ trưng bày tham khảo.</p>
-  <h2>Kệ Rubik</h2><p>Danh mục được dựng từ thư mục <code>public/catalog/brands/&lt;hãng&gt;/&lt;loại&gt;/&lt;mẫu&gt;/</code>. Tên mẫu là thông tin sản phẩm công khai; thông số chưa xác minh để trống, không có điểm đánh giá giả. Logo là chữ thương hiệu dạng vector dựng lại, không phải tác phẩm logo chính thức. Mọi thương hiệu thuộc chủ sở hữu tương ứng.</p>
+  <h2>Kệ Rubik</h2><p>Danh mục được dựng từ thư mục <code>public/catalog/brands/&lt;hãng&gt;/&lt;loại&gt;/&lt;mẫu&gt;/</code>. Tên mẫu là thông tin sản phẩm công khai; thông số chưa xác minh để trống, không có điểm đánh giá giả. Logo hãng hiện là ô chờ cho đến khi có ảnh logo. Mọi thương hiệu thuộc chủ sở hữu tương ứng.</p>
   <h3>Ghi công ảnh</h3><div id="credits"><p class="muted">Đang tải…</p></div>
   <h3>Nguồn thông tin hãng</h3><ul>${brandSources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)} ↗</a></li>`).join('')}</ul>
   <details><summary>Ghi chú quan hệ thương hiệu</summary><ul>${brandNotes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></details>

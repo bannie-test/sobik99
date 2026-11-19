@@ -1,0 +1,30 @@
+{
+  "name": "GAN i4 MagLev UV 3x3 (Smart Cube)",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm",
+    "Thông minh"
+  ],
+  "description": "Introducing the GAN i4 MagLev UV 3x3 — the latest evolution in GAN’s line of flagship smartcubes. Built for speedcubers who refuse to compromise, the i4 brings a perfect blend of lightning-fast performance and intelligent tracking technology, wrapped in GAN’s iconic UV-coated finish.",
+  "features": [
+    "Effortless Disassembly & Setup: Unique 6-color ball core makes reassembly straightforward and stress-free, always guaranteeing perfect alignment with the app.",
+    "Featherlight, Competition-Ready: Weighing just 74g, the i4 offers effortless, fatigue-free handling — ideal for those marathon sessions or heated competitions."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_20i4_20MagLev_20UV.png?v=1772872883&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-i4-maglev-uv-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-i4-maglev-uv-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-i4-maglev-uv-3x3",
+    "updated": "2026-11-17"
+  }
+}

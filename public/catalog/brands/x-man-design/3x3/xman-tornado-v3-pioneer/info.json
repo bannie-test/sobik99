@@ -7,5 +7,28 @@
   "features": [
     "Kết hợp từ tính, MagLev, Ball-Core và bề mặt UV",
     "Kích thước 55,5 mm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/x-man-tornado-v3-m-pioneer-uv-3x3"
+    }
+  ],
+  "description": "The X-Man Tornado V3 M Pioneer UV 3x3 features corner/core magnets and maglev technology. Those features, along with the magnet and compression adjustments, make this puzzle one of the most feature-rich 3x3s on the market! Get yours today and see what all the hype is about. Comes with: Tornado V3 Pioneer UV coated Adjustment tool X-Man Designs cube pouch Microfiber cloth",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/tornadov3pioneeruvcoated.jpg?v=1708016778&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/x-man-tornado-v3-m-pioneer-uv-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/x-man-tornado-v3-m-pioneer-uv-3x3"
+    ]
+  }
 }

@@ -1,0 +1,47 @@
+{
+  "name": "QiYi QiMeng 3x3 V3 (Tiled)",
+  "tags": [
+    "55.5 mm"
+  ],
+  "description": "QiYi QiMeng 3x3 V3 (Tiled) delivers on its promise to provide a great solving experience at a low price point. The addition of tiles rather than traditional vinyl stickers is great for durability and keeping your cube looking great!",
+  "features": [
+    "Colored tiles in place of vinyl stickers",
+    "Removable so that you can customize your color scheme",
+    "\"Smiley\" piece design for smoother turning",
+    "Smooth turning feel"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-qimeng-3x3-v3-tiled-black.jpg?v=1771619385&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-qimeng-3x3-v3-tiled"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-qimeng-3x3-v3-tiled"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-qimeng-v3-3x3-tiled-icy-amber"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-qimeng-v3-3x3-tiled"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-qimeng-3x3-v3-tiled",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "55.5 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-qimeng-v3-3x3-tiled-icy-amber",
+      "https://www.thecubicle.com/products/qiyi-qimeng-v3-3x3-tiled"
+    ]
+  }
+}

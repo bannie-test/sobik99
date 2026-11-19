@@ -9,5 +9,28 @@
   "reviews": [
     "Tốt hơn nhiều bản gốc khi giải nhanh"
   ],
-  "audience": "Người mới đến trung cấp"
+  "audience": "Người mới đến trung cấp",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-speed-cube-3x3-magnetic"
+    }
+  ],
+  "description": "Designed for speedcubers, the Rubik’s Speed Cube 3x3 is an upgraded version of the classic Rubik’s Cube. Its strong internal magnets enhance stability, aligning layers for smoother, faster, and more accurate turns.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Rubiks-Speed-Cube-3x3-Magnetic.jpg?v=1771619509&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-speed-cube-3x3-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/rubiks-speed-cube-3x3-magnetic"
+    ]
+  }
 }

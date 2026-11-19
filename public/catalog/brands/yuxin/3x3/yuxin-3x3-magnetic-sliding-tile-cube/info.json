@@ -1,0 +1,27 @@
+{
+  "name": "YuXin 3x3 Magnetic Sliding Tile Cube",
+  "tags": [
+    "Nam châm",
+    "85 mm"
+  ],
+  "description": "The YuXin 3x3 Magnetic Sliding Tile Cube is a 3x3 where every face has 9 sliding tiles. The tiles are numbered 1-9, and they need to be in order. Twist, turn, slide, solve! Remove the center of the white side to start scrambling and playing.",
+  "features": [
+    "Kích thước 85 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YuXin-3x3-Magnetic-Sliding-Tile-Cube.jpg?v=1687457790&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yuxin-3x3-magnetic-sliding-tile-cube"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yuxin-3x3-magnetic-sliding-tile-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yuxin-3x3-magnetic-sliding-tile-cube",
+    "updated": "2026-11-17"
+  }
+}

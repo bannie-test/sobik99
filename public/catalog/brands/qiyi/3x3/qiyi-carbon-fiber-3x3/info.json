@@ -1,0 +1,26 @@
+{
+  "name": "QiYi Carbon Fiber 3x3",
+  "tags": [
+    "56 mm"
+  ],
+  "description": "The QiYi Carbon Fiber 3x3 is a non-magnetic puzzle with black carbon fiber stickers. The underlying puzzle is a stickerless bright 3x3.",
+  "features": [
+    "Kích thước 56 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/QiYi_20Carbon_20Fiber_203x3_13fd0a74-2e41-464e-a855-c769c48eeac2.jpg?v=1637693963&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-carbon-fiber-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-carbon-fiber-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-carbon-fiber-3x3",
+    "updated": "2026-11-17"
+  }
+}

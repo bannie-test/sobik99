@@ -10,5 +10,28 @@
   "reviews": [
     "Giá tốt để thử 5x5 có nam châm"
   ],
-  "audience": "Người mới chơi 5x5"
+  "audience": "Người mới chơi 5x5",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/shengshou-mr-m-5x5"
+    }
+  ],
+  "description": "The ShengShou Mr. M 5x5 is a budget friendly, factory magnetized 5x5 speed cube. This puzzle has a medium to light magnetic feel. It is naturally fast out of the box and, at this price point, is sure to impress beginners and advanced solvers alike.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/shengshoumrm5x5bl.jpg?v=1581457893&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/shengshou-mr-m-5x5"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/shengshou-mr-m-5x5"
+    ]
+  }
 }

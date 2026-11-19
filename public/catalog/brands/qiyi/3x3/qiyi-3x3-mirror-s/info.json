@@ -1,0 +1,27 @@
+{
+  "name": "QiYi 3x3 Mirror S",
+  "tags": [
+    "Biến thể",
+    "57 mm"
+  ],
+  "description": "The QiYi 3x3 Mirror S is a fun twist on the classic 3x3. Instead of using colors, it features shiny brushed stickers in blue, gold, or silver that make the whole cube pop. It solves just like a normal cube, but the pieces are all different sizes, so it changes shape as you mix it up. It’s smooth, flashy, and super satisfying to solve.",
+  "features": [
+    "Kích thước 57 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/QiYi_203x3_20Mirror_20S_20silver.jpg?v=1752516303&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-3x3-mirror-s"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-3x3-mirror-s"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-3x3-mirror-s",
+    "updated": "2026-11-17"
+  }
+}

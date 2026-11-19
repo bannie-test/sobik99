@@ -2,5 +2,28 @@
   "name": "GAN 12 M Leap",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan12-m-leap-3x3"
+    }
+  ],
+  "description": "The GAN12 M Leap 3x3 is the latest 3x3 from GAN. This version of the flagship puzzle includes adjustable magnets in the pieces, and an adjustable spring compression/tension system. The 12 M Leap has a frosted outer finish with vibrant stickerless bright shades.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan12mleap.jpg?v=1636478264&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan12-m-leap-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan12-m-leap-3x3"
+    ]
+  }
 }

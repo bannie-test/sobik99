@@ -1,4 +1,27 @@
 {
   "name": "QiYi MS 2x2",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-ms-2x2"
+    }
+  ],
+  "description": "The QiYi MS 2x2 is a magnetic 2x2 speed cube built for performance and economy. Part of QiYi’s new economy “MS” line, this 2x2 has an unbelievably light and quick feel. This puzzle is sure to please beginners and advanced solvers alike.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/NsoSNBB60K89U.jpg?v=1685135258&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-ms-2x2"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-ms-2x2"
+    ]
+  }
 }

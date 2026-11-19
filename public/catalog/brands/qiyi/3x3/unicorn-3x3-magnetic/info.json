@@ -1,0 +1,44 @@
+{
+  "name": "QiYi Unicorn Cube 3x3 (Magnetic)",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "The QiYi Unicorn Cube 3x3 (Magnetic) is a beginner-friendly magnetic speed cube built for kids starting out, with a playful unicorn-themed design and a frosted finish that keeps colors easy to read and hands free of fingerprints. It's part of QiYi's children's cube series, tuned so little hands get stable, controlled turning without fighting the cube.",
+  "features": [
+    "Built for kids learning the cube: A zero-threshold entry cube designed so beginners can start solving and feel a real sense of achievement early.",
+    "Magnetic where it counts: Magnets add positioning assistance for stable rotation without the loose, floppy feel of older non-magnetic children's cubes.",
+    "Character-style design: The playful unicorn-themed color blocks pull kids in and keep them coming back to turn it.",
+    "Easy on little hands: Light and controllable, with a smooth feel that doesn't require adult-level grip strength.",
+    "Magnetic positioning: Magnets help layers settle into place, so turns feel stable and don't over-rotate as easily.",
+    "Frosted surface: Scratch-resistant, anti-reflective, and fingerprint-proof, so the cube stays looking clean through heavy play."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/33ea4ca2-5efd-45b8-9e8b-f29186d3f842.jpg?v=1792878528&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/unicorn-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/unicorn-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-unicorn-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "unicorn-3x3-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-unicorn-3x3-magnetic"
+    ]
+  }
+}

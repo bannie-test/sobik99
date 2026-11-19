@@ -1,0 +1,25 @@
+{
+  "name": "The FerYooCore UV 3x3",
+  "tags": [
+    "UV",
+    "Nam châm"
+  ],
+  "description": "Meet the FerYooCore UV, the next step in the Yoo Cube journey.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/ferryoocoreuv.jpg?v=1755710723&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/the-feryoocore-uv-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/the-feryoocore-uv-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "the-feryoocore-uv-3x3",
+    "updated": "2026-11-17"
+  }
+}

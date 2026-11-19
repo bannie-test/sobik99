@@ -1,4 +1,27 @@
 {
   "name": "QiYi Thunderclap V3",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-thunderclap-3x3-v3-magnetic"
+    }
+  ],
+  "description": "The QiYi Thunderclap 3x3 V3 Magnetic was once considered the best value 3x3 speed cube ever released by QiYi. This magnetic cube 3x3 delivers smooth, fast, and reliable performance, making it an excellent choice for beginners and competitive speedcubers alike.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-thunderclap-3x3-v3-magnetic-stickerless.jpg?v=1771619434&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-thunderclap-3x3-v3-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/qiyi-thunderclap-3x3-v3-magnetic"
+    ]
+  }
 }

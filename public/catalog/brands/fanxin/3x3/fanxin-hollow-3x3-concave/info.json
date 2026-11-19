@@ -1,0 +1,33 @@
+{
+  "name": "Fanxin Hollow 3x3 - Concave",
+  "tags": [],
+  "description": "Fanxin Hollow 3x3 - Concave is an attention grabber and will stand out in your collection! Despite the intricate design, the Hollow cube turns very well and is a blast to solve!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/fanxin-hollow-3x3-concave-stickerless.jpg?v=1771619320&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/fanxin-hollow-3x3-concave"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/fanxin-hollow-3x3-concave"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/fanxin-hollow-3x3-concave"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "fanxin-hollow-3x3-concave",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/fanxin-hollow-3x3-concave"
+    ]
+  }
+}

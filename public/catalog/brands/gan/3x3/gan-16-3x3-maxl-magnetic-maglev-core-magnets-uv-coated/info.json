@@ -1,0 +1,32 @@
+{
+  "name": "GAN 16 3x3 MaxL (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "The GAN 16 3x3 MaxL (Magnetic, MagLev, Core Magnets, UV Coated) is a premium magnetic speed cube designed for cubers who want a faster, more stable feel with extra grip and a slightly larger size for added control. Standard magnets help pieces click into place more accurately, MagLev replaces springs for a lighter, lower-resistance turning feel, and core magnets add stability for a more precise, predictable solve.",
+  "features": [
+    "Cleaner, more accurate turning: Magnetic positioning helps pieces align more consistently during solves.",
+    "Fast, low-resistance feel: MagLev replaces springs with repelling magnets for quicker, smoother turning.",
+    "Better control: Core magnets improve stability and make the cube feel more predictable at speed.",
+    "More secure grip: UV coating adds a super glossy surface with high grip.",
+    "Larger handling feel: 57mm size is designed for greater control and a more precise grip.",
+    "MagLev setup: Creates a lighter, faster turning feel by reducing internal spring resistance."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-16-3x3-maxl-magnetic-maglev-core-magnets-uv-coated_c3002ce6.jpg?v=1775924069&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-16-3x3-maxl-magnetic-maglev-core-magnets-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-16-3x3-maxl-magnetic-maglev-core-magnets-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-16-3x3-maxl-magnetic-maglev-core-magnets-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

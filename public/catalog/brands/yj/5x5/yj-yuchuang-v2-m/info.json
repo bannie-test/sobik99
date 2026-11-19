@@ -2,5 +2,28 @@
   "name": "YJ YuChuang V2 M",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-yuchuang-5x5-v2-m"
+    }
+  ],
+  "description": "The YJ YuChuang 5x5 V2 M is an economy friendly magnetic 5x5. With a light magnetic feel, and fast turning right out of the box, this puzzle features amazing performance at a budget friendly price.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/yjyuchuangv2m.jpg?v=1569376748&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-yuchuang-5x5-v2-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/yj-yuchuang-5x5-v2-m"
+    ]
+  }
 }

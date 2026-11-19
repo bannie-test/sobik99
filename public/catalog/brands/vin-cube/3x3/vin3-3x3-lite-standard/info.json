@@ -1,0 +1,25 @@
+{
+  "name": "VIN3 3x3 Lite (Standard Edition)",
+  "tags": [
+    "Nam châm",
+    "Bản đặc biệt"
+  ],
+  "description": "VIN3 3x3 Lite (Standard) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/VIN3_20Nova_20-_20Lite.png?v=1775228220&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/vin3-3x3-lite-standard"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/vin3-3x3-lite-standard"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "vin3-3x3-lite-standard",
+    "updated": "2026-11-17"
+  }
+}

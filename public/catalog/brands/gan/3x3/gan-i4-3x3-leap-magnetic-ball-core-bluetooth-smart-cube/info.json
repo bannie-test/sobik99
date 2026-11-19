@@ -1,0 +1,32 @@
+{
+  "name": "GAN i4 3x3 Leap (Magnetic, Ball-Core) - Bluetooth Smart Cube",
+  "tags": [
+    "Ball-core",
+    "Thông minh"
+  ],
+  "description": "The GAN i4 3x3 (Magnetic, Ball-Core) - Bluetooth Smart Cube is a premium magnetic speed cube built for cubers who want strong turning performance with smart training features built in. Standard magnets help pieces click into place more accurately, while the Ball-Core adds stability and a more controlled feel.",
+  "features": [
+    "Smarter practice: Zero-loss sensing and omni-motion monitoring capture turning data to help you train more intentionally.",
+    "More controlled feel: Ball-Core stability helps the cube feel more predictable during faster solves.",
+    "Fast, accurate turning: Standard magnets improve alignment and give the cube a cleaner, more precise feel.",
+    "Flexible battery options: Performance and endurance modes let you choose between full smart features or longer battery life.",
+    "Established smart ecosystem: Built for a smartcubing community with over 1.5 million players.",
+    "72 handfeel options: Designed to give you a wide range of setup possibilities."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-i4-3x3-leap-magnetic-ball-core-bluetooth-smart-cube.jpg?v=1774974004&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-i4-3x3-leap-magnetic-ball-core-bluetooth-smart-cube"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-i4-3x3-leap-magnetic-ball-core-bluetooth-smart-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-i4-3x3-leap-magnetic-ball-core-bluetooth-smart-cube",
+    "updated": "2026-11-16"
+  }
+}

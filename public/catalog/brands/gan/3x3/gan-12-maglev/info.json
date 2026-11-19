@@ -1,7 +1,11 @@
 {
   "name": "GAN 12 Maglev",
   "tags": [
-    "Maglev"
+    "Maglev",
+    "UV",
+    "Nam châm",
+    "56 mm",
+    "Ball-core"
   ],
   "features": [
     "Nam châm + maglev",
@@ -10,5 +14,38 @@
   "reviews": [
     "Nhanh và ổn định, từng là flagship được ưa chuộng"
   ],
-  "audience": "Người chơi thi đấu"
+  "audience": "Người chơi thi đấu",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan12-m-maglev-uv-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan12-maglev-uv-3x3-picube-20-magnet-ball-core-mod"
+    }
+  ],
+  "description": "The GAN12 MagLev UV 3x3 is at the very peak of 3x3 innovation and design. This flagship puzzle includes adjustable magnets in the pieces and an adjustable magnetic levitation tension/compression system. This technology utilizes opposing magnets to imitate the feel of a spring while also reducing friction and spring noise. This version has a glossy finish out the outer surface.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/gan12maglevwrpromo.jpg?v=1687295898&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan12-m-maglev-uv-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "UV",
+      "Nam châm",
+      "56 mm",
+      "Ball-core"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan12-m-maglev-uv-3x3",
+      "https://www.thecubicle.com/products/gan12-maglev-uv-3x3-picube-20-magnet-ball-core-mod"
+    ]
+  }
 }

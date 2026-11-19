@@ -5,5 +5,28 @@
   ],
   "features": [
     "Thử thách reduction nhiều lớp"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-6x6-magnetic"
+    }
+  ],
+  "description": "The YJ MGC 6x6 magnetic cube is easily the best value 6x6 available today! This magnetic cube offers exceptional performance, making it a top choice for speedcubers looking for a reliable and smooth-turning puzzle.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yj-mgc-6x6-magnetic-stickerless.jpg?v=1765325988&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-mgc-6x6-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yj-mgc-6x6-magnetic"
+    ]
+  }
 }

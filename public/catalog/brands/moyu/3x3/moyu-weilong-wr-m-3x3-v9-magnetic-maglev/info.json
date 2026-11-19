@@ -1,0 +1,32 @@
+{
+  "name": "MoYu WeiLong WR M 3x3 V9 (Magnetic, MagLev)",
+  "tags": [
+    "MagLev",
+    "Nam châm"
+  ],
+  "description": "MoYu WeiLong WR M 3x3 V9 (Magnetic, MagLev) is a highly anticipated update to MoYu's flagship \"WR M\" series.",
+  "features": [
+    "Magnetic repulsion technology",
+    "No springs required",
+    "Faster turning feel",
+    "Dual-adjustment system (9 settings)",
+    "\"Dragon scale\" piece design for smoother turning",
+    "55mm smaller size"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-weilong-wr-m-3x3-v9-magnetic-maglev-stickerless.jpg?v=1771619412&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-wr-m-3x3-v9-magnetic-maglev"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-wr-m-3x3-v9-magnetic-maglev"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-weilong-wr-m-3x3-v9-magnetic-maglev",
+    "updated": "2026-11-16"
+  }
+}

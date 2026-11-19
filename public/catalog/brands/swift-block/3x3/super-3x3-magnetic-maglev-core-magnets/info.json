@@ -1,0 +1,31 @@
+{
+  "name": "Swift Block Super 3x3 (Magnetic, MagLev, Core Magnets)",
+  "tags": [
+    "MagLev"
+  ],
+  "description": "The Swift Block Super 3x3 (Magnetic, MagLev, Core Magnets) is a levitation-driven speed cube built around a dual-ring MagLev system and an omni-directional core, tuned for instant acceleration and a light, frictionless glide. At 71g with 8-gear tension adjustment, it's a fast, tunable magnetic speed cube that stays stable through fast turns.",
+  "features": [
+    "Snaps into place: 76 magnets deliver 3D surround magnetic force, pulling each turn into alignment and drifting misaligned layers back within about 35 degrees.",
+    "Light in the hand: At 71g, it's easy to hold and quick to control, so your fingers stay fast through long solves.",
+    "GES tension system: Adjust handfeel across 8 gears to move from loose and flowing to firm and controlled.",
+    "Continuously variable center travel: Fine-tune the core beyond the fixed gears for a setup that's genuinely yours.",
+    "Omni-directional core: An omni-support spherical orbit keeps the tuning stable, so your dialed-in feel holds up turn after turn.",
+    "Dual ring magnets: Friction-reducing repulsion lifts each layer while attraction speed-boosts the turn back into place."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/ebaabee5-2679-4830-b43d-0b2fe2d9d6e2.jpg?v=1783701682&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/super-3x3-magnetic-maglev-core-magnets"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/super-3x3-magnetic-maglev-core-magnets"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "super-3x3-magnetic-maglev-core-magnets",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Rubik's Cube Stitch Cuber",
+  "tags": [],
+  "description": "Say “Aloha” to your next favorite collectible — the Rubik’s Cube Stitch Cuber! Inspired by Disney’s Lilo & Stitch, this playful twist on the classic 3×3 Rubik’s Cube lets you show off your fandom while putting your solving skills to the test.",
+  "features": [
+    "Disney Design: Features Stitch’s adorable blue alien design straight from Lilo & Stitch.",
+    "Solve & Display: Attach Stitch’s head and ears to create a display-worthy collectible.",
+    "Classic Rubik’s Challenge: Twist, turn, and align all six sides like the iconic 3×3 puzzle.",
+    "Collect Them All: Part of the Rubik’s Cuber Collection, featuring fan-favorite characters from Disney, Marvel, DC, and more.",
+    "Perfect Gift Idea: A must-have for Disney fans, Stitch lovers, and puzzle collectors of all ages.",
+    "Official Rubik’s 3×3 format"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Rubiks-Cube-Stitch-Cuber.jpg?v=1771619489&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-cube-stitch-cuber"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-cube-stitch-cuber"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "rubiks-cube-stitch-cuber",
+    "updated": "2026-11-16"
+  }
+}

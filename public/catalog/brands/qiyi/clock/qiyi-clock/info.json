@@ -9,5 +9,28 @@
   "reviews": [
     "Cách giải khác hẳn cube, thú vị"
   ],
-  "audience": "Người thích puzzle lạ"
+  "audience": "Người thích puzzle lạ",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-3x3-clock-magnetic"
+    }
+  ],
+  "description": "The QiYi 3x3 Clock (Magnetic) is a speedcubing-ready magnetic clock puzzle designed for smooth, accurate solves. A twelve-tooth magnetic edge wheel snaps each increment precisely into place, while a dial-bottom magnetic ring system keeps transitions between lifted and pressed states stable and predictable.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-3x3-clock-magnetic-blue.jpg?v=1771619417&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-3x3-clock-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/qiyi-3x3-clock-magnetic"
+    ]
+  }
 }

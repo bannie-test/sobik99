@@ -1,0 +1,26 @@
+{
+  "name": "HuaMeng TG V2 3x3 (8-Magnet Ball-Core + UV)",
+  "tags": [
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "HuaMeng TG V2 3x3 (8-Magnet Ball-Core + UV) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/Huameng_20TG_20V2_208Magnet.png?v=1777650869&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/huameng-tg-v2-3x3-8-magnet-ball-core"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/huameng-tg-v2-3x3-8-magnet-ball-core"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "huameng-tg-v2-3x3-8-magnet-ball-core",
+    "updated": "2026-11-17"
+  }
+}

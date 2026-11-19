@@ -2,5 +2,28 @@
   "name": "Valk 4 M",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/valk-4-m-standard"
+    }
+  ],
+  "description": "The Valk 4 M is the first 4x4 in the iconic Valk line. It measures a compact 60mm across, making it more comfortable to hold and turn. When turning each layer slowly, the cube has a very comfortable, stable smoothness. When turning faster, there is a pleasant, slight hint of crunchiness. Corner cutting is quite flexible and is on par with other top 4x4's.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/qiyivalk4stickerless.jpg?v=1569380146&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/valk-4-m-standard"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/valk-4-m-standard"
+    ]
+  }
 }

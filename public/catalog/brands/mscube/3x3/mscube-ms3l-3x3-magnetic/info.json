@@ -1,0 +1,29 @@
+{
+  "name": "MsCUBE MS3L 3x3 (Magnetic)",
+  "tags": [],
+  "description": "MsCUBE MS3L 3x3 (Magnetic) is a unique-feeling speed cube with new technology advancements!",
+  "features": [
+    "Spiderweb piece design",
+    "3 spring compression options",
+    "Smooth, bumpy turning",
+    "Interchangeable spring options",
+    "Flexible mechanism",
+    "Display stand ($1 value)"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/mscube-ms3l-3x3-magnetic-stickerless.jpg?v=1781569363&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/mscube-ms3l-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/mscube-ms3l-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "mscube-ms3l-3x3-magnetic",
+    "updated": "2026-11-16"
+  }
+}

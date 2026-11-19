@@ -1,0 +1,32 @@
+{
+  "name": "VIN3 3x3 Nova (Flagship Edition)",
+  "tags": [
+    "Nam châm",
+    "Bản đặc biệt"
+  ],
+  "description": "The VIN3 3x3 Nova (Flagship Edition) is the ultimate evolution of Vin Cube’s debut 3x3, designed specifically for speedcubers and enthusiasts seeking peak performance. As the flagship model, Nova brings together next-generation engineering and premium materials for an unmatched solving experience.",
+  "features": [
+    "88 Purple Titanium Magnets: Advanced magnetic layout delivers powerful, seamless turning with optimal stability.",
+    "Transparent Integrated Core Magnets: Experience incredible alignment and feel with a refined, state-of-the-art core.",
+    "8 Levels of Compression & Tensioning: Precisely adjust to your exact turning preference for consistent, controllable solves.",
+    "Maglev Center Piece: Enjoy frictionless, smooth turning and outstanding speed thanks to magnetic levitation technology.",
+    "20 Edge-Corner Magnets: Enhance stability and corner-cutting, engineered for top-tier speedsolving.",
+    "Centrifugal Adjustment System: Fine-tune your Nova for performance at any speed."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/VIN3_20Nova.png?v=1768626099&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/vin-3x3-nova-flagship"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/vin-3x3-nova-flagship"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "vin-3x3-nova-flagship",
+    "updated": "2026-11-17"
+  }
+}

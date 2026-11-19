@@ -1,0 +1,29 @@
+{
+  "name": "Rubik's Mickey Mouse Cuber",
+  "tags": [],
+  "description": "Bring Disney magic to your solves with the Rubik’s Cube Mickey Mouse Cuber — a playful twist on the classic 3×3 puzzle. Featuring Mickey Mouse’s iconic look, this collectible cube lets you enjoy the challenge of solving while celebrating one of the most beloved characters of all time.",
+  "features": [
+    "Classic Disney Design: Showcases Mickey Mouse’s instantly recognizable style",
+    "Solve & Display: Attach the head and ears to create a fun, display-ready collectible",
+    "Timeless 3×3 Challenge: Twist and turn to solve all six sides",
+    "Collector’s Favorite: Part of the Rubik’s Cuber Series alongside other iconic characters",
+    "Perfect Gift Idea: Great for Disney fans, puzzle lovers, and collectors of all ages",
+    "Official Rubik’s 3×3 format"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/rubiks-mickey-mouse-cuber.jpg?v=1776961130&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-mickey-mouse-cuber"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-mickey-mouse-cuber"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "rubiks-mickey-mouse-cuber",
+    "updated": "2026-11-16"
+  }
+}

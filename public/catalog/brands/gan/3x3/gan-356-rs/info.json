@@ -1,4 +1,31 @@
 {
   "name": "GAN 356 RS",
-  "tags": []
+  "tags": [
+    "56 mm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-rs"
+    }
+  ],
+  "description": "The GAN 356 RS is the latest update of the popular budget friendly 3x3 speed cube from GAN, the 356 R. This puzzle features a smooth, soft GAN feel that is characteristic of their cubes. At 72g this puzzle represents the intersection between state-of-the-art engineering and budget consideration.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan356rs.jpg?v=1581458392&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan356-rs"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan356-rs"
+    ]
+  }
 }

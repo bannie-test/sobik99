@@ -2,5 +2,28 @@
   "name": "GAN 11 M Duo",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-11-m-duo-3x3"
+    }
+  ],
+  "description": "The GAN 11 M Duo 3x3 is a new, more affordable variation of their popular GAN 11 M Pro. This cube has the same construction as the famous flagship but without the magnet adjustment features. The result is an ultralight 60g cube that is $18 cheaper. Cut cost, not performance! aka: gan 11mduo Comes with: GAN 11 M Duo GAN Cube Bag Tension adjustment tool Extra tension nuts",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan11mproduo.jpg?v=1618249826&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-11-m-duo-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-11-m-duo-3x3"
+    ]
+  }
 }

@@ -10,5 +10,28 @@
   "reviews": [
     "Hiệu năng tốt so với giá"
   ],
-  "audience": "Người mới"
+  "audience": "Người mới",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-ms-3x3"
+    }
+  ],
+  "description": "The QiYi MS 3x3 is a magnetic 3x3 speed cube built for performance and economy. Part of QiYi’s new economy “MS” line, this 3x3 features a clean, crispy feel that provides a super precise solving experience. The MS 3x3 is undoubtedly one of the best economy cubes ever produced, and has even caught the attention of competitive solvers.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/QiYiMS3x3.jpg?v=1610645240&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-ms-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-ms-3x3"
+    ]
+  }
 }

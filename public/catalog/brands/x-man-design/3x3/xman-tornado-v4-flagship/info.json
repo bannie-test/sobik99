@@ -10,5 +10,28 @@
   "reviews": [
     "Xoay nhanh, chính xác, ổn định hơn"
   ],
-  "audience": "Người chơi thi đấu"
+  "audience": "Người chơi thi đấu",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/x-man-tornado-v4-m-3x3-flagship"
+    }
+  ],
+  "description": "This is the X-Man Tornado V4 M 3x3 (Flagship). This puzzle is a successor to the Tornado V3 which has set many world records over the last few years. This one has a ball-core, and an updated adjustment system that allows you to adjust the magnet strength in an entire corner with just a single twist! This version has a matte finish and a spring tensioning system. Get yours today!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/tornado_20v4.jpg?v=1726802352&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/x-man-tornado-v4-m-3x3-flagship"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/x-man-tornado-v4-m-3x3-flagship"
+    ]
+  }
 }

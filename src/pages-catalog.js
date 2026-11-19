@@ -16,11 +16,12 @@ const brandById = id => brands.find(b => b.id === id);
 const imageURL = src => (/^https?:\/\//.test(src) ? src : BASE + src);
 const TYPE_ALIASES = { Megaminx: 'megaminx', Pyraminx: 'pyraminx', Skewb: 'skewb', 'Square-1': 'square-1', Clock: 'clock' };
 
-/** Brand wordmark as inline SVG (falls back to the name in the brand color). */
+const logoPlaceholder = (b, cls) => `<span class="${cls} logo-ph" role="img" aria-label="${esc(b.name)}"><span>${esc(b.name)}</span></span>`;
+/** Brand logo image from `b.logo` (path under public/ or https URL); grey placeholder when unset or broken. */
 export function brandLogo(b, cls = 'brand-logo') {
   if (!b) return '';
-  if (!b.logo) return `<span class="${cls} text" style="--brand:${b.color}">${esc(b.name)}</span>`;
-  return `<svg class="${cls}" viewBox="0 0 ${b.logo.width} ${b.logo.height}" role="img" aria-label="${esc(b.name)}" style="--brand:${b.color}"><path d="${b.logo.path}" fill="currentColor"/></svg>`;
+  if (!b.logo) return logoPlaceholder(b, cls);
+  return `<img class="${cls}" src="${esc(imageURL(b.logo))}" alt="${esc(b.name)}" loading="lazy" decoding="async" data-logo="${esc(b.id)}">`;
 }
 
 /** 4:3 placeholder in the style of placehold.co, drawn locally so it never depends on another site. */
@@ -31,10 +32,9 @@ function productImage(p, big = false) {
   return `<img src="${esc(imageURL(p.image))}" alt="${esc(p.name)}" loading="lazy" decoding="async" width="800" height="600" data-fallback="${esc(p.name)}"${big ? ' data-big' : ''}>`;
 }
 function wireFallbacks(el) {
-  el.querySelectorAll('img[data-fallback]').forEach(img => {
-    const swap = () => { const d = document.createElement('div'); d.innerHTML = placeholder(img.dataset.fallback, img.hasAttribute('data-big')); img.replaceWith(d.firstChild); };
-    if (img.complete && img.naturalWidth === 0 && img.src) swap(); else img.addEventListener('error', swap, { once: true });
-  });
+  const onBroken = (img, swap) => { if (img.complete && img.naturalWidth === 0 && img.src) swap(); else img.addEventListener('error', swap, { once: true }); };
+  el.querySelectorAll('img[data-fallback]').forEach(img => onBroken(img, () => { const d = document.createElement('div'); d.innerHTML = placeholder(img.dataset.fallback, img.hasAttribute('data-big')); img.replaceWith(d.firstChild); }));
+  el.querySelectorAll('img[data-logo]').forEach(img => onBroken(img, () => { const d = document.createElement('div'); d.innerHTML = logoPlaceholder(brandById(img.dataset.logo), img.className); img.replaceWith(d.firstChild); }));
 }
 
 function cardHTML(p) {
@@ -54,15 +54,16 @@ export function catalog(root, params) {
 
   root.innerHTML = `<section class="page-shell catalog-page"><div class="page-heading"><div><small>KỆ RUBIK / BỘ SƯU TẬP</small><h1>Một kệ trưng bày.<br><em>Không có giá.</em></h1></div>
    <p>Chọn hãng hoặc loại để xem. Ảnh và thông tin tải dần khi bạn cuộn. Đây là kệ tham khảo, không bán hàng.</p></div>
-   <div class="brand-strip" role="group" aria-label="Lọc theo hãng"><button data-brand="" class="brand-chip all"><b>Tất cả</b><span></span></button>${ordered.map(b => `<button data-brand="${b.id}" class="brand-chip" title="${esc(b.name)}${b.parent ? ' · thuộc ' + esc(brandById(b.parent)?.name || '') : ''}">${brandLogo(b)}<span></span></button>`).join('')}</div>
+   <div class="brand-strip" role="group" aria-label="Lọc theo hãng"><button data-brand="" class="brand-chip all"><b>Tất cả</b><span class="chip-count"></span></button>${ordered.map(b => `<button data-brand="${b.id}" class="brand-chip" title="${esc(b.name)}${b.parent ? ' · thuộc ' + esc(brandById(b.parent)?.name || '') : ''}">${brandLogo(b)}<span class="chip-count"></span></button>`).join('')}</div>
    <div class="catalog-tools"><div class="cat-chips" role="group" aria-label="Lọc theo loại"><button data-cat="">Tất cả loại</button>${CATEGORIES.map(c => `<button data-cat="${c.folder}">${c.label} <span></span></button>`).join('')}</div>
    <label class="catalog-search">Tìm mẫu<input type="search" id="q" placeholder="WRM V11, Tornado, MGC…" value="${esc(term)}"></label></div>
    <div id="brand-info"></div><p class="case-count" id="count" aria-live="polite"></p>
    <div id="grid" class="product-grid"></div><div id="more" class="load-more"><span>Đang tải thêm…</span></div>
-   <p class="muted catalog-note">Ảnh thuộc về chủ sở hữu (ghi công ở trang chi tiết). Mẫu chưa có ảnh hiển thị ảnh chờ. Logo là chữ thương hiệu dạng vector dựng lại, không phải tác phẩm logo chính thức. <a href="#/sources">Nguồn dữ liệu ↗</a></p></section>`;
+   <p class="muted catalog-note">Ảnh thuộc về chủ sở hữu (ghi công ở trang chi tiết). Mẫu chưa có ảnh hiển thị ảnh chờ. Logo hãng chưa có ảnh hiển thị ô chờ. <a href="#/sources">Nguồn dữ liệu ↗</a></p></section>`;
 
   const $ = s => root.querySelector(s);
   const grid = $('#grid'), more = $('#more'), count = $('#count');
+  wireFallbacks(root.querySelector('.brand-strip'));
 
   function syncURL() {
     const q = new URLSearchParams();
@@ -91,12 +92,13 @@ export function catalog(root, params) {
     let index;
     try { index = await catalogIndex(); } catch { count.textContent = 'Chưa tải được danh mục. Hãy chạy “npm run catalog” rồi tải lại trang.'; more.hidden = true; return; }
     if (my !== session) return;
-    root.querySelectorAll('[data-brand]').forEach(b => { b.querySelector('span').textContent = b.dataset.brand ? index.brandCounts[b.dataset.brand] || 0 : index.total; });
+    root.querySelectorAll('[data-brand]').forEach(b => { b.querySelector('.chip-count').textContent = b.dataset.brand ? index.brandCounts[b.dataset.brand] || 0 : index.total; });
     root.querySelectorAll('[data-cat]').forEach(b => { const c = index.categories.find(x => x.folder === b.dataset.cat); if (c) b.querySelector('span').textContent = c.count; });
     const b = brandById(brand);
     const family = b ? [...brandFamily(brands, b.id)].filter(id => id !== b.id) : [];
     $('#brand-info').innerHTML = b ? `<div class="brand-panel" style="--brand:${b.color}">${brandLogo(b, 'brand-logo big')}<div><h2>${esc(b.name)}</h2><p>${esc(b.summary || '')}${b.country ? ` <span class="muted">· ${esc(b.country)}</span>` : ''}</p>
       ${family.length ? `<p class="muted">Gồm cả: ${family.map(id => esc(brandById(id).name)).join(', ')}.</p>` : ''}${b.parent ? `<p class="muted">Thương hiệu thuộc ${esc(brandById(b.parent).name)}.</p>` : ''}</div></div>` : '';
+    wireFallbacks($('#brand-info'));
 
     if (term.trim()) {
       // Search uses the light index, still rendered page by page.

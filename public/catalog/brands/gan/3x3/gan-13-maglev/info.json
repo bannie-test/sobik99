@@ -2,5 +2,28 @@
   "name": "GAN 13 MagLev",
   "tags": [
     "MagLev"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan13-m-maglev-uv-3x3"
+    }
+  ],
+  "description": "The GAN13 M MagLev UV 3x3 is the famous manufacturer's latest flagship 3x3. This puzzle is loaded with 88 magnets! 8 core magnets, 56 piece magnets, 12 repulsion magnets, and 12 maglev rings all come together to give you the most amazing 3x3 ever conceived. This puzzle is fully adjustable meaning you can fine tune the compression/travel distance, the tension, and the magnet strength.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan13uvcoated1.jpg?v=1665682658&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan13-m-maglev-uv-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan13-m-maglev-uv-3x3"
+    ]
+  }
 }

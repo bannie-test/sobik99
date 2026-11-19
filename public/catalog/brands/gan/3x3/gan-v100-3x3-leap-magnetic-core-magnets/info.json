@@ -1,0 +1,46 @@
+{
+  "name": "GAN V100 3x3 Leap (Magnetic, Core Magnets)",
+  "tags": [
+    "Nam châm",
+    "Bản đặc biệt"
+  ],
+  "description": "The GAN V100 3x3 Leap is a light, fully tunable 55 mm speed cube built on GAN's V100 platform. Piece magnets give each turn a crisp click and a core-magnet system pulls layers into alignment for added stability, while a ~62 g build keeps it quick and easy on the hands. With 72 tuning configurations, you set the feel rather than settle for it.",
+  "features": [
+    "Crisp, accurate turning: piece magnets give every layer a defined click, so turns land where you mean them to.",
+    "Stable at speed: the core-magnet system pulls layers into alignment and steadies the cube through fast solves, with fewer lockups.",
+    "Light and quick: at ~62 g it moves with little effort and stays comfortable across long practice sessions.",
+    "Tune it to your hands: 72 configurations let you set the feel from soft and fast to firm and controlled, with no guesswork.",
+    "72 configurations: combine 6 levels of center-piece travel with 12 tension settings to land on the exact feel you want.",
+    "Two independent axes: adjust how loose and fast versus firm and controlled the cube turns without endless trial and error."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-v100-3x3-leap-magnetic-core-magnets.jpg?v=1780706113&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-v100-3x3-leap-magnetic-core-magnets"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-v100-3x3-leap-magnetic-core-magnets"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-v100-leap-3x3-2026-year-of-the-horse-edition"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-v100-3x3-leap-magnetic-core-magnets",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "Bản đặc biệt"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-v100-leap-3x3-2026-year-of-the-horse-edition"
+    ]
+  }
+}

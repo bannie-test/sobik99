@@ -1,0 +1,29 @@
+{
+  "name": "VIN Cube 3x3 Lite (Magnetic)",
+  "tags": [],
+  "description": "The VIN Cube 3x3 Lite (Magnetic) is a magnetic speed cube built for cubers who want a light, responsive feel with more tuning range than you might expect from a simpler setup. Standard magnets help pieces click into place more accurately, while the CFRS adjustment system gives you broad control over how crisp, light, or stable the cube feels. With a compact 55.",
+  "features": [
+    "Clean, accurate turning: Magnetic positioning helps pieces align more consistently during solves.",
+    "Light and agile feel: The 70g build keeps the cube quick in hand without feeling flimsy.",
+    "More setup flexibility: The CFRS system gives you a wide range of feel options, from lighter and snappier to tighter and more stable.",
+    "Easy everyday handling: The 55.5mm size feels compact and precise without becoming too small.",
+    "Useful extras included: An adjustment tool and cube storage bag add practical value right out of the box.",
+    "CFRS adjustment system: Centrifugal force regulation lets you switch between crisp, snappy, and stable turning styles."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/vin-cube-3x3-lite-magnetic.jpg?v=1775924120&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/vin-cube-3x3-lite-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/vin-cube-3x3-lite-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "vin-cube-3x3-lite-magnetic",
+    "updated": "2026-11-16"
+  }
+}

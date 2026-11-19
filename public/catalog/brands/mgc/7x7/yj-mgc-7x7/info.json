@@ -5,5 +5,28 @@
   ],
   "features": [
     "Tâm giữa cố định, nhiều thử thách nhận diện"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-7x7-magnetic"
+    }
+  ],
+  "description": "The YJ MGC 7x7 Magnetic quickly became one of the most popular 7x7 speed cubes on the market. It captures YJ’s signature smooth turning feel and delivers consistent magnet strength across all layers, making it a top choice for both competitive and casual speedcubing.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yj-mgc-7x7-magnetic-stickerless.jpg?v=1765326058&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-mgc-7x7-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yj-mgc-7x7-magnetic"
+    ]
+  }
 }

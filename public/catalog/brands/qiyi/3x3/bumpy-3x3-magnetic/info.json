@@ -1,0 +1,44 @@
+{
+  "name": "QiYi Bumpy Cube 3x3 (Magnetic)",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "The QiYi Bumpy Cube 3x3 (Magnetic) is a beginner's speed cube featuring magnetic positioning that keeps each layer aligned and stable, and the simplified bright color scheme makes turns easy to track for cubers just starting out.",
+  "features": [
+    "Built for small hands: A beginner-friendly children's cube with a simplified layout, so new cubers get a sense of achievement instead of frustration.",
+    "Bright, readable colors: The full-bright color scheme keeps faces easy to tell apart while playing.",
+    "Magnetic stability: Magnets help each turn settle into place, so the cube rotates without the loose, wobbly feel of traditional non-magnetic kids' cubes.",
+    "Magnetic positioning: Magnets assist alignment for stable rotation and a smoother, more controlled solve.",
+    "Frosted surface: Matte finish is scratch-resistant, anti-reflective, and fingerprint-proof.",
+    "Durable build: Molded in ABS plastic to hold up to everyday play."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/14b737f4-bbea-4c15-8362-67eb03f21644.jpg?v=1792878521&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/bumpy-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/bumpy-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-bumpy-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "bumpy-3x3-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-bumpy-3x3-magnetic"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "HuaMeng YS3M 3x3 Ball-Core (Magnetic Core + MagLev)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "Nam châm",
+    "55 mm"
+  ],
+  "description": "The MoYu HuaMeng YS3M is the latest flagship 3x3 release from the famous cube company. This puzzle features amazing corner cutting, adjustable tensions/compressions, a dragon scale pattern to reduce sticking, and is designed/endorsed by the 3x3 world record single holder YuSheng Du.",
+  "features": [
+    "Kích thước 55 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/moyu-huameng-ys3m-maglev-ball-core.jpg?v=1677090986&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/huameng-ys3m-3x3-ball-core-magnetic-core-maglev"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/huameng-ys3m-3x3-ball-core-magnetic-core-maglev"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "huameng-ys3m-3x3-ball-core-magnetic-core-maglev",
+    "updated": "2026-11-17"
+  }
+}

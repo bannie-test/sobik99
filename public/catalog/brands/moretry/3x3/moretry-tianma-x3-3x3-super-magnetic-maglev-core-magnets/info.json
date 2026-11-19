@@ -1,0 +1,31 @@
+{
+  "name": "MoreTry TianMa X3 3x3 Super (Magnetic, MagLev, Core Magnets)",
+  "tags": [
+    "MagLev"
+  ],
+  "description": "MoreTry TianMa X3 Series is the first release from this new manufacturer!",
+  "features": [
+    "Dual-adjustment core for independent spring compression & tension",
+    "Auto-alignment system",
+    "Easy to customize",
+    "9 spring compression settings",
+    "\"Fishscale\" piece design for smoother turning",
+    "Screwdriver"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moretry-tianma-x3-3x3-super-magnetic-maglev-core-magnets-stickerless.jpg?v=1771619418&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moretry-tianma-x3-3x3-super-magnetic-maglev-core-magnets"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moretry-tianma-x3-3x3-super-magnetic-maglev-core-magnets"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moretry-tianma-x3-3x3-super-magnetic-maglev-core-magnets",
+    "updated": "2026-11-16"
+  }
+}

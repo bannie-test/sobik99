@@ -1,4 +1,27 @@
 {
   "name": "QiYi QiHeng S Megaminx",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-qiheng-s2-megaminx"
+    }
+  ],
+  "description": "QiYi QiHeng S2 Megaminx (Non-Magnetic) is a great first megaminx for any cuber!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/QiYi-QiHeng-S2-Megaminx.jpg?v=1771619492&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-qiheng-s2-megaminx"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/qiyi-qiheng-s2-megaminx"
+    ]
+  }
 }

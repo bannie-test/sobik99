@@ -2,7 +2,10 @@
   "name": "GAN15 Maglev",
   "tags": [
     "Maglev",
-    "Siêu nhẹ"
+    "Siêu nhẹ",
+    "UV",
+    "Nam châm",
+    "56 mm"
   ],
   "features": [
     "Dưới 60 g",
@@ -11,5 +14,37 @@
   "reviews": [
     "Nhẹ, tuỳ chỉnh sâu"
   ],
-  "audience": "Trung cấp trở lên"
+  "audience": "Trung cấp trở lên",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan15-maglev-uv-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan15-maglev-3x3-frosted"
+    }
+  ],
+  "description": "The GAN15 MagLev UV 3x3 is lighter, faster, and performs better than the GAN14. This new flagship 3x3 does have adjustable magnets, but not in the pieces. It comes with extra corner/core magnets that you can swap out to give your cube a lighter or stronger magnetic feel. If you're looking for a top-of-the-line 3x3, the GAN15 MagLev UV is the one.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN15_20MagLev_20UV_203x3_03a9ca9a-4a04-4de8-9b3c-317763fb2b05.jpg?v=1727707674&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan15-maglev-uv-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "UV",
+      "Nam châm",
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan15-maglev-uv-3x3",
+      "https://www.thecubicle.com/products/gan15-maglev-3x3-frosted"
+    ]
+  }
 }

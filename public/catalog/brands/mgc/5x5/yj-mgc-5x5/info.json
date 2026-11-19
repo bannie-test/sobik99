@@ -5,5 +5,28 @@
   ],
   "features": [
     "Tâm giữa cố định, thêm chiều sâu cho ghép cạnh"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-5x5-magnetic"
+    }
+  ],
+  "description": "The YJ MGC 5x5 magnetic cube is the continuation of the popular MGC series! In true MGC fashion, the MGC 5x5 magnetic cube performs so well, it's hard to believe the price!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yj-mgc-5x5-magnetic-stickerless.jpg?v=1765326002&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-mgc-5x5-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yj-mgc-5x5-magnetic"
+    ]
+  }
 }

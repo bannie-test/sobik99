@@ -1,0 +1,32 @@
+{
+  "name": "GAN 16 3x3 (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "Push your solves further with GAN’s next-gen flagship. This magnetic 3×3 combines MagLev tensioning for ultra-low friction with calibrated core-to-corner magnets that auto-align layers mid-turn. The result is a fast, stable, and remarkably controllable cube that rewards high TPS while minimizing lockups. A UV-coated, glossy shell resists scratches and keeps colors vivid for long practice sessions and competition use.",
+  "features": [
+    "MagLev tensioning replaces springs to cut friction and maintain consistent feel over time",
+    "Core magnets pull layers into place for reliable auto-alignment and better corner-cutting",
+    "Factory-installed edge/corner magnets add a crisp, confident snap without harsh overshoot",
+    "UV-coated exterior is durable, easy to clean, and helps shades pop for quicker recognition",
+    "Balanced speed and stability tuned for both beginners and top speedcubers",
+    "Dual-adjust system lets you set overall tension and compression separately"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-16-3x3-magnetic-maglev-core-magnets-uv-coated-stickerless.jpg?v=1771619411&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-16-3x3-magnetic-maglev-core-magnets-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-16-3x3-magnetic-maglev-core-magnets-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-16-3x3-magnetic-maglev-core-magnets-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

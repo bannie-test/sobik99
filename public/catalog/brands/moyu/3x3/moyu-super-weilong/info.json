@@ -1,4 +1,44 @@
 {
   "name": "MoYu Super WeiLong",
-  "tags": []
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "55 mm"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-super-weilong-3x3-magnetic-maglev-20-magnet-ball-core-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-weilong-3x3-20-core-magnetic-maglev"
+    }
+  ],
+  "description": "MoYu Super WeiLong 3x3 (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated) is the 2023 flagship packed full of new adjustment features!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-super-weilong-3x3-magnetic-maglev-20-magnet-ball-core-uv-coated_542e73b7.jpg?v=1781570054&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-super-weilong-3x3-magnetic-maglev-20-magnet-ball-core-uv-coated"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "MagLev",
+      "Ball-core",
+      "UV",
+      "Nam châm",
+      "55 mm"
+    ],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-super-weilong-3x3-magnetic-maglev-20-magnet-ball-core-uv-coated",
+      "https://www.thecubicle.com/products/moyu-super-weilong-3x3-20-core-magnetic-maglev"
+    ]
+  }
 }

@@ -9,5 +9,28 @@
   "reviews": [
     "Được nhà giữ kỷ lục thế giới Yiheng Wang sử dụng"
   ],
-  "audience": "Người chơi thi đấu"
+  "audience": "Người chơi thi đấu",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weipo-v5-ai-2x2"
+    }
+  ],
+  "description": "The MoYu WeiPo V5 AI 2x2 is a smart 2x2 based on the upcoming WeiPo V5 2x2. This one has a medium magnetic feel and corner/core magnets, a gyroscope for rotation tracking, a rechargeable battery, and a screwless adjustment system.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/Moyu_20Weipo_20V5_20AI_202x2_2bb375bf-36d9-4ecd-9767-d5637a02ad49.jpg?v=1727198170&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-weipo-v5-ai-2x2"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-weipo-v5-ai-2x2"
+    ]
+  }
 }

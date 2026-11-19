@@ -1,0 +1,22 @@
+{
+  "name": "MoYu Big 3x3 - 18cm",
+  "tags": [],
+  "description": "MoYu Big 3x3 - 18cm is a fun, oversized 3x3 speed cube that turns smoothly, making for a goofy challenge and a great home decoration!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-big-3x3-18cm-stickerless.jpg?v=1771619489&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-big-3x3-18cm"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-big-3x3-18cm"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-big-3x3-18cm",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "QiYi Dimension 3x3",
+  "tags": [
+    "56 mm"
+  ],
+  "description": "The QiYi Dimension 3x3 is a neat-looking 3x3 cube with embedded plastic outlines instead of normal stickers.",
+  "features": [
+    "Kích thước 56 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/qiyidimensionb1_a3aa8dfb-d4ca-4f19-8ada-685b631e8baa.jpg?v=1581454326&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-dimension-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-dimension-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-dimension-3x3",
+    "updated": "2026-11-17"
+  }
+}

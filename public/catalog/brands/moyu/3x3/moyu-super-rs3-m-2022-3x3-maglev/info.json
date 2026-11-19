@@ -1,0 +1,31 @@
+{
+  "name": "MoYu Super RS3 M 2022 3x3 (MagLev)",
+  "tags": [
+    "MagLev",
+    "Nam châm",
+    "56 mm"
+  ],
+  "description": "The MoYu Super RS3 M 2022 3x3 the latest cube in MoYu's famous entry level 3x3 series. This version uses MagLev technology in place of springs, which relies on repelling magnets to replicate spring force. This reduces friction and completely eliminates spring noise, as there are no springs.",
+  "features": [
+    "Kích thước 56 mm",
+    "MoYu Super RS3 M 2022 3x3",
+    "MoYu Super RS3 M 2022 3x3 (MagLev) (current product)",
+    "MoYu Super RS3 M 2022 3x3 Ball-Core (Magnetic Core + MagLev)"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/moyu-super-rs3m-maglev.jpg?v=1666038446&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-super-rs3-m-2022-3x3-maglev"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-rs3-m-2022-3x3-maglev"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "moyu-super-rs3-m-2022-3x3-maglev",
+    "updated": "2026-11-17"
+  }
+}

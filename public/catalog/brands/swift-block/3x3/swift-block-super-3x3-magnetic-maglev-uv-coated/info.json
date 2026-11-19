@@ -1,0 +1,32 @@
+{
+  "name": "Swift Block Super 3x3 (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "The Swift Block Super 3x3 (Magnetic, MagLev, Core Magnets, UV Coated) is a premium magnetic speed cube built for cubers who want a fast, lightweight feel with added stability and a more refined setup. Standard magnets help pieces click into place more accurately, MagLev reduces spring resistance for quicker turning, and core magnets improve control for a more predictable solve.",
+  "features": [
+    "Fast, clean turning: Magnetic positioning helps the cube feel more accurate and consistent during solves.",
+    "Lower-resistance feel: MagLev replaces springs with repelling magnets for quicker, smoother turning.",
+    "Better stability: Core magnets add control and help the cube feel more predictable at higher speeds.",
+    "Lightweight handling: The hollow 71g design keeps the cube quick and easy to move.",
+    "Secure grip: UV coating adds a glossy, high-grip surface for a more confident feel in hand.",
+    "Dual-adjustment system: 8 settings give you room to fine-tune the feel."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/swift-block-super-3x3-magnetic-maglev-core-magnets-uv-coated.jpg?v=1774974031&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/swift-block-super-3x3-magnetic-maglev-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/swift-block-super-3x3-magnetic-maglev-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "swift-block-super-3x3-magnetic-maglev-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

@@ -9,5 +9,28 @@
   "reviews": [
     "Lựa chọn tiết kiệm để thử cube lớn"
   ],
-  "audience": "Người muốn thử cube lớn"
+  "audience": "Người muốn thử cube lớn",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/shengshou-7x7"
+    }
+  ],
+  "description": "This is ShengShou's critically acclaimed cubic 7x7. It comes pre-lubed by the factory, and it feels very smooth right out of the box. Extra Stickers: You will receive a set of extra factory stickers with this puzzle.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/7x710Small_wm.jpg?v=1581455315&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/shengshou-7x7"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/shengshou-7x7"
+    ]
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "name": "MoYu MeiLong 3x3 (Magnetic, Robot Display Box)",
+  "tags": [],
+  "description": "MoYu MeiLong 3x3 (Magnetic, Robot Display Box) has remained one of the most popular 3x3s since its release in 2020.",
+  "features": [
+    "Factory-installed magnets for smoother, more controllable turning",
+    "Smooth, controllable turning feel",
+    "Arms and legs move up/down",
+    "\"Window\" pops on and off to allow for adding/removal of the cube",
+    "Multiple robots can be stacked on top of one another to make fun poses!",
+    "Accessories NOT included"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-meilong-3x3-magnetic-robot-display-box-stickerless.jpg?v=1771619467&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-3x3-magnetic-robot-display-box"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-3x3-magnetic-robot-display-box"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-meilong-3x3-magnetic-robot-display-box",
+    "updated": "2026-11-16"
+  }
+}

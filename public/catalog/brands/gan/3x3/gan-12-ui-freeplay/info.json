@@ -1,4 +1,27 @@
 {
   "name": "GAN 12 Ui FreePlay",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan12-ui-free-play"
+    }
+  ],
+  "description": "The GAN 12 UI Free Play is the latest smart cube from the famous manufacturer. This puzzle utilizes all of the speed cube features from the GAN 12 M like the modern GAN tension system, adjustable magnets, corner/core magnetization, and UV coating.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN12uiFreePlay.jpg?v=1690921321&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan12-ui-free-play"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan12-ui-free-play"
+    ]
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "name": "QiYi 3x3 (Magnetic, Glow in the Dark)",
+  "tags": [],
+  "description": "The QiYi 3x3 (Magnetic, Glow in the Dark) is a fun, beginner-friendly magnetic speed cube that stays visible when the lights go out. Piece magnets add crisp alignment “clicks” so turns feel more accurate and controlled, while the glow-in-the-dark plastic charges under light and then shines in darkness—perfect for night practice, gifting, and display. With a modern 55.",
+  "features": [
+    "Magnetic accuracy: Magnets guide layers into place for faster, more consistent turning.",
+    "Solve in the dark: Glow-in-the-dark material keeps the cube visible for nighttime solves.",
+    "Easy glow activation: Charge it under sunlight or room light — UV light works best, but regular light works too.",
+    "Comfortable handling: 55.5 mm size balances speed and control for most hands.",
+    "Display-worthy look: Glossy finish + glow effect makes it a standout cube on a desk or shelf.",
+    "Expose the cube to light (sunlight, room light, or UV light)."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-3x3-magnetic-glow-in-the-dark.gif?v=1771619444&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-3x3-magnetic-glow-in-the-dark"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-3x3-magnetic-glow-in-the-dark"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-3x3-magnetic-glow-in-the-dark",
+    "updated": "2026-11-16"
+  }
+}

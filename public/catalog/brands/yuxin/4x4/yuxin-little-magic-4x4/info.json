@@ -1,4 +1,27 @@
 {
   "name": "YuXin Little Magic 4x4",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yuxin-little-magic-4x4-m"
+    }
+  ],
+  "description": "The Yuxin Little Magic 4x4 M is a budget friendly magnetic 4x4 speed cube. This puzzle features smooth turning right out of the box, along with a light magnetic feel on the outer layers. The inner layers have a more pronounced magnetic attraction. This puzzle is fantastic for any skill level!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/J0psl9sJixKZ6.jpg?v=1569389006&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yuxin-little-magic-4x4-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/yuxin-little-magic-4x4-m"
+    ]
+  }
 }

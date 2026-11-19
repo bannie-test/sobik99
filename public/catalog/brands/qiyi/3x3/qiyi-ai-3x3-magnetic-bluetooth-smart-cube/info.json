@@ -1,0 +1,31 @@
+{
+  "name": "QiYi AI 3x3 (Magnetic) - Bluetooth Smart Cube",
+  "tags": [
+    "Thông minh"
+  ],
+  "description": "QiYi AI 3x3 (Magnetic) - Bluetooth Smart Cube is currently the most cost-effective way to improve your speedcubing skills!",
+  "features": [
+    "Real-time feedback for each solve",
+    "AI training for learning how to solve the cube or improve your times",
+    "Individual practice mode",
+    "Global 1x1 'battle' mode",
+    "Room competition mode",
+    "7 spring compression settings (no tool needed)"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-ai-3x3-magnetic-bluetooth-smart-cube-stickerless.jpg?v=1771619486&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-ai-3x3-magnetic-bluetooth-smart-cube"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-ai-3x3-magnetic-bluetooth-smart-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-ai-3x3-magnetic-bluetooth-smart-cube",
+    "updated": "2026-11-16"
+  }
+}

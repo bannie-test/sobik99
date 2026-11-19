@@ -2,5 +2,28 @@
   "name": "GAN Skewb M",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-skewb-m-enhanced"
+    }
+  ],
+  "description": "The GAN Skewb M is the first skewb to have adjustable tensions and spring compression. It also features the new core/corner magnet layout. With all of this innovation, this magnetic skewb is sure to impress many top solvers. The Enhanced version of this puzzle features a more advanced magnetic positioning system.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/ganskewbenhanced.jpg?v=1659020861&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-skewb-m-enhanced"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-skewb-m-enhanced"
+    ]
+  }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "YJ MGC3 Beta 3x3 Aero (MagLev + UV)",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "The YJ MGC3 Beta 3x3 Aero (MagLev + UV) is a lightweight, reimagined take on YJ's flagship platform, engineered for speedcubers who prefer a nimble, low-inertia feel. Featuring strategically hollowed-out internal piece geometry, the Aero trims the overall weight down to an agile 72 grams without sacrificing structural integrity.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YJ_20MGC_20Beta_20Aero_20_1.png?v=1790799545&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-mgc3-beta-3x3-aero-maglev-uv"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-mgc3-beta-3x3-aero-maglev-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-mgc3-beta-3x3-aero-maglev-uv",
+    "updated": "2026-11-17"
+  }
+}

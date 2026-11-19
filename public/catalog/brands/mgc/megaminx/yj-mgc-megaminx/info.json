@@ -1,4 +1,27 @@
 {
   "name": "YJ MGC Megaminx",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-megaminx-magnetic"
+    }
+  ],
+  "description": "The YJ MGC Magnetic Megaminx is a fresh addition to the popular, budget friendly MGC lineup! What makes this megaminx special is that it has many features found in top tier models for a more competitive price. \"Ridges\" were added to assist with grip and comfort which compliment to overall feel nicely. Vibrant shades were chosen with look-ahead in mind and contrast nicely.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yj-mgc-megaminx-magnetic-stickerless.jpg?v=1765325920&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-mgc-megaminx-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yj-mgc-megaminx-magnetic"
+    ]
+  }
 }

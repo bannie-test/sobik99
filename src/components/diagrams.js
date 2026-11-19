@@ -70,14 +70,14 @@ export function topView(state, mode = 'pll', { title = '' } = {}) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" role="img">${title ? `<title>${title}</title>` : ''}${defs}${out}</svg>`;
 }
 
-/** 3/4 view of U, F and R. Last-layer pieces are grayed out (wherever they sit) except the FR pair. */
+/** 3/4 view of U, F and R. F2L diagrams mask last-layer stickers to highlight the FR pair. */
 export function f2lView(state, { title = '', highlight = true } = {}) {
-  const cc = toCubie(state);
-  // Stickers of last-layer pieces (home in U) that are not the front-right pair (corner DFR, edge FR).
-  const gray = new Set();
+  const masked = new Set();
   if (highlight) {
-    CORNER_FACELETS.forEach((fl, pos) => { if (cc.cp[pos] < 4) fl.forEach(i => gray.add(i)); });
-    EDGE_FACELETS.forEach((fl, pos) => { if (cc.ep[pos] < 4) fl.forEach(i => gray.add(i)); });
+    const cc = toCubie(state);
+    masked.add(4); // U center
+    CORNER_FACELETS.forEach((fl, pos) => { if (cc.cp[pos] < 4) fl.forEach(i => masked.add(i)); });
+    EDGE_FACELETS.forEach((fl, pos) => { if (cc.ep[pos] < 4) fl.forEach(i => masked.add(i)); });
   }
   const proj = ([x, y, z]) => [(x - z) * 0.866 * 26, ((x + z) * 0.5 - y) * 26];
   const polys = [];
@@ -88,7 +88,7 @@ export function f2lView(state, { title = '', highlight = true } = {}) {
     const center = g.p.map((v, a) => (a === axis ? 1.5 : v));
     const corner = (su, sv) => { const p = [...center]; p[others[0]] += su * 0.44; p[others[1]] += sv * 0.44; return proj(p); };
     const pts = [corner(-1, -1), corner(1, -1), corner(1, 1), corner(-1, 1)];
-    const fill = gray.has(i) ? GRAY : COLORS[state[i]];
+    const fill = masked.has(i) ? '#000000' : COLORS[state[i]];
     polys.push(`<polygon points="${pts.map(p => p.map(v => v.toFixed(1)).join(',')).join(' ')}" fill="${fill}" stroke="${INK}" stroke-width="1.4" stroke-linejoin="round"/>`);
   });
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-72 -82 144 160" role="img">${title ? `<title>${title}</title>` : ''}${polys.join('')}</svg>`;

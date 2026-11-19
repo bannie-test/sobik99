@@ -9,5 +9,28 @@
   "reviews": [
     "Thiết kế sáng tạo"
   ],
-  "audience": "Trung cấp"
+  "audience": "Trung cấp",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-square-1-magnetic"
+    }
+  ],
+  "description": "YJ MGC Square-1 (Magnetic) is a very highly anticipated item and does not disappoint!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yj-mgc-square-1-magnetic-stickerless.jpg?v=1765326136&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-mgc-square-1-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yj-mgc-square-1-magnetic"
+    ]
+  }
 }

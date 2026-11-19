@@ -1,6 +1,61 @@
 {
   "name": "MoYu RS3 M 2020",
   "tags": [
-    "Nam châm"
-  ]
+    "Nam châm",
+    "UV",
+    "56 mm",
+    "55.5 mm"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs3-m-2020-3x3-magnetic"
+    },
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs3-m-2020-3x3-magnetic-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs3-m-2020"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs3-m-2020-3x3-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs3-m-2020-3x3-picube-core-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs3-m-2020-3x3-uv-picube-core-magnetic"
+    }
+  ],
+  "description": "The MoYu RS3 M 2020 is one of the most trusted budget magnetic speed cubes, delivering impressive performance at an affordable price. This 3x3 speed cube features a spring compression system for a customizable feel, making it a go-to speed cube for learning how to solve a 3x3 cube, practicing advanced algorithms, or pushing for faster solve times.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-rs3-m-2020-3x3-magnetic-stickerless.jpg?v=1771619484&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-rs3-m-2020-3x3-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "UV",
+      "56 mm",
+      "55.5 mm"
+    ],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-rs3-m-2020-3x3-magnetic",
+      "https://speedcubeshop.com/products/moyu-rs3-m-2020-3x3-magnetic-uv-coated",
+      "https://www.thecubicle.com/products/moyu-rs3-m-2020",
+      "https://www.thecubicle.com/products/moyu-rs3-m-2020-3x3-uv-coated",
+      "https://www.thecubicle.com/products/moyu-rs3-m-2020-3x3-picube-core-magnetic",
+      "https://www.thecubicle.com/products/moyu-rs3-m-2020-3x3-uv-picube-core-magnetic"
+    ]
+  }
 }

@@ -1,4 +1,41 @@
 {
   "name": "YuXin Little Magic 3x3",
-  "tags": []
+  "tags": [
+    "55.5 mm"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yuxin-little-magic-3x3-magnetic"
+    },
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yuxin-little-magic-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yuxin-little-magic-3x3"
+    }
+  ],
+  "description": "YuXin Little Magic 3x3 Magnetic is finally here after 3 years as a factory-magnetized speed cube! The Little Magic is easily one of the most popular speed cubes to date resulting from the low price point and the level of performance that you get. The factory magnetized version now comes equipped with moderate strength magnets and a glossy exterior versus the frosted plastic found on the non-magnetic version.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yuxin-little-magic-3x3-magnetic-stickerless.jpg?v=1765326056&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yuxin-little-magic-3x3-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "55.5 mm"
+    ],
+    "sources": [
+      "https://speedcubeshop.com/products/yuxin-little-magic-3x3-magnetic",
+      "https://speedcubeshop.com/products/yuxin-little-magic-3x3",
+      "https://www.thecubicle.com/products/yuxin-little-magic-3x3"
+    ]
+  }
 }

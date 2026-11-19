@@ -1,0 +1,24 @@
+{
+  "name": "ShengShou 7-Axis 3x3 Cube",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "The ShengShou 7 Axis 3x3 Cube is a visually striking puzzle with a pentagonal face and clean three layer turning. Its angled cuts and unique shape give it a bold look without adding unnecessary complexity, making it a fun and approachable solve for all skill levels. A great addition to any collection.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/ShengShou_207-Axis_203x3_20Cube.jpg?v=1749241723&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/shengshou-7-axis-3x3-cube"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/shengshou-7-axis-3x3-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "shengshou-7-axis-3x3-cube",
+    "updated": "2026-11-17"
+  }
+}

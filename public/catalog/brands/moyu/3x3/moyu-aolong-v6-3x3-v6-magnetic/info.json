@@ -1,0 +1,29 @@
+{
+  "name": "MoYu AoLong 3x3 V6 (Magnetic)",
+  "tags": [],
+  "description": "The MoYu AoLong 3x3 V6 (Magnetic) brings the AoLong line's refined speedsolving feel to its most accessible build yet, pairing a lightweight carbon fiber core with a 48-magnet layout and full dual 8-level tuning. It's a spring-tensioned magnetic speed cube that gives you deep adjustability and solid control without stepping up to the MagLev or ball-core tiers.",
+  "features": [
+    "Accessible entry to the AoLong V6 line: Get the V6's engineered feel and full tuning range in its lightest, most affordable spring-tensioned build.",
+    "48-magnet control: A magnetic layout that clicks pieces into place for faster, more accurate turning.",
+    "Tune it to your hands: Dual 8-level adjustment unlocks 64 feel configurations, so you can dial in exactly the control you want.",
+    "Stickerless and ready to go: Half-bright stickerless shades that stay vivid with nothing to peel.",
+    "8-level spring elasticity: Mechanical spring adjustment with distinct, precise steps.",
+    "8-level tension: Fine-tune the balance between looseness and tightness, pairing high corner-cutting with high precision."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-Aolong-V6-_Magnetic_6862.jpg?v=1794001920&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-aolong-v6-3x3-v6-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-aolong-v6-3x3-v6-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-aolong-v6-3x3-v6-magnetic",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,7 +1,8 @@
 {
   "name": "QiYi Sail W",
   "tags": [
-    "Giá rẻ"
+    "Giá rẻ",
+    "56 mm"
   ],
   "features": [
     "Không nam châm"
@@ -9,5 +10,35 @@
   "reviews": [
     "Ra mắt 2019, rẻ mà nhanh và tin cậy"
   ],
-  "audience": "Người mới bắt đầu"
+  "audience": "Người mới bắt đầu",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-sail-w-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-sail-w-3x3"
+    }
+  ],
+  "description": "The QiYi Sail W 3x3 an updated version of the smash hit, QiYi Sail. The Sail W features improvements to the mechanism and a new half-bright color scheme which aids with color recognition.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-sail-w-3x3-black.jpg?v=1771619517&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-sail-w-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "56 mm"
+    ],
+    "sources": [
+      "https://speedcubeshop.com/products/qiyi-sail-w-3x3",
+      "https://www.thecubicle.com/products/qiyi-sail-w-3x3"
+    ]
+  }
 }

@@ -1,4 +1,27 @@
 {
   "name": "QiYi MS 4x4",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-ms-4x4"
+    }
+  ],
+  "description": "The QiYi MS 4x4 is a magnetic 4x4 speed cube built for performance and economy. Part of QiYi’s new economy “MS” line, this 4x4 features a quick, slightly crunchy feel that makes it a joy to turn. The MS 4x4 is one of our top recommendations for a great, no-nonsense economy 4x4.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/WM6QNLJcFeKKJ.jpg?v=1587740340&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-ms-4x4"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-ms-4x4"
+    ]
+  }
 }

@@ -1,4 +1,27 @@
 {
   "name": "X-Man Bell Pyraminx V2",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/x-man-bell-magnetic-pyraminx-v2"
+    }
+  ],
+  "description": "The X-Man Bell V2 Pyraminx is a new magnetic pyraminx by QiYi MoFangGe and X-Man Designs. Designed to be extremely customizable, the Bell V2 has two tiers of magnet adjustment. First, magnets can be added to the tips. Second, the distance between the internal magnets can be adjusted by turning a dial inside the puzzle's pieces.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/x-manbellv2.jpg?v=1594147248&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/x-man-bell-magnetic-pyraminx-v2"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/x-man-bell-magnetic-pyraminx-v2"
+    ]
+  }
 }

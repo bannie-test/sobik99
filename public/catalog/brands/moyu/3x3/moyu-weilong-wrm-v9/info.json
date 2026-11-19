@@ -1,4 +1,54 @@
 {
   "name": "MoYu WeiLong WRM V9",
-  "tags": []
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "55 mm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3-20-core-magnetic-maglev-ball-core-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3-ball-core-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3-maglev"
+    }
+  ],
+  "description": "The MoYu WeiLong WRM V9 3x3 (20-Magnet Ball-Core + MagLev + UV) is everything MoYu has to offer in a 3x3. It has a 20-magnet ball core that attracts and repels to aid with alignment, a MagLev tension system, and a beautiful UV finish. If you're a fan of MoYu 3x3s, you will not want to miss out on this one!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/MOYUWEILONGWRMV93X3_20-COREMAGNETIC_MAGLEV_BALL-CORE_UV.jpg?v=1705605206&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3-20-core-magnetic-maglev-ball-core-uv"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "MagLev",
+      "Ball-core",
+      "UV",
+      "Nam châm",
+      "55 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3-20-core-magnetic-maglev-ball-core-uv",
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3-ball-core-uv",
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3",
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v9-3x3-maglev"
+    ]
+  }
 }

@@ -2,5 +2,28 @@
   "name": "QiYi M Pro 4x4",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-m-pro-4x4-magnetic"
+    }
+  ],
+  "description": "QiYi M Pro 4x4 Magnetic is a unique 4x4 coming in at only 58.5mm compared to the usual 60mm making this perfect for cubers looking for a more compact feel!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-m-pro-4x4-magnetic-stickerless.jpg?v=1771619438&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-m-pro-4x4-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/qiyi-m-pro-4x4-magnetic"
+    ]
+  }
 }

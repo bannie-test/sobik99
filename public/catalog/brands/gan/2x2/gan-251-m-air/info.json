@@ -2,5 +2,28 @@
   "name": "GAN 251 M Air",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-251-2x2-air-magnetic"
+    }
+  ],
+  "description": "GAN 251 2x2 Air (Magnetic) is a 2021 update that builds upon everything you loved in the previous GAN 251.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/GAN-251-2x2-Air-Magnetic.jpg?v=1771619295&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-251-2x2-air-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/gan-251-2x2-air-magnetic"
+    ]
+  }
 }

@@ -1,4 +1,27 @@
 {
   "name": "QiYi QiCheng Skewb",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-qicheng-skewb"
+    }
+  ],
+  "description": "The QiYi QiCheng Skewb is a new entry level skewb that has just hit the market. With many modern features and a very affordable price, the QiCheng Skewb is expected to make the skewb puzzle event more accessible to all speedcubers of all ages.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/qiyi-qicheng-skewb.jpg?v=1677872904&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-qicheng-skewb"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-qicheng-skewb"
+    ]
+  }
 }

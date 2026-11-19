@@ -1,0 +1,28 @@
+{
+  "name": "GAN i4 MagLev UV 3x3 (Minions Edition, Smart Cube)",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm",
+    "Thông minh",
+    "Bản đặc biệt"
+  ],
+  "description": "GAN i4 MagLev UV 3x3 (Minions Edition, Smart Cube) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_20i4_20Minions.png?v=1781233914&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-i4-maglev-frosted-3x3-smart-cube"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-i4-maglev-frosted-3x3-smart-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-i4-maglev-frosted-3x3-smart-cube",
+    "updated": "2026-11-17"
+  }
+}

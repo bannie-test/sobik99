@@ -1,0 +1,37 @@
+{
+  "name": "YJ Ball 3x3",
+  "tags": [
+    "60 mm"
+  ],
+  "description": "The YJ Ball 3x3 is a uniquely crafted 3x3 - all of the cubies are spheres rather than cubes! This is a very cool puzzle for collection but also is tons of fun to speedsolve with!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yj-ball-3x3-stickerless.jpg?v=1765325918&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-ball-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-ball-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-3x3-ball-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "yj-ball-3x3",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "60 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/yj-3x3-ball-cube"
+    ]
+  }
+}

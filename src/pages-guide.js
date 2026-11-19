@@ -3,7 +3,7 @@ import { lessons, notation } from './data/lessons.js';
 import { puzzleTypes } from './data/puzzles.js';
 import { caseOf } from './core/cfop.js';
 import { caseDiagram } from './components/diagrams.js';
-import { mountPlayer } from './components/player.js';
+import { mountPlayer, retarget } from './components/player.js';
 import { escapeHTML as esc, copy, openModal, toast } from './utils/ui.js';
 import { read, write } from './utils/storage.js';
 
@@ -12,32 +12,44 @@ const puzzleID = t => (/^\dx\d$/.test(t) ? `${t[0]}x${t[0]}x${t[0]}` : t.toLower
 const PAGE = 12;
 const SOURCE_NOTE = { modern: 'Công thức phổ biến hiện nay', coach: 'Từ Cube Coach (MIT)', sobik: 'Từ thư viện SOBIK' };
 
-/** Plays an algorithm from the case it solves, held yellow-up / white-down, ending fully solved. */
-export function playCase(c, alg) {
-  const r = caseOf(c.type, alg);
+/**
+ * Plays one of a case's algorithms from the state it solves, held yellow-up / white-down, ending
+ * fully solved. The select lists every algorithm of the case, starting on `pick`; switching it
+ * re-targets the player and reports the choice through `onPick` (to keep the card in sync).
+ */
+export function playCase(c, pick = 0, onPick) {
+  const maskLastLayer = c.type === 'f2l';
+  const algOf = i => c.algs[i].alg;
+  const setupOf = i => `z2 ${caseOf(c.type, algOf(i)).setup}`;
   openModal(`<small>THẤY TỪNG CHUYỂN ĐỘNG</small><h2>${esc(c.name)}</h2>
    <p>Cầm <b>vàng trên, trắng dưới, xanh lá trước</b>. Mô hình bắt đầu từ trạng thái của case và kết thúc khi cube được giải hoàn toàn.</p>
-   <div id="player-mount" class="player-box"></div><code class="alg-large">${esc(alg)}</code>
+   <label class="variant-select">Cách xoay<select id="variant-select">${c.algs.map((a, i) => `<option value="${i}"${i === pick ? ' selected' : ''}>${i + 1} · ${esc(a.label)} — ${esc(a.alg)}</option>`).join('')}</select></label>
+   <div id="player-mount" class="player-box"></div><code class="alg-large" id="player-alg">${esc(algOf(pick))}</code>
    <button class="button secondary" id="copy-player">Sao chép</button>`, el => {
-    el.querySelector('#copy-player').onclick = () => copy(alg);
-    mountPlayer(el.querySelector('#player-mount'), { setup: `z2 ${r.setup}`, alg });
+    let player = null, shown = pick;
+    const select = el.querySelector('#variant-select');
+    el.querySelector('#copy-player').onclick = () => copy(algOf(pick));
+    select.onchange = () => {
+      pick = +select.value;
+      el.querySelector('#player-alg').textContent = algOf(pick);
+      onPick?.(pick);
+      if (player) { retarget(player, { setup: setupOf(pick), alg: algOf(pick), maskLastLayer }); shown = pick; }
+    };
+    mountPlayer(el.querySelector('#player-mount'), { setup: setupOf(pick), alg: algOf(pick), maskLastLayer }).then(p => {
+      player = p;
+      if (p && shown !== pick) { retarget(p, { setup: setupOf(pick), alg: algOf(pick), maskLastLayer }); shown = pick; }
+    });
   });
 }
 
 export function playAlgorithm(alg, puzzle = '3x3', title = 'Công thức') {
   openModal(`<small>THẤY TỪNG CHUYỂN ĐỘNG</small><h2>${esc(title)}</h2><p>Trạng thái đầu được dựng từ nghịch đảo công thức, vì vậy chạy hết công thức là khối trở về đã giải.</p><div id="player-mount" class="player-box"></div><code class="alg-large">${esc(alg)}</code><button class="button secondary" id="copy-player">Sao chép</button>`, el => {
-    let dead = false;
     el.querySelector('#copy-player').onclick = () => copy(alg);
     (async () => {
-      try {
-        const { TwistyPlayer } = await import('cubing/twisty');
-        const { Alg } = await import('cubing/alg');
-        if (dead) return;
-        const player = new TwistyPlayer({ puzzle: puzzleID(puzzle), alg, experimentalSetupAlg: new Alg(alg).invert().toString(), background: 'none', controlPanel: 'bottom-row', hintFacelets: 'floating', viewerLink: 'none' });
-        el.querySelector('#player-mount').replaceChildren(player);
-      } catch { if (!dead) el.querySelector('#player-mount').innerHTML = '<p>Không tải được mô hình.</p>'; }
+      let setup = '';
+      try { const { Alg } = await import('cubing/alg'); setup = new Alg(alg).invert().toString(); } catch { /* play from solved */ }
+      if (el.isConnected) mountPlayer(el.querySelector('#player-mount'), { setup, alg, puzzle: puzzleID(puzzle) });
     })();
-    return () => { dead = true; };
   });
 }
 
@@ -95,15 +107,16 @@ export function guide(root, params) {
   function wire(el) {
     const c = find(el.dataset.case);
     let pick = 0;
-    el.querySelectorAll('[data-variant]').forEach(b => b.addEventListener('click', () => {
-      pick = +b.dataset.variant;
-      el.querySelectorAll('[data-variant]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
+    const choose = i => {
+      pick = i;
+      el.querySelectorAll('[data-variant]').forEach(x => x.setAttribute('aria-checked', String(+x.dataset.variant === i)));
       const alg = c.algs[pick].alg;
       el.querySelector('code').textContent = alg;
       el.querySelector('.case-figure').innerHTML = caseDiagram(c, caseOf(c.type, alg).setup);
-    }));
+    };
+    el.querySelectorAll('[data-variant]').forEach(b => b.addEventListener('click', () => choose(+b.dataset.variant)));
     el.querySelector('[data-copy]').onclick = () => copy(c.algs[pick].alg);
-    el.querySelector('[data-play]').onclick = () => playCase(c, c.algs[pick].alg);
+    el.querySelector('[data-play]').onclick = () => playCase(c, pick, choose);
     el.querySelector('[data-learn]').onclick = e => {
       learned = learned.includes(c.id) ? learned.filter(x => x !== c.id) : [...learned, c.id];
       if (!write('sobik_learned', learned)) toast('Không lưu được tiến độ vào trình duyệt.');

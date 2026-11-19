@@ -2,5 +2,28 @@
   "name": "Valk 2 M",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/valk-2-lm"
+    }
+  ],
+  "description": "The Valk 2 LM is the newest iteration of the Valk 2 M. This 2x2 speed cube has a slightly lighter magnetic feel than its counterpart, giving it a faster, livelier feel with less turning resistance. Despite the lighter magnets, the Valk 2 LM still stands as one of the sturdiest, most stable flagship 2x2s on the market.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/6bF4N2T2opnH3.jpg?v=1581458214&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/valk-2-lm"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/valk-2-lm"
+    ]
+  }
 }

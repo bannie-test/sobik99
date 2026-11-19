@@ -1,0 +1,32 @@
+{
+  "name": "YJ MGC Beta 3x3 Aero (Magnetic, MagLev, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "The YJ MGC Beta 3x3 Aero (Magnetic, MagLev, UV Coated) is the cloud-feel build of the MGC Beta line — a lightweight 72g magnetic speed cube with a zero-resistance MagLev core and dual-adjustment tuning that lets you dial in both tension and magnet distance by hand. If you want a floating, effortless turning feel without the extra heft, this is the one.",
+  "features": [
+    "Floating MagLev feel: Repelling magnets replace the springs for a zero-resistance, silky turning motion that stays consistent solve after solve.",
+    "Lightweight at 72g: A multiple-hollowed, weight-reduced core and pieces keep the cube light and agile in hand.",
+    "Tune it to your hand: 6 levels of tension and 5 levels of magnet distance, all adjustable by hand — no tools, no guesswork.",
+    "Stickerless and ready to solve: Comes set up out of the box with a clean stickerless finish, so you can start turning right away.",
+    "Dual-adjustment system: Outer ring sets tension across 6 levels; inner ring sets magnet distance across 5 levels.",
+    "Manual adjustment: The 5-level setup adjusts by hand, so you can fine-tune the feel between loose and locked without disassembly."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/YJ-MGC-Beta-3x3-Aero-Magnetic-Version-UV-Coated6463.jpg?v=1793909777&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-mgc-beta-3x3-aero-magnetic-maglev"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-beta-3x3-aero-magnetic-maglev"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "yj-mgc-beta-3x3-aero-magnetic-maglev",
+    "updated": "2026-11-16"
+  }
+}

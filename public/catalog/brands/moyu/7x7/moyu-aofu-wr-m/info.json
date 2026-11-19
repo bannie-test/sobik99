@@ -2,5 +2,28 @@
   "name": "MoYu AoFu WR M",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-aofu-wr-m-7x7-magnetic"
+    }
+  ],
+  "description": "MoYu AoFu WR M 7x7 Magnetic is a modern update to the once legendary \"AoFu\" 7x7!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-aofu-wr-m-7x7-magnetic-stickerless.jpg?v=1771619344&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-aofu-wr-m-7x7-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-aofu-wr-m-7x7-magnetic"
+    ]
+  }
 }

@@ -14,7 +14,7 @@ export function solvePage(root, params) {
   let goal = GOALS[params.get('goal')] ? params.get('goal') : 'all';
   let method = 'cfop';
   let result = null; // { setup, steps, solved, remaining, endState, method }
-  let player = null, editor = null, dead = false, ticket = 0;
+  let player = null, mountingPlayer = null, editor = null, dead = false, ticket = 0;
 
   root.innerHTML = `<section class="page-shell solve-page">
   <div class="page-heading"><div><small>CUBE LAB / TRÌNH GIẢI 3×3</small><h1>Xáo bất kỳ.<br><em>Giải đến cùng.</em></h1></div>
@@ -49,6 +49,17 @@ export function solvePage(root, params) {
   const $ = s => root.querySelector(s);
   const scrambleInput = $('#scramble');
   const messages = $('#messages');
+  const playerBox = $('#player');
+
+  async function showCube(config) {
+    if (!player) {
+      mountingPlayer ??= mountPlayer(playerBox);
+      player = await mountingPlayer;
+      mountingPlayer = null;
+    }
+    if (!dead) retarget(player, config);
+    return player;
+  }
 
   function setMode(m) {
     mode = m;
@@ -68,7 +79,19 @@ export function solvePage(root, params) {
     try {
       const { randomScrambleForEvent } = await import('cubing/scramble');
       const s = (await randomScrambleForEvent('333')).toString();
-      if (!dead) scrambleInput.value = s;
+      if (dead) return '';
+      scrambleInput.value = s;
+      if (mode === 'scramble') {
+        const previewTicket = ++ticket;
+        result = null;
+        messages.replaceChildren();
+        $('#summary').replaceChildren();
+        $('#steps').replaceChildren();
+        const preview = await showCube({ setup: s });
+        if (!preview && !dead && previewTicket === ticket) {
+          playerBox.innerHTML = `<div class="player-empty">${cubeView(apply(solvedFacelets(), s), 'Cube đã xáo trộn')}<p>Đã xáo theo scramble.</p></div>`;
+        }
+      }
       return s;
     } catch {
       toast('Không tạo được scramble ngẫu nhiên. Hãy thử lại.');
@@ -124,7 +147,7 @@ export function solvePage(root, params) {
       await render();
     } catch (e) {
       console.error(e);
-      showError('Không giải được trạng thái này. Hãy kiểm tra lại dữ liệu nhập.');
+      if (!dead && my === ticket) showError('Không giải được trạng thái này. Hãy kiểm tra lại dữ liệu nhập.');
     } finally { if (!dead) $('#solve').disabled = false; }
   }
   $('#solve').addEventListener('click', solve);
@@ -149,6 +172,7 @@ export function solvePage(root, params) {
 
   async function render() {
     const all = result.steps.map(s => s.moves).join(' ');
+    const fullPlayback = { setup: result.setup, alg: all };
     const total = moveCount(result.steps.filter(s => s.stage !== 'hold'));
     $('#summary').innerHTML = `<div class="solve-summary">
       ${result.method === 'cfop' ? `<div class="stage-row">${stageProgress()}</div>` : ''}
@@ -161,14 +185,13 @@ export function solvePage(root, params) {
       <button class="small-button" data-step="${i}">▶ Xem bước này</button></li>`).join('');
     $('#continue')?.addEventListener('click', continueSolve);
     $('#copy-all').addEventListener('click', () => copy(all));
-    $('#play-all').addEventListener('click', () => retarget(player, { setup: result.setup, alg: all }));
+    $('#play-all').addEventListener('click', () => retarget(player, fullPlayback));
     root.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => {
       const s = result.steps[+b.dataset.step];
       retarget(player, { setup: s.setup, alg: s.moves });
       $('#player').scrollIntoView({ behavior: 'smooth', block: 'center' });
     }));
-    if (!player || !player.isConnected) player = await mountPlayer($('#player'), { setup: result.setup, alg: all });
-    else retarget(player, { setup: result.setup, alg: all });
+    await showCube(fullPlayback);
   }
 
   setMode(mode);

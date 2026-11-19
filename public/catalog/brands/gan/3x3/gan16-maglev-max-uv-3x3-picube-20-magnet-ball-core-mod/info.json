@@ -1,0 +1,27 @@
+{
+  "name": "GAN16 MagLev MAX UV 3x3 (PiCube 20-Magnet Ball-Core Mod)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "GAN16 MagLev MAX UV 3x3 (PiCube 20-Magnet Ball-Core Mod) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN16_20MagLev_20MAX_20PiCube_2020M_20BC_20Mod.png?v=1786142690&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3-picube-20-magnet-ball-core-mod"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3-picube-20-magnet-ball-core-mod"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan16-maglev-max-uv-3x3-picube-20-magnet-ball-core-mod",
+    "updated": "2026-11-17"
+  }
+}

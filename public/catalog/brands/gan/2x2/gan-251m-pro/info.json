@@ -10,5 +10,28 @@
   "reviews": [
     "Dòng 251 M được phần lớn top 10 thế giới 2x2 sử dụng; bản Pro phổ biến nhất"
   ],
-  "audience": "Trung cấp trở lên"
+  "audience": "Trung cấp trở lên",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-251-m-pro"
+    }
+  ],
+  "description": "The GAN 251 M Pro is an updated 2x2 mechanism which features corner/core and traditional magnets just like the GAN 11 M Pro. Like the others in the lineup, this puzzle is 51mm across, which many cubers prefer over the standard 50mm size.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan251mpro.jpg?v=1626803235&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-251-m-pro"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-251-m-pro"
+    ]
+  }
 }

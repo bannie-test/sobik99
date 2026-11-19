@@ -1,4 +1,27 @@
 {
   "name": "YuXin Little Magic 5x5",
-  "tags": []
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yuxin-little-magic-5x5-m"
+    }
+  ],
+  "description": "The Yuxin Little Magic 5x5 M is a great magnetic 5x5 speed cube for those on a budget. Despite its economical price, the Little Magic 5x5’s performance is not compromised with a medium magnetic feel and smooth turning out of the box. Also featuring bright stickerless shades, this puzzle is likely to become very popular very quickly.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/yuxinlittlemagic5x5m.jpg?v=1581457873&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yuxin-little-magic-5x5-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/yuxin-little-magic-5x5-m"
+    ]
+  }
 }

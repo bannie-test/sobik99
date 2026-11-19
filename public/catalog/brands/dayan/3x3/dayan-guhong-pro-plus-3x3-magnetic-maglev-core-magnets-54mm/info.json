@@ -1,0 +1,31 @@
+{
+  "name": "DaYan GuHong Pro+ 3x3 (Magnetic, MagLev, Core Magnets) - 54mm",
+  "tags": [
+    "MagLev"
+  ],
+  "description": "The DaYan GuHong Pro+ 3x3 (Magnetic, MagLev, Core Magnets) – 54mm is a flagship 3x3 speed cube that’s fast, stable, and easy to tune for any skill level. Piece magnets “click” layers into place for accuracy, MagLev replaces traditional springs with repelling magnets for a low-friction, ultra-quick feel, and core magnets add corner-to-core attraction for better layer alignment and control.",
+  "features": [
+    "Faster, more accurate turning from 94 total magnets (piece + core).",
+    "MagLev drive delivers the brand’s quickest, smoothest feel with no spring noise or wear.",
+    "Core magnets increase stability and tracking during high-TPS solves.",
+    "Big corner-cutting keeps solves flowing even when alignment isn’t perfect.",
+    "Beginner-friendly but competition-ready: easy setup, consistent feel.",
+    "Numerical dual adjustment: 6 tension settings × 8 compression settings for precise, repeatable tuning."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/dayan-guhong-pro-3x3-magnetic-maglev-core-magnets-54mm-stickerless.jpg?v=1771619453&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/dayan-guhong-pro-plus-3x3-magnetic-maglev-core-magnets-54mm"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/dayan-guhong-pro-plus-3x3-magnetic-maglev-core-magnets-54mm"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "dayan-guhong-pro-plus-3x3-magnetic-maglev-core-magnets-54mm",
+    "updated": "2026-11-16"
+  }
+}

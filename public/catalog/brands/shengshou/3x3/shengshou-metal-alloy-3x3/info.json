@@ -1,0 +1,22 @@
+{
+  "name": "ShengShou Metal Alloy 3x3",
+  "tags": [],
+  "description": "ShengShou Metal Alloy 3x3 is a very cool metal-plated cube! Because of its metal exterior, this cube is almost three times as heavy as a standard 3x3 speed cube and has a brushed metal alloy finish.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/ShengShou-Metal-Alloy.jpg?v=1771619298&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/shengshou-metal-alloy-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/shengshou-metal-alloy-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "shengshou-metal-alloy-3x3",
+    "updated": "2026-11-16"
+  }
+}

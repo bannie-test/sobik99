@@ -1,4 +1,37 @@
 {
   "name": "GAN 356 i Carry 2",
-  "tags": []
+  "tags": [
+    "UV",
+    "Nam châm",
+    "Thông minh",
+    "Bản đặc biệt"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-i-carry-2-uv-3x3-10th-anniversary-edition"
+    }
+  ],
+  "description": "The GAN356 i Carry 2 UV 3x3 (10th Anniversary Edition) is a version of the puzzle that celebrates GAN's 10th anniversary. This puzzle comes with a special edition sticker set (one side) and cube bag. The GAN 356 i Carry 2 offers over 2x the battery life of the previous versions! And with the new GES Pro+ elasticity system, it is sure to be a top-performing smart cube.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN356_20i_20Carry_202_20UV_203x3_20_10th_20Anniversary_20Edition.jpg?v=1729116585&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan356-i-carry-2-uv-3x3-10th-anniversary-edition"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "UV",
+      "Nam châm",
+      "Thông minh",
+      "Bản đặc biệt"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan356-i-carry-2-uv-3x3-10th-anniversary-edition"
+    ]
+  }
 }

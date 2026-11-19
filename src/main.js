@@ -11,6 +11,7 @@ const pages = {
   '/catalog': ['Kệ Rubik', 'Đang mở kệ…', async (root, params) => (await import('./pages-catalog.js')).catalog(root, params)],
   '/guide': ['Học cách xoay', 'Đang mở lớp học…', async (root, params) => (await import('./pages-guide.js')).guide(root, params)],
   '/solve': ['Giải Rubik', 'Đang mở trình giải…', async (root, params) => (await import('./pages-solve.js')).solvePage(root, params)],
+  '/blindfold': ['Rubik bịt mắt', 'Đang mở bài học…', async root => (await import('./pages-blindfold.js')).blindfoldPage(root)],
   '/timer': ['Timer', 'Đang mở phòng luyện tập…', async root => (await import('./pages-timer.js')).timerPage(root)],
   '/sources': ['Nguồn dữ liệu', 'Đang tải…', async root => (await import('./pages-sources.js')).sourcesPage(root)],
 };

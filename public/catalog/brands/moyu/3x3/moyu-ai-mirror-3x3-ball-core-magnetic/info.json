@@ -1,0 +1,31 @@
+{
+  "name": "MoYu AI Mirror 3x3 (Ball-Core Magnetic)",
+  "tags": [
+    "Ball-core",
+    "Nam châm",
+    "Biến thể"
+  ],
+  "description": "Introducing the MoYu AI Mirror 3x3 (Ball-Core Magnetic) – a cutting-edge smart cube from the acclaimed MoYu lineup, engineered for both speed and innovation. Combining precision and technology, this is the world’s first competition-grade mirror cube designed for the speed-solving elite and tech enthusiasts alike.",
+  "features": [
+    "Futuristic and stylish silver mirror finish adds a trendy touch to your collection",
+    "Advanced Ball-Core Magnetic system delivers unrivaled stability and turning accuracy",
+    "Enjoy up to 30 hours of battery life on a single charge for extended solving sessions",
+    "Seamlessly connects to MoYu’s smart cube app ecosystem, compatible with both Android and iOS"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/MoYu_20AI_203x3_20Mirror_20Cube.png?v=1759858197&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-ai-mirror-3x3-ball-core-magnetic"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-ai-mirror-3x3-ball-core-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "moyu-ai-mirror-3x3-ball-core-magnetic",
+    "updated": "2026-11-17"
+  }
+}

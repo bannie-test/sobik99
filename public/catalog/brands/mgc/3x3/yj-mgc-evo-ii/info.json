@@ -10,5 +10,28 @@
   "reviews": [
     "Xoay nhanh và ổn định, hợp mọi trình độ"
   ],
-  "audience": "Mọi trình độ"
+  "audience": "Mọi trình độ",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-mgc-evo-ii-3x3"
+    }
+  ],
+  "description": "The YJ MGC Evo II is YJ's new and improved version of their flagship 3x3. This updated puzzle has hand-adjustable settings and screwdriver-adjustable magnets. Performance-wise, this new addition from YJ has a fast and stable turn that is sure to impress speedcubers of any skill level. Please note: the center caps of this puzzle only fit in two directions.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/mgc-evo-ii.jpg?v=1680545428&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-mgc-evo-ii-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/yj-mgc-evo-ii-3x3"
+    ]
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "name": "Rubik's Tetris 3x3 Cube",
+  "tags": [],
+  "description": "Two legendary puzzles collide in the Rubik’s Tetris 3x3 Cube — a clever twist on the classic Rubik’s Cube that challenges you to think in shapes, not colors. Instead of solving solid-colored sides, your goal is to restore all six iconic Tetris Tetriminos to their original forms.",
+  "features": [
+    "Rubik’s × Tetris Crossover: Combines two of the most iconic puzzle games ever created",
+    "Shape-Based Solving: Focus on rebuilding Tetriminos instead of matching colors",
+    "Advanced Challenge: Level 4 difficulty for seasoned solvers and brain-teaser fans",
+    "STEM-Friendly Fun: Encourages spatial reasoning, problem-solving, and strategic thinking",
+    "Display-Ready: Includes an I-Tetrimino stand for showcasing your solved cube",
+    "Official Rubik’s 3x3 format with Tetris-inspired design"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/rubiks-tetris-3x3-cube.jpg?v=1771619377&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-tetris-cube"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-tetris-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "rubiks-tetris-cube",
+    "updated": "2026-11-16"
+  }
+}

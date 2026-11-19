@@ -9,5 +9,28 @@
   "reviews": [
     "Mượt và nhanh"
   ],
-  "audience": "Mọi trình độ"
+  "audience": "Mọi trình độ",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-ms-pyraminx"
+    }
+  ],
+  "description": "The QiYi MS Pyraminx is a magnetic pyraminx built for performance and economy. Part of QiYi’s new economy “MS” line, this pyraminx has a smooth and stable feel with a subtle magnetic click. A great choice for pyraminx solvers of all levels, this model has even gained the favor of a few world class pyraminx solvers.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/Tsi8ov7uVzFbh.jpg?v=1587740430&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-ms-pyraminx"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-ms-pyraminx"
+    ]
+  }
 }

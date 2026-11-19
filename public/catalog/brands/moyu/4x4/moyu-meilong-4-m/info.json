@@ -2,5 +2,28 @@
   "name": "MoYu MeiLong 4 M",
   "tags": [
     "Nam châm"
-  ]
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-4x4-magnetic"
+    }
+  ],
+  "description": "The MoYu MeiLong 4x4 magnetic cube has remained one of the most popular 4x4s since its release in 2020. This magnetic cube is known for its smooth turning, stability, and affordability, making it a great choice for cubers of all levels.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-meilong-4x4-magnetic-stickerless.jpg?v=1771619482&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-4x4-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-meilong-4x4-magnetic"
+    ]
+  }
 }

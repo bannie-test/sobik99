@@ -1,0 +1,30 @@
+{
+  "name": "GAN V100 MagLev Frosted 3x3",
+  "tags": [
+    "MagLev",
+    "Nam châm"
+  ],
+  "description": "The GAN V100 MagLev Frosted 3x3 is GAN’s latest innovation for speedcubers and cube enthusiasts seeking peak performance. This premium 3x3 features a modern frosted matte exterior for improved grip and visual appeal. At a compact 55mm, it offers unparalleled control and handling suitable for all solving styles.",
+  "features": [
+    "Advanced MagLev tension system powered by 76 strategically placed magnets, reducing friction and delivering buttery-smooth, consistent turns.",
+    "Fine-tune your experience with 72 unique setting combinations using the beloved GAN16 tension adjustment system.",
+    "Ultra-lightweight design—just 64 grams—minimizes hand fatigue during long or intense solving sessions.",
+    "Distinctive black internal plastic adds an extra layer of visual sophistication."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_20V100_203x3_20-_20Frosted.png?v=1769571675&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-v100-maglev-3x3-frosted"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-v100-maglev-3x3-frosted"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-v100-maglev-3x3-frosted",
+    "updated": "2026-11-17"
+  }
+}

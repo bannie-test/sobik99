@@ -1,0 +1,27 @@
+{
+  "name": "GAN12 ui SP 3x3 (UV Coated)",
+  "tags": [
+    "UV",
+    "Nam châm"
+  ],
+  "description": "Elevate your cubing to the next generation with the GAN12 ui SP 3x3, the latest smart cube innovation from the world-renowned GAN brand. Engineered with competitive solvers and enthusiasts in mind, the GAN12 ui SP introduces a host of next-level design improvements, delivering an unparalleled solving experience and cutting-edge connectivity.",
+  "features": [
+    "Includes Basic Powerpod: The included Basic Powerpod makes charging seamless—simply plug it in to keep your GAN12 ui SP ready to go."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN12_ui_SP-basic.png?v=1754687755&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan12-ui-sp-3x3-with-basic-powerpod"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan12-ui-sp-3x3-with-basic-powerpod"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan12-ui-sp-3x3-with-basic-powerpod",
+    "updated": "2026-11-17"
+  }
+}

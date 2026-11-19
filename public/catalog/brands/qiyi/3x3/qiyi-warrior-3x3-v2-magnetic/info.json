@@ -1,0 +1,29 @@
+{
+  "name": "QiYi Warrior 3x3 V2 (Magnetic)",
+  "tags": [],
+  "description": "The QiYi Warrior 3x3 V2 is a magnetic 3x3 speed cube built for cubers moving past the basics and chasing faster times. A 48-magnet corner-edge positioning system adds assisted alignment and stability, while a frosted surface and bright stickerless colors keep solving comfortable through long practice sessions.",
+  "features": [
+    "Grows with your solving: The upgraded magnetic positioning helps you move from learning the basics toward quicker, more consistent solves.",
+    "Stronger magnetic feel: At 65g with a stronger magnetic pull than the original Warrior, pieces click into place and non-turning layers stay put.",
+    "Ready out of the box: Comes with an adjustment screwdriver, a cube stand, and a layer-by-layer solving tutorial, so there's nothing else to buy to get started.",
+    "Beginner-friendly colors: Six bright, distinct stickerless colors make inspection quick and color recognition easy.",
+    "Adjustable tension: The included screwdriver lets you dial in compression to match your turning preference, simple enough for a first-time tuner.",
+    "48-magnet positioning: Corner and edge magnets work together for assisted alignment and a stable, predictable turning feel."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/QiYi-Warrior-3x3-V2-_Magnetic_6840.jpg?v=1793918910&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-warrior-3x3-v2-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-warrior-3x3-v2-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-warrior-3x3-v2-magnetic",
+    "updated": "2026-11-16"
+  }
+}

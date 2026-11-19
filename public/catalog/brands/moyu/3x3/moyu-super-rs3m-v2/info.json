@@ -2,7 +2,11 @@
   "name": "MoYu Super RS3M V2",
   "tags": [
     "Giá tốt",
-    "UV"
+    "UV",
+    "MagLev",
+    "Ball-core",
+    "Nam châm",
+    "55.5 mm"
   ],
   "features": [
     "Thiết kế bên trong đơn giản hoá",
@@ -12,5 +16,43 @@
     "Hiệu năng nằm giữa Super RS3M V1 và WeiLong V9",
     "Chắc, ổn định, xoay mượt"
   ],
-  "audience": "Người mới đến trung cấp"
+  "audience": "Người mới đến trung cấp",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-super-rs3-m-3x3-v2-magnetic-maglev-ball-core-uv-coated"
+    },
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-super-rs3-m-3x3-v2-magnetic-maglev-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-rs3-m-v2-magnetic-uv-3x3"
+    }
+  ],
+  "description": "MoYu Super RS3 M 3x3 V2 (Magnetic, MagLev, Ball-Core, UV Coated) is an exciting update to the immensely popular \"RS3\" series and is now a top-tier speed cube!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-super-rs3-m-3x3-v2-magnetic-maglev-ball-core-uv-coated-stickerless.jpg?v=1771619470&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-super-rs3-m-3x3-v2-magnetic-maglev-ball-core-uv-coated"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "MagLev",
+      "Ball-core",
+      "Nam châm",
+      "55.5 mm"
+    ],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-super-rs3-m-3x3-v2-magnetic-maglev-ball-core-uv-coated",
+      "https://speedcubeshop.com/products/moyu-super-rs3-m-3x3-v2-magnetic-maglev-uv-coated",
+      "https://www.thecubicle.com/products/moyu-super-rs3-m-v2-magnetic-uv-3x3"
+    ]
+  }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "YuXin Kylin 3x3 V2 (Tiled)",
+  "tags": [
+    "55.5 mm"
+  ],
+  "description": "The YuXin Black Kirin 3x3 V2 is a budget puzzle that features durable tiles and a simple, yet robust mechanism. If you like the look of black puzzles, but are not happy with the durability of stickers, this is the economy cube you've been waiting for.",
+  "features": [
+    "Kích thước 55.5 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YuXinBlackKirin3x3V2.jpg?v=1695841704&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yuxin-black-kirin-3x3-v2"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yuxin-black-kirin-3x3-v2"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yuxin-black-kirin-3x3-v2",
+    "updated": "2026-11-17"
+  }
+}

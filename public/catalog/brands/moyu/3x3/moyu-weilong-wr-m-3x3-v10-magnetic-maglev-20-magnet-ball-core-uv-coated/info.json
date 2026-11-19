@@ -1,0 +1,34 @@
+{
+  "name": "MoYu WeiLong WR M 3x3 V10 (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "The MoYu WeiLong WR M 3x3 V10 (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated) is a next-generation 3x3 speed cube packed with advanced features for serious speedcubing. Building on the legendary WeiLong series, the V10 is equipped with MagLev technology, a powerful 20-magnet ball-core for increased stability, and a sleek UV Coated surface for enhanced grip.",
+  "features": [
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "Auto-alignment 3.0 (43 degrees)",
+    "Dual-adjustment system 8 Compression settings",
+    "8 Tension settings",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-WeiLong-WR-M-3x3-V10-Magnetic-MagLev-20-Magnet-Ball-Core-UV-Coated.jpg?v=1771619415&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-wr-m-3x3-v10-magnetic-maglev-20-magnet-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-wr-m-3x3-v10-magnetic-maglev-20-magnet-ball-core-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-weilong-wr-m-3x3-v10-magnetic-maglev-20-magnet-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

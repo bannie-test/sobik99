@@ -1,0 +1,31 @@
+{
+  "name": "HaiTun WaveRider 3x3 V2 Flagship (Magnetic, 20-Magnet Ball-Core)",
+  "tags": [
+    "Ball-core"
+  ],
+  "description": "The HaiTun WaveRider 3x3 V2 Flagship is a 56 mm magnetic speed cube built around a spherical ball-core with 20 core magnets and 6 magnetic rings, tuned for a lively, accelerated turning feel at a lightweight 72 g. It's the version that puts the redesigned core front and center — high magnetic acceleration without the extra positioning hardware of the heavier builds.",
+  "features": [
+    "Comfortable for long sessions: 56 mm golden size and a 72 g weight keep control high and fatigue low through extended practice.",
+    "Quiet by design: Full lubrication and high-precision processing keep turning noise down for everyday cubing.",
+    "Micro-numerical setting: Numbered dials let you replicate a specific setup precisely and repeat it, so a good configuration is never lost.",
+    "Spring compression & center tension: Adjust both independently across 8 levels each for a wide range of tactile feedback.",
+    "Auto-alignment: Magnetic repulsion combined with inertia provides acceleration and auto-assisted homing for smooth operation with solid stability.",
+    "Spherical ball-core levitation system: An integrated core with a spherical magnetic levitation setup delivers auto-alignment and increased stability."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Haitun-Waverider-V2-3x3---0024782.jpg?v=1783786361&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/waverider-v2-3x3-flagship-magnetic-20-magnet-ball-core"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/waverider-v2-3x3-flagship-magnetic-20-magnet-ball-core"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "waverider-v2-3x3-flagship-magnetic-20-magnet-ball-core",
+    "updated": "2026-11-16"
+  }
+}

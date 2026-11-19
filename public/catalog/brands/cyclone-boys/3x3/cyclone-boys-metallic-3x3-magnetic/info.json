@@ -1,0 +1,42 @@
+{
+  "name": "Cyclone Boys Metallic 3x3 (Magnetic)",
+  "tags": [
+    "57 mm"
+  ],
+  "description": "Cyclone Boys Metallic 3x3 (Magnetic) is a must-have for any speed cuber!",
+  "features": [
+    "Factory-installed magnets for smoother, more accurate turning feel",
+    "Metallic plated exterior",
+    "Plastic interior for smooth turning",
+    "Incredibly fast turning feel"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/cyclone-boys-metallic-3x3-magnetic-stickerless.jpg?v=1771619386&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/cyclone-boys-metallic-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/cyclone-boys-metallic-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/cyclone-boys-metallic-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "cyclone-boys-metallic-3x3-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "57 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/cyclone-boys-metallic-3x3"
+    ]
+  }
+}

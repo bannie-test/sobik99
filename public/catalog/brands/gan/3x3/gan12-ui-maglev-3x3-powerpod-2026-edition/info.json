@@ -1,0 +1,33 @@
+{
+  "name": "GAN12 ui MagLev 3x3 (PowerPod, 2026 Edition)",
+  "tags": [
+    "MagLev",
+    "Nam châm",
+    "Bản đặc biệt"
+  ],
+  "description": "The GAN 12 UI MagLev is everything you love about the GAN 12 UI Free Play, but with a MagLev tensioning system! This is the world's first MagLev smart cube, and it is built like a GAN 12, which means performance is top-tier! It comes with a GAN PowerPod for easy charging and storage.",
+  "features": [
+    "GAN 12 UI MagLev",
+    "GAN PowerPod",
+    "User manual",
+    "GAN power station",
+    "USB type-C cable",
+    "Adjustment tool"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN12_ui_MagLev_2026.png?v=1781234665&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan12-ui-maglev-3x3-powerpod-2026-edition"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan12-ui-maglev-3x3-powerpod-2026-edition"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan12-ui-maglev-3x3-powerpod-2026-edition",
+    "updated": "2026-11-17"
+  }
+}

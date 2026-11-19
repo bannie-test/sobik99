@@ -1,0 +1,32 @@
+{
+  "name": "MoreTry Tianma X3+ V4 3x3 (MagLev)",
+  "tags": [
+    "MagLev",
+    "Nam châm",
+    "55 mm"
+  ],
+  "description": "The Moretry Tianma X3+ V4 3x3 (MagLev + UV) is the highly anticipated successor to the X3 V4, bringing a host of new improvements while maintaining the features you loved. This cube is designed for maximum performance, precision, and customization, perfect for solvers who demand the best.",
+  "features": [
+    "Kích thước 55 mm",
+    "Redesigned internals reduce noise significantly, offering a smoother and quieter solving experience—perfect for any setting.",
+    "Innovative magnet pods make assembly and disassembly easier than ever, giving you more control over your cube.",
+    "Enlarged corner base magnets interact with center magnets to aid in precise alignment for effortless turning.",
+    "MagLev Technology: The magnetic levitation system now features 6 magnetic rings for more consistent and linear tension, ensuring optimal speed and stability."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/Moretry_20Tianma_20X3_20V2_203x3_20_Enhanced_2c3ab4c5-924c-40ef-826d-cd2f4b450650.jpg?v=1735966048&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moretry-tianma-x3-v4-3x3-maglev-1"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moretry-tianma-x3-v4-3x3-maglev-1"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "moretry-tianma-x3-v4-3x3-maglev-1",
+    "updated": "2026-11-17"
+  }
+}

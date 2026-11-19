@@ -9,5 +9,28 @@
   "reviews": [
     "Được mô tả là một trong những Megaminx nhanh nhất, cắt góc rất tốt"
   ],
-  "audience": "Trung cấp trở lên"
+  "audience": "Trung cấp trở lên",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-yuhu-megaminx-v2-magnetic"
+    }
+  ],
+  "description": "YJ YuHu Megaminx V2 (Magnetic) magnetic puzzle is the first megaminx in this price range to come equipped with magnets from the factory! The moderate-strength magnets add a nice weight to the puzzle, which helps to improve the overall stability of the puzzle and promotes smoother, more accurate turning.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yj-yuhu-megaminx-v2-magnetic-stickerless.jpg?v=1765326012&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-yuhu-megaminx-v2-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yj-yuhu-megaminx-v2-magnetic"
+    ]
+  }
 }

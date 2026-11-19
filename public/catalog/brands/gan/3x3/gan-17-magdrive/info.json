@@ -3,7 +3,11 @@
   "tags": [
     "Flagship",
     "MagLev",
-    "Lõi từ"
+    "Lõi từ",
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "Bản đặc biệt"
   ],
   "features": [
     "MagDrive hướng lực từ xuyên suốt vòng xoay, kết hợp MagLev và lõi từ",
@@ -13,6 +17,42 @@
     {
       "name": "GANCUBE",
       "url": "https://www.gancube.com/products/gan17-magdrive-3x3-speed-cube"
+    },
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-17-magdrive-3x3-magnetic-maglev-ball-core-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan17-magdrive-uv-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan17-magdrive-3x3-jurassic-world-edition"
     }
-  ]
+  ],
+  "description": "The GAN 17 MagDrive 3x3 (Magnetic, MagLev, Ball-Core, UV Coated) wraps a full 196-magnet system around one micro core, so the magnetic feel guides the pieces through the whole turn instead of only clicking in at the end. It is GAN's 2026 flagship, built for solvers who want that guided feel plus tuning they can set by the number and return to exactly.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Gan-176175.jpg?v=1786563677&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-17-magdrive-3x3-magnetic-maglev-ball-core-uv-coated"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "Ball-core",
+      "UV",
+      "Nam châm",
+      "Bản đặc biệt"
+    ],
+    "sources": [
+      "https://speedcubeshop.com/products/gan-17-magdrive-3x3-magnetic-maglev-ball-core-uv-coated",
+      "https://www.thecubicle.com/products/gan17-magdrive-uv-3x3",
+      "https://www.thecubicle.com/products/gan17-magdrive-3x3-jurassic-world-edition"
+    ]
+  }
 }

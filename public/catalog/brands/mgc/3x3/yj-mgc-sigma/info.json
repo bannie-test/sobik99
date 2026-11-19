@@ -10,6 +10,27 @@
     {
       "name": "TheCubicle",
       "url": "https://www.thecubicle.com/collections/3x3-speed-cubes"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-mgc-sigma-3x3"
     }
-  ]
+  ],
+  "description": "The YJ MGC Sigma is what the Beta was trying to be. Larger core magnets lock the cube into place with smoother alignment. Lighter corner-edge magnets create balance without hesitation. Sharper corner caps reduce unwanted twists at the source. Finished with red accents and a new insignia. “I have examined many cubes. This one passes.” - Socrates",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YJMGCSigma.jpg?v=1770922732&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-mgc-sigma-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/yj-mgc-sigma-3x3"
+    ]
+  }
 }

@@ -1,0 +1,27 @@
+{
+  "name": "MFJS Mirror Cube 3x3 V2",
+  "tags": [
+    "Biến thể",
+    "56 mm"
+  ],
+  "description": "The MFJS Mirror Cube 3x3 V2 is a shape-mod transformation of a classic 3x3 puzzle, where you solve based on shape rather than color. Featuring an upgraded mechanism from its predecessor, this version offers smoother turning, improved stability, and better corner-cutting for an enhanced solving experience.",
+  "features": [
+    "Kích thước 56 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/MFJS_20Mirror_20Cube_203x3_20V2_20blue.jpg?v=1741126052&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/mfjs-mirror-cube-3x3-v2"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/mfjs-mirror-cube-3x3-v2"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "mfjs-mirror-cube-3x3-v2",
+    "updated": "2026-11-17"
+  }
+}

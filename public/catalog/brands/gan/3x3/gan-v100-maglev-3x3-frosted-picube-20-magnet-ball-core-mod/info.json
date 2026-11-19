@@ -1,0 +1,26 @@
+{
+  "name": "GAN V100 MagLev Frosted 3x3 (PiCube 20-Magnet Ball-Core Mod)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "Nam châm"
+  ],
+  "description": "GAN V100 MagLev Frosted 3x3 (PiCube 20-Magnet Ball-Core Mod) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_20V100_20MagLev_20Frosted_20PiCube_20Mod.png?v=1783717629&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-v100-maglev-3x3-frosted-picube-20-magnet-ball-core-mod"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-v100-maglev-3x3-frosted-picube-20-magnet-ball-core-mod"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-v100-maglev-3x3-frosted-picube-20-magnet-ball-core-mod",
+    "updated": "2026-11-17"
+  }
+}

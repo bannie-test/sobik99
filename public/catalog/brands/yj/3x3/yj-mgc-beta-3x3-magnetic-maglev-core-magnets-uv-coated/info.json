@@ -1,0 +1,32 @@
+{
+  "name": "YJ MGC Beta 3x3 (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "YJ MGC Beta 3x3 (Magnetic, MagLev, Core Magnets, UV Coated) is a fresh take for their flagship line and is incredibly pleasant to use!",
+  "features": [
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology",
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "43-degree auto-alignment",
+    "Increased stability"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/YJ-MGC-Beta-3x3-Magnetic-MagLev-Core-Magnets-UV-Coated_50e18280.jpg?v=1760588750&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-mgc-beta-3x3-magnetic-maglev-core-magnets-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-beta-3x3-magnetic-maglev-core-magnets-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "yj-mgc-beta-3x3-magnetic-maglev-core-magnets-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

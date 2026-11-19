@@ -9,5 +9,28 @@
   "reviews": [
     "Mềm, ít 'tactile'; dòng TengYun xoay nhanh, slice tốt"
   ],
-  "audience": "Trung cấp"
+  "audience": "Trung cấp",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/dayan-tengyun-v2-m-3x3"
+    }
+  ],
+  "description": "The DaYan TengYun V2 M is an exciting new magnetic 3x3 speed cube from classic manufacturer DaYan. Weighing in at a modest 83g, the TengYun V2 M features three magnetic settings that you can adjust by rotating a plate, as well as adjustable elasticities and tensions without having to switch out any components. Using DaYan's new adjustment tool, you can choose from four tensions and four elasticity settings.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/dayantengyunv2m3x3.jpg?v=1704388478&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/dayan-tengyun-v2-m-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/dayan-tengyun-v2-m-3x3"
+    ]
+  }
 }

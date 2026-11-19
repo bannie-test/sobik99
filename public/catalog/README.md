@@ -31,3 +31,28 @@ public/catalog/brands/<hãng>/<loại>/<mẫu>/image.webp    (hoặc .avif / .pn
 `image` có thể là tên file trong thư mục mẫu hoặc một URL `https://` (chỉ dùng ảnh bạn có quyền sử dụng). `imageCredit` hiện dưới ảnh và trong trang Nguồn.
 
 Sau khi thêm/sửa, chạy `npm run catalog` (tự chạy cùng `npm run dev`, `npm run build`, `npm test`). Lệnh in cảnh báo nếu có thư mục hãng/loại sai, JSON lỗi hoặc ảnh không tồn tại.
+
+## Logo hãng
+
+Mặc định mỗi hãng hiện **ô chờ xám** có tên hãng. Để dùng ảnh logo:
+
+1. Đặt file vào `public/catalog/logos/`, ví dụ `public/catalog/logos/gan.svg` (SVG/PNG/WebP, nền trong suốt, cao ~40 px trở lên).
+2. Trong `src/data/brands.js`, đổi `"logo": ""` của hãng đó thành `"logo": "catalog/logos/gan.svg"` (đường dẫn tính từ `public/`, hoặc một URL `https://`).
+
+Ảnh lỗi hoặc không tồn tại sẽ tự quay về ô chờ.
+
+## Nhập mẫu từ SpeedCubeShop và The Cubicle
+
+```
+npm run import:cubicle                              # mọi trang của các collection mặc định
+npm run import:cubicle -- <url collection>          # collection khác (tự đi hết các trang)
+npm run import:cubicle -- --refresh                 # bỏ cache, tải lại từ shop
+```
+
+Script đọc `products.json` (Shopify) theo từng trang `?limit=250&page=N` cho đến trang rỗng. Các trang tải về được lưu cache 1 ngày trong `node_modules/.cache/shop-import/`. Khi shop trả về 429, script tự chờ rồi thử lại.
+
+1. **Mẫu 3x3 từ collection 3x3** → `brands/<hãng>/3x3/<handle>/info.json`, gồm tên, tag, mô tả tiếng Anh, ảnh trên CDN của shop kèm ghi công và link nguồn. **Không lấy giá.** Cùng một khối có ở cả hai shop (tên giống nhau sau khi bỏ phần trong ngoặc) thì gộp làm một mẫu.
+2. **Mẫu bạn tự viết mà chưa có ảnh** (mọi loại) được ghép theo tên với toàn bộ sản phẩm của hai shop (collection `all`) để bổ sung ảnh, mô tả và nguồn. Phần bổ sung được ghi trong khóa `imported`; lần chạy sau sẽ gỡ ra rồi ghép lại, nên không bao giờ ghi đè chữ bạn viết.
+3. Thư mục do script tạo (có `importedFrom` và chỉ chứa `info.json`) được dựng lại mỗi lần chạy. Muốn sửa tay một mẫu đã nhập: xóa khóa `importedFrom`, hoặc thêm `image.webp` vào thư mục đó.
+
+Cuối mỗi lần chạy, script in danh sách mẫu vẫn chưa có ảnh.

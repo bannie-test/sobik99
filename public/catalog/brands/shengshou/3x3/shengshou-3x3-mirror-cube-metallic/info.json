@@ -1,0 +1,24 @@
+{
+  "name": "ShengShou 3x3 Mirror Cube (Metallic)",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "ShengShou 3x3 Mirror Cube (Metallic) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/ShengShou_20Metallic_20Mirror_20Cube_20Silver.png?v=1788388843&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/shengshou-3x3-mirror-cube-metallic"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/shengshou-3x3-mirror-cube-metallic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "shengshou-3x3-mirror-cube-metallic",
+    "updated": "2026-11-17"
+  }
+}

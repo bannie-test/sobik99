@@ -1,0 +1,44 @@
+{
+  "name": "QiYi Cross Cube 3x3 (Magnetic)",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "The QiYi Cross Cube 3x3 (Magnetic) is a children's speed cube from QiYi's magnetic kids' series, built around a simplified cross motif that gives new solvers a clear pattern to follow across the faces. Magnetic positioning keeps turns stable, and the full-bright, frosted stickerless build is made to be easy on little hands and easy on the eyes.",
+  "features": [
+    "Clear cross pattern: The cross motif across the faces gives new solvers an easy visual cue to track their turns and stay oriented.",
+    "Easy for little hands: At 55.5 mm it's sized and tuned for smaller hands to control comfortably.",
+    "Magnetic positioning: Magnets assist alignment for stable rotation without the looseness common on entry-level children's cubes.",
+    "Frosted surface: The matte finish is scratch-resistant, anti-reflective, and fingerprint-proof, keeping the focus on the solve.",
+    "Full-bright color scheme: Bold, clearly distinct colors make it easy for children to tell faces apart while playing.",
+    "Stickerless build: Molded colors mean nothing to peel or wear off over time."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/97692edb-b3aa-4abf-a6ce-f33f1ea38312.jpg?v=1792878567&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-cross-cube-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-cross-cube-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-cross-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-cross-cube-3x3-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-cross-3x3-magnetic"
+    ]
+  }
+}
