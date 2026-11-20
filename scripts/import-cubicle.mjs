@@ -5,7 +5,7 @@
 //   npm run import:cubicle -- --refresh         # ignore the download cache
 //   npm run import:cubicle -- --verbose         # list skipped products
 //
-// 1. Every product of the 3x3 collections becomes public/catalog/brands/<brand>/3x3/<handle>/info.json
+// 1. Every product of the 3x3 collections becomes catalog-source/brands/<brand>/3x3/<handle>/info.json
 //    (unless the same cube is already on the shelf: then that folder is enriched instead).
 // 2. Every hand-written model without a photo (any category) is matched by name against all the
 //    shops' products (the `all` collections) and gains the missing image, description and source.
@@ -14,7 +14,7 @@
 // Pages are cached in node_modules/.cache/shop-import for a day, so re-runs do not hit rate limits.
 import fs from 'node:fs';
 import path from 'node:path';
-import { brands, brandAliases } from '../src/data/brands.js';
+import { brands, brandAliases, catalogBrands } from '../src/data/brands.js';
 import { CATEGORIES, brandFamily } from '../src/data/catalog-schema.js';
 
 // Collections whose products are added to the shelf (3x3 only).
@@ -22,7 +22,7 @@ const DEFAULT = ['https://speedcubeshop.com/collections/3x3-speed-cubes/products
 // Collections only used to find photos for models already on the shelf.
 const LOOKUP = ['https://speedcubeshop.com/collections/all/products.json', 'https://www.thecubicle.com/collections/all/products.json'];
 const SHOP_NAMES = { 'speedcubeshop.com': 'SpeedCubeShop', 'www.thecubicle.com': 'The Cubicle', 'thecubicle.com': 'The Cubicle' };
-const ROOT = new URL('../public/catalog/brands/', import.meta.url).pathname;
+const ROOT = new URL('../catalog-source/brands/', import.meta.url).pathname;
 const CACHE = new URL('../node_modules/.cache/shop-import/', import.meta.url).pathname;
 const CACHE_MS = 24 * 3600 * 1000;
 
@@ -238,7 +238,7 @@ function matchWords(p) {
 const readJSON = f => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return null; } };
 const shelf = new Map(); // folder path -> { brand, category, folder, info, name, shop?, dirty }
 const generated = new Set(); // folders written by an earlier run
-for (const b of fs.readdirSync(ROOT)) for (const c of fs.existsSync(path.join(ROOT, b)) ? fs.readdirSync(path.join(ROOT, b)) : []) {
+for (const { id: b } of catalogBrands) for (const c of fs.existsSync(path.join(ROOT, b)) ? fs.readdirSync(path.join(ROOT, b)) : []) {
   if (!CATEGORIES.some(x => x.folder === c)) continue;
   for (const m of fs.readdirSync(path.join(ROOT, b, c))) {
     const dir = path.join(ROOT, b, c, m);
@@ -266,11 +266,16 @@ for (const p of added) {
   seen.add(key);
   if (p.category !== '3x3' || SKIP.test(p.title)) { stats.skipped.push(`${p.title} (không phải khối 3x3)`); continue; }
   if (!p.brand) { stats.skipped.push(`${p.title} (chưa có hãng "${p.vendor}" trong brands.js)`); continue; }
+  const match = MATCH[p.handle];
+  if (!byId.get(p.brand)?.logo || (match && !byId.get(match.split('/')[0])?.logo)) {
+    stats.skipped.push(`${p.title} (hãng chưa có logo)`);
+    continue;
+  }
   const info = infoOf(p);
   // Same cube already on the shelf? explicit MATCH, the same handle, or the same name (bracketed
   // notes ignored) from a hand-written model or the other shop. A shop's own variants stay separate.
   const core = coreWords(p.title, p.brand);
-  let dir = MATCH[p.handle] ? path.join(ROOT, MATCH[p.handle].replace('/', '/3x3/')) : null;
+  let dir = match ? path.join(ROOT, match.replace('/', '/3x3/')) : null;
   dir ||= [...shelf.keys()].find(d => shelf.get(d).folder === p.handle && shelf.get(d).shop !== p.shop);
   dir ||= [...shelf.entries()].find(([, m]) => m.category === '3x3' && m.shop !== p.shop && related(m.brand, p.brand) && sameWords(coreWords(m.name, m.brand), core))?.[0];
   if (!dir || !shelf.has(dir)) {
@@ -293,7 +298,12 @@ if (missing.length) {
   for (const m of missing) {
     const p = bestMatch(m, pool);
     if (!p) continue;
-    const info = infoOf(p);
+    const match = MATCH[p.handle];
+  if (!byId.get(p.brand)?.logo || (match && !byId.get(match.split('/')[0])?.logo)) {
+    stats.skipped.push(`${p.title} (hãng chưa có logo)`);
+    continue;
+  }
+  const info = infoOf(p);
     m.info = merge(m.info, { tags: [], description: info.description, image: info.image, imageCredit: info.imageCredit, sources: info.sources });
     m.dirty = true;
     stats.photos++;

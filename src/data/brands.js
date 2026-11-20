@@ -1,4 +1,5 @@
-// Brand registry: ids match the folders in public/catalog/brands/.
+import { t as tr } from '../utils/i18n.js';
+// Brand registry: ids match the folders in catalog-source/brands/.
 // `logo` is an image path under public/ (e.g. "catalog/logos/gan.webp") or an https:// URL.
 // Left empty, the brand shows a grey placeholder with its name.
 export const brandNotes = [
@@ -42,7 +43,8 @@ export const brandSources = [
   "name": "The Cubicle popular brands",
   "url": "https://www.thecubicle.com/pages/collections/top-brands",
   "supports": [
-   "brand discovery"
+   "brand discovery",
+   "brand logos"
   ]
  },
  {
@@ -145,34 +147,34 @@ export const brands = [
   "id": "rubiks",
   "name": "Rubik's",
   "parent": null,
-  "country": "Hungary (thương hiệu gốc)",
-  "summary": "Thương hiệu gốc của khối Rubik do Ernő Rubik phát minh năm 1974.",
+  "country": tr("Hungary (thương hiệu gốc)", "Hungary (original brand)"),
+  "summary": tr("Thương hiệu gốc của khối Rubik do Ernő Rubik phát minh năm 1974.", "The original brand of the cube invented by Ernő Rubik in 1974."),
   "color": "#C62828",
-  "logo": ""
+  "logo": "catalog/logos/rubiks.png"
  },
  {
   "id": "gan",
   "name": "GAN",
   "parent": null,
-  "country": "Trung Quốc",
-  "summary": "Hãng cao cấp: dòng Maglev, cube thông minh Bluetooth; sở hữu các thương hiệu con Monster Go và Swift Block.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Hãng cao cấp: dòng Maglev, cube thông minh Bluetooth; sở hữu các thương hiệu con Monster Go và Swift Block.", "A premium brand known for MagLev and Bluetooth smart cubes. Its sub-brands include Monster Go and Swift Block."),
   "color": "#1565C0",
-  "logo": ""
+  "logo": "catalog/logos/gan.png"
  },
  {
   "id": "moyu",
   "name": "MoYu",
   "parent": null,
-  "country": "Trung Quốc",
-  "summary": "Hãng lớn: dòng WeiLong thi đấu và RS giá rẻ; có các thương hiệu con như PBCube, Cubing Classroom.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Hãng lớn: dòng WeiLong thi đấu và RS giá rẻ; có các thương hiệu con như PBCube, Cubing Classroom.", "Known for the competition-grade WeiLong line and affordable RS line, with sub-brands such as PBCube and Cubing Classroom."),
   "color": "#1E88E5",
-  "logo": ""
+  "logo": "catalog/logos/moyu.png"
  },
  {
   "id": "pbcube",
   "name": "PBCube",
   "parent": "moyu",
-  "country": "Trung Quốc",
+  "country": tr("Trung Quốc", "China"),
   "summary": "Thương hiệu con chuyên biệt của MoYu, dòng flagship WR do nhà vô địch thế giới Yiheng Wang tham gia phát triển.",
   "color": "#263238",
   "logo": ""
@@ -184,7 +186,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/mfjs.png"
  },
  {
   "id": "guoguan",
@@ -199,10 +201,10 @@ export const brands = [
   "id": "qiyi",
   "name": "QiYi",
   "parent": null,
-  "country": "Trung Quốc",
-  "summary": "Hãng lớn với 4 thương hiệu con: QY Cube, QY Toys, MoFangGe và X-Man Design.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Hãng lớn với 4 thương hiệu con: QY Cube, QY Toys, MoFangGe và X-Man Design.", "QiYi’s sub-brands include QY Cube, QY Toys, MoFangGe, and X-Man Design."),
   "color": "#F57C00",
-  "logo": ""
+  "logo": "catalog/logos/qiyi-mofangge.png"
  },
  {
   "id": "qy-cube",
@@ -235,16 +237,16 @@ export const brands = [
   "id": "x-man-design",
   "name": "X-Man Design",
   "parent": "qiyi",
-  "country": "Trung Quốc",
-  "summary": "Thương hiệu thi đấu của QiYi, nổi tiếng với dòng Tornado.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Thương hiệu thi đấu của QiYi, nổi tiếng với dòng Tornado.", "QiYi’s competition brand, known for the Tornado series."),
   "color": "#212121",
-  "logo": ""
+  "logo": "catalog/logos/x-man-designs.png"
  },
  {
   "id": "the-valk",
   "name": "The Valk",
   "parent": "qiyi",
-  "country": "Trung Quốc",
+  "country": tr("Trung Quốc", "China"),
   "summary": "Dòng cube QiYi hợp tác với Mats Valk từ 2016.",
   "color": "#0D47A1",
   "logo": ""
@@ -253,16 +255,16 @@ export const brands = [
   "id": "yj",
   "name": "YJ",
   "parent": null,
-  "country": "Trung Quốc",
-  "summary": "YongJun: cube giá phải chăng; MGC là dòng sản phẩm chủ lực.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("YongJun: cube giá phải chăng; MGC là dòng sản phẩm chủ lực.", "YongJun makes affordable cubes, with MGC as its flagship line."),
   "color": "#2E7D32",
-  "logo": ""
+  "logo": "catalog/logos/yj.png"
  },
  {
   "id": "mgc",
   "name": "MGC",
   "parent": "yj",
-  "country": "Trung Quốc",
+  "country": tr("Trung Quốc", "China"),
   "summary": "Dòng/thương hiệu sản phẩm chủ lực của YJ.",
   "color": "#388E3C",
   "logo": ""
@@ -271,19 +273,19 @@ export const brands = [
   "id": "yuxin",
   "name": "YuXin",
   "parent": null,
-  "country": "Trung Quốc",
-  "summary": "Nhiều puzzle WCA giá tốt, nổi bật với Pyraminx Little Magic.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Nhiều puzzle WCA giá tốt, nổi bật với Pyraminx Little Magic.", "Makes affordable WCA puzzles, including the Little Magic Pyraminx."),
   "color": "#00897B",
-  "logo": ""
+  "logo": "catalog/logos/yuxin.png"
  },
  {
   "id": "shengshou",
   "name": "ShengShou",
   "parent": null,
-  "country": "Trung Quốc",
-  "summary": "Mạnh về cube kích thước lớn và puzzle lạ, giá dễ tiếp cận.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Mạnh về cube kích thước lớn và puzzle lạ, giá dễ tiếp cận.", "Known for affordable big cubes and unusual puzzles."),
   "color": "#00838F",
-  "logo": ""
+  "logo": "catalog/logos/shengshou.png"
  },
  {
   "id": "sengso",
@@ -298,10 +300,10 @@ export const brands = [
   "id": "dayan",
   "name": "DaYan",
   "parent": null,
-  "country": "Trung Quốc",
-  "summary": "Hãng speedcube lâu đời, các thiết kế ZhanChi, TengYun có ảnh hưởng lớn.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Hãng speedcube lâu đời, các thiết kế ZhanChi, TengYun có ảnh hưởng lớn.", "A longtime speedcube maker behind the influential ZhanChi and TengYun designs."),
   "color": "#6A1B9A",
-  "logo": ""
+  "logo": "catalog/logos/dayan.png"
  },
  {
   "id": "diansheng",
@@ -310,7 +312,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/diansheng.png"
  },
  {
   "id": "mscube",
@@ -328,13 +330,13 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/fanxin.png"
  },
  {
   "id": "cyclone-boys",
   "name": "Cyclone Boys",
   "parent": null,
-  "country": "Trung Quốc",
+  "country": tr("Trung Quốc", "China"),
   "summary": "Cube giá rẻ, nhiều mẫu cho người mới.",
   "color": "#5E35B1",
   "logo": ""
@@ -346,7 +348,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/lanlan.png"
  },
  {
   "id": "mf8",
@@ -355,7 +357,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/mf8.png"
  },
  {
   "id": "verypuzzle",
@@ -400,7 +402,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/vin-cube.png"
  },
  {
   "id": "witeden",
@@ -418,7 +420,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/limcube.png"
  },
  {
   "id": "cube4you",
@@ -427,7 +429,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/cube4you.png"
  },
  {
   "id": "lingao",
@@ -442,10 +444,10 @@ export const brands = [
   "id": "huameng",
   "name": "HuaMeng",
   "parent": null,
-  "country": "Trung Quốc",
-  "summary": "Thường bán dưới tên MoYu HuaMeng; dòng YS3M nam châm.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Thường bán dưới tên MoYu HuaMeng; dòng YS3M nam châm.", "Often sold as MoYu HuaMeng, including the magnetic YS3M line."),
   "color": "#D32F2F",
-  "logo": ""
+  "logo": "catalog/logos/huameng.png"
  },
  {
   "id": "haitun",
@@ -454,7 +456,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/haitun.png"
  },
  {
   "id": "kfcube",
@@ -481,7 +483,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/moretry.png"
  },
  {
   "id": "ze-puzzles",
@@ -490,7 +492,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/zepuzzles.png"
  },
  {
   "id": "z-cube",
@@ -499,7 +501,7 @@ export const brands = [
   "country": "",
   "summary": "",
   "color": "#37474F",
-  "logo": ""
+  "logo": "catalog/logos/zcube.png"
  },
  {
   "id": "cube-twist",
@@ -523,7 +525,7 @@ export const brands = [
   "id": "monster-go",
   "name": "Monster Go",
   "parent": "gan",
-  "country": "Trung Quốc",
+  "country": tr("Trung Quốc", "China"),
   "summary": "Thương hiệu con của GAN hướng tới người mới và giáo dục.",
   "color": "#43A047",
   "logo": ""
@@ -532,9 +534,111 @@ export const brands = [
   "id": "swift-block",
   "name": "Swift Block",
   "parent": "gan",
-  "country": "Trung Quốc",
-  "summary": "Thương hiệu con của GAN với các mẫu giá mềm.",
+  "country": tr("Trung Quốc", "China"),
+  "summary": tr("Thương hiệu con của GAN với các mẫu giá mềm.", "A GAN sub-brand with budget-friendly models."),
   "color": "#E65100",
-  "logo": ""
+  "logo": "catalog/logos/swift-block.png"
+ },
+ {
+  "id": "aj",
+  "name": "AJ",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/aj.png"
+ },
+ {
+  "id": "calvins-puzzle",
+  "name": "Calvin's Puzzle",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/calvins-puzzle.png"
+ },
+ {
+  "id": "cubicle-pro-shop-1",
+  "name": "Pro Shop",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/cubicle-pro-shop-1.png"
+ },
+ {
+  "id": "cubicle",
+  "name": "TheCubicle",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/cubicle.png"
+ },
+ {
+  "id": "cubing-gg",
+  "name": "Cubing.GG",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/cubing-gg.png"
+ },
+ {
+  "id": "escube",
+  "name": "ESCube",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/escube.png"
+ },
+ {
+  "id": "kanyon",
+  "name": "Kanyon",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/kanyon.png"
+ },
+ {
+  "id": "lbl-designs",
+  "name": "LBL Designs",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/lbl-designs.png"
+ },
+ {
+  "id": "picube",
+  "name": "PiCube",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/picube.png"
+ },
+ {
+  "id": "saocube",
+  "name": "SAOCube",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/saocube.png"
+ },
+ {
+  "id": "ziina",
+  "name": "Ziina",
+  "parent": null,
+  "country": "",
+  "summary": "",
+  "color": "#37474F",
+  "logo": "catalog/logos/ziina.png"
  }
 ];
+
+// Brands with a logo can appear in the cube shop.
+export const catalogBrands = brands.filter(brand => brand.logo);

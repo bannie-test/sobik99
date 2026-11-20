@@ -1,3 +1,4 @@
+import { t as tr } from '../utils/i18n.js';
 // Paint-the-cube editor: an unfolded net held yellow-up, green-front (white on the bottom).
 // Centers are fixed; every other sticker is painted with the selected color.
 import { apply, solvedFacelets } from '../core/cube.js';
@@ -5,8 +6,8 @@ import { COLORS } from './diagrams.js';
 import { escapeHTML as esc } from '../utils/ui.js';
 
 export const COLOR_ORDER = ['D', 'U', 'F', 'B', 'R', 'L'];
-export const COLOR_LABEL = { U: 'Trắng', D: 'Vàng', F: 'Xanh lá', B: 'Xanh dương', R: 'Đỏ', L: 'Cam' };
-const FACE_LABEL = { U: 'Trên', R: 'Phải', F: 'Trước', D: 'Dưới', L: 'Trái', B: 'Sau' };
+export const COLOR_LABEL = { U: tr('Trắng', "White"), D: tr('Vàng', "Yellow"), F: tr('Xanh lá', "Green"), B: tr('Xanh dương', "Blue"), R: tr('Đỏ', "Red"), L: tr('Cam', 'Orange') };
+const FACE_LABEL = { U: tr('Trên', "Top"), R: tr('Phải', "Right"), F: tr('Trước', "Front"), D: tr('Dưới', "Bottom"), L: tr('Trái', "Left"), B: tr('Sau', 'Back') };
 // Net placement (column, row in face units) of each face index U R F D L B.
 const PLACE = [[1, 0], [2, 1], [1, 1], [1, 2], [0, 1], [3, 1]];
 const FACES = ['U', 'R', 'F', 'D', 'L', 'B'];
@@ -18,8 +19,8 @@ export function netEditor(root, { initial = heldSolved(), onChange = () => {} } 
   let state = [...initial];
   let brush = 'D';
   let marked = new Set();
-  root.innerHTML = `<div class="net-palette" role="radiogroup" aria-label="Chọn màu để tô">${COLOR_ORDER.map(c => `<button type="button" role="radio" data-brush="${c}" style="--swatch:${COLORS[c]}" aria-checked="${c === brush}"><i></i>${COLOR_LABEL[c]}</button>`).join('')}</div>
-  <div class="net-grid">${FACES.map((f, fi) => `<div class="net-face" style="grid-column:${PLACE[fi][0] + 1};grid-row:${PLACE[fi][1] + 1}" aria-label="Mặt ${FACE_LABEL[f]}"><span>${FACE_LABEL[f]}</span>${Array.from({ length: 9 }, (_, k) => {
+  root.innerHTML = `<div class="net-palette" role="radiogroup" aria-label="${tr("Chọn màu để tô", "Choose a sticker color")}">${COLOR_ORDER.map(c => `<button type="button" role="radio" data-brush="${c}" style="--swatch:${COLORS[c]}" aria-checked="${c === brush}"><i></i>${COLOR_LABEL[c]}</button>`).join('')}</div>
+  <div class="net-grid">${FACES.map((f, fi) => `<div class="net-face" style="grid-column:${PLACE[fi][0] + 1};grid-row:${PLACE[fi][1] + 1}" aria-label="${tr("Mặt", "Face")} ${FACE_LABEL[f]}"><span>${FACE_LABEL[f]}</span>${Array.from({ length: 9 }, (_, k) => {
     const i = fi * 9 + k;
     return `<button type="button" class="net-cell" data-i="${i}" ${k === 4 ? 'disabled' : ''}></button>`;
   }).join('')}</div>`).join('')}</div>`;
@@ -29,7 +30,7 @@ export function netEditor(root, { initial = heldSolved(), onChange = () => {} } 
       const i = +b.dataset.i, c = state[i];
       b.style.background = COLORS[c];
       b.classList.toggle('bad', marked.has(i));
-      b.setAttribute('aria-label', `${COLOR_LABEL[c]}${i % 9 === 4 ? ' (tâm cố định)' : ''}`);
+      b.setAttribute('aria-label', `${COLOR_LABEL[c]}${i % 9 === 4 ? tr(' (tâm cố định)', " (fixed center)") : ''}`);
     });
   }
   root.querySelectorAll('[data-brush]').forEach(b => b.addEventListener('click', () => {
@@ -51,6 +52,6 @@ export function netEditor(root, { initial = heldSolved(), onChange = () => {} } 
     setState(s) { state = [...s]; marked = new Set(); paint(); onChange(state); },
     mark(indices) { marked = new Set(indices); paint(); },
     dispose() { window.removeEventListener('pointerup', stop); },
-    describe: () => esc('Cầm vàng ở trên, xanh lá phía trước, trắng ở dưới.'),
+    describe: () => esc(tr('Cầm vàng ở trên, xanh lá phía trước, trắng ở dưới.', "Hold yellow on top, green in front, and white on the bottom.")),
   };
 }

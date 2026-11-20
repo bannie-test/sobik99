@@ -10,3 +10,4 @@ dist/
 public/catalog/index.json
 public/catalog/search.json
 public/catalog/pages/
+public/catalog/images/

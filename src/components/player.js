@@ -1,3 +1,4 @@
+import { t as tr } from '../utils/i18n.js';
 import * as THREE from 'three';
 import { Alg } from 'cubing/alg';
 import { escapeHTML as esc } from '../utils/ui.js';
@@ -23,34 +24,43 @@ const ICON = {
   pause: '❚❚', next: '▶|', end: '⏭'
 };
 
+const ACTION_LABEL = {
+  start: tr('Về đầu', 'Go to start'),
+  back: tr('Lùi một bước', 'Previous move'),
+  play: tr('Phát', 'Play'),
+  pause: tr('Tạm dừng', 'Pause'),
+  next: tr('Tiến một bước', 'Next move'),
+  end: tr('Về cuối', 'Go to end'),
+};
+
 function shell() {
   return `
     <div class="fp-stage"
-      style="position:relative;height:clamp(280px,45vw,360px);touch-action:none">
+      style="position:relative;touch-action:none">
     </div>
     <div class="fp-now" aria-live="polite">
       <span class="fp-count"></span>
       <b class="fp-move"></b>
     </div>
     <div class="fp-frames" role="group"
-      aria-label="Các bước của công thức"></div>
+      aria-label="${tr("Các bước của công thức", "Algorithm steps")}"></div>
     <div class="fp-controls" role="group"
-      aria-label="Điều khiển">
+      aria-label="${tr("Điều khiển", "Controls")}">
       ${Object.entries(ICON)
         .filter(([k]) => k !== 'pause')
         .map(([k,v]) => `
           <button type="button"
             class="fp-btn ${k === 'play' ? 'main' : ''}"
-            data-act="${k}">${v}</button>
+            data-act="${k}" aria-label="${ACTION_LABEL[k]}">${v}</button>
         `).join('')}
     </div>
     <div class="fp-options">
       <label class="fp-toggle">
         <input type="checkbox" data-opt="hidden">
-        Hiện ô màu mặt khuất
+        ${tr("Hiện ô màu mặt khuất", "Show stickers on hidden faces")}
       </label>
       <label class="fp-speed">
-        Tốc độ
+        ${tr("Tốc độ", "Speed")}
         <select data-opt="tempo">
           ${SPEEDS.map(s =>
             `<option value="${s}">${s}×</option>`
@@ -59,8 +69,8 @@ function shell() {
       </label>
     </div>
     <p class="fp-hint muted">
-      Kéo để xoay góc nhìn 3D.
-      Phím ← → để lùi/tiến từng bước.
+      ${tr('Kéo để xoay góc nhìn 3D. Phím ← → để lùi/tiến từng bước.',
+        'Drag to rotate the 3D view. Use ← and → to step backward or forward.')}
     </p>`;
 }
 
@@ -93,7 +103,7 @@ const FACE = {
   z: ['z', null, -1]
 };
 
-function parseMove(raw) {
+function parseMove(raw, size, coordinates) {
   const match =
     /^(\d+)?([URFDLBMESxyzurfdlb])(w)?(2)?(')?$/.exec(raw);
 
@@ -113,23 +123,21 @@ function parseMove(raw) {
 
   const [axis, layer, sign] = def;
 
-  const isWide =
-    (wide || lower || Number(depth) > 1) &&
-    layer !== null && layer !== 0;
-
+  const isWide = Boolean(wide || (lower && layer !== null));
   const count = Number(depth) || (isWide ? 2 : 1);
-
-  if (count > 3) {
-    throw new Error(`Unsupported wide move: ${raw}`);
+  let layers;
+  if (layer === null) {
+    layers = coordinates;
+  } else if (layer === 0) {
+    if (size % 2 === 0) throw new Error(`Unsupported center slice: ${raw}`);
+    layers = [0];
+  } else {
+    if (count > size || count < 1) throw new Error(`Unsupported layer: ${raw}`);
+    const outer = (size - 1) / 2;
+    layers = isWide
+      ? coordinates.slice(0, count).map((_, i) => layer * (outer - i))
+      : [layer * (outer - (count - 1))];
   }
-
-  const layers = layer === null
-    ? [-1, 0, 1]
-    : layer === 0
-      ? [0]
-      : isWide
-        ? (count === 3 ? [-1, 0, 1] : [layer, 0])
-        : [layer];
 
   return {
     axis,
@@ -139,7 +147,12 @@ function parseMove(raw) {
   };
 }
 
-function createCube(stage) {
+function createCube(stage, size) {
+  const outer = (size - 1) / 2;
+  const coordinates = Array.from({ length: size }, (_, i) => i - outer);
+  const snap = coordinate => Math.round(coordinate + outer) - outer;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let floating = false;
   const scene = new THREE.Scene();
 
   const camera = new THREE.PerspectiveCamera(
@@ -185,11 +198,14 @@ function createCube(stage) {
   light(0xffffff, 0.6, 5, -5, 4);
 
   const root = new THREE.Group();
-  scene.add(root);
+  const display = new THREE.Group();
+  display.scale.setScalar(3 / size);
+  display.add(root);
+  scene.add(display);
 
   let factory;
   try {
-    factory = createGanFactory(renderer);
+    factory = createGanFactory(renderer, size);
   } catch (error) {
     renderer.dispose();
     throw error;
@@ -197,9 +213,9 @@ function createCube(stage) {
 
   const pieces = [];
 
-  for (let x = -1; x <= 1; x++) {
-    for (let y = -1; y <= 1; y++) {
-      for (let z = -1; z <= 1; z++) {
+  for (const x of coordinates) {
+    for (const y of coordinates) {
+      for (const z of coordinates) {
         const p = factory.makePiece(x, y, z);
         if (p) {
           root.add(p);
@@ -254,13 +270,21 @@ function createCube(stage) {
   observer?.observe(stage);
   resize();
 
-  function render() {
+  function render(now = 0) {
     if (disposed) return;
     if (!stage.isConnected || (stage.closest('dialog')?.open === false)) {
       dispose();
       return;
     }
     raf = requestAnimationFrame(render);
+    if (floating && !reducedMotion.matches) {
+      const seconds = now / 1000;
+      display.position.y = Math.sin(seconds * 1.65) * 0.19;
+      display.rotation.set(Math.sin(seconds * 0.85) * 0.12, seconds * 0.42, 0.08);
+    } else {
+      display.position.y = 0;
+      display.rotation.set(0, 0, 0);
+    }
     renderer.render(scene, camera);
   }
 
@@ -324,11 +348,11 @@ function createCube(stage) {
   }
 
   function rotate(raw, animate = false, duration = 250) {
-    const move = parseMove(raw);
+    const move = parseMove(raw, size, coordinates);
 
     const selected = pieces.filter(p =>
       move.layers.includes(
-        Math.round(p.position[move.axis])
+        snap(p.position[move.axis])
       )
     );
 
@@ -347,9 +371,9 @@ function createCube(stage) {
         root.attach(p);
 
         p.position.set(
-          Math.round(p.position.x),
-          Math.round(p.position.y),
-          Math.round(p.position.z)
+          snap(p.position.x),
+          snap(p.position.y),
+          snap(p.position.z)
         );
 
         const m = new THREE.Matrix4()
@@ -428,12 +452,13 @@ function createCube(stage) {
 
   return {
     reset, rotate, dispose,
+    setFloating(enabled) { floating = enabled; },
     maskLastLayer: enabled => pieces.forEach(piece => factory.maskLastLayer(piece, enabled)),
     showHints: enabled => pieces.forEach(piece => factory.showHints(piece, enabled)),
   };
 }
 
-async function mountFallback(el, { setup, alg, puzzle, maskLastLayer }) {
+async function mountFallback(el, { setup, alg, puzzle, maskLastLayer, floating }) {
   const { TwistyPlayer } = await import('cubing/twisty');
   if (!el.isConnected) return null;
   const native = new TwistyPlayer({
@@ -441,7 +466,9 @@ async function mountFallback(el, { setup, alg, puzzle, maskLastLayer }) {
   });
   native.className = 'twisty';
   const player = {
+    destroy() { native.pause(); native.remove(); },
     setAlgorithm(next) {
+      native.controlPanel = next.floating ? 'none' : 'bottom-row';
       native.pause();
       native.experimentalSetupAlg = next.setup || '';
       native.alg = next.alg || '';
@@ -455,7 +482,7 @@ async function mountFallback(el, { setup, alg, puzzle, maskLastLayer }) {
       native.jumpToStart({ flash: false });
     },
   };
-  player.setAlgorithm({ setup, alg, maskLastLayer });
+  player.setAlgorithm({ setup, alg, maskLastLayer, floating });
   el.replaceChildren(native);
   return player;
 }
@@ -467,14 +494,16 @@ export async function mountPlayer(
     alg = '',
     puzzle = '3x3x3',
     tempo,
-    maskLastLayer = false
+    maskLastLayer = false,
+    floating = false
   } = {}
 ) {
   if (tempo !== undefined && SPEEDS.includes(tempo)) {
     prefs.tempo = tempo;
   }
 
-  if (puzzle !== '3x3x3') return mountFallback(el, { setup, alg, puzzle, maskLastLayer });
+  const size = { '2x2x2': 2, '3x3x3': 3, '4x4x4': 4 }[puzzle];
+  if (!size) return mountFallback(el, { setup, alg, puzzle, maskLastLayer, floating });
 
   el.innerHTML = '';
 
@@ -487,14 +516,14 @@ export async function mountPlayer(
   let cube;
 
   try {
-    cube = createCube(box.querySelector('.fp-stage'));
+    cube = createCube(box.querySelector('.fp-stage'), size);
   } catch (error) {
     console.error(error);
     try {
-      return await mountFallback(el, { setup, alg, puzzle, maskLastLayer });
+      return await mountFallback(el, { setup, alg, puzzle, maskLastLayer, floating });
     } catch (fallbackError) {
       console.error(fallbackError);
-      box.textContent = 'Không tải được mô hình Rubik.';
+      box.textContent = tr('Không tải được mô hình Rubik.', "Couldn't load the cube model.");
       return null;
     }
   }
@@ -524,15 +553,17 @@ export async function mountPlayer(
   let centered = -1;
 
   function refresh() {
-    count.textContent = `Bước ${index} / ${moves.length}`;
+    count.textContent = `${tr("Bước", "Step")} ${index} / ${moves.length}`;
 
     now.textContent = index
-      ? `Vừa xoay ${moves[index - 1]}`
+      ? `${tr("Vừa xoay", "Last move:")} ${moves[index - 1]}`
       : moves.length
-        ? 'Trạng thái đầu'
-        : 'Không có bước nào';
+        ? tr('Trạng thái đầu', "Starting state")
+        : tr('Không có bước nào', "No moves");
 
-    playButton.textContent = playing ? ICON.pause : ICON.play;
+    const playbackAction = playing ? 'pause' : 'play';
+    playButton.textContent = ICON[playbackAction];
+    playButton.setAttribute('aria-label', ACTION_LABEL[playbackAction]);
 
     for (const btn of strip.querySelectorAll('[data-frame]')) {
       const i = Number(btn.dataset.frame);
@@ -681,6 +712,11 @@ export async function mountPlayer(
 
     setAlgorithm(next) {
       stop();
+      const preview = next.floating === true;
+      box.classList.toggle('is-floating', preview);
+      box.tabIndex = preview ? -1 : 0;
+      cube.setFloating(preview);
+      cube.showHints(!preview && prefs.hidden);
 
       setupMoves = expandMoves(next.setup || '');
       moves = expandMoves(next.alg || '');
@@ -691,12 +727,12 @@ export async function mountPlayer(
       strip.innerHTML = `
         <button type="button"
           class="fp-frame start"
-          data-frame="0">Đầu</button>
+          data-frame="0">${tr("Đầu", "Start")}</button>
       ` + moves.map((m, i) => `
         <button type="button"
           class="fp-frame"
           data-frame="${i + 1}"
-          title="Bước ${i + 1}: ${esc(m)}">
+          title="${tr("Bước", "Step")} ${i + 1}: ${esc(m)}">
           <small>${i + 1}</small>${esc(m)}
         </button>
       `).join('');
@@ -720,7 +756,7 @@ export async function mountPlayer(
   };
 
   instances.set(api, api);
-  api.setAlgorithm({ setup, alg, maskLastLayer });
+  api.setAlgorithm({ setup, alg, maskLastLayer, floating });
 
   return api;
 }

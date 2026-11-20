@@ -1,3 +1,4 @@
+import { t as tr } from '../utils/i18n.js';
 // 3x3 sticker model. 54 facelets in Kociemba order U R F D L B, each face row-major as seen
 // looking straight at it (U with B at the top, D with F at the top, side faces with U at the top).
 // Moves are derived geometrically from sticker positions, so faces, wide turns, slices and
@@ -82,7 +83,7 @@ export function parse(text) {
       if (ch === '(') {
         i++;
         const inner = seq(depth + 1);
-        if (src[i] !== ')') throw new Error('Thiếu dấu ")"');
+        if (src[i] !== ')') throw new Error(tr('Thiếu dấu ")"', "Missing closing parenthesis"));
         i++;
         const m = /^(\d*)('?)/.exec(src.slice(i));
         i += m[0].length;
@@ -92,17 +93,17 @@ export function parse(text) {
         for (let t = 0; t < times; t++) out.push(...group);
         continue;
       }
-      if (ch === ')') { if (depth === 0) throw new Error('Thừa dấu ")"'); return out; }
+      if (ch === ')') { if (depth === 0) throw new Error(tr('Thừa dấu ")"', "Unexpected closing parenthesis")); return out; }
       TOKEN.lastIndex = i;
       const m = TOKEN.exec(src);
-      if (!m) throw new Error(`Ký hiệu không hợp lệ gần "${src.slice(i, i + 4)}"`);
+      if (!m) throw new Error(`${tr("Ký hiệu không hợp lệ gần \"", "Invalid move notation near \"")}${src.slice(i, i + 4)}"`);
       i = TOKEN.lastIndex;
       const base = ALIASES[m[1]] || m[1];
       let amount = (m[2] ? Number(m[2]) : 1) % 4;
       if (m[3]) amount = (4 - amount) % 4;
       if (amount) out.push({ base, amount });
     }
-    if (depth > 0) throw new Error('Thiếu dấu ")"');
+    if (depth > 0) throw new Error(tr('Thiếu dấu ")"', "Missing closing parenthesis"));
     return out;
   }
   return seq(0);
@@ -191,7 +192,7 @@ export function conjugate(moves, rotation) {
   };
   return moves.map(m => {
     const t = map(m.base);
-    if (!t) throw new Error('Chỉ chuyển được lượt xoay mặt hoặc wide');
+    if (!t) throw new Error(tr('Chỉ chuyển được lượt xoay mặt hoặc wide', "Only face turns and wide moves can be converted"));
     return { base: t, amount: m.amount };
   });
 }

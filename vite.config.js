@@ -4,6 +4,9 @@ import { defineConfig } from 'vite';
 // loads the page entry (which touches `document`, absent in workers).
 export default defineConfig({
   base: './',
+  server: {
+    fs: { deny: ['.env', '.env.*', '*.{crt,pem}', '**/.git/**', '**/catalog-source/**'] },
+  },
   worker: { format: 'es' },
   build: {
     target: 'es2022',

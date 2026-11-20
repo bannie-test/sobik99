@@ -87,7 +87,8 @@ function markGeometry() {
   return new THREE.ShapeGeometry(shapes);
 }
 
-export function createGanFactory(renderer) {
+export function createGanFactory(renderer, size = 3) {
+  const outer = (size - 1) / 2;
   const environment = renderer ? studioEnvironment(renderer) : null;
   const envMap = environment?.texture ?? null;
   const caps = Object.fromEntries(Object.entries(FACE_COLORS).map(([face, color]) => [face,
@@ -111,7 +112,7 @@ export function createGanFactory(renderer) {
 
   function makePiece(x, y, z) {
     const coord = new THREE.Vector3(x, y, z);
-    const faces = Object.keys(AXES).filter(face => coord.dot(new THREE.Vector3(...AXES[face])) === 1);
+    const faces = Object.keys(AXES).filter(face => coord.dot(new THREE.Vector3(...AXES[face])) === outer);
     if (!faces.length) return null;
 
     const group = new THREE.Group();
@@ -125,7 +126,8 @@ export function createGanFactory(renderer) {
       frame.position.copy(normal).multiplyScalar(GAN.faceOffset);
       frame.quaternion.setFromUnitVectors(NORMAL, normal);
       if (faces.length === 2) {
-        const inward = normal.clone().sub(coord).applyQuaternion(frame.quaternion.clone().invert());
+        const otherFace = faces.find(candidate => candidate !== face);
+        const inward = new THREE.Vector3(...AXES[otherFace]).negate().applyQuaternion(frame.quaternion.clone().invert());
         frame.rotateZ(Math.atan2(inward.y, inward.x) - Math.PI / 2);
       }
       const cap = new THREE.Mesh(skins[faces.length], caps[face]);
@@ -137,14 +139,14 @@ export function createGanFactory(renderer) {
       frame.add(hint);
       group.userData.facelets.push({ face, cap, hint });
       group.add(frame);
-      if (faces.length === 1 && face === 'U') {
+      if (size === 3 && faces.length === 1 && face === 'U') {
         const logo = new THREE.Mesh(mark, ink);
         logo.position.z = 0.037;
         frame.add(logo);
       }
     }
 
-    if (faces.length > 1) {
+    if (size === 3 && faces.length > 1) {
       for (const normal of Object.values(AXES).map(axis => new THREE.Vector3(...axis))) {
         const outward = coord.dot(normal);
         if (faces.length === 2 ? outward !== 0 : outward !== -1) continue;

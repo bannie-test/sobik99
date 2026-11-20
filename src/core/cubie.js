@@ -1,3 +1,4 @@
+import { t as tr } from '../utils/i18n.js';
 // Cubie view of a sticker state, relative to the current centers (Kociemba conventions), and the
 // validator that explains why a colored-in cube cannot exist.
 import { FACES } from './cube.js';
@@ -62,7 +63,7 @@ function parity(p) {
   return s;
 }
 
-const COLOR_NAMES = { U: 'trên', R: 'phải', F: 'trước', D: 'dưới', L: 'trái', B: 'sau' };
+const COLOR_NAMES = { U: tr('trên', "top"), R: tr('phải', "right"), F: tr('trước', "front"), D: tr('dưới', "bottom"), L: tr('trái', "left"), B: tr('sau', 'back') };
 
 /**
  * Checks a facelet array of color ids. Returns {ok, errors:[{code, message, stickers}]}.
@@ -74,13 +75,13 @@ export function validate(state) {
   state.forEach(c => { counts[c] = (counts[c] || 0) + 1; });
   const ctr = FACES.map((_, i) => state[i * 9 + 4]);
   if (new Set(ctr).size !== 6) {
-    errors.push({ code: 'CENTERS', message: 'Sáu ô tâm phải có sáu màu khác nhau.', stickers: FACES.map((_, i) => i * 9 + 4) });
+    errors.push({ code: 'CENTERS', message: tr('Sáu ô tâm phải có sáu màu khác nhau.', "The six centers must have different colors."), stickers: FACES.map((_, i) => i * 9 + 4) });
     return { ok: false, errors };
   }
   const wrong = ctr.filter(c => counts[c] !== 9);
   if (wrong.length || Object.keys(counts).length !== 6) {
     const detail = ctr.map(c => `${c}: ${counts[c] || 0}`).join(', ');
-    errors.push({ code: 'COUNT', message: `Mỗi màu phải xuất hiện đúng 9 lần (hiện tại ${detail}).`, stickers: state.map((c, i) => (wrong.includes(c) ? i : -1)).filter(i => i >= 0) });
+    errors.push({ code: 'COUNT', message: `${tr("Mỗi màu phải xuất hiện đúng 9 lần (hiện tại", "Each color must appear exactly nine times (current counts:")} ${detail}).`, stickers: state.map((c, i) => (wrong.includes(c) ? i : -1)).filter(i => i >= 0) });
     return { ok: false, errors };
   }
   const f = relabel(state);
@@ -88,28 +89,28 @@ export function validate(state) {
     const fl = CORNER_FACELETS[i];
     const set = fl.map(x => f[x]).sort().join('');
     if (!CORNER_COLORS.some(c => [...c].sort().join('') === set)) {
-      errors.push({ code: 'CORNER_INVALID', message: `Góc ${CORNER_NAMES[i]} có tổ hợp màu không tồn tại trên Rubik thật (ví dụ hai màu đối diện trên cùng một góc).`, stickers: fl });
+      errors.push({ code: 'CORNER_INVALID', message: `${tr("Góc", "Corners")} ${CORNER_NAMES[i]} ${tr("có tổ hợp màu không tồn tại trên Rubik thật (ví dụ hai màu đối diện trên cùng một góc).", "has an impossible color combination, such as two opposite colors.")}`, stickers: fl });
     }
   }
   for (let i = 0; i < 12; i++) {
     const el = EDGE_FACELETS[i];
     const set = el.map(x => f[x]).sort().join('');
     if (!EDGE_COLORS.some(c => [...c].sort().join('') === set)) {
-      errors.push({ code: 'EDGE_INVALID', message: `Cạnh ${EDGE_NAMES[i]} có tổ hợp màu không tồn tại.`, stickers: el });
+      errors.push({ code: 'EDGE_INVALID', message: `${tr("Cạnh", "Edges")} ${EDGE_NAMES[i]} ${tr("có tổ hợp màu không tồn tại.", "has an impossible color combination.")}`, stickers: el });
     }
   }
   if (errors.length) return { ok: false, errors };
   const cc = toCubie(state);
-  if (!cc) return { ok: false, errors: [{ code: 'CORNER_INVALID', message: 'Không nhận ra được một số mảnh.', stickers: [] }] };
+  if (!cc) return { ok: false, errors: [{ code: 'CORNER_INVALID', message: tr('Không nhận ra được một số mảnh.', "Some pieces couldn't be identified."), stickers: [] }] };
   const dupC = cc.cp.map((p, i) => (cc.cp.indexOf(p) !== i ? i : -1)).filter(i => i >= 0);
   const dupE = cc.ep.map((p, i) => (cc.ep.indexOf(p) !== i ? i : -1)).filter(i => i >= 0);
   if (dupC.length || dupE.length) {
-    errors.push({ code: 'DUPLICATE', message: 'Có mảnh bị lặp lại (cùng một góc hoặc cạnh xuất hiện hai lần). Kiểm tra lại màu đã nhập.', stickers: [...dupC.flatMap(i => CORNER_FACELETS[i]), ...dupE.flatMap(i => EDGE_FACELETS[i])] });
+    errors.push({ code: 'DUPLICATE', message: tr('Có mảnh bị lặp lại (cùng một góc hoặc cạnh xuất hiện hai lần). Kiểm tra lại màu đã nhập.', "A corner or edge appears twice. Check the entered colors."), stickers: [...dupC.flatMap(i => CORNER_FACELETS[i]), ...dupE.flatMap(i => EDGE_FACELETS[i])] });
     return { ok: false, errors };
   }
-  if (cc.co.reduce((a, b) => a + b, 0) % 3) errors.push({ code: 'TWIST', message: 'Một góc đang bị xoay lệch: tổng hướng các góc không hợp lệ. Có thể bạn đã nhập nhầm thứ tự màu của một góc, hoặc cube từng bị vặn góc.', stickers: [] });
-  if (cc.eo.reduce((a, b) => a + b, 0) % 2) errors.push({ code: 'FLIP', message: 'Một cạnh đang bị lật: số cạnh bị lật phải là số chẵn. Kiểm tra hai màu của từng cạnh.', stickers: [] });
-  if (parity(cc.cp) !== parity(cc.ep)) errors.push({ code: 'PARITY', message: 'Hai mảnh đang bị đổi chỗ cho nhau — trạng thái này không thể có khi chỉ xoay. Kiểm tra lại hai góc hoặc hai cạnh gần nhau.', stickers: [] });
+  if (cc.co.reduce((a, b) => a + b, 0) % 3) errors.push({ code: 'TWIST', message: tr('Một góc đang bị xoay lệch: tổng hướng các góc không hợp lệ. Có thể bạn đã nhập nhầm thứ tự màu của một góc, hoặc cube từng bị vặn góc.', "Corner orientation is invalid. Check the color order on each corner and look for a physically twisted corner."), stickers: [] });
+  if (cc.eo.reduce((a, b) => a + b, 0) % 2) errors.push({ code: 'FLIP', message: tr('Một cạnh đang bị lật: số cạnh bị lật phải là số chẵn. Kiểm tra hai màu của từng cạnh.', "The number of flipped edges must be even. Check both colors of each edge."), stickers: [] });
+  if (parity(cc.cp) !== parity(cc.ep)) errors.push({ code: 'PARITY', message: tr('Hai mảnh đang bị đổi chỗ cho nhau — trạng thái này không thể có khi chỉ xoay. Kiểm tra lại hai góc hoặc hai cạnh gần nhau.', "Two pieces appear swapped, which can't happen using legal turns alone. Check nearby corners and edges."), stickers: [] });
   return { ok: errors.length === 0, errors };
 }
 

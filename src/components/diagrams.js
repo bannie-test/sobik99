@@ -1,3 +1,4 @@
+import { t as tr } from '../utils/i18n.js';
 // Static SVG case pictures drawn from the cube engine, with yellow on top and white on the bottom
 // (the way the cube is held for CFOP). Top view for OLL/PLL (PLL with arrows), 3/4 view for F2L.
 import { apply, solvedFacelets, GEOMETRY } from '../core/cube.js';
@@ -97,7 +98,7 @@ export function f2lView(state, { title = '', highlight = true } = {}) {
 /** Picture for an algorithm-library case. */
 export function caseDiagram(c, setup = c.setup) {
   const state = caseState(setup);
-  const title = `${c.name}: mặt vàng ở trên, mặt trắng ở dưới`;
+  const title = `${c.name}${tr(": mặt vàng ở trên, mặt trắng ở dưới", ": yellow on top, white on the bottom")}`;
   if (c.type === 'f2l') return f2lView(state, { title });
   return topView(state, c.type === 'oll' ? 'oll' : 'pll', { title });
 }

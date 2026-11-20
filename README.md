@@ -23,7 +23,7 @@ npm run preview
 - **Học cách xoay** (`#/guide`): lộ trình cho 2×2–7×7, Megaminx, Pyraminx. Thư viện CFOP có 119 case với khoảng 390 công thức, trong đó gần 180 công thức hiện đại.
   - Hình minh họa đặt vàng trên, trắng dưới. PLL có mũi tên chỉ đường đi của mảnh, F2L làm mờ tầng cuối.
   - Mọi công thức được kiểm chứng tự động và xếp đúng case nó giải.
-- **Kệ Rubik** (`#/catalog`): đọc từ thư mục `public/catalog/brands/<hãng>/<loại>/<mẫu>/`, xem [public/catalog/README.md](public/catalog/README.md).
+- **Kệ Rubik** (`#/catalog`): đọc từ thư mục `catalog-source/brands/<hãng>/<loại>/<mẫu>/`, xem [catalog-source/README.md](catalog-source/README.md).
   - Lọc theo hãng (gồm cả thương hiệu con) hoặc theo loại, có tìm kiếm.
   - Danh mục và ảnh tải dần theo trang khi cuộn.
   - Mẫu thiếu ảnh hiện ảnh chờ 4:3.
@@ -38,7 +38,7 @@ npm run preview
 | `src/core/cfop.js` | Nhận diện case, Cross tối ưu, trình giải CFOP |
 | `src/core/solve-service.js` | Nối trình giải với trang web, lời giải ngắn qua cubing.js |
 | `scripts/sources/*.json` → `scripts/build-algorithms.mjs` → `src/data/algorithms.js` | Nguồn công thức, kiểm chứng và gom theo case (`npm run algorithms`) |
-| `public/catalog/brands/**` → `scripts/build-catalog.mjs` → `public/catalog/{index,search}.json`, `pages/` | Kệ Rubik (`npm run catalog`, file sinh ra không commit) |
+| `catalog-source/brands/**` → `scripts/build-catalog.mjs` → `public/catalog/{index,search}.json`, `pages/` | Kệ Rubik (`npm run catalog`, file sinh ra không commit) |
 
 Thêm công thức: ghi vào `scripts/sources/modern.json` rồi chạy `npm run algorithms`. Công thức sai bị loại và in ra; công thức đúng tự vào case nó thực sự giải.
 

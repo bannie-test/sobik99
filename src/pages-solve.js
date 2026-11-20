@@ -1,3 +1,4 @@
+import { t as tr } from './utils/i18n.js';
 import { apply, solvedFacelets, parse } from './core/cube.js';
 import { validate } from './core/cubie.js';
 import { GOALS } from './core/cfop.js';
@@ -14,55 +15,68 @@ export function solvePage(root, params) {
   let goal = GOALS[params.get('goal')] ? params.get('goal') : 'all';
   let method = 'cfop';
   let result = null; // { setup, steps, solved, remaining, endState, method }
-  let player = null, mountingPlayer = null, editor = null, dead = false, ticket = 0;
+  let player = null, editor = null, dead = false, ticket = 0;
 
-  root.innerHTML = `<section class="page-shell solve-page">
-  <div class="page-heading"><div><small>CUBE LAB / TRÌNH GIẢI 3×3</small><h1>Xáo bất kỳ.<br><em>Giải đến cùng.</em></h1></div>
-  <p>Nhập scramble hoặc tô màu khối của bạn. Trình giải đi trọn Cross → F2L → OLL → PLL, cầm mặt trắng ở dưới và lấy mặt vàng làm mặt cuối.</p></div>
+  root.innerHTML = `<section class="page-shell solve-page" data-state="preview">
+  <header class="solve-heading">
+    <h1>${tr('Giải Rubik 3×3', '3×3 Cube Solver')}</h1>
+    <p>${tr('Nhập scramble hoặc tô màu để xem lời giải từng bước.', 'Enter a scramble or paint the cube to see a step-by-step solution.')}</p>
+  </header>
   <div class="solve-layout">
    <div class="solve-input">
-    <div class="phase-tabs" role="group" aria-label="Cách nhập">
-     <button data-mode="scramble">Scramble</button><button data-mode="paint">Tô màu</button></div>
+    <div class="phase-tabs" role="group" aria-label="${tr("Cách nhập", "Input method")}">
+     <button data-mode="scramble">Scramble</button><button data-mode="paint">${tr("Tô màu", "Paint cube")}</button></div>
     <div data-panel="scramble">
-     <label>Scramble (cầm trắng trên, xanh lá trước khi xáo — chuẩn WCA)<textarea id="scramble" rows="3" spellcheck="false" placeholder="R U R' U' …"></textarea></label>
-     <div class="row-buttons"><button class="button secondary" id="random">Scramble ngẫu nhiên</button></div>
+     <label>${tr("Scramble (cầm trắng trên, xanh lá trước khi xáo — chuẩn WCA)", "Scramble (start with white on top and green in front, as in WCA notation)")}<textarea id="scramble" rows="2" spellcheck="false" placeholder="R U R' U' …"></textarea></label>
     </div>
     <div data-panel="paint" hidden>
-     <p class="muted">Cầm khối: <b>vàng ở trên, xanh lá phía trước, trắng ở dưới</b>. Chọn màu rồi chạm (hoặc kéo) lên ô. Ô tâm cố định.</p>
+     <p class="muted">${tr("Cầm khối:", "Hold the cube with")} <b>${tr("vàng ở trên, xanh lá phía trước, trắng ở dưới", "yellow on top, green in front, and white on the bottom")}</b>${tr(". Chọn màu rồi chạm (hoặc kéo) lên ô. Ô tâm cố định.", ". Pick a color and tap or drag across the stickers. Centers are fixed.")}</p>
      <div id="net"></div>
-     <div class="row-buttons"><button class="small-button" id="net-reset">Về trạng thái đã giải</button><button class="small-button" id="net-from-scramble">Lấy màu từ scramble</button></div>
+     <div class="row-buttons"><button class="small-button" id="net-reset">${tr("Về trạng thái đã giải", "Reset to solved")}</button><button class="small-button" id="net-from-scramble">${tr("Lấy màu từ scramble", "Load colors from scramble")}</button></div>
     </div>
-    <fieldset class="goal-picker"><legend>Mục tiêu</legend>${Object.entries(GOALS).map(([k, v]) => `<label><input type="radio" name="goal" value="${k}" ${k === goal ? 'checked' : ''}> ${v}</label>`).join('')}</fieldset>
-    <fieldset class="goal-picker"><legend>Cách giải</legend>
-     <label><input type="radio" name="method" value="cfop" checked> CFOP từng bước (dễ học)</label>
-     <label><input type="radio" name="method" value="short"> Ngắn nhất (thuật toán hai pha)</label></fieldset>
-    <button class="button primary" id="solve">Giải ↗</button>
+    <details class="solve-options"${params.has('goal') ? ' open' : ''}>
+      <summary>${tr('Tùy chọn lời giải', 'Solve options')}</summary>
+    <fieldset class="goal-picker"><legend>${tr("Mục tiêu", "Goal")}</legend>${Object.entries(GOALS).map(([k, v]) => `<label><input type="radio" name="goal" value="${k}" ${k === goal ? 'checked' : ''}> ${v}</label>`).join('')}</fieldset>
+    <fieldset class="goal-picker"><legend>${tr("Cách giải", "Solve method")}</legend>
+     <label><input type="radio" name="method" value="cfop" checked> ${tr("CFOP từng bước (dễ học)", "Step-by-step CFOP")}</label>
+     <label><input type="radio" name="method" value="short"> ${tr("Ngắn nhất (thuật toán hai pha)", "Short solution (two-phase algorithm)")}</label></fieldset>
+    </details>
+    <div class="solve-actions">
+      <button class="button primary" id="solve">${tr('Giải Rubik', 'Solve cube')} ↗</button>
+      <button class="button secondary" id="random">${tr('Scramble ngẫu nhiên', 'Random scramble')}</button>
+    </div>
     <div id="messages" aria-live="polite"></div>
    </div>
    <div class="solve-output">
-    <div id="player" class="player-box"><div class="player-empty">${cubeView(apply(solvedFacelets(), 'z2'), 'Cube đã giải')}<p>Lời giải sẽ hiện ở đây.</p></div></div>
+    <div id="player" class="player-box"></div>
     <div id="summary"></div>
     <ol id="steps" class="solution-steps"></ol>
    </div>
   </div></section>`;
 
   const $ = s => root.querySelector(s);
+  const page = $('.solve-page');
   const scrambleInput = $('#scramble');
   const messages = $('#messages');
   const playerBox = $('#player');
 
-  async function showCube(config) {
-    if (!player) {
-      mountingPlayer ??= mountPlayer(playerBox);
-      player = await mountingPlayer;
-      mountingPlayer = null;
-    }
-    if (!dead) retarget(player, config);
+  const mountingPlayer = mountPlayer(playerBox, { floating: true }).then(mounted => {
+    if (dead) mounted?.destroy();
+    else player = mounted;
+    return mounted;
+  });
+
+  async function showCube(config, request = ticket) {
+    await mountingPlayer;
+    if (dead || request !== ticket) return null;
+    page.dataset.state = 'active';
+    retarget(player, config);
     return player;
   }
 
   function setMode(m) {
     mode = m;
+    $('#random').hidden = m !== 'scramble';
     root.querySelectorAll('[data-mode]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === m)));
     root.querySelectorAll('[data-panel]').forEach(p => { p.hidden = p.dataset.panel !== m; });
     if (m === 'paint' && !editor) editor = netEditor($('#net'), { onChange: () => { messages.innerHTML = ''; } });
@@ -87,14 +101,14 @@ export function solvePage(root, params) {
         messages.replaceChildren();
         $('#summary').replaceChildren();
         $('#steps').replaceChildren();
-        const preview = await showCube({ setup: s });
+        const preview = await showCube({ setup: s }, previewTicket);
         if (!preview && !dead && previewTicket === ticket) {
-          playerBox.innerHTML = `<div class="player-empty">${cubeView(apply(solvedFacelets(), s), 'Cube đã xáo trộn')}<p>Đã xáo theo scramble.</p></div>`;
+          playerBox.innerHTML = `<div class="player-empty">${cubeView(apply(solvedFacelets(), s), tr('Cube đã xáo trộn', "Scrambled cube"))}<p>${tr("Đã xáo theo scramble.", "Scramble applied.")}</p></div>`;
         }
       }
       return s;
     } catch {
-      toast('Không tạo được scramble ngẫu nhiên. Hãy thử lại.');
+      toast(tr('Không tạo được scramble ngẫu nhiên. Hãy thử lại.', "Couldn't generate a random scramble. Try again."));
       return '';
     } finally { if (!dead) $('#random').disabled = false; }
   }
@@ -131,11 +145,11 @@ export function solvePage(root, params) {
     messages.innerHTML = '';
     const input = currentInput();
     if (input.error) return showError(input.error);
-    if (cfop().analyze(input.state).solved) return showError('Cube đang ở trạng thái đã giải — hãy xáo hoặc tô màu trước.', true);
+    if (cfop().analyze(input.state).solved) return showError(tr('Cube đang ở trạng thái đã giải — hãy xáo hoặc tô màu trước.', "The cube is already solved. Enter a scramble or paint the stickers first."), true);
     $('#solve').disabled = true;
     try {
       if (method === 'short') {
-        $('#steps').innerHTML = '<li class="muted">Đang tìm lời giải ngắn…</li>';
+        $('#steps').innerHTML = tr('<li class="muted">Đang tìm lời giải ngắn…</li>', "<li class=\"muted\">Finding a short solution…</li>");
         const r = await shortSolution(input.setup);
         if (my !== ticket || dead) return;
         result = { setup: input.setup, steps: withSetups(input.setup, r.steps), solved: r.solved, remaining: [], method };
@@ -147,7 +161,7 @@ export function solvePage(root, params) {
       await render();
     } catch (e) {
       console.error(e);
-      if (!dead && my === ticket) showError('Không giải được trạng thái này. Hãy kiểm tra lại dữ liệu nhập.');
+      if (!dead && my === ticket) showError(tr('Không giải được trạng thái này. Hãy kiểm tra lại dữ liệu nhập.', "Couldn't solve this state. Check your input."));
     } finally { if (!dead) $('#solve').disabled = false; }
   }
   $('#solve').addEventListener('click', solve);
@@ -166,7 +180,7 @@ export function solvePage(root, params) {
     const f2l = result.steps.filter(s => s.stage === 'f2l').length;
     return STAGES.map(([k, label]) => {
       const finished = result.solved || (k === 'cross' ? done.has('cross') || !result.remaining.includes('Cross') : k === 'f2l' ? !result.remaining.some(x => x.startsWith('F2L')) : k === 'oll' ? !result.remaining.includes('OLL') : !result.remaining.includes('PLL'));
-      return `<span class="stage-pill ${finished ? 'done' : ''}">${finished ? '✓' : '○'} ${label}${k === 'f2l' && f2l ? ` · ${f2l} cặp` : ''}</span>`;
+      return `<span class="stage-pill ${finished ? 'done' : ''}">${finished ? '✓' : '○'} ${label}${k === 'f2l' && f2l ? ` · ${f2l} ${tr("cặp", "pairs")}` : ''}</span>`;
     }).join('');
   }
 
@@ -176,13 +190,13 @@ export function solvePage(root, params) {
     const total = moveCount(result.steps.filter(s => s.stage !== 'hold'));
     $('#summary').innerHTML = `<div class="solve-summary">
       ${result.method === 'cfop' ? `<div class="stage-row">${stageProgress()}</div>` : ''}
-      <p><b>${total} bước xoay</b>${result.method === 'cfop' ? ' theo CFOP' : ' (hai pha)'} · ${result.solved ? 'cube được giải hoàn toàn.' : 'đã xong mục tiêu “' + esc(GOALS[goal]) + '”.'}</p>
-      ${!result.solved && result.method === 'cfop' ? `<div class="notice info">Mục tiêu từng phần chỉ dừng ở giai đoạn bạn chọn. Còn lại: <b>${result.remaining.map(esc).join(' → ')}</b>.<button class="button primary" id="continue">Giải tiếp đến khi xong ↗</button></div>` : ''}
-      <div class="row-buttons"><button class="small-button" id="play-all">▶ Xem toàn bộ</button><button class="small-button" id="copy-all">Sao chép lời giải</button></div></div>`;
-    $('#steps').innerHTML = result.steps.map((s, i) => `<li class="solution-step stage-${s.stage}"><div class="step-head"><span class="step-no">${String(i + 1).padStart(2, '0')}</span><strong>${esc(s.title)}</strong><small>${s.stage === 'hold' ? 'xoay khối' : parse(s.moves).filter(m => !'xyz'.includes(m.base)).length + ' bước'}</small></div>
+      <p><b>${total} ${tr("bước xoay", "moves")}</b>${result.method === 'cfop' ? tr(' theo CFOP', ' with CFOP') : tr(' (hai pha)', ' (two-phase)')} · ${result.solved ? tr('cube được giải hoàn toàn.', "cube fully solved.") : tr('đã xong mục tiêu “', "completed goal “") + esc(GOALS[goal]) + '”.'}</p>
+      ${!result.solved && result.method === 'cfop' ? `<div class="notice info">${tr("Mục tiêu từng phần chỉ dừng ở giai đoạn bạn chọn. Còn lại:", "The solution stops at your chosen stage. Remaining:")} <b>${result.remaining.map(esc).join(' → ')}</b>.<button class="button primary" id="continue">${tr("Giải tiếp đến khi xong ↗", "Continue to a full solve ↗")}</button></div>` : ''}
+      <div class="row-buttons"><button class="small-button" id="play-all">${tr("▶ Xem toàn bộ", "▶ Watch full solve")}</button><button class="small-button" id="copy-all">${tr("Sao chép lời giải", "Copy solution")}</button></div></div>`;
+    $('#steps').innerHTML = result.steps.map((s, i) => `<li class="solution-step stage-${s.stage}"><div class="step-head"><span class="step-no">${String(i + 1).padStart(2, '0')}</span><strong>${esc(s.title)}</strong><small>${s.stage === 'hold' ? tr('xoay khối', "cube rotation") : parse(s.moves).filter(m => !'xyz'.includes(m.base)).length + tr(' bước', " moves")}</small></div>
       <div class="move-chips">${s.moves ? s.moves.split(' ').map(m => `<span>${esc(m)}</span>`).join('') : '<span>—</span>'}</div>
-      <p>${esc(s.explanation)}</p>${s.caseId ? `<a class="source-link" href="#/guide?case=${encodeURIComponent(s.caseId)}">Xem case ${esc(s.caseId.toUpperCase())} trong thư viện ↗</a>` : ''}
-      <button class="small-button" data-step="${i}">▶ Xem bước này</button></li>`).join('');
+      <p>${esc(s.explanation)}</p>${s.caseId ? `<a class="source-link" href="#/guide?case=${encodeURIComponent(s.caseId)}">${tr('Xem case', 'View case')} ${esc(s.caseId.toUpperCase())} ${tr("trong thư viện ↗", "in the library ↗")}</a>` : ''}
+      <button class="small-button" data-step="${i}">${tr("▶ Xem bước này", "▶ Watch this step")}</button></li>`).join('');
     $('#continue')?.addEventListener('click', continueSolve);
     $('#copy-all').addEventListener('click', () => copy(all));
     $('#play-all').addEventListener('click', () => retarget(player, fullPlayback));
@@ -202,5 +216,5 @@ export function solvePage(root, params) {
     if ((s || params.get('random')) && !dead) solve();
   })();
 
-  return () => { dead = true; editor?.dispose(); };
+  return () => { dead = true; player?.destroy(); editor?.dispose(); };
 }

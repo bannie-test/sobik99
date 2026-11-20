@@ -1,14 +1,16 @@
+import { t as tr } from '../utils/i18n.js';
+import { caseRecognition } from '../data/algorithm-text.js';
 // CFOP solver: Cross -> F2L (4 pairs) -> OLL -> PLL with the white cross on D and yellow as the
 // last layer. F2L/OLL/PLL use the algorithm library; the case each algorithm solves is derived by
 // applying its inverse to a solved cube, so recognition never disagrees with the data.
 import { apply, parse, invert, simplify, format, htm, centers, solvedFacelets, ORIENTATIONS } from './cube.js';
 import { toCubie, isSolvedCubie, validate, DFR, DLF, DBL, DRB, FR, FL, BL, BR } from './cubie.js';
 
-export const COLOR_VI = { U: 'trắng', R: 'đỏ', F: 'xanh lá', D: 'vàng', L: 'cam', B: 'xanh dương' };
+export const COLOR_VI = { U: tr('trắng', "white"), R: tr('đỏ', "red"), F: tr('xanh lá', "green"), D: tr('vàng', "yellow"), L: tr('cam', 'orange'), B: tr('xanh dương', "blue") };
 export const CROSS_COLOR = 'U'; // white in the standard scheme (white U, green F)
 const SLOT_CORNER = [DFR, DLF, DBL, DRB];
 const SLOT_EDGE = [FR, FL, BL, BR];
-const SLOT_NAMES = ['trước-phải (FR)', 'trước-trái (FL)', 'sau-trái (BL)', 'sau-phải (BR)'];
+const SLOT_NAMES = [tr('trước-phải (FR)', "front-right (FR)"), tr('trước-trái (FL)', "front-left (FL)"), tr('sau-trái (BL)', "back-left (BL)"), tr('sau-phải (BR)', "back-right (BR)")];
 const Y_TO_FR = ['', "y'", 'y2', 'y'];
 const EXTRACT = ['', "L' U' L", "L U L'", "R' U' R"];
 const AUF = ['', 'U', 'U2', "U'"];
@@ -17,7 +19,7 @@ export class Frame {
   constructor(state) {
     this.state = state;
     this.cc = toCubie(state);
-    if (!this.cc) throw new Error('Trạng thái không hợp lệ');
+    if (!this.cc) throw new Error(tr('Trạng thái không hợp lệ', "Invalid cube state"));
   }
   apply(moves) { return (typeof moves === 'string' ? moves.trim() : moves.length) ? new Frame(apply(this.state, moves)) : this; }
   color(faceIndex) { return this.state[faceIndex * 9 + 4]; }
@@ -109,7 +111,7 @@ export class CaseLibrary {
         if (r.error) { this.rejected.push([c.id, entry.alg, r.error]); return; }
         const alg = r.fix ? `${entry.alg} ${r.fix}` : entry.alg;
         const moves = parse(alg);
-        const info = { caseId: c.id, name: c.name, alg, recognition: c.recognition || '', score: rotations(moves) * 100 + rank * 10 + htm(moves) };
+        const info = { caseId: c.id, name: c.name, alg, recognition: caseRecognition(c) || '', score: rotations(moves) * 100 + rank * 10 + htm(moves) };
         if (c.type === 'f2l') offer(this.f2l, f2lKey(r.frame.cc), info);
         if (c.type === 'oll') offer(this.oll, ollKey(r.frame.cc), info);
         if (c.type === 'pll') {
@@ -174,7 +176,7 @@ export function solveCross(cc) {
 // ------------------------------------------------------------------ solver
 
 export const GOALS = {
-  all: 'Giải toàn bộ', cross: 'Cross', f2l: 'F2L (4 cặp)', pair: 'Một cặp F2L', oll: 'OLL', pll: 'PLL',
+  all: tr('Giải toàn bộ', "Full solve"), cross: 'Cross', f2l: tr('F2L (4 cặp)', "F2L (4 pairs)"), pair: tr('Một cặp F2L', "One F2L pair"), oll: 'OLL', pll: 'PLL',
 };
 
 const tidy = text => format(simplify(parse(text)));
@@ -202,17 +204,17 @@ export class CfopSolver {
   /** Why a goal cannot be used right now (null = available). */
   availability(state, goal) {
     const a = this.analyze(state);
-    if (a.solved) return 'Cube đã được giải.';
+    if (a.solved) return tr('Cube đã được giải.', "The cube is already solved.");
     switch (goal) {
-      case 'cross': return a.crossSolved ? 'Cross trắng đã xong — chọn F2L hoặc Giải toàn bộ.' : null;
+      case 'cross': return a.crossSolved ? tr('Cross trắng đã xong — chọn F2L hoặc Giải toàn bộ.', "The white cross is complete. Choose F2L or Full solve.") : null;
       case 'f2l': case 'pair':
-        if (!a.crossSolved) return 'Cần hoàn thành Cross trắng trước. Chọn “Cross” hoặc “Giải toàn bộ”.';
-        return a.f2lSolved ? 'F2L đã xong — chọn OLL.' : null;
+        if (!a.crossSolved) return tr('Cần hoàn thành Cross trắng trước. Chọn “Cross” hoặc “Giải toàn bộ”.', "Complete the white cross first. Choose “Cross” or “Full solve.”");
+        return a.f2lSolved ? tr('F2L đã xong — chọn OLL.', "F2L is complete. Choose OLL.") : null;
       case 'oll':
-        if (!a.f2lSolved) return `OLL chỉ dùng khi đã xong hai tầng đầu (hiện có ${a.crossSolved ? a.slots + '/4 cặp F2L' : 'chưa có Cross'}).`;
-        return a.ollSolved ? 'Mặt vàng đã xong — chọn PLL.' : null;
+        if (!a.f2lSolved) return `${tr("OLL chỉ dùng khi đã xong hai tầng đầu (hiện có", "OLL requires both first layers to be solved (current state:")} ${a.crossSolved ? a.slots + tr('/4 cặp F2L', "/4 F2L pairs") : tr('chưa có Cross', "cross incomplete")}).`;
+        return a.ollSolved ? tr('Mặt vàng đã xong — chọn PLL.', "The yellow face is oriented. Choose PLL.") : null;
       case 'pll':
-        return a.ollSolved ? null : 'PLL chỉ dùng khi mặt vàng phía trên đã cùng màu (xong OLL).';
+        return a.ollSolved ? null : tr('PLL chỉ dùng khi mặt vàng phía trên đã cùng màu (xong OLL).', "Finish OLL so the top face is all yellow before starting PLL.");
       default: return null;
     }
   }
@@ -230,7 +232,7 @@ export class CfopSolver {
     const hold = this.holdRotation(state);
     let f = new Frame(state);
     if (hold) {
-      steps.push({ stage: 'hold', title: 'Cầm cube', moves: hold, explanation: 'Xoay cả khối để tâm trắng nằm dưới, mặt vàng hướng lên trên.' });
+      steps.push({ stage: 'hold', title: tr('Cầm cube', "Hold the cube"), moves: hold, explanation: tr('Xoay cả khối để tâm trắng nằm dưới, mặt vàng hướng lên trên.', "Turn the whole cube so the white center faces down and yellow faces up.") });
       f = f.apply(hold);
     }
     const push = (s) => { steps.push(s); f = f.apply(s.moves); };
@@ -252,7 +254,7 @@ export class CfopSolver {
     }
     const remaining = [];
     if (!f.crossSolved) remaining.push('Cross');
-    if (!f.f2lSolved) remaining.push(`F2L (${f.crossSolved ? 4 - f.solvedSlots.length : 4} cặp)`);
+    if (!f.f2lSolved) remaining.push(`F2L (${f.crossSolved ? 4 - f.solvedSlots.length : 4} ${tr("cặp)", "pairs)")}`);
     if (!f.ollSolved) remaining.push('OLL');
     if (!f.solved) remaining.push('PLL');
     return { ok: true, steps, solved: f.solved, remaining, endState: f.state };
@@ -261,7 +263,7 @@ export class CfopSolver {
   crossStep(f) {
     const moves = solveCross(f.cc);
     const n = moves ? moves.split(' ').length : 0;
-    return { stage: 'cross', title: 'Cross', moves, explanation: `Tạo dấu cộng trắng ở mặt dưới, mỗi cạnh khớp màu với tâm bên cạnh (${n} bước, tối ưu).` };
+    return { stage: 'cross', title: 'Cross', moves, explanation: `${tr("Tạo dấu cộng trắng ở mặt dưới, mỗi cạnh khớp màu với tâm bên cạnh (", "Build the white cross on the bottom, matching each edge to its side center (")}${n} ${tr("bước, tối ưu).", "moves, optimal).")}` };
   }
 
   f2lStep(f) {
@@ -273,15 +275,15 @@ export class CfopSolver {
       const cost = plan.cost + (slot ? 1 : 0);
       if (!best || cost < best.cost) best = { ...plan, slot, cost };
     }
-    if (!best) throw new Error('Thư viện F2L thiếu trường hợp cho trạng thái hiện tại.');
+    if (!best) throw new Error(tr('Thư viện F2L thiếu trường hợp cho trạng thái hiện tại.', "The F2L library has no match for this state."));
     const target = f.apply(Y_TO_FR[best.slot]);
     const corner = [3, 2, 1].map(i => COLOR_VI[target.color(i)]).join('-');
     const edge = [2, 1].map(i => COLOR_VI[target.color(i)]).join('-');
     const n = f.solvedSlots.length + 1;
     return {
       stage: 'f2l', title: `F2L ${n}`, moves: best.moves, caseId: best.info.caseId,
-      explanation: `Ghép góc ${corner} với cạnh ${edge} vào khe ${SLOT_NAMES[best.slot]}` +
-        (Y_TO_FR[best.slot] ? ` (xoay ${Y_TO_FR[best.slot]} để khe về trước-phải)` : '') + `. Trường hợp: ${best.info.name}.`,
+      explanation: `${tr("Ghép góc", "Pair the corner")} ${corner} ${tr("với cạnh", "with the edge")} ${edge} ${tr("vào khe", "and insert into the")} ${SLOT_NAMES[best.slot]}` +
+        (Y_TO_FR[best.slot] ? ` (${tr('xoay', 'rotate')} ${Y_TO_FR[best.slot]} ${tr("để khe về trước-phải)", "to bring the slot to the front-right)")}` : '') + `${tr(". Trường hợp:", ". Case:")} ${best.info.name}.`,
     };
   }
 
@@ -318,8 +320,8 @@ export class CfopSolver {
       const cost = info.score + htm(parse(total));
       if (!best || cost < best.cost) best = { moves: total, info, cost };
     }
-    if (!best) throw new Error('Không tìm thấy công thức OLL phù hợp trong thư viện.');
-    return { stage: 'oll', title: 'OLL', moves: best.moves, caseId: best.info.caseId, explanation: `${best.info.name}: lật các mảnh để mặt trên cùng màu vàng.` + (best.info.recognition ? ' Nhận diện: ' + best.info.recognition : '') };
+    if (!best) throw new Error(tr('Không tìm thấy công thức OLL phù hợp trong thư viện.', "No matching OLL algorithm was found in the library."));
+    return { stage: 'oll', title: 'OLL', moves: best.moves, caseId: best.info.caseId, explanation: `${best.info.name}${tr(": lật các mảnh để mặt trên cùng màu vàng.", ": orient the pieces so the top face is all yellow.")}` + (best.info.recognition ? tr(' Nhận diện: ', " Recognition: ") + best.info.recognition : '') };
   }
 
   pllStep(f) {
@@ -333,10 +335,10 @@ export class CfopSolver {
       const cost = info.score + htm(parse(total));
       if (!best || cost < best.cost) best = { moves: total, info, cost };
     }
-    if (!best) throw new Error('Không tìm thấy công thức PLL phù hợp trong thư viện.');
+    if (!best) throw new Error(tr('Không tìm thấy công thức PLL phù hợp trong thư viện.', "No matching PLL algorithm was found in the library."));
     return best.info
-      ? { stage: 'pll', title: 'PLL', moves: best.moves, caseId: best.info.caseId, explanation: `${best.info.name}: hoán vị các mảnh tầng trên về đúng chỗ (gồm chỉnh U cuối nếu cần).` }
-      : { stage: 'pll', title: 'AUF', moves: best.moves, explanation: 'Chỉ cần xoay mặt trên để hoàn thành.' };
+      ? { stage: 'pll', title: 'PLL', moves: best.moves, caseId: best.info.caseId, explanation: `${best.info.name}${tr(": hoán vị các mảnh tầng trên về đúng chỗ (gồm chỉnh U cuối nếu cần).", ": move the last-layer pieces into position and adjust U if needed.")}` }
+      : { stage: 'pll', title: 'AUF', moves: best.moves, explanation: tr('Chỉ cần xoay mặt trên để hoàn thành.', "Turn the top layer to finish.") };
   }
 }
 

@@ -1,3 +1,4 @@
+import { t as tr } from '../utils/i18n.js';
 // Glue between the solver page and the engines: builds states from scrambles or painted colors,
 // runs CFOP, and asks cubing.js for a short (Kociemba-style two-phase) solution.
 import { apply, parse, invert, format, simplify, solvedFacelets, centers, conjugate, ORIENTATIONS, htm } from './cube.js';
@@ -10,8 +11,8 @@ export const cfop = () => (solver ??= new CfopSolver(cases));
 /** Validates notation; returns {moves} or {error}. */
 export function readScramble(text) {
   const t = String(text || '').trim();
-  if (!t) return { error: 'Hãy nhập scramble hoặc bấm “Scramble ngẫu nhiên”.' };
-  try { return { moves: format(parse(t)) }; } catch (e) { return { error: 'Scramble không hợp lệ: ' + e.message }; }
+  if (!t) return { error: tr('Hãy nhập scramble hoặc bấm “Scramble ngẫu nhiên”.', "Enter a scramble or select “Random scramble.”") };
+  try { return { moves: format(parse(t)) }; } catch (e) { return { error: tr('Scramble không hợp lệ: ', "Invalid scramble: ") + e.message }; }
 }
 
 /** An algorithm that builds `state` from a solved cube held white-up, green-front (cubing.js default). */
@@ -46,8 +47,8 @@ export async function shortSolution(setup) {
   const target = centers(apply(state, `${toStandard} z2`)).join('');
   const hold = ORIENTATIONS.find(o => centers(apply(state, o)).join('') === target) ?? `${toStandard} z2`;
   const steps = [];
-  if (hold) steps.push({ stage: 'hold', title: 'Cầm cube', moves: hold, explanation: 'Xoay cả khối để mặt vàng hướng lên, xanh lá phía trước.' });
-  steps.push({ stage: 'short', title: 'Lời giải ngắn', moves: yellowUp, explanation: `Lời giải ${htm(k)} bước bằng thuật toán hai pha (kiểu Kociemba). Ngắn nhưng khó nhớ — phù hợp để kiểm tra hoặc thử thách.` });
+  if (hold) steps.push({ stage: 'hold', title: tr('Cầm cube', "Hold the cube"), moves: hold, explanation: tr('Xoay cả khối để mặt vàng hướng lên, xanh lá phía trước.', "Rotate the cube so yellow faces up and green faces front.") });
+  steps.push({ stage: 'short', title: tr('Lời giải ngắn', "Short solution"), moves: yellowUp, explanation: `${tr("Lời giải", "Solution:")} ${htm(k)} ${tr("bước bằng thuật toán hai pha (kiểu Kociemba). Ngắn nhưng khó nhớ — phù hợp để kiểm tra hoặc thử thách.", "moves using a Kociemba-style two-phase algorithm.")}` });
   const end = apply(apply(state, hold), yellowUp);
   return { steps, solved: cfop().analyze(end).solved };
 }

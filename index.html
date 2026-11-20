@@ -1,2 +1,69 @@
 <!doctype html>
-<html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#fbf8f0"><meta name="description" content="SOBIK99 — kệ Rubik theo hãng, trình giải CFOP từng bước, thư viện công thức mặt vàng và timer luyện tốc độ."><title>SOBIK99 — Cube Club</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"></head><body><a class="skip-link" href="#main">Đến nội dung</a><header class="site-nav"><a class="wordmark" href="#/" aria-label="SOBIK99 Trang chủ">SOBIK<span>99</span><i>✳</i></a><nav aria-label="Điều hướng chính"><a href="#/catalog">Kệ Rubik</a><a href="#/solve">Giải Rubik</a><a href="#/guide">Học cách xoay</a><a href="#/blindfold">Bịt mắt</a><a href="#/timer" class="nav-timer">Timer ↗</a></nav></header><main id="main"></main><footer class="site-footer"><div><a href="#/" class="wordmark">SOBIK<span>99</span> ✳</a><p>Cứ tò mò. Cứ xoay. Cứ tiến bộ.</p></div><div><p>Website cá nhân, phi thương mại. Không bán hàng, không có giá.<br>Thông tin và ảnh sản phẩm ghi nguồn trên từng mẫu.<br>Mọi thương hiệu thuộc chủ sở hữu tương ứng.</p><a href="#/sources">Nguồn & ghi chú dữ liệu ↗</a></div></footer><div id="toast" role="status" aria-live="polite"></div><dialog id="modal"><button class="close-modal" aria-label="Đóng hộp thoại">×</button><div id="modal-content"></div></dialog><script type="module" src="/src/main.js"></script></body></html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#fbf8f0">
+    <meta name="description"
+        content="SOBIK99 — thư viện Rubik theo hãng, trình giải CFOP từng bước, thư viện công thức mặt vàng và timer luyện tốc độ.">
+    <title>SOBIK99 — Cube Club</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+
+<body><a class="skip-link" href="#main" data-en="Skip to content">Đến nội dung</a>
+    <header class="site-nav"><a class="wordmark" href="#/" aria-label="SOBIK99 Trang chủ"
+            data-en-label="SOBIK99 home">SOBIK<span>99</span><i>✳</i></a>
+        <nav aria-label="Điều hướng chính" data-en-label="Main navigation">
+            <a href="#/" class="nav-home">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11l9-8 9 8M5 10v10h5v-5h4v5h5V10"/></svg>
+                <span class="nav-short-label" data-en="Home">Trang chủ</span>
+            </a>
+            <a href="#/catalog">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h4v14H4zM10 5h4v14h-4zM16 6l3-1 3 13-3 1z"/></svg>
+                <span class="nav-label" data-en="Cube Library">Thư viện Rubik</span>
+                <span class="nav-short-label" data-en="Library">Thư viện</span>
+            </a>
+            <a href="#/solve">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zm0 9l8-4.5M12 12v9m0-9L4 7.5"/></svg>
+                <span class="nav-label" data-en="Solve">Giải Rubik</span>
+                <span class="nav-short-label" data-en="Solve">Giải</span>
+            </a>
+            <a href="#/guide">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 6c-2-2-5-2-9-2v14c4 0 7 0 9 2 2-2 5-2 9-2V4c-4 0-7 0-9 2zm0 0v14"/></svg>
+                <span class="nav-label" data-en="Learn">Học cách xoay</span>
+                <span class="nav-short-label" data-en="Learn">Học</span>
+            </a>
+            <a href="#/timer" class="nav-timer">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 3h6m-3 0v3m0 4v4l2 1m4-7 2-2M20 14a8 8 0 1 1-16 0 8 8 0 0 1 16 0z"/></svg>
+                <span class="nav-label" data-en="Timer ↗">Timer ↗</span>
+                <span class="nav-short-label" data-en="Timer">Bấm giờ</span>
+            </a>
+        </nav>
+        <select id="site-language" aria-label="Ngôn ngữ" data-en-label="Language">
+            <option value="vi" lang="vi">Tiếng Việt</option>
+            <option value="en" lang="en">English</option>
+        </select>
+    </header>
+    <main id="main"></main>
+    <footer class="site-footer">
+        <div><a href="#/" class="wordmark">SOBIK<span>99</span> ✳</a>
+            <p data-en="Stay curious. Keep solving.">Cứ tò mò. Tiếp tục xoay. Tiếp tục tiến bộ.</p>
+        </div>
+        <div>
+            <p><span data-en="A personal, non-commercial cube reference.">Website cá nhân, phi thương mại. Không bán
+                    hàng, không có giá.</span><br><span
+                    data-en="Sources and photo credits appear on each model page.">Thông tin và ảnh sản phẩm ghi nguồn
+                    trên từng mẫu.</span><br><span data-en="Trademarks belong to their respective owners.">Mọi thương
+                    hiệu thuộc chủ sở hữu tương ứng.</span></p><a href="#/sources" data-en="Photo credits ↗">Nguồn hình
+                ảnh ↗</a>
+        </div>
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal"><button class="close-modal" aria-label="Đóng hộp thoại" data-en-label="Close dialog">×</button>
+        <div id="modal-content"></div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
