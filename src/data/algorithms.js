@@ -53,6 +53,11 @@ export default [
     "alg": "y U' L' U L y'",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "r U R' U' r' R",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -81,6 +86,11 @@ export default [
     "alg": "y L' U' L y'",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "F' U' L' U2 L F",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -99,6 +109,11 @@ export default [
     "alg": "R U R'",
     "source": "modern",
     "label": "Khuyên dùng"
+   },
+   {
+    "alg": "F U R U' R2 F' R",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -165,6 +180,11 @@ export default [
     "alg": "F2 U' L' U L F2",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "F R' F' R U' R U2 R'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -198,6 +218,11 @@ export default [
     "alg": "U' R U2 R' d R' U' R y",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "R' D' R U2 R' D R F' U' F",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -231,6 +256,11 @@ export default [
     "alg": "y' U R' U2 R U' y R U R'",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "F' U2 F U' R U R'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -259,6 +289,11 @@ export default [
     "alg": "y' U R' U R U' R' U' R y",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "F U R U' R' F2 U' F",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -282,6 +317,11 @@ export default [
     "alg": "U2 R2 U R' U R U2 R2",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "R U R2 D' R U R' D R",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -310,6 +350,11 @@ export default [
     "alg": "F2 L' U' L U F2",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "R U R' U R' F R F'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -371,6 +416,11 @@ export default [
     "alg": "F2 U2 R' F2 R U2 F2",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "R U2 R' U R' F R F'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -432,6 +482,11 @@ export default [
     "alg": "R U2 R2 F R F'",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "U R U2 R2 F R F'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -521,6 +576,11 @@ export default [
     "alg": "y' U2 R' U' R U' R' U R y",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "F' U' F2 R' F' R",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -559,6 +619,11 @@ export default [
     "alg": "y' R' U R U2 y R U R'",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "R' D' R U' R' D F R F'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -605,6 +670,11 @@ export default [
     "alg": "R U2 R' U' R U R'",
     "source": "modern",
     "label": "Khuyên dùng"
+   },
+   {
+    "alg": "F U R U' R' F2 L' U2 L F",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -656,6 +726,11 @@ export default [
     "alg": "U2 R2 U2 R' U' R U' R2",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "R U' R2 D' R U2 R' D R",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -689,6 +764,11 @@ export default [
     "alg": "y' U' R' U R U R' U R U' R' U R y",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "F R' F' D' R U R' D R",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -821,6 +901,11 @@ export default [
     "alg": "y' R' U R U' R' U R y",
     "source": "coach",
     "label": "Cube Coach"
+   },
+   {
+    "alg": "F' L' U2 L U' F",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -867,6 +952,11 @@ export default [
     "alg": "R U R' U' R U R'",
     "source": "modern",
     "label": "Khuyên dùng"
+   },
+   {
+    "alg": "F R' F' R2 U R'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -923,6 +1013,11 @@ export default [
     "alg": "R2 U R2 U R2 U2 R2",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "F R' F' R U' R U R'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -961,6 +1056,11 @@ export default [
     "alg": "U' F' U2 L' U2 L F",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "F' U2 L' U2 L F",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -989,6 +1089,11 @@ export default [
     "alg": "U2 F' L' U2 L U2 F",
     "source": "sobik",
     "label": "SOBIK"
+   },
+   {
+    "alg": "R' D' R U R' D R",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },
@@ -1040,6 +1145,11 @@ export default [
     "alg": "U F' U' F U' R U R'",
     "source": "modern",
     "label": "Khuyên dùng"
+   },
+   {
+    "alg": "R' F R F' U2 R U R'",
+    "source": "advanced",
+    "label": "Nâng cao"
    }
   ]
  },

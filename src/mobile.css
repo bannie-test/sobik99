@@ -1,4 +1,4 @@
-.chapter-picker, .journey-frames, #sobik-orbit .intro-mobile { display: none; }
+.journey-frames, #sobik-orbit .intro-mobile { display: none; }
 .site-nav :is(.nav-icon, .nav-short-label, .nav-home) { display: none; }
 
 @media (max-width: 760px) {
@@ -27,7 +27,7 @@
   }
 
   .site-nav .wordmark { font-size: 21px; }
-  #site-language { min-height: 36px; margin: 0; font-size: 14px; }
+  #site-language { margin: 0; }
 
   .site-nav nav,
   body:has(.solve-page[data-state="preview"]) .site-nav nav {
@@ -38,7 +38,7 @@
     margin: 0;
     padding: 4px max(4px, env(safe-area-inset-right, 0px)) calc(4px + env(safe-area-inset-bottom, 0px)) max(4px, env(safe-area-inset-left, 0px));
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 2px;
     align-items: stretch;
     background: #fbf8ff;
@@ -172,8 +172,6 @@
   #sobik-orbit .disc { width: 176px; height: 176px; }
   #sobik-orbit :is(.floating-label, .net, .spark, .orbit, .era) { display: none; }
   #sobik-orbit .chapter-bar { height: auto; min-height: 56px; padding: 6px var(--mobile-edge); }
-  #sobik-orbit .chapters { display: none; }
-  #sobik-orbit .chapter-picker { display: block; min-height: 40px; padding: 4px 8px; font-size: 16px; }
   #sobik-orbit .scroll-hint { display: block; margin-inline-start: auto; font-size: 9px; letter-spacing: 0; }
   #sobik-orbit .brand-gallery { margin-inline: var(--mobile-edge); padding-block: 28px; scroll-snap-align: start; }
   #sobik-orbit .gallery-intro small, #sobik-orbit .home-explore .section-heading :is(small, p) { display: none; }

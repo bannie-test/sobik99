@@ -10,13 +10,12 @@ const SPEEDS = [0.5, 1, 1.5, 2];
 
 let prefs = read(
   KEY,
-  { hidden: false, tempo: 1 },
+  { tempo: 1 },
   v => v && typeof v === 'object' &&
-    typeof v.hidden === 'boolean' &&
     SPEEDS.includes(v.tempo)
 );
 
-const save = () => write(KEY, prefs);
+const save = () => write(KEY, { tempo: prefs.tempo });
 const instances = new WeakMap();
 
 const ICON = {
@@ -55,10 +54,6 @@ function shell() {
         `).join('')}
     </div>
     <div class="fp-options">
-      <label class="fp-toggle">
-        <input type="checkbox" data-opt="hidden">
-        ${tr("Hiện ô màu mặt khuất", "Show stickers on hidden faces")}
-      </label>
       <label class="fp-speed">
         ${tr("Tốc độ", "Speed")}
         <select data-opt="tempo">
@@ -151,6 +146,8 @@ function createCube(stage, size) {
   const outer = (size - 1) / 2;
   const coordinates = Array.from({ length: size }, (_, i) => i - outer);
   const snap = coordinate => Math.round(coordinate + outer) - outer;
+  const smallScreen = window.matchMedia('(max-width: 760px)');
+  const minDistance = () => smallScreen.matches ? 8.5 : 6;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let floating = false;
   const scene = new THREE.Scene();
@@ -258,6 +255,8 @@ function createCube(stage, size) {
     const w = Math.max(1, r.width);
     const h = Math.max(1, r.height || 350);
 
+    distance = Math.max(distance, minDistance());
+    orbitCamera();
     renderer.setSize(w, h, false);
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
@@ -320,7 +319,7 @@ function createCube(stage, size) {
   function wheel(e) {
     e.preventDefault();
     distance = Math.max(
-      6,
+      minDistance(),
       Math.min(14, distance + e.deltaY * 0.006)
     );
     orbitCamera();
@@ -454,7 +453,6 @@ function createCube(stage, size) {
     reset, rotate, dispose,
     setFloating(enabled) { floating = enabled; },
     maskLastLayer: enabled => pieces.forEach(piece => factory.maskLastLayer(piece, enabled)),
-    showHints: enabled => pieces.forEach(piece => factory.showHints(piece, enabled)),
   };
 }
 
@@ -533,14 +531,6 @@ export async function mountPlayer(
   const now = box.querySelector('.fp-move');
   const playButton = box.querySelector('[data-act="play"]');
   const speed = box.querySelector('[data-opt="tempo"]');
-  const hidden = box.querySelector('[data-opt="hidden"]');
-  hidden.checked = prefs.hidden;
-  cube.showHints(prefs.hidden);
-  hidden.addEventListener('change', () => {
-    prefs.hidden = hidden.checked;
-    cube.showHints(prefs.hidden);
-    save();
-  });
 
   speed.value = String(prefs.tempo);
 
@@ -716,7 +706,6 @@ export async function mountPlayer(
       box.classList.toggle('is-floating', preview);
       box.tabIndex = preview ? -1 : 0;
       cube.setFloating(preview);
-      cube.showHints(!preview && prefs.hidden);
 
       setupMoves = expandMoves(next.setup || '');
       moves = expandMoves(next.alg || '');

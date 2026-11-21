@@ -8,3 +8,5 @@
 - The orbital interaction was adapted from the HTML supplied by the user.
 
 Trademarks remain the property of their owners. This personal educational site does not process orders, payments, or shipments.
+
+- Xưởng Rubik hand and arm geometry and skin weights are adapted from the [MakeHuman 1.3.0 base mesh](https://github.com/makehumancommunity/makehuman/blob/v1.3.0/makehuman/data/3dobjs/base.obj) and [default rig](https://github.com/makehumancommunity/makehuman/tree/v1.3.0/makehuman/data/rigs), released under CC0 1.0 by Data Collection AB, Joel Palmius and Jonas Hauquier. SOBIK99 crops the mesh to both arms and combines the twist-bone weights with the corresponding limb bones.

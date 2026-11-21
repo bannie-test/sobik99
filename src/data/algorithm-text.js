@@ -127,5 +127,6 @@ export const caseGroup = entry => t(entry.group_vi, entry.group);
 export function algorithmLabel(algorithm) {
   if (algorithm.label === 'Khuyên dùng') return t(algorithm.label, 'Recommended');
   if (algorithm.label === 'Hiện đại') return t(algorithm.label, 'Modern');
+  if (algorithm.label === 'Nâng cao') return t(algorithm.label, 'Advanced');
   return algorithm.label;
 }

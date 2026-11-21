@@ -94,9 +94,6 @@ export function createGanFactory(renderer, size = 3) {
   const caps = Object.fromEntries(Object.entries(FACE_COLORS).map(([face, color]) => [face,
     new THREE.MeshPhysicalMaterial({ color, roughness: 0.2, clearcoat: 0.72, clearcoatRoughness: 0.15, envMap, envMapIntensity: 0.78 }),
   ]));
-  const hints = Object.fromEntries(Object.entries(FACE_COLORS).map(([face, color]) => [face,
-    new THREE.MeshBasicMaterial({ color, side: THREE.BackSide }),
-  ]));
   const masked = new THREE.MeshPhysicalMaterial({ color: 0x151515, roughness: 0.38, clearcoat: 0.2, envMap });
   const shell = new THREE.MeshStandardMaterial({ color: 0x0c1018, roughness: 0.52, envMap, envMapIntensity: 0.37 });
   const collar = new THREE.MeshPhysicalMaterial({ color: 0x121821, roughness: 0.34, clearcoat: 0.24, envMap });
@@ -132,12 +129,7 @@ export function createGanFactory(renderer, size = 3) {
       }
       const cap = new THREE.Mesh(skins[faces.length], caps[face]);
       frame.add(cap);
-      const hint = new THREE.Mesh(skins[faces.length], hints[face]);
-      hint.position.z = 0.38;
-      hint.scale.setScalar(0.82);
-      hint.visible = false;
-      frame.add(hint);
-      group.userData.facelets.push({ face, cap, hint });
+      group.userData.facelets.push({ face, cap });
       group.add(frame);
       if (size === 3 && faces.length === 1 && face === 'U') {
         const logo = new THREE.Mesh(mark, ink);
@@ -168,23 +160,16 @@ export function createGanFactory(renderer, size = 3) {
 
   function maskLastLayer(group, enabled) {
     const hide = enabled && group.userData.faces.includes('D');
-    group.userData.masked = hide;
-    for (const { face, cap, hint } of group.userData.facelets) {
+    for (const { face, cap } of group.userData.facelets) {
       cap.material = hide ? masked : caps[face];
-      hint.visible = !hide && !!group.userData.hints;
     }
-  }
-
-  function showHints(group, enabled) {
-    group.userData.hints = enabled;
-    for (const { hint } of group.userData.facelets) hint.visible = enabled && !group.userData.masked;
   }
 
   function dispose() {
     [body, ...skins.slice(1), seat, disk, ring, mark].forEach(geometry => geometry.dispose());
-    [...Object.values(caps), ...Object.values(hints), masked, shell, collar, steel, lime, ink].forEach(material => material.dispose());
+    [...Object.values(caps), masked, shell, collar, steel, lime, ink].forEach(material => material.dispose());
     environment?.dispose();
   }
 
-  return { makePiece, maskLastLayer, showHints, dispose };
+  return { makePiece, maskLastLayer, dispose };
 }

@@ -33,8 +33,9 @@
 #sobik-orbit .orbit-controls{display:flex;justify-content:space-between;align-items:center;gap:15px;padding-top:23px}
 #sobik-orbit .orbit-picker{min-width:0;width:10rem;min-height:44px;border:1.5px solid #292339;border-radius:10px;background:#fff;color:#292339;padding:0 8px}
 #sobik-orbit .orbit-controls>div{flex-shrink:0}
-#sobik-orbit .orbit-status{font-size:12px;font-weight:bold}
-#sobik-orbit .orbit-prev,#sobik-orbit .orbit-next{height:44px;width:46px;border:2px solid #292339;background:#fff35c;border-radius:12px;box-shadow:3px 3px 0 #292339;font-size:23px;margin-left:8px;color:#292339}
+#sobik-orbit .orbit-prev,#sobik-orbit .orbit-next{height:44px;width:46px;border:2px solid #292339;background:#fff35c;border-radius:12px;box-shadow:3px 3px 0 #292339;display:inline-grid;place-items:center;margin-left:8px;color:#292339}
+#sobik-orbit .orbit-chevron{width:12px;height:12px;border-right:4px solid currentColor;border-bottom:4px solid currentColor;transform:translateX(-2px) rotate(-45deg)}
+#sobik-orbit .orbit-prev .orbit-chevron{transform:translateX(2px) rotate(135deg)}
 #sobik-orbit .model-detail{display:flex;gap:25px;justify-content:space-between;border-top:2px solid #292339;margin-top:32px;padding-top:23px}
 #sobik-orbit .brand-name{font-size:30px;margin:10px 0}#sobik-orbit .model-list{display:flex;gap:12px;flex:1;justify-content:flex-end;flex-wrap:wrap}
 #sobik-orbit .model-list a{display:block;flex:1;max-width:260px;background:#fff;border:1.5px solid #292339;border-radius:12px;padding:16px;text-decoration:none;color:#292339;font-size:13px;box-shadow:3px 3px 0 #292339}
@@ -42,4 +43,4 @@
 #sobik-orbit .orbit-particle{position:absolute;left:50%;top:50%;width:9px;height:9px;background:var(--color);border:1px solid #292339;pointer-events:none;z-index:25;animation:sobik-burst .85s ease-out both}
 @keyframes sobik-burst{0%{transform:translate(var(--sx),var(--sy)) rotate(0);opacity:0}15%{opacity:1}100%{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
 #sobik-orbit.reduced *{animation:none!important;transition:none!important}
-@media(max-width:650px){#sobik-orbit .gallery-intro{display:block}#sobik-orbit .gallery-intro h2{font-size:43px}#sobik-orbit .gallery-intro p{margin-top:16px;max-width:none}#sobik-orbit .orbital{height:430px}#sobik-orbit .brand-card{width:200px;height:270px;margin:-135px 0 0 -100px}#sobik-orbit .orbit-status{font-size:10px;max-width:75px}#sobik-orbit .orbit-controls{gap:4px}#sobik-orbit .orbit-prev,#sobik-orbit .orbit-next{width:38px;margin-left:5px}#sobik-orbit .model-detail{display:block}#sobik-orbit .model-list{justify-content:flex-start}#sobik-orbit .model-list a{min-width:130px}#sobik-orbit .net{bottom:-13px}#sobik-orbit .era{bottom:25px;font-size:17px}#sobik-orbit .label-b{bottom:33px}}
+@media(max-width:650px){#sobik-orbit .gallery-intro{display:block}#sobik-orbit .gallery-intro h2{font-size:43px}#sobik-orbit .gallery-intro p{margin-top:16px;max-width:none}#sobik-orbit .orbital{height:430px}#sobik-orbit .brand-card{width:200px;height:270px;margin:-135px 0 0 -100px}#sobik-orbit .orbit-controls{gap:4px}#sobik-orbit .orbit-prev,#sobik-orbit .orbit-next{width:38px;margin-left:5px}#sobik-orbit .model-detail{display:block}#sobik-orbit .model-list{justify-content:flex-start}#sobik-orbit .model-list a{min-width:130px}#sobik-orbit .net{bottom:-13px}#sobik-orbit .era{bottom:25px;font-size:17px}#sobik-orbit .label-b{bottom:33px}}

@@ -12,7 +12,7 @@ import { read, write } from './utils/storage.js';
 let learned = read('sobik_learned', [], v => Array.isArray(v) && v.every(x => typeof x === 'string'));
 const puzzleID = t => (/^\dx\d$/.test(t) ? `${t[0]}x${t[0]}x${t[0]}` : t.toLowerCase());
 const PAGE = 12;
-const SOURCE_NOTE = { modern: tr('Công thức phổ biến hiện nay', "Commonly used algorithm"), coach: tr('Từ Cube Coach (MIT)', "From Cube Coach (MIT)"), sobik: tr('Từ thư viện SOBIK', "From the SOBIK library") };
+const SOURCE_NOTE = { advanced: tr('Biến thể F2L không cần xoay cả khối', 'Rotation-free F2L variant'), modern: tr('Công thức phổ biến hiện nay', "Commonly used algorithm"), coach: tr('Từ Cube Coach (MIT)', "From Cube Coach (MIT)"), sobik: tr('Từ thư viện SOBIK', "From the SOBIK library") };
 
 function playbackModal(title, alg, options, neighbors) {
   return `<section class="algorithm-playback" aria-label="${esc(title)}">

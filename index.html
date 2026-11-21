@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#fbf8f0">
     <meta name="description"
         content="SOBIK99 — thư viện Rubik theo hãng, trình giải CFOP từng bước, thư viện công thức mặt vàng và timer luyện tốc độ.">
-    <title>SOBIK99 — Cube Club</title>
+    <title>SOBIK99</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 </head>
 
@@ -34,16 +34,21 @@
                 <span class="nav-label" data-en="Learn">Học cách xoay</span>
                 <span class="nav-short-label" data-en="Learn">Học</span>
             </a>
+            <a href="#/workshop">
+                <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m4 20 7-7m-1-7 3-3 8 8-3 3zm2 2-5 5 4 4 5-5"/></svg>
+                <span class="nav-label" data-en="Workshop">Xưởng Rubik</span>
+                <span class="nav-short-label" data-en="Workshop">Xưởng</span>
+            </a>
             <a href="#/timer" class="nav-timer">
                 <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 3h6m-3 0v3m0 4v4l2 1m4-7 2-2M20 14a8 8 0 1 1-16 0 8 8 0 0 1 16 0z"/></svg>
                 <span class="nav-label" data-en="Timer ↗">Timer ↗</span>
                 <span class="nav-short-label" data-en="Timer">Bấm giờ</span>
             </a>
         </nav>
-        <select id="site-language" aria-label="Ngôn ngữ" data-en-label="Language">
-            <option value="vi" lang="vi">Tiếng Việt</option>
-            <option value="en" lang="en">English</option>
-        </select>
+        <div id="site-language" role="group" aria-label="Ngôn ngữ" data-en-label="Language">
+            <button type="button" lang="vi" data-language="vi" aria-label="Tiếng Việt" aria-pressed="true">VI</button>
+            <button type="button" lang="en" data-language="en" aria-label="English" aria-pressed="false">EN</button>
+        </div>
     </header>
     <main id="main"></main>
     <footer class="site-footer">

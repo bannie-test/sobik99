@@ -6,9 +6,11 @@ import { landing } from './landing.js';
 import { initModal, closeModal } from './utils/ui.js';
 
 document.documentElement.lang = language;
-const languagePicker = document.getElementById('site-language');
-languagePicker.value = language;
-languagePicker.addEventListener('change', () => setLanguage(languagePicker.value));
+document.querySelectorAll('#site-language [data-language]').forEach(button => {
+  const option = button.dataset.language;
+  button.setAttribute('aria-pressed', String(option === language));
+  button.addEventListener('click', () => setLanguage(option));
+});
 if (language === 'en') {
   document.querySelectorAll('[data-en]').forEach(el => { el.textContent = el.dataset.en; });
   document.querySelectorAll('[data-en-label]').forEach(el => el.setAttribute('aria-label', el.dataset.enLabel));
@@ -20,13 +22,14 @@ initModal();
 let cleanup = () => {}, navigation = 0;
 
 const pages = {
+  '/workshop': [tr('Xưởng Rubik', 'Cube Workshop'), tr('Đang mở xưởng…', 'Opening the workshop…'), async root => (await import('./pages-workshop.js')).workshop(root)],
   '/catalog': [tr('Thư viện Rubik', "Cube Library"), tr('Đang mở thư viện…', "Opening Cube Library…"), async (root, params) => (await import('./pages-catalog.js')).catalog(root, params)],
   '/guide': [tr('Học cách xoay', "Learn"), tr('Đang mở lớp học…', "Opening the guide…"), async (root, params) => (await import('./pages-guide.js')).guide(root, params)],
   '/solve': [tr('Giải Rubik', "Solve"), tr('Đang mở trình giải…', "Opening the solver…"), async (root, params) => (await import('./pages-solve.js')).solvePage(root, params)],
-  // '/blindfold': [tr('Rubik bịt mắt', "Blindfold Solving"), tr('Đang mở bài học…', "Opening the lesson…"), async root => (await import('./pages-blindfold.js')).blindfoldPage(root)],
   '/timer': ['Timer', tr('Đang mở phòng luyện tập…', "Opening the timer…"), async root => (await import('./pages-timer.js')).timerPage(root)],
   '/sources': [tr('Nguồn hình ảnh', "Photo credits"), tr('Đang tải…', "Loading…"), async root => (await import('./pages-sources.js')).sourcesPage(root)],
 };
+// '/blindfold': [tr('Rubik bịt mắt', "Blindfold Solving"), tr('Đang mở bài học…', "Opening the lesson…"), async root => (await import('./pages-blindfold.js')).blindfoldPage(root)],
 
 async function route() {
   const ticket = ++navigation;
@@ -42,7 +45,7 @@ async function route() {
     else a.removeAttribute('aria-current');
   });
   try {
-    if (path === '/') { document.title = 'SOBIK99 — Cube Club'; cleanup = landing(root) || (() => {}); return; }
+    if (path === '/') { document.title = 'SOBIK99'; cleanup = landing(root) || (() => {}); return; }
     if (path.startsWith('/cube/')) {
       const [, , brand, id] = path.split('/');
       root.innerHTML = `<section class="page-shell"><p>${tr('Đang mở mẫu…', 'Opening puzzle…')}</p></section>`;

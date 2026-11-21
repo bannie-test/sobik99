@@ -10,6 +10,7 @@ const read = f => JSON.parse(fs.readFileSync(new URL('./sources/' + f, import.me
 const coach = read('cube-coach.json');
 const android = read('sobik-android.json');
 const modern = read('modern.json');
+const advancedF2L = read('advanced-f2l.json');
 const MAX_ALGS = 6;
 
 const GROUP_VI = {
@@ -21,7 +22,7 @@ const GROUP_VI = {
   'L Shape': 'Hình L', 'Big Lightning Bolt': 'Tia chớp lớn', 'Awkward Shape': 'Hình khó', Cross: 'Dấu thập',
   'Corners Only': 'Chỉ đổi góc', 'Edges Only': 'Chỉ đổi cạnh', 'Adjacent Corner Swap': 'Đổi hai góc kề', 'Diagonal Corner Swap': 'Đổi hai góc chéo',
 };
-const SOURCE_LABEL = { modern: 'Hiện đại', coach: 'Cube Coach', sobik: 'SOBIK' };
+const SOURCE_LABEL = { advanced: 'Nâng cao', modern: 'Hiện đại', coach: 'Cube Coach', sobik: 'SOBIK' };
 
 const norm = alg => format(parse(alg));
 const sameClass = (a, b) => a.size === b.size && [...a].every(k => b.has(k));
@@ -71,10 +72,16 @@ for (const a of android) {
 
 // Rotation-free algorithms first (stable, so the source order is kept otherwise).
 const rotationCount = alg => parse(alg).filter(m => 'xyz'.includes(m.base)).length;
-for (const c of cases) c.algs.sort((a, b) => (rotationCount(a.alg) > 0) - (rotationCount(b.alg) > 0));
+for (const c of cases) {
+  c.algs.sort((a, b) => (rotationCount(a.alg) > 0) - (rotationCount(b.alg) > 0));
+  c.algs = c.algs.slice(0, MAX_ALGS);
+}
+
+// Append practice variants after the existing choices.
+for (const alg of advancedF2L) add('f2l', alg, 'advanced');
 
 const out = cases.map(c => {
-  const algs = c.algs.slice(0, MAX_ALGS).map((a, i) => ({ ...a, label: i === 0 ? 'Khuyên dùng' : SOURCE_LABEL[a.source] }));
+  const algs = c.algs.map((a, i) => ({ ...a, label: i === 0 ? 'Khuyên dùng' : SOURCE_LABEL[a.source] }));
   const setup = caseOf(c.type, algs[0].alg).setup;
   return { id: c.id, type: c.type, name: c.name, short: c.short, group: c.group, group_vi: c.group_vi, recognition: c.recognition, explanation: c.explanation || '', setup, algs };
 });

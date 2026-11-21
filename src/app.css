@@ -27,8 +27,6 @@
 .fp-btn{min-width:44px;height:40px;border:1.5px solid #292339;border-radius:10px;background:#fffdf8;font-size:14px;font-weight:700}
 .fp-btn.main{min-width:60px;background:#7856df;color:#fff;box-shadow:2px 3px 0 #292339}
 .fp-options{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;justify-content:center}
-.fp-toggle{flex-direction:row;align-items:center;gap:7px;font-size:12px}
-.fp-toggle input{width:17px;height:17px}
 .fp-speed{flex-direction:row;align-items:center;gap:7px;font-size:12px}
 .fp-speed select{padding:5px 8px;font-size:12px}
 .fp-hint{margin:0;font-size:11px;text-align:center}
