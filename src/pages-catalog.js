@@ -3,6 +3,7 @@ import { t as tr } from './utils/i18n.js';
 import { catalogBrands } from './data/brands.js';
 import { CATEGORIES, categoryOf, brandFamily } from './data/catalog-schema.js';
 import { mechanisms, initMechanisms } from './components/mechanisms.js';
+import { webURL } from './utils/web-url.js';
 import { escapeHTML as esc } from './utils/ui.js';
 
 const BASE = import.meta.env.BASE_URL;
@@ -39,7 +40,7 @@ function wireFallbacks(el) {
 
 function cardHTML(p) {
   const b = brandById(p.brand), cat = categoryOf(p.category);
-  return `<a class="product-card" href="#/cube/${p.brand}/${p.id}"><div class="product-image">${productImage(p)}</div>
+  return `<a class="product-card" href="#/cube/${encodeURIComponent(p.brand)}/${encodeURIComponent(p.id)}"><div class="product-image">${productImage(p)}</div>
    <div class="product-meta">${brandLogo(b)}<strong>${esc(p.name)}</strong><span class="product-sub">${esc(cat?.label || p.category)}${b ? ' · ' + esc(b.name) : ''}</span>
    ${p.tags.length ? `<span class="product-tags">${p.tags.slice(0, 2).map(t => `<i>${esc(t)}</i>`).join('')}</span>` : ''}</div></a>`;
 }
@@ -201,7 +202,14 @@ export async function detail(root, brandId, id) {
   }
   document.title = `${p.name} — SOBIK99`;
   const c = categoryOf(p.category);
-  const credit = p.imageCredit ? `<p class="credit">${tr("Ảnh:", "Photo:")} ${p.imageCredit.url ? `<a href="${esc(p.imageCredit.url)}" target="_blank" rel="noopener">${esc(p.imageCredit.name || p.imageCredit.url)}</a>` : esc(p.imageCredit.name || '')}</p>` : '';
+  const creditURL = webURL(p.imageCredit?.url);
+  const creditName = esc(p.imageCredit?.name || creditURL);
+  const credit = creditName ? `<p class="credit">${tr("Ảnh:", "Photo:")} ${creditURL
+    ? `<a href="${esc(creditURL)}" target="_blank" rel="noopener">${creditName}</a>` : creditName}</p>` : '';
+  const sourceLinks = p.sources.flatMap(source => {
+    const url = webURL(source?.url);
+    return url ? [`<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(source.name || url)} ↗</a></li>`] : [];
+  });
   root.innerHTML = `<section class="page-shell product-page"><a class="source-link" href="#/catalog?brand=${b.id}">${tr("← Xem hãng", "← Browse")} ${esc(b.name)}</a>
    <div class="product-layout"><div class="product-hero">${productImage(p, true)}${credit}</div>
    <div class="product-info">${brandLogo(b, 'brand-logo big')}<small>${esc(c?.label || p.category)} · ${esc(b.name)}</small><h1>${esc(p.name)}</h1>
@@ -211,7 +219,7 @@ export async function detail(root, brandId, id) {
    ${p.reviews.length ? `<h3>${tr("Nhận xét phổ biến", "Common feedback")}</h3><ul>${p.reviews.map(f => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
    ${p.audience ? `<p><b>${tr("Phù hợp:", "Suited to:")}</b> ${esc(p.audience)}</p>` : ''}
    ${!p.features.length && !p.reviews.length && !p.description ? tr('<p class="muted">Thông tin chi tiết đang được cập nhật.</p>', "<p class=\"muted\">More details are coming.</p>") : ''}
-   ${p.sources.length ? `<h3>${tr("Nguồn", "Sources")}</h3><ul>${p.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name || s.url)} ↗</a></li>`).join('')}</ul>` : ''}
+   ${sourceLinks.length ? `<h3>${tr("Nguồn", "Sources")}</h3><ul>${sourceLinks.join('')}</ul>` : ''}
    <div class="brand-panel small" style="--brand:${b.color}"><div><b>${esc(b.name)}</b><p>${esc(b.summary || '')}</p></div></div>
    <p class="muted">${tr("Thư viện tham khảo dành cho người chơi Rubik.", "A reference collection for cubers.")}</p></div></div>
    ${c?.shape === 'cube' ? mechanisms({ name: p.name, brand: b.id === 'gan' ? 'GAN' : b.name, id: MECH_IDS[p.id] || p.id }) : ''}</section>`;

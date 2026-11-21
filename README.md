@@ -1,4 +1,4 @@
-# SOBIK99 · Cube Club
+# SOBIK99
 
 Website Rubik tiếng Việt: kệ Rubik theo hãng, trình giải CFOP từng bước, thư viện công thức lấy mặt vàng làm mặt cuối, và timer luyện tốc độ. Không bán hàng, không có giá.
 
@@ -47,20 +47,3 @@ Thêm công thức: ghi vào `scripts/sources/modern.json` rồi chạy `npm run
 `dist/` là website tĩnh; hash routing và đường dẫn asset tương đối hỗ trợ cả thư mục con. Vercel / Netlify: build `npm run build`, output `dist`. CI chạy test và build trên mỗi push/PR.
 
 Nguồn và giấy phép: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-
-### Đầu vào cử chỉ cho Xưởng Rubik
-
-Bộ nhận diện tay bên ngoài có thể chuyển các tín hiệu qua một cầu nối Python–trình duyệt. Khi có cầu nối, JavaScript chuyển mỗi thông điệp thành sự kiện trên canvas của xưởng.
-
-```js
-canvas.dispatchEvent(new CustomEvent('sobik:workshop-gesture', {
-  detail: { type: 'grab', x: 0.25, y: 0.62 },
-}));
-```
-
-- `move`, `grab` và `drop` nhận `x`, `y` từ 0 đến 1, theo canvas với gốc ở góc trên trái. Ví dụ, bắt đầu chụm tay gửi `grab`, giữ chụm gửi `move`, mở tay gửi `drop`.
-- `rotate` xoay chi tiết đang chọn hoặc căn góc khi lắp cạnh cuối (gửi thêm `direction: -1` để xoay ngược).
-- `press-start` và `press-end` điều khiển lực ép trong bước lắp cạnh cuối.
-- `cancel` hủy thao tác đang giữ khi mất dấu tay hoặc ngắt kết nối.
-
-Bản hiện tại chỉ nhận sự kiện trong trình duyệt. Bộ nhận diện, webcam và cầu nối truyền dữ liệu sẽ được tích hợp sau.
