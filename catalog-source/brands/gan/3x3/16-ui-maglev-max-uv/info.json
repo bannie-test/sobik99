@@ -1,0 +1,33 @@
+{
+  "name": "GAN 16 ui 3x3 Max (Magnetic, MagLev, Core Magnets, UV Coated) - Bluetooth Smart Cube",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Thông minh"
+  ],
+  "description": "The GAN 16 ui 3x3 Max (Magnetic, MagLev, Core Magnets, UV Coated) is GAN's next-generation smart flagship — a Bluetooth speed cube that captures every degree of your solve and turns it into personalized data you can actually train against. High frame rate motion capture, a 124-magnet Celestial Network, and 72-gear tuning make this the most detailed smart cube GAN has built.",
+  "features": [
+    "72-gear numerical tuning: A fully numerical Magnetic GES system tunes handfeel in one click — precise, repeatable, and quick.",
+    "Double Maglev engine: Magnetic attraction and repulsion work together for stable momentum, with 30-degree self-aligning that slides silky-smooth.",
+    "Omni-support spherical orbit: Rock-solid support built for maximum stability and maximum speed.",
+    "Hollow, flexible core: A hollow design reduces friction to speed things up, while flexible internal space keeps moves loose and quick.",
+    "90-degree full corner-cutting: Honeycomb touch face with tracks and symmetrical snap-in splicing keep turns forgiving and consistent.",
+    "UV Coated finish: Super glossy plastic with high grip, for control that holds up under speed."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/b0c15579-c3ec-4bd9-8570-8baa95d4b079.jpg?v=1783615164&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/16-ui-maglev-max-uv"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/16-ui-maglev-max-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "16-ui-maglev-max-uv",
+    "updated": "2026-11-16"
+  }
+}

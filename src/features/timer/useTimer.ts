@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useRef } from 'react';
+import { t } from '../../cube-tools/utils/i18n.js';
 import { useStore } from '../../shared/store/createStore';
 import { useToast } from '../../shared/ui/Toast';
 import * as timer from './timerStore';
 
-const SAVE_FAILED = 'Trình duyệt không lưu được lịch sử. Hãy xuất CSV để giữ kết quả.';
-const SCRAMBLE_FAILED = 'Không tạo được scramble. Bấm Scramble mới để thử lại.';
+const SAVE_FAILED = t('Trình duyệt không lưu được lịch sử. Hãy xuất CSV để giữ kết quả.', 'Could not save history. Export a CSV to keep your results.');
+const SCRAMBLE_FAILED = t('Không tạo được scramble. Bấm Scramble mới để thử lại.', 'Could not generate a scramble. Try again.');
 
 /** Nối timerStore với UI: đọc state, gọi action và hiện thông báo khi lỗi. */
 export function useTimer() {
@@ -36,7 +37,7 @@ export function useTimer() {
   return {
     state,
     generate,
-    toggle: () => timer.toggleTimer(),
+    toggle: timer.toggleTimer,
     save: () => {
       if (!timer.timerStore.get().pending) return;
       persisting(timer.savePending)();

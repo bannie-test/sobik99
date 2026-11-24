@@ -1,0 +1,39 @@
+{
+  "name": "GAN 356 M",
+  "tags": [
+    "Nam châm",
+    "56 mm"
+  ],
+  "features": [
+    "Chỉnh được lực nam châm và độ căng"
+  ],
+  "reviews": [
+    "Lựa chọn phổ biến khi lên đời cube nam châm"
+  ],
+  "audience": "Người mới đến trung cấp",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-m"
+    }
+  ],
+  "description": "The GAN 356 M is a modern, mid-range magnetic 3x3 speed cube by popular manufacturer GAN. This version comes with GAN’s unique hand adjustable Numerical IPG Core and a set of spare GES nuts. Out of the box, the GAN 356 M has a fast, stable feel that is very reminiscent of a mix between the GAN XS and GAN X V2, two of GAN's most famous flagships.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan356m.jpg?v=1585074302&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan356-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan356-m"
+    ]
+  }
+}

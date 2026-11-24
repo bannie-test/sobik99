@@ -1,0 +1,25 @@
+{
+  "name": "Z Mogao-Caves 3x3 (Magnetic)",
+  "tags": [],
+  "description": "Z Mogao-Caves 3x3 (Magnetic) is a beautiful, decorative 3x3 speed cube featuring patterns inspired by the Chinese Mogao-Caves. This cube is gold plated, so the turning and solving experience is spectacular!",
+  "features": [
+    "Faster, more accurate turning that “clicks” into place.",
+    "Small magnets installed inside edge and corner pieces."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/z-mogao-caves-3x3-magnetic.jpg?v=1752855291&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/z-mogao-caves-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/z-mogao-caves-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "z-mogao-caves-3x3-magnetic",
+    "updated": "2026-11-16"
+  }
+}

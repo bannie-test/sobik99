@@ -1,0 +1,26 @@
+{
+  "name": "GAN V100 MagLev UV 3x3",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "Introducing the GAN V100 MagLev UV 3x3, the latest innovation from GAN for speedcubers and enthusiasts seeking a competitive edge. Featuring a compact 55mm design, this cube is engineered for agility and control in every solve. Benefit from 72 unique setting combinations using GAN’s advanced tension adjustment system—identical to the system found in the flagship GAN16.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_V100_3x3_-_UV.png?v=1769571815&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-v100-maglev-uv-3x3",
+    "updated": "2026-11-17"
+  }
+}

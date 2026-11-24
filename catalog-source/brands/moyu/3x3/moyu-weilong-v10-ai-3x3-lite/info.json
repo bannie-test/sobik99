@@ -1,0 +1,27 @@
+{
+  "name": "MoYu WeiLong V10 AI 3x3 Lite",
+  "tags": [
+    "Nam châm",
+    "55.5 mm"
+  ],
+  "description": "The MoYu Weilong V10 AI 3x3 Lite is a new smart cube modeled after MoYu’s latest flagship release, the WeiLong V10. This puzzle has piece-to-piece magnetization.",
+  "features": [
+    "Kích thước 55.5 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/MoYu_20WeiLong_20V10_20AI_203x3_20Lite.jpg?v=1723754552&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-weilong-v10-ai-3x3-lite"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-v10-ai-3x3-lite"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "moyu-weilong-v10-ai-3x3-lite",
+    "updated": "2026-11-17"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "GAN11 Air 3x3",
+  "tags": [
+    "56 mm"
+  ],
+  "description": "The GAN 11 Air is a new non-magnetic 3x3 release by famous manufacturer GAN. Instead of the GAN 11’s dual adjustment system, the GAN 11 Air features a classic GES nut with multiple settings. These changes allow this puzzle to weigh only 50g!",
+  "features": [
+    "Kích thước 56 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan11air.jpg?v=1626803296&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-11-air-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-11-air-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-11-air-3x3",
+    "updated": "2026-11-17"
+  }
+}

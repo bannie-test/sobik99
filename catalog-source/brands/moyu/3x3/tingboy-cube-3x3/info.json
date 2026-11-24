@@ -1,0 +1,24 @@
+{
+  "name": "Tingboy Cube 3x3",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "The Tingboy Cube is a spring-tension RS3 V5 3x3. This puzzle is lubed, tensioned, and ready for competition. This 3x3 should not be this good! Get yours today and watch your times go down!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/tingboycubesolidbg1.jpg?v=1720227292&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/tingboy-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/tingboy-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "tingboy-cube-3x3",
+    "updated": "2026-11-17"
+  }
+}

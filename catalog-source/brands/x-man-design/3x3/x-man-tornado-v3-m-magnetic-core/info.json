@@ -1,0 +1,31 @@
+{
+  "name": "X-Man Tornado V3 M Flagship 3x3 (Magnetic Core)",
+  "tags": [
+    "Nam châm",
+    "55.5 mm"
+  ],
+  "description": "The X-Man Tornado V3 M is QiYi's new flagship 3x3 speedcube. This puzzle has amazing performance and easy customization. X-man has released 3 versions, introducing core magnets and maglev tech to the Tornado line. It solves some small issues that were present in the V2 like replacing the rivets with screws and allowing the center caps to fit from any orientation.",
+  "features": [
+    "Kích thước 55.5 mm",
+    "3.63 second single, 2nd in the world",
+    "4.03 second single, 5th in the world",
+    "5.48 second average, 4th in the world",
+    "5.57 second average, 6th in the world"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/tornadoflagshipwrpromo.jpg?v=1687295859&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/x-man-tornado-v3-m-magnetic-core"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/x-man-tornado-v3-m-magnetic-core"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "x-man-tornado-v3-m-magnetic-core",
+    "updated": "2026-11-17"
+  }
+}

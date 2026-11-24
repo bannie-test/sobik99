@@ -1,0 +1,29 @@
+{
+  "name": "GAN 562 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan562-m-5x5-uv-coated"
+    }
+  ],
+  "description": "The GAN562 M 5x5 (UV Coated) is the first 5x5 from the famous manufacturer.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/gan562uv.jpg?v=1718046083&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan562-m-5x5-uv-coated"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan562-m-5x5-uv-coated"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Glow in the Dark 3x3 - Unstickered",
+  "tags": [],
+  "description": "This item does not include stickers. If you would like to shop for a set of compatible stickers, click here.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/glow-in-the-dark-3x3-unstickered-luminous-blue-unstickered.jpg?v=1771619391&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/glow-in-the-dark-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/glow-in-the-dark-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "glow-in-the-dark-3x3",
+    "updated": "2026-11-16"
+  }
+}

@@ -2,7 +2,6 @@ import { PENALTIES, type Solve } from './stats';
 
 /** Khóa localStorage — giữ nguyên với bản cũ để không mất dữ liệu người dùng. */
 export const STORAGE_KEYS = {
-  compare: 'sobik_compare',
   learned: 'sobik_learned',
   timerHistory: 'rubik_timer_history',
 } as const;

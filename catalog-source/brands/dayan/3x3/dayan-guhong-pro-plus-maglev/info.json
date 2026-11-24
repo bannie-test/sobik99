@@ -1,0 +1,36 @@
+{
+  "name": "DaYan GuHong Pro+ MagLev 55 mm",
+  "tags": [
+    "MagLev"
+  ],
+  "features": [
+    "Bản 55 mm có MagLev, kích thước gọn"
+  ],
+  "sources": [
+    {
+      "name": "TheCubicle",
+      "url": "https://www.thecubicle.com/collections/3x3-speed-cubes"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/dayan-guhong-pro-3x3-55mm-maglev"
+    }
+  ],
+  "description": "The DaYan GuHong Pro+ 3x3 55mm (MagLev) is the next evolution of the legendary GuHong lineup, tailored for speedcubers who demand peak performance and flexibility. This Pro+ version introduces a suite of cutting-edge enhancements, including adjustable corner-core magnets, a fully magnetic core, and easy-to-use numerical tension adjustment settings, all designed to let you fine-tune your solving experience.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/DaYan_20GuHong_20Pro_20Plus_203x3_20_3.png?v=1759941477&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/dayan-guhong-pro-3x3-55mm-maglev"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/dayan-guhong-pro-3x3-55mm-maglev"
+    ]
+  }
+}

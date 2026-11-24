@@ -1,0 +1,22 @@
+{
+  "name": "Rubik's Official 3x3 (Next-Gen)",
+  "tags": [],
+  "description": "The original 3x3 Rubik's Cube is back with a fully redesigned mechanism to invite a new generation of solvers into the world of Cubing. While holding true to its iconic look, this version has been re-engineered for a smoother and more responsive play experience. The internal mechanics provide a consistent tension and improved corner-cutting, allowing for faster and less resistant turning.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/Rubik_s_20Next-Gen_203x3_11c473d9-26c4-4b2e-8296-a7c052b16a61.png?v=1789585637&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/rubiks-official-3x3-next-gen"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-official-3x3-next-gen"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "rubiks-official-3x3-next-gen",
+    "updated": "2026-11-17"
+  }
+}

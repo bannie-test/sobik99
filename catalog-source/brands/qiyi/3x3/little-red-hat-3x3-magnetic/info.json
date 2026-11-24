@@ -1,0 +1,29 @@
+{
+  "name": "QiYi Little Red Hat Cube 3x3 (Magnetic)",
+  "tags": [],
+  "description": "The QiYi Little Red Hat Cube 3x3 (Magnetic) is a beginner-friendly magnetic speed cube built around a simple visual idea: a red top layer that sits like a little hat, giving kids an instant cue for which way is up. It's part of QiYi's children's cube series, designed to lower the learning threshold without making solving any less fun.",
+  "features": [
+    "Magnets that help, not hinder: Magnetic positioning adds stability to each turn and helps layers settle into place, which small hands notice right away.",
+    "A real bridge for parent-child time: Easy enough to learn together, which makes it a solid pick for families who want screen-free time at the table.",
+    "Magnetic turning: Magnets give each move a light, controlled snap into position for steadier rotation than a non-magnetic children's cube.",
+    "Frosted surface: The matte finish is scratch-resistant, anti-reflective, and fingerprint-proof, and gives little hands a medium-grip feel.",
+    "Full-bright color scheme: Bold, clearly distinct colors are easy for children to tell apart while they play.",
+    "Kid-sized build: At 55.5 mm, it's easy for smaller hands to hold and turn."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/55528b78-1531-45d1-9f39-b764c2e4d05b.jpg?v=1792878604&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/little-red-hat-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/little-red-hat-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "little-red-hat-3x3-magnetic",
+    "updated": "2026-11-16"
+  }
+}

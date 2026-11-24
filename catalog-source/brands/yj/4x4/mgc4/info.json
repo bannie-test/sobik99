@@ -1,0 +1,17 @@
+{
+  "name": "YJ MGC 4×4",
+  "description": "Rubik 4×4 từ tính trong dòng MGC, dành cho ghép tâm và ghép cạnh.",
+  "features": [
+    "Có nam châm",
+    "Bắt đầu làm quen big cube"
+  ],
+  "sources": [
+    {
+      "name": "TheCubicle",
+      "url": "https://www.thecubicle.com/products/yj-mgc-4x4"
+    }
+  ],
+  "tags": [
+    "Magnetic"
+  ]
+}

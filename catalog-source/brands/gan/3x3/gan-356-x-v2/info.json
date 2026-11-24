@@ -1,0 +1,27 @@
+{
+  "name": "GAN 356 X V2",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-356-x-v2"
+    }
+  ],
+  "description": "The GAN 356 X V2 is GAN's newest update to the famous GAN 356 X. This new magnetic 3x3 speed cube is outfitted with a matte exterior and shares the same dual adjustment core as GAN's most recent flagship, the GAN 356 XS. Slightly lighter than its predecessor, the GAN 356 X V2 is a fast and smooth cube with modern, easily adjustable settings.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/NHPD1YKiNeXhT.jpg?v=1685557194&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-356-x-v2"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-356-x-v2"
+    ]
+  }
+}

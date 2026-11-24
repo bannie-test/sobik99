@@ -1,0 +1,51 @@
+{
+  "name": "GAN16 Maglev",
+  "tags": [
+    "Mới",
+    "Flagship",
+    "Maglev",
+    "UV",
+    "Nam châm",
+    "Ball-core"
+  ],
+  "features": [
+    "Maglev giảm ma sát",
+    "Nam châm lõi–góc tự căn tầng khi đang xoay"
+  ],
+  "reviews": [
+    "Flagship thế hệ mới của GAN"
+  ],
+  "audience": "Người mới đến thi đấu",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan16-maglev-uv-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/picube-gan16-maglev-uv-20-magnet"
+    }
+  ],
+  "description": "Introducing the GAN16 MagLev UV 3x3 —a refined evolution of the innovative GAN16 line. Designed for serious speedcubers, this new edition features a streamlined magnetic system, shedding some skirt and repelling edge magnets to achieve a lighter feel and enhanced control.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN16_MagLev_UV.png?v=1762018968&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan16-maglev-uv-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "UV",
+      "Nam châm",
+      "Ball-core"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan16-maglev-uv-3x3",
+      "https://www.thecubicle.com/products/picube-gan16-maglev-uv-20-magnet"
+    ]
+  }
+}

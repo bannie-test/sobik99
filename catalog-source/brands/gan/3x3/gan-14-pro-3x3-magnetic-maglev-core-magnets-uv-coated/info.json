@@ -1,0 +1,32 @@
+{
+  "name": "GAN 14 PRO 3x3 (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "GAN 14 PRO 3x3 (Magnetic, MagLev, Core Magnets, UV Coated) builds upon the GAN 14 with a new 'Pro Level Anti-Pop' system and offers a mind-blowing 1,296 different customization settings!",
+  "features": [
+    "Super glossy plastic, high grip",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology",
+    "Pro Level Anti-Pop system",
+    "Enhanced core positioning 4.0 auto aligning technology (40 degrees)"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-14-pro-3x3-magnetic-maglev-core-magnets-uv-coated-stickerless.jpg?v=1771619476&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-14-pro-3x3-magnetic-maglev-core-magnets-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-14-pro-3x3-magnetic-maglev-core-magnets-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-14-pro-3x3-magnetic-maglev-core-magnets-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

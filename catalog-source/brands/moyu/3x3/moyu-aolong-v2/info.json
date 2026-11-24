@@ -1,0 +1,27 @@
+{
+  "name": "MoYu AoLong V2",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aolong-v2"
+    }
+  ],
+  "description": "The MoYu AoLong V2 is the revised version of the immensely popular and successful MoYu AoLong. The revisions are intended to reduce the possibility of corners twisting accidentally during solves, which was widely publicized during Feliks Zemdegs' would-be world record 3x3 solve. The changes mainly target the corner-twisting and the overall stability of the cube.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/moyuaolongv2b1_247b8bef-a44d-4d68-ae50-2c8590de68c2.jpg?v=1581454221&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-aolong-v2"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-aolong-v2"
+    ]
+  }
+}

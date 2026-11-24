@@ -1,3 +1,4 @@
+import { t } from '../../cube-tools/utils/i18n.js';
 import {
   createContext,
   useCallback,
@@ -24,7 +25,11 @@ export function ModalProvider({ children }: { children: ReactNode }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [entry, setEntry] = useState<{ key: number; content: ReactNode } | null>(null);
 
-  const close = useCallback(() => dialogRef.current?.close(), []);
+  const close = useCallback(() => {
+    dialogRef.current?.close();
+    setEntry(null);
+    document.body.classList.remove('modal-open');
+  }, []);
   const api = useMemo<ModalApi>(
     () => ({
       open: (content) => setEntry((prev) => ({ key: (prev?.key ?? 0) + 1, content })),
@@ -42,6 +47,7 @@ export function ModalProvider({ children }: { children: ReactNode }) {
   }, [entry]);
 
   const handleClose = () => {
+    if (dialogRef.current?.open) return;
     setEntry(null);
     document.body.classList.remove('modal-open');
   };
@@ -58,7 +64,7 @@ export function ModalProvider({ children }: { children: ReactNode }) {
     <ModalContext.Provider value={api}>
       {children}
       <dialog id="modal" ref={dialogRef} onClose={handleClose} onClick={handleClick}>
-        <button className="close-modal" aria-label="Đóng hộp thoại" onClick={close}>
+        <button className="close-modal" aria-label={t('Đóng hộp thoại', 'Close dialog')} onClick={close}>
           ×
         </button>
         <div id="modal-content" key={entry?.key}>

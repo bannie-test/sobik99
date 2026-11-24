@@ -1,0 +1,44 @@
+{
+  "name": "Rubik's Crystal Cube 3x3",
+  "tags": [
+    "57 mm"
+  ],
+  "description": "See the cube like never before. The Rubik’s Crystal Cube 3x3 gives the classic puzzle a brilliant transparent twist, letting you see straight into the heart of the cube as you solve. With six translucent colors and smooth, durable construction, it’s both a display-worthy collectible and a fun challenge for cubers of any skill level.",
+  "features": [
+    "Transparent Design: Clear body and crystal-colored sides let you see the cube’s inner mechanism as you turn.",
+    "Iconic Challenge: Classic 3×3 format with over 43 quintillion possible combinations.",
+    "Perfect for All Levels: Great for beginners learning to solve or experts adding something unique to their collection.",
+    "Smooth Turning: Built with modern internals for a reliable, satisfying feel.",
+    "Display-Ready: Eye-catching and unique — a standout piece for any puzzle shelf.",
+    "Official Rubik’s 3×3 format"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Rubiks-Crystal-Cube.jpg?v=1771619295&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-crystal-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-crystal-cube-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-crystal-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "rubiks-crystal-cube-3x3",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "57 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/rubiks-crystal-cube-3x3"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "YJ Fisher Cube V3",
+  "tags": [
+    "Biến thể",
+    "56 mm"
+  ],
+  "description": "The YJ Fisher Cube V3 is a classic 3x3 shape mod that adds a fun twist to solving. Its off-center cuts turn the familiar cube into a whole new visual challenge, with interesting shapes and tricky piece orientation. It solves like a standard 3x3, but the shape shifting adds an extra layer of excitement. A great pick for puzzlers who want something familiar but fresh.",
+  "features": [
+    "Kích thước 56 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YJ_20Fisher_20Cube_20V3.jpg?v=1748639142&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-fisher-cube-v3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-fisher-cube-v3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-fisher-cube-v3",
+    "updated": "2026-11-17"
+  }
+}

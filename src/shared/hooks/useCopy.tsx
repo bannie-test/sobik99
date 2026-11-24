@@ -1,3 +1,4 @@
+import { t } from '../../cube-tools/utils/i18n.js';
 import { useCallback, useEffect, useRef } from 'react';
 import { useModal } from '../ui/Modal';
 import { useToast } from '../ui/Toast';
@@ -7,8 +8,8 @@ function CopyFallback({ text }: { text: string }) {
   useEffect(() => ref.current?.select(), []);
   return (
     <>
-      <h2>Sao chép công thức</h2>
-      <textarea ref={ref} readOnly aria-label="Công thức" defaultValue={text} />
+      <h2>{t('Sao chép công thức', 'Copy algorithm')}</h2>
+      <textarea ref={ref} readOnly aria-label={t('Công thức', 'Algorithm')} defaultValue={text} />
     </>
   );
 }
@@ -21,7 +22,7 @@ export function useCopy(): (text: string) => Promise<void> {
     async (text: string) => {
       try {
         await navigator.clipboard.writeText(text);
-        toast('Đã sao chép công thức.');
+        toast(t('Đã sao chép công thức.', 'Algorithm copied.'));
       } catch {
         modal.open(<CopyFallback text={text} />);
       }

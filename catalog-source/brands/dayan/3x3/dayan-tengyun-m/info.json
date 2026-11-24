@@ -1,0 +1,32 @@
+{
+  "name": "DaYan TengYun M",
+  "tags": [
+    "Nam châm",
+    "55 mm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/dayan-tengyun-m-3x3"
+    }
+  ],
+  "description": "The DaYan TengYun M is a smooth, 55 mm 3x3 speed cube that is one of the quietest 3x3’s on the market. It has a unique design and feel that sets it apart from other modern 3x3's.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/dayantengyunm3x3b2.jpg?v=1581457872&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/dayan-tengyun-m-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "55 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/dayan-tengyun-m-3x3"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "MoYu MeiLong 3x3",
+  "tags": [],
+  "description": "The MoYu MeiLong 3x3 is a fantastic option for someone looking for a lower priced speedcube! The turning is smooth and the stable mechanism responds well to speedsolving!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-meilong-3x3-stickerless.jpg?v=1771619385&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-meilong-3x3",
+    "updated": "2026-11-16"
+  }
+}

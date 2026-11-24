@@ -1,0 +1,27 @@
+{
+  "name": "DianSheng Solar S3M",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/diansheng-solar-s3m-2022-3x3"
+    }
+  ],
+  "description": "The DianSheng Solar S3M 2022 3x3 is a great speed cube at a reasonable price. It comes with a screwdriver to adjust tensions and has a compression adjustment mechanism that you can tune by hand!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/DianSheng-Solar-S3M-2022-3x3.jpg?v=1673034556&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/diansheng-solar-s3m-2022-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/diansheng-solar-s3m-2022-3x3"
+    ]
+  }
+}

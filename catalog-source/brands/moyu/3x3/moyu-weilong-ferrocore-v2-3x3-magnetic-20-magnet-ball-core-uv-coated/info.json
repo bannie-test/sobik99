@@ -1,0 +1,51 @@
+{
+  "name": "MoYu WeiLong Ferrocore V2 3x3 (Magnetic, 20-Magnet Ball-Core, UV Coated)",
+  "tags": [
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "The MoYu WeiLong Ferrocore V2 3x3 (Magnetic, 20-Magnet Ball-Core, UV Coated) brings the Ferrocore back on a new body: the MoYu WeiLong V11. Developed with cubing creator CubeHead, it keeps the strong magnets and flexible feel the original Ferrocore was known for, then adds the smoother turning of the V11 and a glossy UV coating for extra grip.",
+  "features": [
+    "Grip you can feel: The UV coating is a glossy finish over the plastic that adds grip and shine without stickers to peel or fade.",
+    "A box worth keeping: Ships in a custom box designed by CubeHead, with a collectible CubeHead card inside.",
+    "8 levels of tension: Tension sets how tightly the pieces are held together. Loosen it for a lighter, faster feel or tighten it for more control.",
+    "8 levels of compression: Compression sets how firm the springs feel when you turn, from 1 (loosest) to 8 (tightest).",
+    "Tool included: Both settings adjust with the adjustment tool that ships in the box.",
+    "Springs, not MagLev: A classic spring setup gives a familiar, controllable turning feel."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-Weilong-V11-Ferrocore-3x3-V2-_Magnetic_-UV-Coated_6026.jpg?v=1790815882&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-ferrocore-v2-3x3-magnetic-20-magnet-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-ferrocore-v2-3x3-magnetic-20-magnet-ball-core-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-ferrocore-v2-3x3-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-ferrocore-v2-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-weilong-ferrocore-v2-3x3-magnetic-20-magnet-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-weilong-ferrocore-v2-3x3-uv-coated",
+      "https://www.thecubicle.com/products/moyu-weilong-ferrocore-v2-3x3"
+    ]
+  }
+}

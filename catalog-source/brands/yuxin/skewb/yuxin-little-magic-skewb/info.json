@@ -1,0 +1,27 @@
+{
+  "name": "YuXin Little Magic Skewb",
+  "tags": [],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yuxin-little-magic-skewb"
+    }
+  ],
+  "description": "The YuXin Little Magic Skewb fits in perfectly with the rest of the popular Little Magic series puzzles. The turning of this skewb was surprisingly fast and the ball bearing mechanism helps to align each turn for a more pleasant solving experience.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yuxin-little-magic-skewb-stickerless.jpg?v=1765325917&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yuxin-little-magic-skewb"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yuxin-little-magic-skewb"
+    ]
+  }
+}

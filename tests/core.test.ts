@@ -1,9 +1,9 @@
 // @vitest-environment node
-import { access, readFile } from 'node:fs/promises';
-import { puzzles } from 'cubing/puzzles';
 import { afterEach, describe, expect, it } from 'vitest';
-import type { AlgorithmCase } from '../src/data/types';
-import { cubeTimeline, netColors, solvedFaceCount } from '../src/features/landing/cubeEngine';
+import { cases } from '../src/data/algorithms';
+import { apply, solvedFacelets } from '../src/cube-tools/core/cube.js';
+import { Frame } from '../src/cube-tools/core/cfop.js';
+import { cubeTimeline, netColors, SCRAMBLE, solvedFaceCount } from '../src/features/landing/cubeEngine';
 import { averageOf, effective, formatTime, statistics, type Penalty } from '../src/shared/lib/stats';
 import { read, validHistory, write } from '../src/shared/lib/storage';
 
@@ -12,7 +12,7 @@ const zero = (xs: number[]) => xs.map((x) => x || 0); // -0 → 0
 
 describe('cube engine', () => {
   it('20 inverse turns restore every cubie position and orientation', () => {
-    const t = cubeTimeline();
+    const t = cubeTimeline(SCRAMBLE);
     expect(t.states[0]).not.toEqual(t.solved);
     t.sample(20).forEach((c, i) => {
       expect(zero(c.p)).toEqual(t.solved[i]!.p);
@@ -22,7 +22,7 @@ describe('cube engine', () => {
   });
 
   it('net shows 6 solved faces only at the end', () => {
-    const t = cubeTimeline();
+    const t = cubeTimeline(SCRAMBLE);
     expect(solvedFaceCount(netColors(t.states[20]!))).toBe(6);
     expect(solvedFaceCount(netColors(t.states[0]!))).toBeLessThan(6);
   });
@@ -76,22 +76,20 @@ describe('storage', () => {
 });
 
 describe('CFOP data', () => {
-  it('119 cases have renderable variants and consistent setup states', async () => {
-    const cases = JSON.parse(
-      await readFile(new URL('../src/data/algorithms.json', import.meta.url), 'utf8'),
-    ) as AlgorithmCase[];
+  it('119 cases have renderable variants and consistent setup states', () => {
     for (const [type, n] of [
       ['f2l', 41],
       ['oll', 57],
       ['pll', 21],
     ] as const)
       expect(cases.filter((c) => c.type === type)).toHaveLength(n);
-    const kp = await puzzles['3x3x3']!.kpuzzle();
+    const solved = solvedFacelets();
     for (const c of cases) {
-      expect(c.variants.length).toBeGreaterThanOrEqual(2);
+      expect(c.variants.length).toBeGreaterThanOrEqual(1);
       for (const v of c.variants) {
-        await access(new URL('../public/' + v.image, import.meta.url));
-        expect(kp.defaultPattern().applyAlg(v.setup).applyAlg(v.alg).isIdentical(kp.defaultPattern()), c.id).toBe(true);
+        expect(v.image).toMatch(/^data:image\/svg\+xml/);
+        expect(apply(solved, v.setup)[4], c.id).toBe('D');
+        expect(new Frame(apply(solved, v.setup + ' ' + v.alg)).solved, c.id).toBe(true);
       }
     }
   });

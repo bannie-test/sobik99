@@ -1,0 +1,44 @@
+{
+  "name": "QiYi Bubble 3x3",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "The QiYi Bubble 3x3 trades flat faces for rounded, ball-shaped pieces that look like a cube built out of bubbles. It solves like a 3x3 puzzle with a playful shape and bright bubble-inspired colors, designed for younger cubers and anyone who wants something that stands out on the desk.",
+  "features": [
+    "Fresh, bright colors: The stickerless color scheme is energetic and cheerful, built to catch the eye and keep solving fun.",
+    "Great for new cubers: The chunky, grippable balls are easy for smaller hands to hold and turn, making it a friendly first puzzle.",
+    "Conversation starter: It doesn't look like any cube on the shelf, which makes it as much a display piece as a puzzle.",
+    "Rounded ball pieces: The signature bubble shape gives the puzzle a distinctive feel in the hand and a soft profile from every angle.",
+    "Stickerless build: Colors run through the plastic, so there are no stickers to peel or wear down over time.",
+    "Standard 3x3 mechanism: Under the bubble shell it solves like a normal 3x3, so the moves and methods you already know still apply."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/b7d22a0b-3a83-4207-9057-971de6a555ca.jpg?v=1784564766&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/bubble-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/bubble-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-bubble-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "bubble-3x3",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Biến thể"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-bubble-3x3"
+    ]
+  }
+}

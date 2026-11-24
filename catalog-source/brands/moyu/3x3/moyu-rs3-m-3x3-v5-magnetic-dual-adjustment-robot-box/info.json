@@ -1,0 +1,31 @@
+{
+  "name": "MoYu RS3 M 3x3 V5 (Magnetic) - Dual-Adjustment + Robot Box",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "MoYu RS3 M 3x3 V5 (Magnetic) - Dual-Adjustment + Robot Box is the successor to the legendary RS3 M 2020 that took the cubing community by storm!",
+  "features": [
+    "Classic screw/spring design.",
+    "Dual-adjustment system (9 settings)",
+    "Circular core design for increased stability",
+    "Micro strong magnets",
+    "Anti-pop mechanism",
+    "\"Dragon scale\" piece design for smoother turning"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-RS3-M-3x3-V5-Magnetic-Dual-Adjustment-Robot-Box.jpg?v=1771619503&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-magnetic-dual-adjustment-robot-box"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-magnetic-dual-adjustment-robot-box"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-rs3-m-3x3-v5-magnetic-dual-adjustment-robot-box",
+    "updated": "2026-11-16"
+  }
+}

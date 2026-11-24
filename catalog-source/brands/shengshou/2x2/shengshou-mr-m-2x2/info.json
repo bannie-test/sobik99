@@ -1,0 +1,29 @@
+{
+  "name": "ShengShou Mr. M 2x2",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/shengshou-mr-m-2x2"
+    }
+  ],
+  "description": "The ShengShou Mr. M 2x2 is a budget magnetic 2x2 that features stronger that usual magnets, and light scratchy feel.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/shengshoumrm2x2b1.jpg?v=1569308021&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/shengshou-mr-m-2x2"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/shengshou-mr-m-2x2"
+    ]
+  }
+}

@@ -1,3 +1,4 @@
+import { randomScramble3x3 } from '../../cube-tools/core/cubing-search.js';
 import { read, STORAGE_KEYS, validHistory, write } from '../../shared/lib/storage';
 import type { Penalty, Solve } from '../../shared/lib/stats';
 import { createStore } from '../../shared/store/createStore';
@@ -41,10 +42,7 @@ export const resetTimerStore = () => {
 export type ScrambleLoader = () => Promise<string>;
 
 /** Scramble random-state chính thức 3×3 từ cubing.js (tải khi cần). */
-export const cubingScramble: ScrambleLoader = async () => {
-  const { randomScrambleForEvent } = await import('cubing/scramble');
-  return (await randomScrambleForEvent('333')).toString();
-};
+export const cubingScramble: ScrambleLoader = randomScramble3x3;
 
 let generation: Promise<void> | null = null;
 

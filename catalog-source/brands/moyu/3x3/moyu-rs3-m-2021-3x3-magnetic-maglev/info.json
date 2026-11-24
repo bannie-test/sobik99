@@ -1,0 +1,46 @@
+{
+  "name": "MoYu RS3 M 2021 3x3 (Magnetic, MagLev)",
+  "tags": [
+    "MagLev",
+    "Nam châm",
+    "56 mm"
+  ],
+  "description": "The MoYu RS3 M 2021 3x3 magnetic cube (MagLev) is an update of our best-selling 3x3 speed cube, the RS3 M 2020. This magnetic 3x3 cube features advanced MagLev technology, which replaces traditional springs with opposing magnets to reduce friction for even faster, smoother turning and improved corner-cutting.",
+  "features": [
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology",
+    "Spring compression system (9 settings)",
+    "Frosted exterior for improved grip",
+    "Customizable feel"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-rs3-m-2021-3x3-magnetic-maglev-stickerless.jpg?v=1771619486&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-rs3-m-2021-3x3-magnetic-maglev"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs3-m-2021-3x3-magnetic-maglev"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs3-m-2021-3x3-maglev"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-rs3-m-2021-3x3-magnetic-maglev",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-rs3-m-2021-3x3-maglev"
+    ]
+  }
+}

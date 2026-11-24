@@ -1,0 +1,22 @@
+{
+  "name": "Rubik's 3x3 Coach Cube",
+  "tags": [],
+  "description": "The Rubik's 3x3 Coach Cube is a great way to learn to solve the 3x3! This cube comes with numbered stickers over each piece. You will remove them step-by-step to help you focus only on the pieces you're trying to solve. Follow along with the included instruction guide and tutorial videos to get started on your first solve!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/Rubik_s_203x3_20Coach_20Cube.jpg?v=1717615400&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/rubiks-3x3-coach-cube"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-3x3-coach-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "rubiks-3x3-coach-cube",
+    "updated": "2026-11-17"
+  }
+}

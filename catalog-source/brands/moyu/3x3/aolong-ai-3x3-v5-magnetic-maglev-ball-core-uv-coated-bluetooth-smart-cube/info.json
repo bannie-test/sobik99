@@ -1,0 +1,34 @@
+{
+  "name": "MoYu AoLong 3x3 V5 AI (Magnetic, MagLev, Ball-Core, UV Coated) - Bluetooth Smart Cube",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Thông minh"
+  ],
+  "description": "The MoYu AoLong 3x3 V5 AI (Magnetic, MagLev, Ball-Core, UV Coated) - Bluetooth Smart Cube is the only AoLong V5 AI with a gyroscope core. It tracks your motion for real-time feedback and 3D replays of your turning, and pairs that core with MagLev elasticity and an 8-magnet ball-core for 88 magnets in all.",
+  "features": [
+    "Gyroscope magnetic core: Precise motion tracking sends real-time data to the WCU CUBE app, including a 3D replay of your turning technique.",
+    "Ball-core alignment: Eight magnets inside the ball core pull each layer into position for stronger magnetic alignment.",
+    "MagLev elasticity: Repelling magnets replace springs for a fast, smooth turning feel.",
+    "Train and compete in the app: Auto timing, AI coaching, post-solve analysis reports, ranked PvP, and team battles.",
+    "Smart charging case: Charges and stores the cube in one case.",
+    "8 MagLev elasticity levels: Rotate counterclockwise; the indicator shows the elasticity level."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/AoLong-AI-3x3-V5-_Magnetic_-MagLev_-Ball-Core_-UV-Coated_---Bluetooth-Smart-Cube6871.jpg?v=1794010200&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/aolong-ai-3x3-v5-magnetic-maglev-ball-core-uv-coated-bluetooth-smart-cube"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/aolong-ai-3x3-v5-magnetic-maglev-ball-core-uv-coated-bluetooth-smart-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "aolong-ai-3x3-v5-magnetic-maglev-ball-core-uv-coated-bluetooth-smart-cube",
+    "updated": "2026-11-16"
+  }
+}

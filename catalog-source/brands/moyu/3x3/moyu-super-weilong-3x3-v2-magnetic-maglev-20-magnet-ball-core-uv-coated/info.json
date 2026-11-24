@@ -1,0 +1,54 @@
+{
+  "name": "MoYu Super WeiLong 3x3 V2 (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "55.5 mm"
+  ],
+  "description": "The MoYu Super WeiLong 3x3 V2 (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated) is MoYu’s 2025 flagship 3x3 speed cube, engineered for competitive speedcubing.",
+  "features": [
+    "Super glossy plastic, high grip",
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "Dual-adjustment system (8 settings)",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-super-weilong-3x3-v2-magnetic-20-magnet-ball-core-uv-coated.jpg?v=1782519936&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-super-weilong-3x3-v2-magnetic-maglev-20-magnet-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-super-weilong-3x3-v2-magnetic-maglev-20-magnet-ball-core-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-weilong-3x3-v2-20-magnet-ball-core-maglev-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-weilong-3x3-v2-20-magnet-ball-core-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-super-weilong-3x3-v2-magnetic-maglev-20-magnet-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "55.5 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-super-weilong-3x3-v2-20-magnet-ball-core-maglev-uv",
+      "https://www.thecubicle.com/products/moyu-super-weilong-3x3-v2-20-magnet-ball-core-uv"
+    ]
+  }
+}

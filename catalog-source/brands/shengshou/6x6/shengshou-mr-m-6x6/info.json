@@ -1,0 +1,29 @@
+{
+  "name": "ShengShou Mr. M 6x6",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/shengshou-mr-m-6x6"
+    }
+  ],
+  "description": "The ShengShou Mr. M 6x6 is the newest addition to ShengShou’s line of magnetic big cubes. This particular model is quite compact and pillowed, a nod to more traditional 6x6 designs.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/WWBzdSlMI2WNA.jpg?v=1590694872&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/shengshou-mr-m-6x6"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/shengshou-mr-m-6x6"
+    ]
+  }
+}

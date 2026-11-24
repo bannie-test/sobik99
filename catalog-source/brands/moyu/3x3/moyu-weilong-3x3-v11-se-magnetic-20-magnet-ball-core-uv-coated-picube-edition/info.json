@@ -1,0 +1,33 @@
+{
+  "name": "MoYu WeiLong 3x3 V11 SE (Magnetic, 20-Magnet Ball-Core, UV Coated) - PiCube Edition",
+  "tags": [
+    "Ball-core",
+    "UV",
+    "Bản đặc biệt"
+  ],
+  "description": "The MoYu WeiLong 3x3 V11 SE (Magnetic, 20-Magnet Ball-Core, UV Coated) - PiCube Edition takes the SE build and maxes it out: a 20-magnet ball-core for auto-alignment and stability, a MagLev spring system for smooth turning, and a UV-coated exterior for extra grip. It's the SE lineage with the flagship-level hardware under the shell.",
+  "features": [
+    "Maxed-out SE build: The 20-magnet ball-core brings the SE line's top-tier magnetic setup, pairing stronger alignment with a stable, controlled turn.",
+    "Ball-core auto-alignment: The ball-core architecture pulls layers into place on their own, reducing lockups and smoothing out fast solves.",
+    "UV-coated grip: A super glossy UV-coated exterior adds grip and a premium feel that the frosted SE base doesn't have.",
+    "Stickerless and ready to solve: Vivid stickerless shades out of the box, no peeling, no fading.",
+    "Ball-core magnet system: The 20-magnet ball-core sets the magnetic strength and alignment behavior that define this version's feel.",
+    "MagLev spring system: Magnetic levitation replaces traditional springs for a smoother, quieter, more consistent return."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/18894aff-23ca-4fc7-9645-64fd6fdce543.jpg?v=1792878639&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-3x3-v11-se-magnetic-20-magnet-ball-core-uv-coated-picube-edition"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-3x3-v11-se-magnetic-20-magnet-ball-core-uv-coated-picube-edition"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-weilong-3x3-v11-se-magnetic-20-magnet-ball-core-uv-coated-picube-edition",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "HuaMeng YS3M",
+  "tags": [
+    "Maglev",
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "55 mm"
+  ],
+  "features": [
+    "Maglev, ball-core, phủ UV, không dán sticker"
+  ],
+  "reviews": [
+    "Độ mạnh nam châm được so sánh tương đương Super RS3M V2"
+  ],
+  "audience": "Trung cấp",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/huameng-ys3m-3x3-maglev"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/huameng-ys3m-3x3"
+    }
+  ],
+  "description": "The MoYu HuaMeng YS3M is the latest flagship 3x3 release from the famous cube company. This puzzle features amazing corner cutting, adjustable tensions/compressions, a dragon scale pattern to reduce sticking, and is designed/endorsed by the 3x3 world record single holder YuSheng Du.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/moyu-huameng-ys3m-maglev.jpg?v=1714762158&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/huameng-ys3m-3x3-maglev"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "Nam châm",
+      "55 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/huameng-ys3m-3x3-maglev",
+      "https://www.thecubicle.com/products/huameng-ys3m-3x3"
+    ]
+  }
+}

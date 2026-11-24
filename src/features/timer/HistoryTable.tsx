@@ -1,3 +1,4 @@
+import { locale, t } from '../../cube-tools/utils/i18n.js';
 import { effective, formatTime, PENALTIES, type Penalty, type Solve } from '../../shared/lib/stats';
 import { useModal } from '../../shared/ui/Modal';
 
@@ -13,10 +14,10 @@ interface Props {
 function ConfirmDelete({ solve, onConfirm }: { solve: Solve; onConfirm: () => void }) {
   return (
     <>
-      <h2>Xóa lần giải {formatTime(effective(solve))}?</h2>
-      <p>Thao tác này sẽ cập nhật lại thống kê.</p>
+      <h2>{t('Xóa lần giải', 'Delete solve')} {formatTime(effective(solve))}?</h2>
+      <p>{t('Thao tác này sẽ cập nhật lại thống kê.', 'Your statistics will update.')}</p>
       <button id="confirm-delete" className="button primary" onClick={onConfirm}>
-        Xóa lần giải
+        {t('Xóa lần giải', 'Delete solve')}
       </button>
     </>
   );
@@ -30,8 +31,8 @@ export function HistoryTable({ history, onPenalty, onDelete }: Props) {
     return (
       <div className="empty-state">
         <div className="empty-glyph">✳</div>
-        <h3>Chưa có lần giải nào. Và đó là khởi đầu tốt.</h3>
-        <p>Tạo scramble, giải khối Rubik, rồi lưu kết quả đầu tiên.</p>
+        <h3>{t('Chưa có lần giải nào. Và đó là khởi đầu tốt.', 'No solves recorded yet.')}</h3>
+        <p>{t('Tạo scramble, giải khối Rubik, rồi lưu kết quả đầu tiên.', 'Generate a scramble and save your first result.')}</p>
       </div>
     );
   }
@@ -50,15 +51,15 @@ export function HistoryTable({ history, onPenalty, onDelete }: Props) {
   const rows = history.slice(-VISIBLE_LIMIT).reverse();
   return (
     <>
-      <p className="muted">{history.length} lần đã lưu · hiển thị tối đa 100 lần gần nhất</p>
+      <p className="muted">{history.length} {t('lần đã lưu · hiển thị tối đa 100 lần gần nhất', 'solves saved · showing the latest 100')}</p>
       <div className="table-wrap">
         <table className="history-table">
           <thead>
             <tr>
               <th>#</th>
-              <th>Thời gian</th>
-              <th>Điều chỉnh</th>
-              <th>Scramble / thời điểm</th>
+              <th>{t('Thời gian', 'Time')}</th>
+              <th>{t('Điều chỉnh', 'Penalty')}</th>
+              <th>{t('Scramble / thời điểm', 'Scramble / date')}</th>
               <th></th>
             </tr>
           </thead>
@@ -70,12 +71,12 @@ export function HistoryTable({ history, onPenalty, onDelete }: Props) {
                   <td>{n}</td>
                   <td>
                     <strong>{formatTime(effective(s))}</strong>
-                    {s.penalty === 'DNF' && <small>Gốc {formatTime(s.ms)}</small>}
+                    {s.penalty === 'DNF' && <small>{t('Gốc', 'Original')} {formatTime(s.ms)}</small>}
                   </td>
                   <td>
                     <select
                       value={s.penalty}
-                      aria-label={`Điều chỉnh lần ${n}`}
+                      aria-label={`${t('Điều chỉnh lần', 'Adjust solve')} ${n}`}
                       onChange={(e) => onPenalty(s.id, e.target.value as Penalty)}
                     >
                       {PENALTIES.map((p) => (
@@ -90,10 +91,10 @@ export function HistoryTable({ history, onPenalty, onDelete }: Props) {
                       <summary>{s.scramble.slice(0, SCRAMBLE_PREVIEW)}…</summary>
                       <code>{s.scramble}</code>
                     </details>
-                    <small>{new Date(s.date).toLocaleString('vi-VN')}</small>
+                    <small>{new Date(s.date).toLocaleString(locale)}</small>
                   </td>
                   <td>
-                    <button className="text-button" aria-label={`Xóa lần ${n}`} onClick={() => confirmDelete(s)}>
+                    <button className="text-button" aria-label={`${t('Xóa lần', 'Delete solve')} ${n}`} onClick={() => confirmDelete(s)}>
                       ×
                     </button>
                   </td>

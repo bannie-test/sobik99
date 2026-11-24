@@ -1,0 +1,31 @@
+{
+  "name": "YJ MGC Beta 3x3 (Magnetic, Core Magnets, UV Coated)",
+  "tags": [
+    "UV"
+  ],
+  "description": "YJ MGC Beta 3x3 (Magnetic, Core Magnets, UV Coated) is a fresh take for their flagship line and is incredibly pleasant to use!",
+  "features": [
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "43-degree auto-alignment",
+    "Increased stability",
+    "Super glossy plastic, high grip",
+    "9 Spring compression settings",
+    "New piece design for better lubricant distribution"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/YJ-MGC-Beta-3x3-Magnetic-Core-Magnets-UV-Coated_aeadfc5c.jpg?v=1760588741&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-mgc-beta-3x3-magnetic-core-magnets-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-beta-3x3-magnetic-core-magnets-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "yj-mgc-beta-3x3-magnetic-core-magnets-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "HaiTun WaveRider 3x3 V2 Ultimate (Magnetic, 20-Magnet Ball-Core)",
+  "tags": [
+    "Ball-core"
+  ],
+  "description": "The HaiTun WaveRider 3x3 V2 Ultimate is the top-tier build in the WaveRider V2 line, running 94 magnets total on a 26-point core with 20 core magnets and 6 magnetic rings. This is the version for cubers who want every layer of the WaveRider magnetic system working at once.",
+  "features": [
+    "Maximum magnetic feel: 94 magnets across the cube, the highest configuration in the WaveRider V2 line, for dense magnetic coverage on every turn.",
+    "Full-system core: a 20-magnet ball-core paired with 6 magnetic rings, so you feel positioning at the core edges and acceleration through every turn.",
+    "Grows with you: fully numerical tuning means you can dial in a specific feel now and change it as your solving evolves, without guessing.",
+    "Ready to solve out of the box: pre-lubricated with a soft-gloss exterior that resists factory scratches and hand slippage.",
+    "64 tactile combinations: 8 levels of spring compression times 8 levels of center tension, set by numbered dials for repeatable results.",
+    "Replicate a known feel: the numerical system lets beginners copy the setups preferred by top cubers instead of tuning blind."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/HaiTun-Waverider-V2-3x3---0044775.jpg?v=1783786371&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/waverider-v2-3x3-ultimate-magnetic-20-magnet-ball-core"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/waverider-v2-3x3-ultimate-magnetic-20-magnet-ball-core"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "waverider-v2-3x3-ultimate-magnetic-20-magnet-ball-core",
+    "updated": "2026-11-16"
+  }
+}

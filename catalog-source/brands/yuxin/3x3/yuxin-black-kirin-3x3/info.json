@@ -1,0 +1,28 @@
+{
+  "name": "YuXin Kylin 3x3",
+  "tags": [
+    "55.5 mm"
+  ],
+  "description": "A budget speed cube from YuXin, the YuXin Black Kirin 3x3 features frosted plastic and grooves along the inside of the pieces. The mechanism and feel resembles that of the Yuxin Little Magic. This is a great and inexpensive first speed cube for beginners!",
+  "features": [
+    "Kích thước 55.5 mm",
+    "YuXin Black Kirin 3x3",
+    "YuXin pamphlet"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YuXinBlackKirin3x3.jpg?v=1695841442&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yuxin-black-kirin-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yuxin-black-kirin-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yuxin-black-kirin-3x3",
+    "updated": "2026-11-17"
+  }
+}

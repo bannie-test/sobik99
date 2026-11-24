@@ -1,0 +1,27 @@
+{
+  "name": "YJ Windmill Cube V3",
+  "tags": [
+    "Biến thể",
+    "56 mm"
+  ],
+  "description": "The YJ Windmill Cube V3 is a 3x3 shape mod that adds a fun twist to solving. Instead of turning like a normal cube, its offset layers create wild shapes and patterns as you scramble it. Despite the unusual look, it solves using familiar 3x3 methods with a bit of extra spatial awareness. It’s a great pick for anyone who wants a classic challenge with a fresh visual spin.",
+  "features": [
+    "Kích thước 56 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YJ_20Windmill_20Cube_20V3.jpg?v=1748639198&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-windmill-cube-v3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-windmill-cube-v3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-windmill-cube-v3",
+    "updated": "2026-11-17"
+  }
+}

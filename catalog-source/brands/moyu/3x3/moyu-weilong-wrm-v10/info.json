@@ -1,0 +1,64 @@
+{
+  "name": "MoYu WeiLong WRM V10",
+  "tags": [
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "55.5 mm",
+    "MagLev"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-20-core-magnetic-ball-core-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-20-core-magnetic-maglev-ball-core-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-uv-special-edition"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-edge-repulsion-uv-picube-se"
+    }
+  ],
+  "description": "The MoYu WeiLong WRM V10 3x3 (20-Magnet Ball-Core + UV) is a version of MoYu's new flagship 3x3. It has compression and tension adjustments, a classic spring mechanism, a ball core, and all of that under a beautiful UV coating. Get yours today and see what all of the hype is about!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/MoYuWeiLongWRMV103x3_20-MagnetBall-Core_UV_97a370b0-a2a9-4ecf-b59c-7f48a2f1bbc1.jpg?v=1716302190&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-20-core-magnetic-ball-core-uv"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "Ball-core",
+      "UV",
+      "Nam châm",
+      "55.5 mm",
+      "MagLev"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-20-core-magnetic-ball-core-uv",
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-20-core-magnetic-maglev-ball-core-uv",
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3",
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-uv",
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-uv-special-edition",
+      "https://www.thecubicle.com/products/moyu-weilong-wrm-v10-3x3-edge-repulsion-uv-picube-se"
+    ]
+  }
+}

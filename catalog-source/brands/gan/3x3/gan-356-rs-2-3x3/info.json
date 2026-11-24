@@ -1,0 +1,28 @@
+{
+  "name": "GAN 356 RS 2 3x3",
+  "tags": [],
+  "description": "GAN 356 RS 2 3x3 takes all of GAN's experience over the years and packs it into a super cost-effective solution -- the RS 2.",
+  "features": [
+    "GES Pro+ tensioning system (12 configurations)",
+    "Strengthened core",
+    "Honeycomb piece design for better lubricant distribution",
+    "55-degree corner-cutting",
+    "35-degree reverse corner-cutting"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/GAN-356-RS-2.jpg?v=1771619412&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-356-rs-2-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-356-rs-2-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-356-rs-2-3x3",
+    "updated": "2026-11-16"
+  }
+}

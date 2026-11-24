@@ -72,11 +72,18 @@ describe('TimerPage', () => {
     expect(screen.getByText("R U R'")).toBeInTheDocument();
 
     act(() => {
-      fireEvent.keyDown(window, { code: 'Space' });
+      const press = new KeyboardEvent('keydown', { code: 'Space', bubbles: true, cancelable: true });
+      const release = new KeyboardEvent('keyup', { code: 'Space', bubbles: true, cancelable: true });
+      Object.defineProperty(release, 'timeStamp', { value: press.timeStamp + 350 });
+      fireEvent(window, press);
+      expect(timer.timerStore.get().running).toBe(false);
+      fireEvent(window, release);
     });
     expect(screen.getByText('ĐANG CHẠY · SPACE HOẶC CHẠM ĐỂ DỪNG')).toBeInTheDocument();
     act(() => {
-      fireEvent.keyDown(window, { code: 'Space' });
+      const stop = new KeyboardEvent('keydown', { code: 'Space', bubbles: true, cancelable: true });
+      Object.defineProperty(stop, 'timeStamp', { value: timer.timerStore.get().startedAt + 1000 });
+      fireEvent(window, stop);
     });
     expect(screen.getByText('Kết quả chưa lưu.')).toBeInTheDocument();
 

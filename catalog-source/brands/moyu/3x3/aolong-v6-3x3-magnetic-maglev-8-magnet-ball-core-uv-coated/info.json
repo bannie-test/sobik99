@@ -1,0 +1,33 @@
+{
+  "name": "MoYu AoLong 3x3 V6 (Magnetic, MagLev, Ball-Core, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV"
+  ],
+  "description": "The MoYu AoLong 3x3 V6 (Magnetic, MagLev, Ball-Core, UV Coated) brings a carbon fiber core, an 8-magnet ball-core, and a MagLev center into one of MoYu's most refined flagship 3x3s. It pairs frictionless magnetic tension adjustment with corner repulsion alignment and a high-grip UV coated finish, giving you fast, stable solves you can dial in exactly to taste.",
+  "features": [
+    "MagLev smoothness: Repelling magnets replace the spring, so tension adjustment is silky and free of internal resistance for a cleaner, quieter turn.",
+    "Deep, repeatable tuning: A dual 8-level system unlocks 64 feel configurations, letting you switch freely between control-focused and speed-focused setups.",
+    "High-grip finish: The UV coated surface is super glossy with strong grip, giving you confident control during long sessions.",
+    "8-level elasticity: The MagLev center adjusts tension smoothly with no mechanical spring resistance.",
+    "8-level tension: Balance looseness and tightness to combine high corner-cutting with precision, dialing in the ideal mix of control and stability.",
+    "64 total setups: Combine the two 8-level systems for 64 competition-ready feel configurations to match your preference."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-Aolong-V6-8-magnet_-Ball-Core_-Maglev_-UV-Coated6381.jpg?v=1794001829&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/aolong-v6-3x3-magnetic-maglev-8-magnet-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/aolong-v6-3x3-magnetic-maglev-8-magnet-ball-core-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "aolong-v6-3x3-magnetic-maglev-8-magnet-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

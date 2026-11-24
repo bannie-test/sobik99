@@ -1,0 +1,33 @@
+{
+  "name": "GAN i4 3x3 (Magnetic, MagLev, Ball-Core) - Bluetooth Smart Cube",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "Thông minh"
+  ],
+  "description": "The GAN i4 3x3 (Magnetic, MagLev, Ball-Core) - Bluetooth Smart Cube is a premium magnetic speed cube built for cubers who want top-tier turning feel with smart training features built in. Standard magnets help pieces click into place, MagLev reduces spring resistance for a faster feel, and the Ball-Core adds stability and control, while Bluetooth smart tracking captures your turns for more informed practice.",
+  "features": [
+    "Smart practice tools: Zero-loss sensing and omni-motion monitoring help track your turning data so you can practice more intentionally.",
+    "Fast, premium feel: Magnetic turning, MagLev, and Ball-Core technology work together to create a quick, stable, more controlled solve.",
+    "Real-time cube tracking: The smart gyroscope displays all 360 degrees of the cube in real time with no lag.",
+    "Flexible battery use: Full power and endurance modes let you choose between maximum smart functionality or longer battery life.",
+    "Strong smart cube ecosystem: Built for a growing smartcubing community with over 1.5 million players.",
+    "72 handfeel options: Designed to give you a wide range of setup possibilities."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-i4-3x3-magnetic-maglev-ball-core-bluetooth-smart-cube.jpg?v=1780762719&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-i4-3x3-magnetic-maglev-ball-core-bluetooth-smart-cube"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-i4-3x3-magnetic-maglev-ball-core-bluetooth-smart-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-i4-3x3-magnetic-maglev-ball-core-bluetooth-smart-cube",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "HaiTun WaveRider 3x3 V2 Standard (Magnetic, 20-Magnet Ball-Core)",
+  "tags": [
+    "Ball-core",
+    "Nam châm"
+  ],
+  "description": "The HaiTun WaveRider 3x3 V2 Standard is the entry point into the WaveRider V2 family — a magnetic speed cube built on a 20-magnet ball-core with an extra 6 magnetic rings for a total of 88 magnets. It pairs a fully numerical tuning system with a soft-gloss finish and a light 71g build, so you get a genuinely tunable flagship experience without stepping up a tier.",
+  "features": [
+    "Tune it to a top cuber's setup: The fully numerical system lets a beginner dial in an exact feel and repeat it, so you're not guessing.",
+    "Comfortable for long sessions: At 56mm and 71g, it stays controllable through long practice without wearing out your hand.",
+    "64 tactile combinations: 8 levels of spring compression multiplied by 8 levels of center tension give you 64 distinct feels to choose from.",
+    "Numbered dials, not guesswork: Precision micro-numerical settings mean you can note your favorite setup and return to it exactly.",
+    "26-point core positioning: Up to 26 magnets in the core drive 3D accelerated magnetic positioning for a high-density magnetic field inside the cube.",
+    "Great corner-cutting: Rounded, gradient-curved surfaces with big corner-cutting and anti corner-twist help it move through catch points instead of locking up."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/HT001-sku.jpg?v=1783701638&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/waverider-v2-3x3-standard-magnetic-20-magnet-ball-core"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/waverider-v2-3x3-standard-magnetic-20-magnet-ball-core"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-pioneer"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-standard"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-flagship"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/haitun-waverider-v2-3x3-ultimate"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "waverider-v2-3x3-standard-magnetic-20-magnet-ball-core",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-pioneer",
+      "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-standard",
+      "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-flagship",
+      "https://www.thecubicle.com/products/haitun-waverider-v2-3x3-ultimate"
+    ]
+  }
+}

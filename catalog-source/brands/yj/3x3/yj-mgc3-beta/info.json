@@ -1,0 +1,27 @@
+{
+  "name": "YJ MGC3 Beta 3x3",
+  "tags": [
+    "Nam châm",
+    "55.5 mm"
+  ],
+  "description": "The YJ MGC3 Beta is the latest 3x3 speedcube from YJ, featuring a brand new mechanism and philosophy. Designed by the same mind behind the legendary Alpha Cube, the Beta boasts a balanced magnetic feel, great corner cutting, and a wonderfully comfortable hand-feel. This version of the Beta has a glossy exterior and classic edge to corner piece magnets.",
+  "features": [
+    "Kích thước 55.5 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YJ_20MGC3_20Beta.jpg?v=1741384116&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-mgc3-beta"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-mgc3-beta"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-mgc3-beta",
+    "updated": "2026-11-17"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "GAN 16 3x3 Max (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "The next generation of premium speed cube is here! The GAN 16 3x3 Max (Magnetic, MagLev, Core Magnets, UV Coated) sets the bar for 3x3 speed cubes and delivers performance appreciated by speedcubers of all skill levels.",
+  "features": [
+    "Super glossy plastic, high grip",
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "40-degree auto-alignment",
+    "Increased stability",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-16-3x3-max-magnetic-maglev-core-magnets-uv-coated-stickerless.jpg?v=1771619502&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-16-3x3-max-magnetic-maglev-core-magnets-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-16-3x3-max-magnetic-maglev-core-magnets-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-16-3x3-max-magnetic-maglev-core-magnets-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

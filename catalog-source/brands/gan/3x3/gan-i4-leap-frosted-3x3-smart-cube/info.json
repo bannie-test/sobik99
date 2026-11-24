@@ -1,0 +1,32 @@
+{
+  "name": "GAN i4 Leap Frosted 3x3 (Smart Cube)",
+  "tags": [
+    "Nam châm",
+    "Thông minh"
+  ],
+  "description": "The GAN i4 Leap Frosted 3x3 (Smart Cube) redefines the smartcube experience with cutting-edge hardware and elite customization. Perfect for serious speedcubers and data-driven solvers, the i4 Leap brings GAN’s flagship technology to your hands with a precision-engineered spring tensioning system and a refined frosted (matte) outer finish for effortless grip and stability.",
+  "features": [
+    "Dual-Core Endurance: Switch between full-power Performance Mode or legendary 200-hour Endurance Mode to match your session and maximize battery life.",
+    "Ultra-Lightweight: Weighs just 74g, delivering an effortless, fatigue-free solving experience.",
+    "Advanced Customization: 72 flexible tuning combinations (6 travel gears x 12 tension gears) let you dial in your perfect feel in seconds, right out of the box.",
+    "Fast Charging: Quick 10-minute charge gives you up to 10 hours of wireless grinding when you’re on the go.",
+    "Omni-Support Engineering: Hollow design for minimized friction, stable omni-support spherical core, and magnetic GES for smooth, jam-free performance.",
+    "6-Color Ball Core: Simplifies reassembly and guarantees perfect sync with smart features and the companion app."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_20i4_20Leap_20Frosted.png?v=1772873775&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-i4-leap-frosted-3x3-smart-cube"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-i4-leap-frosted-3x3-smart-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-i4-leap-frosted-3x3-smart-cube",
+    "updated": "2026-11-17"
+  }
+}

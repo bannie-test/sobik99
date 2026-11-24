@@ -1,0 +1,60 @@
+{
+  "name": "MoYu Super AoLong 3x3 (Magnetic, MagLev, 20-Magnet Ball-Core)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "Nam châm",
+    "UV",
+    "Bản đặc biệt"
+  ],
+  "description": "The MoYu Super AoLong 3x3 (Magnetic, MagLev, 20-Magnet Ball-Core) is a flagship speed cube designed for fast, controllable turning with deep, repeatable tuning. Piece magnets give precise layer “clicks,” MagLev removes spring friction for a quicker glide, and a 20-magnet ball-core adds corner-to-core attraction for exceptional stability—all in a compact 55.",
+  "features": [
+    "Faster, more accurate turning: Magnetic pieces and 20-magnet ball-core improve corner alignment and control.",
+    "Low-friction MagLev feel: No springs, less maintenance, and a smoother, faster glide.",
+    "Compact, comfortable form factor: 55.5 mm size and ~70 g weight reduce fatigue and over-turns.",
+    "Stability you can trust: Upgraded positioning 3.0 and repulsion force snap layers back into alignment.",
+    "One-button triple adjustment: 8 magnet strengths, 8 tensions, 8 repulsion levels.",
+    "Dial in your feel: 64 tension/compression combos and 512 total tuning combinations —from light and fast to firm and controlled."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-super-aolong-3x3-magnetic-maglev-20-magnet-ball-core.jpg?v=1771619446&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-super-aolong-3x3-magnetic-maglev-20-magnet-ball-core"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-super-aolong-3x3-magnetic-maglev-20-magnet-ball-core"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-aolong-3x3-20-magnet-ball-core-maglev"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-aolong-3x3-20-magnet-ball-core-maglev-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-aolong-3x3-19th-anniversary-edition"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-super-aolong-3x3-magnetic-maglev-20-magnet-ball-core",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "UV",
+      "Bản đặc biệt"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-super-aolong-3x3-20-magnet-ball-core-maglev",
+      "https://www.thecubicle.com/products/moyu-super-aolong-3x3-20-magnet-ball-core-maglev-uv",
+      "https://www.thecubicle.com/products/moyu-super-aolong-3x3-19th-anniversary-edition"
+    ]
+  }
+}

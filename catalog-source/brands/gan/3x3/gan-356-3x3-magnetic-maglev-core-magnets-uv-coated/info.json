@@ -1,0 +1,32 @@
+{
+  "name": "GAN 356 3x3 (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "GAN 356 3x3 (Magnetic, MagLev, Core Magnets, UV Coated) merges current technology with a fan-favorite design resulting in a whole bunch of \"awesome\"!",
+  "features": [
+    "Super glossy plastic, high grip",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology",
+    "Enhanced core positioning 3.0 auto aligning technology (30 degrees)",
+    "GES V2 tensioning system (36 configurations)"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/GAN-356-3x3-Magnetic-MagLev-Core-Magnets-UV-Coated.jpg?v=1771619460&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-356-3x3-magnetic-maglev-core-magnets-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-356-3x3-magnetic-maglev-core-magnets-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-356-3x3-magnetic-maglev-core-magnets-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

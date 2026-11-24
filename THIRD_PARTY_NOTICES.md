@@ -1,11 +1,12 @@
 # Sources and third-party notices
 
-- CFOP algorithm facts and case groupings: Luke Jackson, [Cube Coach](https://github.com/lukejacksonn/cube), `src/algorithms.ts`. The source README declares MIT. Algorithm expressions are included with attribution; UI, Vietnamese explanations, generated setup states and diagrams are authored for SOBIK99. Single-variant cases receive an explicitly labeled y-conjugated holding-angle alternative, not a purported independently faster algorithm.
-- Cubing.js 0.66.1: https://github.com/cubing/cubing.js, MPL-2.0. Used unchanged for official event scrambles, algorithm parsing, puzzle state and interactive playback. Static case diagrams are generated from cubing.js SVG puzzle definitions with state-derived colors. License: https://github.com/cubing/cubing.js/blob/main/LICENSE.md.
-- React / React DOM: MIT, https://github.com/facebook/react.
+- CFOP algorithms: commonly used speedcubing algorithms (labeled "Hiện đại"); Luke Jackson, [Cube Coach](https://github.com/lukejacksonn/cube), `src/algorithms.ts` (README declares MIT); and the SOBIK Android algorithm library. Algorithm move sequences are facts; every one is verified by the SOBIK99 cube engine and filed under the case it actually solves. Vietnamese explanations, diagrams and the solver are authored for SOBIK99.
+- Cubing.js 0.66.1: https://github.com/cubing/cubing.js, MPL-2.0. Used unchanged for random-state scrambles, the two-phase short solver, and interactive 3D playback. License: https://github.com/cubing/cubing.js/blob/main/LICENSE.md.
 - Vite: MIT, https://github.com/vitejs/vite.
-- Product facts: per-product URLs and verification date in `src/data/cubes.js`. Unverified scalar specifications remain null. Prices are author-defined demo values in VND, never live prices. Editorial pros/cons are labeled and no review ratings are fabricated.
+- Catalog: model names are public product information. Brand logos are grey placeholders until logo images are added under `public/` (set `logo` in `src/data/brands.js`). Product images, when added, belong to their owners and are credited per product (`imageCredit` in each `info.json`, listed on the Sources page). No prices, orders or review scores are shown.
 - History: https://rubiks.com/history and https://www.moma.org/collection/works/2908.
-- The orbital interaction was adapted from the HTML supplied by the user. Geometric illustrations are code-authored; no manufacturer photos or logos are copied.
+- The orbital interaction was adapted from the HTML supplied by the user.
 
 Trademarks remain the property of their owners. This personal educational site does not process orders, payments, or shipments.
+
+- Xưởng Rubik hand and arm geometry and skin weights are adapted from the [MakeHuman 1.3.0 base mesh](https://github.com/makehumancommunity/makehuman/blob/v1.3.0/makehuman/data/3dobjs/base.obj) and [default rig](https://github.com/makehumancommunity/makehuman/tree/v1.3.0/makehuman/data/rigs), released under CC0 1.0 by Data Collection AB, Joel Palmius and Jonas Hauquier. SOBIK99 crops the mesh to both arms and combines the twist-bone weights with the corresponding limb bones.

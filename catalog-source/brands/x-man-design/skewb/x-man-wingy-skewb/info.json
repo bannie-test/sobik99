@@ -1,0 +1,27 @@
+{
+  "name": "X-Man Wingy Skewb",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/x-man-wingy-magnetic-skewb-concave"
+    }
+  ],
+  "description": "The X-Man Wingy Magnetic Skewb is the latest skewb release from X-Man Designs and the first concave skewb to hit the market. The Wingy boasts improved grip and control due to its innovative concave design, and it features 24 magnets with adjustable positioning for an even more custom experience. Sturdy and reliable, the X-Man Wingy is a strong choice for cubers interested in skewb.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/xmanwingyskewbb1_195bae39-b67a-48b8-8e9c-4c5e22ba32b8.jpg?v=1581455788&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/x-man-wingy-magnetic-skewb-concave"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/x-man-wingy-magnetic-skewb-concave"
+    ]
+  }
+}

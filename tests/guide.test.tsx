@@ -48,9 +48,7 @@ describe('GuidePage', () => {
   it('switches phases, paginates and persists learned cases', async () => {
     const user = userEvent.setup();
     renderWithProviders(<GuidePage query={new URLSearchParams()} />);
-    expect(
-      screen.getByText('Cross là bài toán lập kế hoạch, không phải danh sách công thức cố định.'),
-    ).toBeInTheDocument();
+    expect(screen.getByRole('tab', { name: 'Công thức' })).toHaveAttribute('aria-selected', 'true');
 
     await user.click(screen.getByRole('button', { name: 'OLL · 57' }));
     expect(screen.getByText('57 case · 0 đã đánh dấu học')).toBeInTheDocument();

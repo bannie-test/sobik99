@@ -1,0 +1,33 @@
+{
+  "name": "VIN Cube 3x3 Nova (Magnetic, MagLev, Ball-Core, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV"
+  ],
+  "description": "The VIN Cube 3x3 Nova (Magnetic, MagLev, Ball-Core, UV Coated) is a premium, competition-focused magnetic speed cube built for solvers who want fast turning and dependable control. It combines MagLev for a quicker, lower-resistance feel, a ball-core for stronger corner-to-core stability, and a high-grip UV coated exterior that stays clean and resists scratches.",
+  "features": [
+    "Faster, cleaner turning: MagLev reduces spring friction for a more responsive feel.",
+    "More stability at high TPS: Ball-core corner-to-core magnets improve control and re-alignment.",
+    "Stronger, more decisive magnet feel: Aerospace-grade purple titanium magnets provide up to 1.7× stronger absorption force than ordinary magnets.",
+    "Easy to tune: Tool-free dual adjustment with defined settings makes dialing in your feel quick and repeatable.",
+    "Premium grip and durability: UV coating adds high grip, resists scratches, and helps prevent lube buildup.",
+    "35° auto-alignment: Helps the cube snap into place for smoother transitions and fewer lockups."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/vin-cube-3x3-nova-magnetic-maglev-ball-core-uv-coated.jpg?v=1768839137&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/vin-cube-3x3-nova-magnetic-maglev-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/vin-cube-3x3-nova-magnetic-maglev-ball-core-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "vin-cube-3x3-nova-magnetic-maglev-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

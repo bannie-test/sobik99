@@ -1,0 +1,37 @@
+{
+  "name": "DianSheng Giant 3x3 - 18.8cm",
+  "tags": [
+    "188 mm"
+  ],
+  "description": "DianSheng Giant 3x3 - 18.8cm is a huge 3x3 that turns very well considering its size! This is a great item for display or having fun and belongs in every cuber's collection!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/diansheng-giant-3x3-18_8cm-stickerless.jpg?v=1771619350&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/diansheng-giant-3x3-18-8cm"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/diansheng-giant-3x3-18-8cm"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/diansheng-giant-3x3-18-8cm"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "diansheng-giant-3x3-18-8cm",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "188 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/diansheng-giant-3x3-18-8cm"
+    ]
+  }
+}

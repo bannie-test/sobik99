@@ -1,0 +1,30 @@
+{
+  "name": "HuaMeng TG 3x3 (MagLev + Ball-Core + UV)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "55.5 mm"
+  ],
+  "description": "The HuaMeng TG is the most feature-rich 3x3 we’ve seen so far! With 1620 different adjustment combinations you can find one that fits your turning style. It has hand-adjustable compression settings and a tool to adjust tensions and magnet strength. It has 6 tension settings, 9 compression settings, 5 edge magnet adjustments, and 6 corner/core magnet adjustments.",
+  "features": [
+    "Kích thước 55.5 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/huameng_20tg_20maglev_20uv_20ball_20core_fe5242ba-ff37-4c6f-91df-3d665b4f0b97.jpg?v=1729694352&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/huameng-tg-3x3-maglev-ball-core-uv"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/huameng-tg-3x3-maglev-ball-core-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "huameng-tg-3x3-maglev-ball-core-uv",
+    "updated": "2026-11-17"
+  }
+}

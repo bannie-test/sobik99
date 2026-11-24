@@ -1,0 +1,26 @@
+{
+  "name": "GAN16 MagLev MAX-L UV 3x3",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "Introducing the GAN16 MagLev MAX-L UV 3x3 — the highly anticipated 57mm upgrade of the outstanding GAN16 MagLev MAX UV. Crafted for serious speedcubers and collectors, this cube boasts an expanded form factor for a more ergonomic grip and enhanced turning precision. Inside, custom N52-grade magnets deliver powerful, locked-in stability, ensuring precise control at any speed.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN16_XL_1.png?v=1775020817&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan16-maglev-maxl-uv-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan16-maglev-maxl-uv-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan16-maglev-maxl-uv-3x3",
+    "updated": "2026-11-17"
+  }
+}

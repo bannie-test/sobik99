@@ -1,0 +1,36 @@
+{
+  "name": "GAN Megaminx MagLev",
+  "tags": [
+    "MagLev"
+  ],
+  "features": [
+    "12 mặt màu, cơ chế MagLev"
+  ],
+  "sources": [
+    {
+      "name": "GANCUBE",
+      "url": "https://www.gancube.com/products/gan-megaminx-maglev"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-megaminx-maglev-uv"
+    }
+  ],
+  "description": "The GAN Megaminx MagLev UV is a new puzzle from the famous manufacturer. This one has all kinds of upgrades! It has a MagLev mechanism that replaces the springs with opposing magnets. It has auto-aligning layers (up to 15 degrees) and uses the new GES Pro+ magnetization system. It also retains the concave shape to aid with grip and feel. This is an upgrade to an already highly-acclaimed megaminx. Get yours today!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/ganmegaminxmaglevuv1.jpg?v=1710354651&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-megaminx-maglev-uv"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-megaminx-maglev-uv"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "YJ YuLong V2 M",
+  "tags": [
+    "Giá rẻ",
+    "Nam châm",
+    "56 mm"
+  ],
+  "features": [
+    "Nam châm"
+  ],
+  "reviews": [
+    "Từng là cube chính của nhiều speedcuber"
+  ],
+  "audience": "Người mới",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-yulong-v2-m"
+    }
+  ],
+  "description": "One of the best budget cubes on the market, the YJ YuLong V2 M is a magnetic 3x3 speed cube with an impressive combination of features. Medium magnets housed in slots and a modern design give this cube a great, premium feel similar to more expensive speed cubes.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/yjyulongmstickerless.jpg?v=1569360786&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-yulong-v2-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/yj-yulong-v2-m"
+    ]
+  }
+}

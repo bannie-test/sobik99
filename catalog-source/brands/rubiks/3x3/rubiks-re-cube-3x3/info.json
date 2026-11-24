@@ -1,0 +1,26 @@
+{
+  "name": "Rubik's Re-Cube 3x3",
+  "tags": [
+    "89 mm"
+  ],
+  "description": "The Rubik's Re-Cube is a 3x3 made with 100% recycled plastic. Improve your times and help reduce the environmental impact of un-recycled plastics all in one go with this fantastic 3x3 from Rubik's.",
+  "features": [
+    "Kích thước 89 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/Rubik_s_20Re-Cube_203x3_5b272b49-5515-4e6f-be27-aac036084ef6.jpg?v=1678982067&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/rubiks-re-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-re-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "rubiks-re-cube-3x3",
+    "updated": "2026-11-17"
+  }
+}

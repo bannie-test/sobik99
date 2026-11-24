@@ -17,19 +17,12 @@ describe('hash router', () => {
     expect(matchPath('/', '/')).toEqual({});
   });
 
-  it('resolves titles like the original site', () => {
-    const title = (hash: string) => {
-      const loc = parseHash(hash);
-      const { route, params } = resolveRoute(loc.path);
-      return route.title({ params, query: loc.query });
-    };
-    expect(title('#/')).toBe('SOBIK99 — Cube Club');
-    expect(title('#/catalog')).toBe('Bộ sưu tập — SOBIK99');
-    expect(title('#/cube/gan12')).toBe('GAN12 MagLev — SOBIK99');
-    expect(title('#/cube/unknown')).toBe('Rubik — SOBIK99');
-    expect(title('#/guide?puzzle=5x5')).toBe('Học cách xoay — SOBIK99');
-    expect(title('#/timer')).toBe('Timer — SOBIK99');
-    expect(title('#/sources')).toBe('Nguồn dữ liệu — SOBIK99');
-    expect(title('#/nope')).toBe('Không tìm thấy trang — SOBIK99');
+  it('resolves the catalog and newly added routes', () => {
+    expect(resolveRoute('/catalog').route.title).toBe('Thư viện Rubik');
+    expect(resolveRoute('/cube/gan/gan-17-magdrive').params).toEqual({ brand: 'gan', id: 'gan-17-magdrive' });
+    expect(resolveRoute('/cube/gan17').params).toEqual({ id: 'gan17' });
+    expect(resolveRoute('/solve').route.title).toBe('Giải Rubik');
+    expect(resolveRoute('/workshop').route.title).toBe('Xưởng Rubik');
+    expect(resolveRoute('/nope').route.path).toBe('*');
   });
 });

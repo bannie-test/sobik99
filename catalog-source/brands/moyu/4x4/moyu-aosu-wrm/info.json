@@ -1,0 +1,36 @@
+{
+  "name": "MoYu AoSu WR M",
+  "tags": [
+    "Nam châm"
+  ],
+  "features": [
+    "4x4 nam châm"
+  ],
+  "reviews": [
+    "Được ưa chuộng trong thi đấu 4x4"
+  ],
+  "audience": "Trung cấp trở lên",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aosu-4x4-wr-m"
+    }
+  ],
+  "description": "The MoYu AoSu 4x4 WR M is the successor to the wildly successful MoYu AoSu GTS2 M. This 4x4 magnetic speed cube features a new, smaller, and more controllable size at 59mm, as well as, an updated positioning system and new stickerless bright shades!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/Dncv6HRKcHYDj.jpg?v=1569398497&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-aosu-4x4-wr-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-aosu-4x4-wr-m"
+    ]
+  }
+}

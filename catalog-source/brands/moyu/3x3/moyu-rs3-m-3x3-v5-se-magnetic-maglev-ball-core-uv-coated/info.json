@@ -1,0 +1,55 @@
+{
+  "name": "MoYu RS3 M 3x3 V5 SE (Magnetic, MagLev, Ball-Core, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "MoYu RS3 M 3x3 V5 SE (Magnetic, MagLev, Ball-Core, UV Coated) is the successor to the legendary RS3 M 2020 that took the cubing community by storm—now in a Special Edition look with a black logo and matching black packaging. The SE version does not include the robot display box.",
+  "features": [
+    "Black logo and black Special Edition packaging",
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "Auto-alignment 2.0",
+    "Dual-adjustment system (9 settings)",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-rs3-m-3x3-v5-se-magnetic-maglev-ball-core-uv-coated.jpg?v=1771619369&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-se-magnetic-maglev-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-se-magnetic-maglev-ball-core-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs3-m-v5-se-3x3-8-magnet-ball-core-maglev-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs3-m-v5-3x3-se-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs3-m-v5-se-3x3-magnetic-spring-tension"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-rs3-m-3x3-v5-se-magnetic-maglev-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-rs3-m-v5-se-3x3-8-magnet-ball-core-maglev-uv",
+      "https://www.thecubicle.com/products/moyu-rs3-m-v5-3x3-se-magnetic",
+      "https://www.thecubicle.com/products/moyu-rs3-m-v5-se-3x3-magnetic-spring-tension"
+    ]
+  }
+}

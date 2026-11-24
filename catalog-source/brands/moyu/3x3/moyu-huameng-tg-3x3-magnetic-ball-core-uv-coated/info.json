@@ -1,0 +1,32 @@
+{
+  "name": "MoYu HuaMeng TG 3x3 (Magnetic, Ball-Core, UV Coated)",
+  "tags": [
+    "Ball-core",
+    "UV"
+  ],
+  "description": "MoYu HuaMeng TG 3x3 (Magnetic, Ball-Core, MagLev, UV Coated) is a major update to MoYu's sub-brand. With a mind-boggling 1,620 possible settings, we guarantee you will find one you love.",
+  "features": [
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "Core positioning 2.0 auto-alignment (30 degrees)",
+    "Super glossy plastic, high grip",
+    "88 Factory-installed magnets",
+    "Dual-adjustment system 9 Compression settings",
+    "6 Tension settings"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-HuaMeng-TG-3x3-Magnetic-Ball-Core-UV-Coated_c3a06b00.jpg?v=1771619406&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-huameng-tg-3x3-magnetic-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-huameng-tg-3x3-magnetic-ball-core-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-huameng-tg-3x3-magnetic-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

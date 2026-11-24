@@ -1,0 +1,49 @@
+{
+  "name": "Swift Block 3x3 Super Maglev",
+  "tags": [
+    "Maglev",
+    "Giá tốt",
+    "UV",
+    "Nam châm",
+    "Bản đặc biệt"
+  ],
+  "features": [
+    "Maglev"
+  ],
+  "reviews": [
+    "Hướng tới cả người mới và người chơi nâng cao"
+  ],
+  "audience": "Người mới",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/swift-block-super-maglev-uv-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/swift-super-maglev-uv-3x3-lbl-mod-pro-shop-se"
+    }
+  ],
+  "description": "The Swift Block Super MagLev UV 3x3 is the latest evolution in GAN's entry-level Swift Block series, designed for speedcubers who crave top-tier performance at an accessible price. Featuring state-of-the-art MagLev technology, this cube offers frictionless, magnet-driven repulsion and attraction for lightning-fast, smooth turning—helping you unleash your full potential with every solve.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/Swift_20Block_20Super_20MagLev_20UV.png?v=1773242293&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/swift-block-super-maglev-uv-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "UV",
+      "Nam châm",
+      "Bản đặc biệt"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/swift-block-super-maglev-uv-3x3",
+      "https://www.thecubicle.com/products/swift-super-maglev-uv-3x3-lbl-mod-pro-shop-se"
+    ]
+  }
+}

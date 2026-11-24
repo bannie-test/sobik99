@@ -1,0 +1,24 @@
+{
+  "name": "GAN V100 Leap Frosted 3x3",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "GAN V100 Leap Frosted 3x3 - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_20V100_203x3_20-_20Frosted_20_2.png?v=1781233495&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-v100-leap-3x3-frosted"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-v100-leap-3x3-frosted"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-v100-leap-3x3-frosted",
+    "updated": "2026-11-17"
+  }
+}

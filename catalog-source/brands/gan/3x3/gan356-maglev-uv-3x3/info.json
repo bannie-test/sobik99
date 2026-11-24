@@ -1,0 +1,29 @@
+{
+  "name": "GAN356 MagLev UV 3x3",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm",
+    "56 mm"
+  ],
+  "description": "The GAN356 MagLev represents a new twist on a familiar favorite. Joining the classic 356 series of GAN 3x3s, this new version incorporates the innovation and technology of 2023.",
+  "features": [
+    "Kích thước 56 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN356MagLevUV3x3.jpg?v=1701288328&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan356-maglev-uv-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-maglev-uv-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan356-maglev-uv-3x3",
+    "updated": "2026-11-17"
+  }
+}

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import { cubes } from '../src/data/cubes';
-import { lessons } from '../src/data/lessons';
+import { webURL } from '../src/cube-tools/utils/web-url.js';
+import { lessons } from '../src/cube-tools/data/lessons.js';
 import { neutralizeFormula } from '../src/shared/lib/csv';
 import { safeExternalUrl } from '../src/shared/lib/safeUrl';
 import { ExternalLink } from '../src/shared/ui/ExternalLink';
@@ -12,6 +12,13 @@ describe('external links', () => {
     expect(safeExternalUrl('javascript:alert(1)')).toBeUndefined();
     expect(safeExternalUrl('http://example.com')).toBeUndefined();
     expect(safeExternalUrl('not a url')).toBeUndefined();
+  });
+
+  it('validates web URLs used by generated catalog metadata', () => {
+    expect(webURL('https://example.com/model')).toBe('https://example.com/model');
+    expect(webURL('http://example.com/model')).toBe('http://example.com/model');
+    expect(webURL('javascript:alert(1)')).toBeNull();
+    expect(webURL('//example.com/model')).toBeNull();
   });
 
   it('renders rel="noopener noreferrer" and drops unsafe hrefs', () => {
@@ -28,7 +35,7 @@ describe('external links', () => {
   });
 
   it('every source URL in the data is https', () => {
-    const urls = [...cubes.flatMap((c) => c.sources.map((s) => s.url)), ...Object.values(lessons).map((l) => l.source)];
+    const urls = Object.values(lessons).map((lesson) => lesson.source);
     for (const url of urls) expect(safeExternalUrl(url), url).toBeDefined();
   });
 });

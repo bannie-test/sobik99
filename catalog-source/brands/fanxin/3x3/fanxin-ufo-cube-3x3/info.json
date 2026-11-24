@@ -1,0 +1,28 @@
+{
+  "name": "FanXin 3x3 UFO Cube",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "Take your puzzling skills out of this world! The FanXin 3x3 UFO Cube is a creative shape mod designed in the iconic profile of an Unidentified Flying Object. This is not your ordinary 3x3—the unique, disc-inspired design offers a fun twist on the classic cube, making each solve feel novel and intriguing.",
+  "features": [
+    "Striking UFO shape for an eye-catching solve",
+    "Stable, cross-foot structure to prevent pops",
+    "Large rounded corners deliver excellent fault tolerance and a smooth turning experience"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/FanXin_20UFO_20Cube.png?v=1768622640&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/fanxin-ufo-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/fanxin-ufo-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "fanxin-ufo-cube-3x3",
+    "updated": "2026-11-17"
+  }
+}

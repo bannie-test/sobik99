@@ -1,0 +1,31 @@
+{
+  "name": "MoYu RS3 M 3x3 V5 SE (Magnetic) - Dual-Adjustment",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "MoYu RS3 M 3x3 V5 SE (Magnetic) - Dual-Adjustment is the successor to the legendary RS3 M 2020 that took the cubing community by storm—now in a Special Edition look with a black logo and matching black packaging. The SE version does not include the robot display box.",
+  "features": [
+    "Black logo and black Special Edition packaging",
+    "Classic screw/spring design",
+    "Dual-adjustment system (9 settings)",
+    "Circular core design for increased stability",
+    "Micro strong magnets",
+    "Anti-pop mechanism"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-rs3-m-3x3-v5-se-magnetic-dual-adjustment.jpg?v=1771619365&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-se-magnetic-dual-adjustment"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-se-magnetic-dual-adjustment"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-rs3-m-3x3-v5-se-magnetic-dual-adjustment",
+    "updated": "2026-11-16"
+  }
+}

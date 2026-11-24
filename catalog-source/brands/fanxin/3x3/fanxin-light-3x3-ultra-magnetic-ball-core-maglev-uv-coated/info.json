@@ -1,0 +1,33 @@
+{
+  "name": "Fanxin Light 3x3 Ultra (Magnetic, Ball-Core, MagLev, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV"
+  ],
+  "description": "Fanxin Light 3x3 Ultra (Magnetic, Ball-Core, MagLev, UV Coated) is a shocking speed cube release from this brand packed with modern features.",
+  "features": [
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "8 Compression settings",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology",
+    "Super glossy plastic, high grip"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Fanxin-Light-3x3-Ultra-Magnetic-Ball-Core-MagLev-UV-Coated.jpg?v=1771619336&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/fanxin-light-3x3-ultra-magnetic-ball-core-maglev-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/fanxin-light-3x3-ultra-magnetic-ball-core-maglev-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "fanxin-light-3x3-ultra-magnetic-ball-core-maglev-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

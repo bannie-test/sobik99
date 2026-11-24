@@ -1,0 +1,27 @@
+{
+  "name": "QiYi MS 5x5",
+  "tags": [],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-ms-5x5-magnetic"
+    }
+  ],
+  "description": "QiYi MS 5x5 Magnetic Speedcube is a part of the new budget \"MS\" series! The MS series really took us by surprise as the amount of performance that you are getting for the price is an INSANE value. The turning of this 5x5 is very smooth and the moderate magnets do a great job of preventing lock-ups and overturning.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-ms-5x5-magnetic-stickerless.jpg?v=1771619427&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-ms-5x5-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/qiyi-ms-5x5-magnetic"
+    ]
+  }
+}

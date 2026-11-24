@@ -1,0 +1,36 @@
+{
+  "name": "MoYu MeiLong Megaminx",
+  "tags": [
+    "Giá rẻ"
+  ],
+  "features": [
+    "12 mặt ngũ giác"
+  ],
+  "reviews": [
+    "Khởi đầu tốt cho Megaminx"
+  ],
+  "audience": "Người mới",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-megaminx-v2-magnetic"
+    }
+  ],
+  "description": "MoYu MeiLong Megaminx V2 (Magnetic) incorporates new features that continue to push the boundaries of entry-level speed cubes!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-MeiLong-Megaminx-V2-Magnetic_ee0c29f0.jpg?v=1771619319&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-megaminx-v2-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-meilong-megaminx-v2-magnetic"
+    ]
+  }
+}

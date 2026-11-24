@@ -1,0 +1,27 @@
+{
+  "name": "X-Man Galaxy Megaminx V2",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/x-man-galaxy-megaminx-v2-concave"
+    }
+  ],
+  "description": "The X-Man Galaxy Megaminx V2 is the upgraded version of the highly-acclaimed X-Man Galaxy Megaminx, which was used to set numerous records. Compared to the V1, the V2 features a more compact design, lower weight, improved corner cutting, and an overall more stable feel. The stickerless variant also comes with a set of black parts in the box, which can be used to switch one side to black.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/xmdgalaxymegaminxv2concaveb1_d4ec0133-a1e4-492f-a903-60624839bd17.jpg?v=1581455197&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/x-man-galaxy-megaminx-v2-concave"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/x-man-galaxy-megaminx-v2-concave"
+    ]
+  }
+}

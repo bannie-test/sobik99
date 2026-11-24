@@ -1,0 +1,33 @@
+{
+  "name": "QiYi M Pro 3x3 V3 Pioneer (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "The QiYi M Pro 3x3 V3 Pioneer is the fully-loaded build of QiYi's M Pro V3 line — a magnetic speed cube that pairs an integrated ball-core with core-to-corner magnetic positioning, edge-corner magnets, and a UV diamond-coated finish. If you want every bit of stability and speed this platform can deliver, this is the version to reach for.",
+  "features": [
+    "Diamond-coated shine: The UV coating stays glossy and holds its premium look through extended use, resisting wear and scratches.",
+    "Dial in your feel: The visual dual-adjustment system takes tuning out of guesswork territory and puts it on a numbered scale you can read at a glance.",
+    "8-level axis distance: Rotate the circular-hole indicator counterclockwise — the larger the number showing, the tighter the axis distance.",
+    "8-level elasticity: Rotate the triangular indicator clockwise — the larger the number, the stronger the elasticity.",
+    "Visual multi-point star dial: Color-coded numbered indicators let you see your exact setting instead of counting turns, so you can repeat a setup you like.",
+    "Integrated high-strength core: Keeps axis distance consistent across all six faces for a uniform, harmonious turning feel and no broken-core worries."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/QiYi-M-Pro-3x3-V3-Pioneer-_Magnetic_-MagLev_-Core-Magnets_-UV-Coated_6442.jpg?v=1791581540&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-m-pro-v3-pioneer-uv"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-m-pro-v3-pioneer-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-m-pro-v3-pioneer-uv",
+    "updated": "2026-11-16"
+  }
+}

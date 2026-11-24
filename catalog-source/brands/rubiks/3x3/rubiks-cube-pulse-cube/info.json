@@ -1,0 +1,40 @@
+{
+  "name": "Rubik's Cube, Pulse Cube",
+  "tags": [],
+  "description": "Race against the clock — and the dark. The Rubik’s Pulse Cube lights up your solve with an electrifying 60-second challenge. Press the logo to activate the glowing core and reveal each color, then twist and turn to solve before the lights fade out! Need more time? Tap the logo to add extra seconds or hold to reset for another round.",
+  "features": [
+    "Light-Up Challenge: Colors glow for 60 seconds — solve before the lights go out!",
+    "Built-In Timer: Press the logo to start, add time, or reset for a new round.",
+    "Fast-Paced Training: Perfect for speedcubers looking for a fun, timed challenge.",
+    "Visually Stunning: Dazzling internal LED light pulses faster as time runs out.",
+    "Great for All Ages: Exciting and rewarding for both beginners and advanced solvers.",
+    "Official Rubik’s 3×3 format"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/rubiks-cube-pulse-cube.jpg?v=1771619391&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-cube-pulse-cube"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-cube-pulse-cube"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-pulse-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "rubiks-cube-pulse-cube",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/rubiks-pulse-cube-3x3"
+    ]
+  }
+}

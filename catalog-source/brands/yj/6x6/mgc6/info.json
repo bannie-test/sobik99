@@ -1,0 +1,16 @@
+{
+  "name": "YJ MGC 6×6",
+  "description": "Rubik 6×6 từ tính cho thử thách ghép tâm lớn và nhiều lớp cạnh.",
+  "features": [
+    "Thử thách reduction nhiều lớp"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-6x6-magnetic"
+    }
+  ],
+  "tags": [
+    "Magnetic"
+  ]
+}

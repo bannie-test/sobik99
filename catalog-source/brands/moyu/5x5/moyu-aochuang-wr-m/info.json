@@ -1,0 +1,29 @@
+{
+  "name": "MoYu AoChuang WR M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aochuang-5x5-wr-m"
+    }
+  ],
+  "description": "The AoChuang WR M is the latest in the record-breaking WR series from MoYu. This 5x5 magnetic speed cube is a fantastically smooth, quick, and very high-performance flagship puzzle. It has a buttery, smooth feel with a hint of a click similar to other quality big cubes from MoYu. Sure to become the main puzzle of many world-class solvers, this is a 5x5 you do not want to miss out on!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/moyu-aochuang-wr-m-5x5.jpg?v=1677872814&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-aochuang-5x5-wr-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-aochuang-5x5-wr-m"
+    ]
+  }
+}

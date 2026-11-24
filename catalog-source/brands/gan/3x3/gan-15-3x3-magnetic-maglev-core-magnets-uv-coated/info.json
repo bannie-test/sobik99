@@ -1,0 +1,48 @@
+{
+  "name": "GAN 15 3x3 (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm",
+    "56 mm"
+  ],
+  "description": "The GAN 15 3x3 (Magnetic, MagLev, Core Magnets, UV Coated) is the lightest flagship 3x3 speed cube from GAN, weighing just 59g. While it’s not as customizable as previous models, the GAN 15 focuses on top-tier performance, smooth turning, and stability right out of the box.",
+  "features": [
+    "Super glossy plastic, high grip",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology",
+    "Enhanced core positioning 4.0 auto aligning technology (40 degrees)",
+    "76 factory-installed magnets"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/GAN-15-3x3-Magnetic-MagLev-Core-Magnets-UV-Coated.jpg?v=1771619593&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-15-3x3-magnetic-maglev-core-magnets-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-15-3x3-magnetic-maglev-core-magnets-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan15-maglev-uv-3x3-newblack"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-15-3x3-magnetic-maglev-core-magnets-uv-coated",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan15-maglev-uv-3x3-newblack"
+    ]
+  }
+}

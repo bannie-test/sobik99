@@ -1,0 +1,27 @@
+{
+  "name": "MoYu MeiLong Pyraminx",
+  "tags": [],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-pyraminx"
+    }
+  ],
+  "description": "The MoYu MeiLong Pyraminx is the first pyraminx in Cubing Classroom's new entry level lineup! Featuring a frosted surface, vibrant colors, and controllable turning this is a great option if you are looking to get started with Pyraminx!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-meilong-pyraminx-stickerless.jpg?v=1771619385&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-pyraminx"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-meilong-pyraminx"
+    ]
+  }
+}

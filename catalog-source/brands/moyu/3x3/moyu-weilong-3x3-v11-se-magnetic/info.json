@@ -1,0 +1,55 @@
+{
+  "name": "MoYu WeiLong 3x3 V11 SE (Magnetic)",
+  "tags": [
+    "Nam châm",
+    "MagLev",
+    "Ball-core",
+    "UV"
+  ],
+  "description": "MoYu WeiLong 3x3 V11 SE (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated) is a spectacular release that was used to break the 3x3 speed solve average World Record—now with a black logo and black Special Edition packaging.",
+  "features": [
+    "Black logo for a clean, stealth look",
+    "Black Special Edition packaging",
+    "64 customization configurations 8 spring compression settings",
+    "8 tension settings",
+    "48 factory-installed magnets for a smoother, more accurate turning feel",
+    "Anti-pop corner piece design"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-weilong-3x3-v11-se-magnetic.jpg?v=1771619365&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-3x3-v11-se-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-3x3-v11-se-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-v11-se-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-v11-se-3x3-20-magnet-ball-core-maglev-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-weilong-3x3-v11-se-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "MagLev",
+      "Ball-core",
+      "UV"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-weilong-v11-se-3x3-magnetic",
+      "https://www.thecubicle.com/products/moyu-weilong-v11-se-3x3-20-magnet-ball-core-maglev-uv"
+    ]
+  }
+}

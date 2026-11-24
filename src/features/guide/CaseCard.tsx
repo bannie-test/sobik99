@@ -1,44 +1,48 @@
 import { useState } from 'react';
 import type { AlgorithmCase } from '../../data/types';
 import { useCopy } from '../../shared/hooks/useCopy';
-import { usePlayAlgorithm } from './AlgorithmPlayer';
+import { t } from '../../cube-tools/utils/i18n.js';
 
 interface Props {
   item: AlgorithmCase;
   learned: boolean;
+  onPlay: (variant: number) => void;
   onToggleLearned: (id: string) => void;
 }
 
-const assetUrl = (path: string) => import.meta.env.BASE_URL + path;
-
-export function CaseCard({ item, learned, onToggleLearned }: Props) {
+export function CaseCard({ item, learned, onToggleLearned, onPlay }: Props) {
   const copy = useCopy();
-  const play = usePlayAlgorithm();
   const [variantIndex, setVariantIndex] = useState(0);
   const variant = item.variants[variantIndex] ?? item.variants[0]!;
-  const name = `${item.type.toUpperCase()} ${item.name}`;
+  const name = String(item.name);
 
   return (
-    <article className="algorithm-card">
+    <article id={`case-${item.id}`} className="algorithm-card">
       <div className="case-heading">
         <strong>{name}</strong>
         <button
           className="learn-toggle"
           aria-pressed={learned}
-          aria-label={`Đánh dấu đã học ${item.id}`}
+          aria-label={`${t("Đánh dấu đã học", "Mark learned")} ${item.id}`}
           onClick={() => onToggleLearned(item.id)}
         >
           {learned ? '✓' : '○'}
         </button>
       </div>
-      <img src={assetUrl(variant.image)} alt={`Trạng thái ${name}, mặt U ở trên`} loading="lazy" />
-      <small>{item.group_vi}</small>
+      <img src={variant.image} alt={`${name} · ${t("Sơ đồ 2D, mặt vàng ở trên", "2D diagram, yellow on top")}`} loading="lazy" />
+      <div className="case-recognition">
+        <small>{item.group_vi}</small>
+        {item.recognition && <details>
+          <summary>{t('Cách nhận diện', 'Recognition')}</summary>
+          <p>{item.recognition}</p>
+        </details>}
+      </div>
       <label className="variant-label">
-        Cách giải
+        {t("Cách giải", "Variant")}
         <select value={variantIndex} onChange={(e) => setVariantIndex(Number(e.target.value))}>
           {item.variants.map((v, i) => (
             <option key={i} value={i}>
-              {v.label}
+              {i + 1} · {v.label}
             </option>
           ))}
         </select>
@@ -46,15 +50,13 @@ export function CaseCard({ item, learned, onToggleLearned }: Props) {
       <code>{variant.alg}</code>
       <div className="actions">
         <button className="small-button" onClick={() => copy(variant.alg)}>
-          Sao chép
+          {t("Sao chép", "Copy")}
         </button>
         <button
           className="small-button primary"
-          onClick={() =>
-            play({ alg: variant.alg, puzzle: '3x3', title: `${name} · ${variant.label}`, setup: variant.setup })
-          }
+          onClick={() => onPlay(variantIndex)}
         >
-          ▶ Xem cách xoay
+          {t("▶ Xem cách xoay", "▶ Watch algorithm")}
         </button>
       </div>
     </article>

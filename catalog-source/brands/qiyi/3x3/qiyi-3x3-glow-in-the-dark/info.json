@@ -1,0 +1,49 @@
+{
+  "name": "QiYi 3x3 (Glow in the Dark)",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "The QiYi 3x3 (Glow in the Dark) is a fun, beginner-friendly 3x3 speed cube that stays visible when the lights go out. Its glow-in-the-dark plastic charges under light and then shines in darkness, making it perfect for night solves, gifts, and display. With a modern 55.5 mm size and an 80 g feel, it’s comfortable for new solvers learning the 3x3 and for seasoned cubers who want a unique practice cube.",
+  "features": [
+    "Solve in the dark: Glow-in-the-dark material makes the cube easy to see during night practice.",
+    "Easy glow activation: Charge it under sunlight or room light — UV light works best, but regular light works too.",
+    "Comfortable handling: 55.5 mm size balances control and speed for most hands.",
+    "Display-worthy look: Glossy finish plus the glow effect makes it a standout cube on a desk or shelf.",
+    "Expose the cube to light (sunlight, room light, or UV light).",
+    "Turn off the lights and enjoy glowing solves."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-3x3-glow-in-the-dark-black.gif?v=1771619307&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-3x3-glow-in-the-dark"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-3x3-glow-in-the-dark"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-3x3-fluorescent-stickers"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-magnetic-3x3-fluorescent-stickers"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-3x3-glow-in-the-dark",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-3x3-fluorescent-stickers",
+      "https://www.thecubicle.com/products/qiyi-magnetic-3x3-fluorescent-stickers"
+    ]
+  }
+}

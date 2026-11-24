@@ -1,0 +1,29 @@
+{
+  "name": "MoYu MeiLong 3x3 V2 (Magnetic)",
+  "tags": [],
+  "description": "MoYu MeiLong 3x3 V2 (Magnetic) is a lightweight upgrade to one of the most popular entry-level cubes ever.",
+  "features": [
+    "\"Dragon scale\" piece design for smoother turning",
+    "Factory-installed magnets for more control",
+    "Reinforced core design",
+    "Super fast turning feel",
+    "Lightweight",
+    "Display stand"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-meilong-3x3-v2-magnetic-stickerless.jpg?v=1771619521&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-meilong-3x3-v2-magnetic",
+    "updated": "2026-11-16"
+  }
+}

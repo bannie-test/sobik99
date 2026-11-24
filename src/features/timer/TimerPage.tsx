@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { t } from '../../cube-tools/utils/i18n.js';
 import { downloadText } from '../../shared/lib/csv';
 import { formatTime, statistics } from '../../shared/lib/stats';
 import { useModal } from '../../shared/ui/Modal';
@@ -9,15 +10,16 @@ import { canToggle, timerStore } from './timerStore';
 import { useTimer } from './useTimer';
 
 const STAT_LABELS = [
-  ['best', 'Best'],
-  ['worst', 'Worst'],
+  ['best', t('Nhanh nhất', 'Best')],
+  ['worst', t('Chậm nhất', 'Worst')],
   ['ao5', 'Ao5'],
   ['ao12', 'Ao12'],
 ] as const;
 
 /** Phím Space không kích hoạt timer khi đang gõ hoặc focus vào control khác. */
+const HOLD_MS = 350;
 const isInteractive = (target: EventTarget | null) =>
-  target instanceof Element && Boolean(target.closest('input,textarea,select,button,a'));
+  target instanceof Element && Boolean(target.closest('input,textarea,select,button:not(#timer-toggle),a,summary,[contenteditable]:not([contenteditable="false"])'));
 
 export default function TimerPage() {
   const modal = useModal();
@@ -25,48 +27,79 @@ export default function TimerPage() {
   const { history, scramble, running, startedAt, pending, loading } = state;
   const stats = statistics(history);
 
-  // Giữ tham chiếu mới nhất cho listener bàn phím đăng ký một lần.
+  const [hold, setHold] = useState<'idle' | 'holding' | 'ready'>('idle');
   const toggleRef = useRef(toggle);
   toggleRef.current = toggle;
 
   useEffect(() => {
     const controller = new AbortController();
-    window.addEventListener(
-      'keydown',
-      (e) => {
-        if (e.code !== 'Space' || e.repeat || modal.isOpen() || isInteractive(e.target)) return;
-        e.preventDefault();
-        toggleRef.current();
-      },
-      { signal: controller.signal },
-    );
-    window.addEventListener(
-      'keyup',
-      (e) => {
-        if (e.code === 'Space' && !isInteractive(e.target)) e.preventDefault();
-      },
-      { signal: controller.signal },
-    );
-    return () => controller.abort();
+    const { signal } = controller;
+    let captured = false;
+    let started: number | undefined;
+    let timeout: ReturnType<typeof setTimeout> | undefined;
+    const reset = () => {
+      captured = false;
+      started = undefined;
+      clearTimeout(timeout);
+      setHold('idle');
+    };
+
+    window.addEventListener('keydown', (event) => {
+      if (event.code !== 'Space') return;
+      if (captured) {
+        event.preventDefault();
+        return;
+      }
+      if (event.repeat || event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey ||
+          modal.isOpen() || isInteractive(event.target)) return;
+      const current = timerStore.get();
+      if (!canToggle(current)) return;
+      event.preventDefault();
+      captured = true;
+      if (current.running) {
+        toggleRef.current(event.timeStamp);
+        return;
+      }
+      started = event.timeStamp;
+      setHold('holding');
+      timeout = setTimeout(() => setHold('ready'), HOLD_MS);
+    }, { signal });
+    window.addEventListener('keyup', (event) => {
+      if (event.code !== 'Space' || !captured) return;
+      event.preventDefault();
+      const current = timerStore.get();
+      const ready = started !== undefined && event.timeStamp - started >= HOLD_MS;
+      reset();
+      if (ready && !modal.isOpen() && !current.running && canToggle(current)) toggleRef.current(event.timeStamp);
+    }, { signal });
+    window.addEventListener('blur', reset, { signal });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) reset(); }, { signal });
+    return () => {
+      controller.abort();
+      clearTimeout(timeout);
+    };
   }, [modal]);
 
-  // Vào trang: tạo scramble nếu chưa có (đồng hồ đang chạy thì giữ nguyên).
   useEffect(() => {
-    const s = timerStore.get();
-    if (!s.running && (!s.scramble || s.loading)) void generate();
+    const current = timerStore.get();
+    if (!current.running && (!current.scramble || current.loading)) void generate();
   }, [generate]);
 
   const hint = running
-    ? 'ĐANG CHẠY · SPACE HOẶC CHẠM ĐỂ DỪNG'
+    ? t('ĐANG CHẠY · SPACE HOẶC CHẠM ĐỂ DỪNG', 'RUNNING · SPACE OR TAP TO STOP')
     : pending
-      ? 'ĐÃ DỪNG · LƯU KẾT QUẢ ĐỂ TIẾP TỤC'
-      : 'Nhấn Space hoặc chạm để bắt đầu';
+      ? t('Lưu hoặc bỏ kết quả để giải tiếp', 'Save or discard the result to continue')
+      : hold === 'ready'
+        ? t('Sẵn sàng · Nhả Space để bắt đầu', 'Ready · Release Space to start')
+        : hold === 'holding'
+          ? t('Tiếp tục giữ Space…', 'Keep holding Space…')
+          : t('Giữ Space rồi nhả hoặc chạm để bắt đầu', 'Hold and release Space or tap to start');
 
   const confirmClear = () =>
     modal.open(
       <>
-        <h2>Xóa {history.length} lần giải?</h2>
-        <p>Bạn có thể xuất CSV trước để giữ bản sao. Việc xóa không thể hoàn tác.</p>
+        <h2>{t(`Xóa ${history.length} lần giải?`, `Delete ${history.length} solves?`)}</h2>
+        <p>{t('Bạn có thể xuất CSV trước để giữ bản sao. Việc xóa không thể hoàn tác.', 'Export a CSV first to keep a copy. Deleting your history is permanent.')}</p>
         <button
           className="button primary"
           id="confirm-clear"
@@ -75,67 +108,50 @@ export default function TimerPage() {
             modal.close();
           }}
         >
-          Xóa toàn bộ lịch sử
+          {t('Xóa toàn bộ lịch sử', 'Clear all history')}
         </button>
       </>,
     );
 
   return (
-    <section className="page-shell timer-page">
-      <div className="page-heading">
-        <div>
-          <small>PRACTICE CLUB / 3×3</small>
-          <h1>
-            Thêm một lần.
-            <br />
-            <em>Thêm một tiến bộ.</em>
-          </h1>
-        </div>
-        <p>
-          Scramble random-state từ cubing.js.
-          <br />
-          Kết quả chỉ lưu trên trình duyệt này.
-        </p>
-      </div>
-
+    <section className="timer-page" aria-labelledby="practice-title">
+      <header className="practice-bar">
+        <a href="#/">{t('← Trang chủ', '← Home')}</a>
+        <h1 id="practice-title">{t('Luyện tập 3×3', '3×3 Practice')}</h1>
+        <button id="new-scramble" className="small-button" disabled={running || !!pending || loading}
+          onClick={() => void generate()}>{t('Scramble mới ↻', 'New scramble ↻')}</button>
+      </header>
       <section className="timer-workspace">
-        <div className="scramble-top">
-          <span className="chip">3×3 · RANDOM STATE</span>
-          <button
-            id="new-scramble"
-            className="small-button"
-            disabled={running || !!pending || loading}
-            onClick={() => void generate()}
-          >
-            Scramble mới ↻
-          </button>
-        </div>
         <p className="scramble-text" id="scramble" aria-live="polite">
-          {loading ? 'Đang tạo scramble…' : scramble || 'Chưa tải được scramble. Bấm “Scramble mới” để thử lại.'}
+          {loading ? t('Đang tạo scramble…', 'Generating scramble…') : scramble || t('Chưa tải được scramble. Bấm “Scramble mới” để thử lại.', 'Could not load a scramble. Try generating a new one.')}
         </p>
         <button
-          className={`timer-display${running ? ' running' : ''}`}
+          className="timer-display"
+          data-state={running ? 'running' : pending ? 'stopped' : hold}
           id="timer-toggle"
-          aria-label="Bắt đầu hoặc dừng đồng hồ"
+          aria-label={t('Bắt đầu hoặc dừng đồng hồ', 'Start or stop the timer')}
+          aria-describedby="timer-hint"
           disabled={!canToggle(state)}
-          onClick={toggle}
+          onClick={(event) => toggle(event.timeStamp)}
         >
           <TimerClock running={running} startedAt={startedAt} stoppedMs={pending?.ms ?? 0} />
-          <span id="timer-hint">{hint}</span>
         </button>
-        <div className="timer-actions">
+        <p id="timer-hint" role="status">{hint}</p>
+        <div className="timer-actions" hidden={!pending}>
           <button id="save-solve" className="button primary" disabled={!pending} onClick={save}>
-            Lưu kết quả ↗
+            {t('Lưu kết quả ↗', 'Save result ↗')}
           </button>
           <button id="discard-solve" className="button secondary" hidden={!pending} onClick={discard}>
-            Bỏ kết quả
+            {t('Bỏ kết quả', 'Discard result')}
           </button>
           <span className="timer-state" role="status">
-            {pending ? 'Kết quả chưa lưu.' : running ? 'Đồng hồ đang chạy.' : ''}
+            {pending ? t('Kết quả chưa lưu.', 'Unsaved result.') : running ? t('Đồng hồ đang chạy.', 'Timer running.') : ''}
           </span>
         </div>
       </section>
 
+      <details className="practice-history" inert={running}>
+      <summary>{t('Lịch sử và thống kê', 'History and statistics')}</summary>
       <div className="stats-grid">
         {STAT_LABELS.map(([id, name]) => (
           <div key={id}>
@@ -145,14 +161,13 @@ export default function TimerPage() {
         ))}
       </div>
       <p className="muted stats-note">
-        Ao5 / Ao12 lấy 5 / 12 lần gần nhất, bỏ một nhanh nhất và một chậm nhất. Một DNF có thể được bỏ; hai DNF khiến
-        trung bình là DNF. +2 được cộng trước khi tính.
+        {t('Ao5 / Ao12 bỏ lần nhanh nhất và chậm nhất trong 5 / 12 lần gần nhất. Hai DNF khiến trung bình là DNF. +2 được cộng trước khi tính.', 'Ao5 / Ao12 drop the fastest and slowest of the last 5 / 12 solves. Two DNFs make the average a DNF. Penalties are applied before averaging.')}
       </p>
 
       <div className="section-heading">
         <div>
-          <small>NHỮNG VÒNG XOAY ĐÃ QUA</small>
-          <h2>Lịch sử của bạn.</h2>
+          <small>{t('NHỮNG VÒNG XOAY ĐÃ QUA', 'PAST SOLVES')}</small>
+          <h2>{t('Lịch sử của bạn.', 'Your history')}</h2>
         </div>
         <div className="actions">
           <button
@@ -161,16 +176,17 @@ export default function TimerPage() {
             disabled={!history.length}
             onClick={() => downloadText(historyCsv(history), 'sobik99-solves.csv', 'text/csv;charset=utf-8')}
           >
-            Xuất CSV ↓
+            {t('Xuất CSV ↓', 'Export CSV ↓')}
           </button>
           <button id="clear-history" className="small-button" disabled={!history.length} onClick={confirmClear}>
-            Xóa lịch sử
+            {t('Xóa lịch sử', 'Clear history')}
           </button>
         </div>
       </div>
       <div id="history-content">
         <HistoryTable history={history} onPenalty={setPenalty} onDelete={deleteSolve} />
       </div>
+      </details>
     </section>
   );
 }

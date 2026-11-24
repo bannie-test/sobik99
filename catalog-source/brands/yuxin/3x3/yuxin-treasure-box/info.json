@@ -1,0 +1,37 @@
+{
+  "name": "YuXin Treasure Box",
+  "tags": [
+    "66 mm"
+  ],
+  "description": "Keep your treasure safe! The YuXin Treasure Box is a fully-fuctional 3x3 puzzle but has a hollow center that can store small objects!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/YuXin-Treasure-Box.jpg?v=1760588793&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yuxin-treasure-box"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yuxin-treasure-box"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yuxin-3x3-treasure-box"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "yuxin-treasure-box",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "66 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/yuxin-3x3-treasure-box"
+    ]
+  }
+}

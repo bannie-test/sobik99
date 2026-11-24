@@ -1,0 +1,27 @@
+{
+  "name": "GAN 356 XS",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-xs"
+    }
+  ],
+  "description": "The GAN 356 XS is the successor to the popular GAN 356 X. This new magnetic flagship 3x3 features multiple innovations in 3x3 design, including an adjustable magnet system, a dual-adjustment tension/compression system, and an all plastic core that significantly reduces the weight of the puzzle. These features put together, the GAN 356 XS stands as one of the lightest, most high-tech modern 3x3's on the market.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/GAN356XS.jpg?v=1624388600&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan356-xs"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan356-xs"
+    ]
+  }
+}

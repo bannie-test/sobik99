@@ -1,0 +1,28 @@
+{
+  "name": "GAN 356 3x3 (Magnetic)",
+  "tags": [],
+  "description": "The GAN 356 3x3 (Magnetic) (356M) is the perfect middle-ground between top GAN Cube 3x3 models! While the magnet strength is not adjustable, this magnetic cube still offers plenty of customization through the dual-adjustment Numerical IPG core and alternate GES spring options—making it one of the most versatile magnetic cubes in its class.",
+  "features": [
+    "GAN 356 (MagLev, Core Magnets)",
+    "GAN 356 (MagLev, Core Magnets, UV Coated)",
+    "GAN 356 Lite (Magnetic)",
+    "GAN 15 (MagLev, Core Magnets, UV Coated)",
+    "GAN 11 Pro (Core Magnets)"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-356-3x3-magnetic-stickerless.jpg?v=1771619393&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-356-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-356-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-356-3x3-magnetic",
+    "updated": "2026-11-16"
+  }
+}

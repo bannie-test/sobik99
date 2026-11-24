@@ -1,0 +1,28 @@
+{
+  "name": "GAN356 i Carry E 3x3",
+  "tags": [
+    "Nam châm",
+    "Thông minh",
+    "56 mm"
+  ],
+  "description": "GAN356 i Carry E is an updated version of GAN’s lightweight smart cube designed for casual solvers who want app-connected functionality without the high cost of gyroscopes or full-motion tracking. This version swaps the CR1632 battery from the original i Carry for two LR43 button batteries, offering about 150 hours of battery life.",
+  "features": [
+    "Kích thước 56 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN356_20i_20Carry_20E_203x3_01430285-065f-499d-b7c9-f30019cd01d6.jpg?v=1746125818&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan356-i-carry-e-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-i-carry-e-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan356-i-carry-e-3x3",
+    "updated": "2026-11-17"
+  }
+}

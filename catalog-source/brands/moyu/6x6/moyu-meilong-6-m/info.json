@@ -1,0 +1,29 @@
+{
+  "name": "MoYu MeiLong 6 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-6x6-v2-magnetic"
+    }
+  ],
+  "description": "MoYu MeiLong 6x6 V2 (Magnetic) is a great choice if you are looking for a 6x6 and don't want to break the bank!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-MeiLong-6x6-V2-Magnetic.jpg?v=1771619391&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-6x6-v2-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-meilong-6x6-v2-magnetic"
+    ]
+  }
+}

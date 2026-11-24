@@ -14,7 +14,7 @@ const CSP = [
   "script-src 'self' 'wasm-unsafe-eval'",
   "worker-src 'self' blob:",
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob:",
+  "img-src 'self' data: blob: https:",
   "font-src 'self'",
   "connect-src 'self'",
   "object-src 'none'",
@@ -37,6 +37,9 @@ function contentSecurityPolicy(): Plugin {
 export default defineConfig({
   base: './',
   plugins: [react(), contentSecurityPolicy()],
+  server: {
+    fs: { deny: ['.env', '.env.*', '*.{crt,pem}', '**/.git/**', '**/catalog-source/**'] },
+  },
   worker: { format: 'es' },
   build: {
     target: 'es2022',

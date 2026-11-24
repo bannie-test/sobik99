@@ -1,0 +1,29 @@
+{
+  "name": "MoYu MeiLong 7 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-7x7-v2-magnetic"
+    }
+  ],
+  "description": "MoYu MeiLong 7x7 V2 (Magnetic) is a great choice if you are looking for a 7x7 and don't want to break the bank!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-MeiLong-7x7-V2-Magnetic.jpg?v=1771619343&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-7x7-v2-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-meilong-7x7-v2-magnetic"
+    ]
+  }
+}

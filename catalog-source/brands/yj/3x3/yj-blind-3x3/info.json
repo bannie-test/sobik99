@@ -1,0 +1,22 @@
+{
+  "name": "YJ Blind 3x3",
+  "tags": [],
+  "description": "The YJ Blind 3x3 is a puzzle with different textures on each face. This difference in texture allows people with vision impairments to solve the 3x3!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/sQxoZed6uhlCg.jpg?v=1594240131&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-blind-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-blind-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-blind-3x3",
+    "updated": "2026-11-17"
+  }
+}

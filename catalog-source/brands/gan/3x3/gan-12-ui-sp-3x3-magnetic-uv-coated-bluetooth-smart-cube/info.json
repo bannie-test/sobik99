@@ -1,0 +1,32 @@
+{
+  "name": "GAN 12 UI SP 3x3 (Magnetic, UV Coated) - Bluetooth Smart Cube",
+  "tags": [
+    "UV",
+    "Thông minh"
+  ],
+  "description": "The GAN 12 UI SP 3x3 (Magnetic, UV Coated) – Bluetooth Smart Cube is a premium smart speed cube that combines GAN’s fast turning feel with accurate motion tracking for training and analysis. Piece magnets provide crisp layer “clicks,” while a magnetic angle sensor system uses 6 core angle sensors to capture motion precisely and help prevent “lost steps” during fast solves.",
+  "features": [
+    "Smarter training: High-sensitivity motion capture records your solves more reliably, even at higher TPS.",
+    "Fast, controlled turning: Magnetic pieces improve alignment for cleaner execution and fewer lockups.",
+    "Durable high-grip finish: UV coating adds glossy grip that stays consistent over time.",
+    "Easy, repeatable tuning: Defined settings make it simple to dial in your preferred feel.",
+    "GES Pro+ dual adjustment: 6 tension settings + 6 compression settings for quick, repeatable setup.",
+    "GMS V3 magnet system: 4 magnet strength settings to match your turning style—lighter for speed or stronger for control."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-12-ui-sp-3x3-magnetic-uv-coated-bluetooth-smart-cube_1c10dd65.jpg?v=1771619319&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-12-ui-sp-3x3-magnetic-uv-coated-bluetooth-smart-cube"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-12-ui-sp-3x3-magnetic-uv-coated-bluetooth-smart-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-12-ui-sp-3x3-magnetic-uv-coated-bluetooth-smart-cube",
+    "updated": "2026-11-16"
+  }
+}

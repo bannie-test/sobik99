@@ -1,0 +1,32 @@
+{
+  "name": "MoYu Super RS3 M 3x3 (Magnetic, MagLev)",
+  "tags": [
+    "MagLev",
+    "Nam châm"
+  ],
+  "description": "MoYu Super RS3 M 3x3 (Magnetic, MagLev) is the long-awaited 2022 update to our best-seller, the RS3 M 2020 speed cube and it is on track to be just as, if not more, popular!",
+  "features": [
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Dual-adjustment system (9 settings)",
+    "Glossy exterior finish",
+    "\"Dragon scale\" piece design for smoother turning",
+    "Customizable feel"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-super-rs3-m-3x3-magnetic-maglev-stickerless.jpg?v=1771619515&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-super-rs3-m-3x3-magnetic-maglev"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-super-rs3-m-3x3-magnetic-maglev"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-super-rs3-m-3x3-magnetic-maglev",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "YJ Pocket Cube 3x3",
+  "tags": [
+    "50 mm"
+  ],
+  "description": "The YJ Pocket Cube is a compact 50mm magnetic 3x3 that’s perfect for cubing on the go. While it’s not a flagship model, it delivers surprisingly smooth turning and reliable performance in a smaller form factor. Whether you’re looking for a travel-friendly option or just want something fun and functional to keep in your pocket, this cube is a great choice for casual solves and quick sessions.",
+  "features": [
+    "Kích thước 50 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YJ_20Pocket_20Cube_203x3_7ee1361a-6143-404b-8a70-f380644f5703.jpg?v=1744985523&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-pocket-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-pocket-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-pocket-cube-3x3",
+    "updated": "2026-11-17"
+  }
+}

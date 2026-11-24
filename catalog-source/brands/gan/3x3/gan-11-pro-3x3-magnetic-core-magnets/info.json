@@ -1,0 +1,29 @@
+{
+  "name": "GAN 11 Pro 3x3 (Magnetic, Core Magnets)",
+  "tags": [],
+  "description": "The GAN 11 Pro 3x3 (Magnetic, Core Magnets) is GAN Cube’s 2020 flagship speed cube, and it has remained a top choice among competitive speedcubers since its release. This magnetic 3x3 cube features a core magnet system for improved stability, enhanced corner-cutting, and a more connected feel, delivering one of the smoothest and fastest solving experiences available in the world of speedcubing.",
+  "features": [
+    "Adjustable magnet strength",
+    "Dual-adjustment core for independent spring compression & tension",
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "Interchangeable corner/core magnets",
+    "Easy to customize",
+    "4 tension settings"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-11-pro-3x3-magnetic-core-magnets-stickerless-black-internals.jpg?v=1771619309&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-11-pro-3x3-magnetic-core-magnets"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-11-pro-3x3-magnetic-core-magnets"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-11-pro-3x3-magnetic-core-magnets",
+    "updated": "2026-11-16"
+  }
+}

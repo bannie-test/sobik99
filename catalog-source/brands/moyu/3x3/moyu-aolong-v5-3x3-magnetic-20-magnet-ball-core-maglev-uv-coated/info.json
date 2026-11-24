@@ -1,0 +1,33 @@
+{
+  "name": "MoYu AoLong 3x3 V5 (Magnetic, 20-Magnet Ball-Core, MagLev, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV"
+  ],
+  "description": "The MoYu AoLong 3x3 V5 (Magnetic, 20-Magnet Ball-Core, MagLev, UV Coated) is the top of the V5 line — 100 magnets in total, with 20 inside the ball core for the densest magnetic field MoYu put into this cube. MagLev suspension, corner-to-core auto-alignment, and dual-axis tuning all carry over from the 8-magnet version, with the 20-magnet core delivering noticeably sharper snap on every turn.",
+  "features": [
+    "MagLev suspension: Repelling magnets replace springs throughout, delivering the fastest, lightest turning feel in the V5 lineup.",
+    "64 tuning combinations: 8 MagLev tension levels × 8 distance settings — the full dual-axis tuning range with MagLev under both axes.",
+    "UV Coated finish: High-grip glossy surface built for confident control at speed.",
+    "Dual adjustment system: MagLev tension and distance are independently adjustable — zero interference between the two axes.",
+    "8 MagLev tension levels: Dial in resistance from soft and fluid to firm and responsive without touching the distance setting.",
+    "8 distance settings: Set how close the layers sit to the core — affects corner-cutting angle, stability, and overall turning character."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-aolong-v5-3x3-magnetic-20-magnet-ball-core-maglev-uv-coated_1dada0bb.jpg?v=1782317773&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-aolong-v5-3x3-magnetic-20-magnet-ball-core-maglev-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-aolong-v5-3x3-magnetic-20-magnet-ball-core-maglev-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-aolong-v5-3x3-magnetic-20-magnet-ball-core-maglev-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

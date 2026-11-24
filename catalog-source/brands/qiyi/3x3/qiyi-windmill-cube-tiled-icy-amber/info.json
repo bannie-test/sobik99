@@ -1,0 +1,24 @@
+{
+  "name": "QiYi Windmill Cube (Tiled - Icy Amber)",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "The QiYi Windmill Cube (Tiled – Icy Amber) is a striking 3x3 shape-mod that features a windmill-like shape on the top and bottom faces. The semi-transparent icy amber tiles give the puzzle a sleek, crystal-clear appearance while maintaining a traditional color scheme for easy piece identification. The slightly rotated layers offer a fresh challenge as you solve this visually captivating cube.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/windmillicyamber1.jpg?v=1743528885&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-windmill-cube-tiled-icy-amber"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-windmill-cube-tiled-icy-amber"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-windmill-cube-tiled-icy-amber",
+    "updated": "2026-11-17"
+  }
+}

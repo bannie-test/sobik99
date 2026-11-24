@@ -1,0 +1,33 @@
+{
+  "name": "Color Brick Speed Cube",
+  "tags": [],
+  "description": "The Color Brick Speed Cube is a fun, unique speedcube for everyone! Don't be fooled by the appearance, this is actually a fully-operational, smooth turning speed cube with an adjustable screw/spring core and corner-cutting of up to 45 degrees!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/products/Color-Brick-Speed-Cube.jpg?v=1771619422&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/color-brick-speed-cube"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/color-brick-speed-cube"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/fanxin-color-brick-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "color-brick-speed-cube",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/fanxin-color-brick-3x3"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Rubik's Phantom Cube 3x3",
+  "tags": [
+    "57 mm"
+  ],
+  "description": "The Rubik’s Phantom Cube 3x3 is not your ordinary 3x3. This heat-sensitive Rubik’s Cube uses innovative thermochromic technology that reveals hidden colors when touched, then fades back to black as the cube cools. It’s a challenge like no other, a race against time and memory that puzzle fans will love.",
+  "features": [
+    "Official Rubik’s Cube 3x3 with heat-sensitive tiles",
+    "Designed for experienced cubers and puzzle enthusiasts",
+    "A standout addition to your Rubik’s Cube collection",
+    "Doubles as a stress-relieving fidget toy for teens and adults"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Rubiks-Phantom-Cube.jpg?v=1771619377&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-phantom-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-phantom-cube-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-phantom-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "rubiks-phantom-cube-3x3",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "57 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/rubiks-phantom-cube-3x3"
+    ]
+  }
+}

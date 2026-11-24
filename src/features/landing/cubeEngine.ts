@@ -83,7 +83,18 @@ const apply = (state: Cubie[], move: Turn): Cubie[] => {
   );
 };
 
-export function cubeTimeline(scramble: string[] = SCRAMBLE): CubeTimeline {
+function randomScramble(): string[] {
+  const axes = ['RL', 'UD', 'FB'];
+  const suffixes = ['', "'", '2'];
+  const choose = <T,>(values: readonly T[]): T => values[Math.floor(Math.random() * values.length)]!;
+  let previous = '';
+  return Array.from({ length: 20 }, () => {
+    previous = choose(axes.filter((axis) => axis !== previous));
+    return choose([...previous]) + choose(suffixes);
+  });
+}
+
+export function cubeTimeline(scramble: string[] = randomScramble()): CubeTimeline {
   const solved: Cubie[] = [];
   for (let x = -1; x <= 1; x++)
     for (let y = -1; y <= 1; y++)

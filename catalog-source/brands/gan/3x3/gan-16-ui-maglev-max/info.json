@@ -1,0 +1,53 @@
+{
+  "name": "GAN16 ui Maglev Max",
+  "tags": [
+    "Mới",
+    "Smart",
+    "Maglev",
+    "UV",
+    "Nam châm",
+    "Thông minh",
+    "Bản đặc biệt"
+  ],
+  "features": [
+    "Cube thông minh Bluetooth",
+    "Ghi lại từng góc xoay để phân tích và luyện tập"
+  ],
+  "reviews": [
+    "Flagship thông minh thế hệ mới của GAN"
+  ],
+  "audience": "Người muốn luyện tập có số liệu",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan16-ui-maglev-max-uv-3x3-smart-cube"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan16-ui-maglev-max-uv-3x3-minions-edition-smart-cube"
+    }
+  ],
+  "description": "GAN16 ui MagLev MAX UV 3x3 (Smart Cube) - more details coming soon!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN16_ui.png?v=1782842762&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan16-ui-maglev-max-uv-3x3-smart-cube"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "UV",
+      "Nam châm",
+      "Thông minh",
+      "Bản đặc biệt"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan16-ui-maglev-max-uv-3x3-smart-cube",
+      "https://www.thecubicle.com/products/gan16-ui-maglev-max-uv-3x3-minions-edition-smart-cube"
+    ]
+  }
+}

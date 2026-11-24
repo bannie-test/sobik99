@@ -1,0 +1,22 @@
+{
+  "name": "Rubik's Classic 3x3 (Tiled)",
+  "tags": [],
+  "description": "The Rubik's Cube is a classic colour-matching puzzle that can be enjoyed at home or on the move. The original, classic 3x3 cube is a highly addictive brain teaser that has fascinated fans all around the world for decades. The Rubik's Cube features six different sides, each made up of nine colourful squares.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/Rubiks_Classic_3x3_3ca0763a-25df-492d-ba13-34553aab0865.png?v=1782317250&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/rubiks-classic-3x3-tiled"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-classic-3x3-tiled"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "rubiks-classic-3x3-tiled",
+    "updated": "2026-11-17"
+  }
+}

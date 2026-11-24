@@ -1,0 +1,26 @@
+{
+  "name": "Rubik's Keychain Cube 3x3",
+  "tags": [
+    "30 mm"
+  ],
+  "description": "The Rubik's Keychain Cube is a small, portable 3x3 with a clip that can attach to anything! Put it on your backpack, keychain, or anywhere you want your cuber spirit to show! This one's turning is a bit stiff, but that makes it more sturdy for your many adventures.",
+  "features": [
+    "Kích thước 30 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/Rubik_s_20Keychain_20Cube_203x3_e3e6d627-a84b-49b5-b88a-505e05ce1f16.jpg?v=1678982017&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/rubiks-keychain-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-keychain-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "rubiks-keychain-cube-3x3",
+    "updated": "2026-11-17"
+  }
+}

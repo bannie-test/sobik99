@@ -1,0 +1,29 @@
+{
+  "name": "MoYu RS2 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-rs2-m-2x2"
+    }
+  ],
+  "description": "The MoYu RS2 M 2x2 is the latest puzzle in the RS line. It features frosted plastic, medium/strong magnetic strength, and smooth turning right out of the box.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/NmmGywVbo21bE.jpg?v=1603292998&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-rs2-m-2x2"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-rs2-m-2x2"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "MoYu AoLong 3x3 V5 (Magnetic, Ball-Core, MagLev, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "The MoYu AoLong 3x3 V5 (Magnetic, Ball-Core, MagLev, UV Coated) adds two meaningful upgrades over the spring versions: MagLev suspension replaces the springs for a faster, more fluid turning feel, and an 8-magnet ball-core brings auto-alignment into the mix. The result is 88 magnets working together — edge, corner, and core — with the same deep dual-axis tuning the whole V5 line shares.",
+  "features": [
+    "8-magnet ball-core: Eight magnets inside the ball core pull each corner piece into alignment as the layer settles — you feel it click into place precisely.",
+    "88-magnet total system: Corner, edge, and ball-core magnets form a complete magnetic field around every layer for feedback and stability from every angle.",
+    "UV Coated finish: High-grip glossy surface that holds under fast turning and sweaty hands.",
+    "Dual adjustment system: MagLev tension and distance are independently controlled — adjust feel and layer proximity without each setting fighting the other.",
+    "8 MagLev tension levels: Repelling magnets replace the spring — dial in the resistance from soft and fluid to firm and snappy.",
+    "8 distance settings: Set layer proximity to the core for the corner-cutting and stability profile you want."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-aolong-v5-3x3-magnetic-ball-core-maglev-uv-coated_5e69e92c.jpg?v=1782317779&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-aolong-v5-3x3-magnetic-ball-core-maglev-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-aolong-v5-3x3-magnetic-ball-core-maglev-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aolong-v5-20-magnet-ball-core-maglev-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aolong-v5-3x3-magnetic-uv"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aolong-v5-8-magnet-ball-core-maglev-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-aolong-v5-3x3-magnetic-ball-core-maglev-uv-coated",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-aolong-v5-20-magnet-ball-core-maglev-uv",
+      "https://www.thecubicle.com/products/moyu-aolong-v5-3x3-magnetic-uv",
+      "https://www.thecubicle.com/products/moyu-aolong-v5-8-magnet-ball-core-maglev-uv"
+    ]
+  }
+}
