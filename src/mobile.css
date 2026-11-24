@@ -233,3 +233,56 @@
   #sobik-orbit .story :is(h1, h2) { font-size: clamp(24px, 5vw, 32px); }
   #sobik-orbit .story p { font-size: 13px; }
 }
+
+.compact-toggle {
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  margin-inline-start: 4px;
+  white-space: nowrap;
+}
+
+.compact-toggle input {
+  margin: 0;
+  accent-color: #7856df;
+}
+
+.compact-mode .site-footer,
+.compact-mode .site-nav nav a:not(.nav-learn) { display: none; }
+
+.guide-sidebar nav [data-guide-puzzle] {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 8px 11px;
+  text-align: start;
+  font-size: 13px;
+}
+
+.guide-sidebar nav [data-guide-puzzle][aria-current="page"] {
+  background: #e4d9ff;
+  border-color: #292339;
+  font-weight: bold;
+}
+
+@media (max-width: 760px) {
+  .compact-mode { padding-bottom: 0; }
+  .compact-mode .site-nav nav {
+    position: static;
+    display: block;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+  .compact-mode .site-nav nav .nav-learn {
+    min-height: 42px;
+    padding-inline: 8px;
+  }
+  .guide-sidebar nav [data-guide-puzzle] {
+    flex: none;
+    min-height: 42px;
+    padding: 6px 9px;
+    background: #fffdf8;
+    font-size: 12px;
+  }
+}

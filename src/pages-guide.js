@@ -1,6 +1,7 @@
 import { t as tr } from './utils/i18n.js';
 import cases from './data/algorithms.js';
 import { algorithmLabel, caseGroup, caseRecognition } from './data/algorithm-text.js';
+import { intuitiveF2L } from './data/f2l-intuitive.js';
 import { lessons, notation } from './data/lessons.js';
 import { puzzleTypes } from './data/puzzles.js';
 import { caseOf } from './core/cfop.js';
@@ -120,13 +121,13 @@ export function playAlgorithm(alg, puzzle = '3x3', title = tr('Công thức', "A
   });
 }
 
-function crossPanel() {
+function crossPanel(compact) {
   return `<div class="cross-workshop"><div class="cross-shape"><i></i><i></i><i></i><i></i><i></i></div><div>
    <h3>${tr("Cross là bài toán lập kế hoạch.", "Plan your cross before turning.")}</h3>
    <p>${tr("Cross không có danh sách công thức cố định: mỗi scramble cần một đường đi riêng (tối đa 8 bước). Cầm trắng ở dưới để không phải lật khối khi chuyển sang F2L.", "Each scramble needs its own cross solution, up to eight moves. Hold white on the bottom so you can move straight into F2L.")}</p>
    <ol><li>${tr("Tìm cả bốn cạnh trắng trong lúc quan sát.", "Find all four white edges during inspection.")}</li><li>${tr("Định trước thứ tự chèn, tính cả việc khớp màu bên với tâm.", "Plan your insertions and match each side color to its center.")}</li><li>${tr("Thực hiện liền mạch, rồi so với lời giải tối ưu.", "Execute the plan in one go and compare it with the optimal solution.")}</li></ol>
-   <p>${tr("Bài luyện dùng scramble ngẫu nhiên: trình giải làm Cross tối ưu, rồi bạn bấm", "The drill generates a random scramble and finds an optimal cross. Select")} <b>${tr("Giải tiếp", "Continue solving")}</b> ${tr("để đi trọn F2L → OLL → PLL cho đến khi cube được giải.", "to finish with F2L → OLL → PLL.")}</p>
-   <div class="row-buttons"><a class="button primary" href="#/solve?random=1&goal=cross">${tr("Luyện Cross với scramble mới ↗", "Practice cross with a new scramble ↗")}</a><a class="button secondary" href="#/solve?random=1">${tr("Xem một lần giải trọn vẹn ↗", "Watch a full solve ↗")}</a></div></div></div>`;
+   ${compact ? '' : `<p>${tr("Bài luyện dùng scramble ngẫu nhiên: trình giải làm Cross tối ưu, rồi bạn bấm", "The drill generates a random scramble and finds an optimal cross. Select")} <b>${tr("Giải tiếp", "Continue solving")}</b> ${tr("để đi trọn F2L → OLL → PLL cho đến khi cube được giải.", "to finish with F2L → OLL → PLL.")}</p>
+   <div class="row-buttons"><a class="button primary" href="#/solve?random=1&goal=cross">${tr("Luyện Cross với scramble mới ↗", "Practice cross with a new scramble ↗")}</a><a class="button secondary" href="#/solve?random=1">${tr("Xem một lần giải trọn vẹn ↗", "Watch a full solve ↗")}</a></div>`}</div></div>`;
 }
 
 function card(c) {
@@ -142,27 +143,57 @@ function card(c) {
   </article>`;
 }
 
-export function guide(root, params) {
+export function guide(root, params, compactMode = false) {
+  if (!compactMode) return renderGuide(root, params, false);
+
+  let dispose = renderGuide(root, params, true);
+  root.onclick = event => {
+    const button = event.target.closest('[data-guide-puzzle]');
+    if (!button || button.getAttribute('aria-current') === 'page') return;
+    const puzzle = button.dataset.guidePuzzle;
+    dispose();
+    dispose = renderGuide(root, new URLSearchParams({ puzzle }), true);
+    root.querySelector('[data-guide-puzzle][aria-current="page"]').focus({ preventScroll: true });
+  };
+  return () => {
+    root.onclick = null;
+    dispose();
+  };
+}
+
+function renderGuide(root, params, compactMode) {
   let puzzle = params.get('puzzle') || '3x3';
-  if (!lessons[puzzle]) puzzle = '3x3';
+  if (!Object.hasOwn(lessons, puzzle)) puzzle = '3x3';
   const focus = cases.find(c => c.id === params.get('case'));
   let phase = focus ? focus.type : ['cross', 'f2l', 'oll', 'pll'].includes(params.get('phase')) ? params.get('phase') : 'f2l';
+  let f2lView = 'algorithms';
   const lesson = lessons[puzzle];
   const counts = t => cases.filter(c => c.type === t).length;
   const compact = matchMedia('(max-width: 760px)').matches;
   const totalAlgs = cases.reduce((n, c) => n + c.algs.length, 0);
   root.innerHTML = `<section class="page-shell guide-page"><div class="page-heading"><div><small>CUBE SCHOOL / ${puzzle}</small><h1>${lesson.title.replace('. ', '.<br><em>')}${lesson.title.includes('. ') ? '</em>' : ''}</h1></div><p>${lesson.intro}</p></div>
-  <div class="guide-layout"><aside class="guide-sidebar"><small>${tr("CHỌN HÌNH KHỐI", "CHOOSE A PUZZLE")}</small><nav aria-label="${tr("Loại Rubik", "Puzzle types")}">${puzzleTypes.map(t => `<a href="#/guide?puzzle=${t}" ${t === puzzle ? 'aria-current="page"' : ''}>${t}<span>↗</span></a>`).join('')}</nav>
+  <div class="guide-layout"><aside class="guide-sidebar"><small>${tr("CHỌN HÌNH KHỐI", "CHOOSE A PUZZLE")}</small><nav aria-label="${tr("Loại Rubik", "Puzzle types")}">${puzzleTypes.map(t => {
+    const current = t === puzzle ? 'aria-current="page"' : '';
+    return compactMode
+      ? `<button type="button" data-guide-puzzle="${t}" ${current}>${t}</button>`
+      : `<a href="#/guide?puzzle=${t}" ${current}>${t}<span>↗</span></a>`;
+  }).join('')}</nav>
   <details class="notation"${compact ? '' : ' open'}><summary>${tr("Bảng ký hiệu", "Move notation")}</summary><dl>${notation.map(([n, d]) => `<dt>${esc(n)}</dt><dd>${esc(d)}</dd>`).join('')}</dl></details></aside>
-  <div class="guide-main"><details class="learning-intro guide-roadmap"${compact ? '' : ' open'}><summary>${tr('Lộ trình học', 'Learning path')}</summary>${lesson.steps.map(([title, text], i) => `<details class="lesson" ${i === 0 ? 'open' : ''}><summary><span>0${i + 1}</span>${esc(title)}</summary><p>${esc(text)}</p></details>`).join('')}<a href="${lesson.source}" target="_blank" rel="noopener" class="source-link">${tr("Tài liệu tham khảo thêm ↗", "Further reading ↗")}</a></details>
+  <div class="guide-main"><details class="learning-intro guide-roadmap"${compact ? '' : ' open'}><summary>${tr('Lộ trình học', 'Learning path')}</summary>${lesson.steps.map(([title, text], i) => `<details class="lesson" ${i === 0 ? 'open' : ''}><summary><span>0${i + 1}</span>${esc(title)}</summary><p>${esc(text)}</p></details>`).join('')}${compactMode ? '' : `<a href="${lesson.source}" target="_blank" rel="noopener" class="source-link">${tr("Tài liệu tham khảo thêm ↗", "Further reading ↗")}</a>`}</details>
   ${puzzle === '3x3' ? `<section class="algorithm-library"><div class="section-heading"><div><small>${tr("CFOP / THƯ VIỆN THẾ GIẢI", "CFOP / ALGORITHM LIBRARY")}</small><h2>${tr("Nhìn thế. Chọn cách.", "Recognize the case. Pick an algorithm.")}</h2></div><span class="chip">${cases.length} CASE · ${totalAlgs} ${tr("CÔNG THỨC", "ALGORITHMS")}</span></div>
    <div class="hold-banner"><span class="hold-cube" aria-hidden="true"><i></i><i></i><i></i></span><p><b>${tr("Mặt vàng là mặt cuối.", "Yellow is the last layer.")}</b> ${tr("Mọi hình và mô hình đều cầm trắng ở dưới, vàng ở trên, xanh lá phía trước — đúng tư thế khi bạn giải CFOP.", "All diagrams and models show white on the bottom, yellow on top, and green in front for CFOP.")}</p></div>
    <div class="phase-tabs" role="group" aria-label="${tr("Giai đoạn CFOP", "CFOP stage")}">${[['cross', 'Cross'], ['f2l', `F2L · ${counts('f2l')}`], ['oll', `OLL · ${counts('oll')}`], ['pll', `PLL · ${counts('pll')}`]].map(([id, label]) => `<button data-phase="${id}" aria-pressed="${id === phase}">${label}</button>`).join('')}</div>
+   <div id="f2l-tabs" class="phase-tabs f2l-tabs" role="tablist" aria-label="${tr('Cách học F2L', 'F2L learning mode')}" hidden>
+     <button type="button" id="f2l-algorithms-tab" role="tab" data-f2l-view="algorithms" aria-controls="case-panel">${counts('f2l')} ${tr('công thức', 'algorithms')}</button>
+     <button type="button" id="f2l-intuitive-tab" role="tab" data-f2l-view="intuitive" aria-controls="f2l-intuitive">${tr('Tự nghiệm', 'Intuitive')}</button>
+   </div>
+   ${intuitiveF2L('f2l-intuitive-tab', compactMode)}
+   <div id="case-panel">
    <div id="case-tools"><label>${tr("Tìm case", "Find a case")}<input id="case-search" placeholder="Sune, OLL 27, T, R U R'…" type="search"></label><label>${tr("Nhóm", "Group")}<select id="case-group"></select></label><label class="checkbox-label"><input type="checkbox" id="unlearned"> ${tr("Chưa đánh dấu đã học", "Unlearned only")}</label></div>
    <p class="case-count" aria-live="polite"></p><div id="case-grid"></div><div id="case-more" class="load-more" aria-hidden="true"></div>
    <p class="muted">${tr("Mỗi case có nhiều cách giải. “Khuyên dùng” là lựa chọn mặc định của trình giải; “Hiện đại” là những công thức phổ biến hiện nay trong cộng đồng speedcubing. Mọi công thức được kiểm chứng tự động trên mô hình cube. Hình minh họa đổi theo công thức bạn chọn, vì một số công thức cần chỉnh U trước khác nhau.", "Each case has several algorithms. The solver uses the recommended one by default. Modern algorithms are popular in the speedcubing community. Every algorithm is checked against the cube model. The diagram changes with your selection because the initial U adjustment can vary.")}</p>
-   </section>`
-    : `<section class="algorithm-library"><small>${tr("LUYỆN BẰNG MÔ HÌNH", "PRACTICE WITH A MODEL")}</small><h2>${lesson.algs.length ? tr('Một vài chuyển động để bắt đầu.', "A few moves to get started.") : tr('Từ ý tưởng đến luyện tập.', "Put it into practice.")}</h2>${lesson.algs.length ? lesson.algs.map(([name, alg], i) => `<article class="tutorial-alg"><h3>${esc(name)}</h3><button type="button" class="algorithm-open" data-tutorial="${i}" aria-label="${tr('Xem chuyển động', 'Watch the moves')} ${esc(name)}"><code>${esc(alg)}</code></button><button class="button secondary" data-tutorial="${i}">${tr("Xem chuyển động ↗", "Watch the moves ↗")}</button></article>`).join('') : `<p>${tr("Với", "For")} ${puzzle}${tr(", ưu tiên nhận diện tâm, cạnh và quỹ đạo trước khi áp dụng công thức. Theo lộ trình bên trên, luyện từng bước trên khối thật.", ", learn to recognize centers, edges, and piece orbits before applying algorithms. Practice each step above on a real puzzle.")}</p><a class="button primary" href="${lesson.source}" target="_blank" rel="noopener">${tr("Mở tài liệu", "Open the guide for")} ${puzzle} ↗</a>`}</section>`}
+   </div></section>`
+    : `<section class="algorithm-library"><small>${tr("LUYỆN BẰNG MÔ HÌNH", "PRACTICE WITH A MODEL")}</small><h2>${lesson.algs.length ? tr('Một vài chuyển động để bắt đầu.', "A few moves to get started.") : tr('Từ ý tưởng đến luyện tập.', "Put it into practice.")}</h2>${lesson.algs.length ? lesson.algs.map(([name, alg], i) => `<article class="tutorial-alg"><h3>${esc(name)}</h3><button type="button" class="algorithm-open" data-tutorial="${i}" aria-label="${tr('Xem chuyển động', 'Watch the moves')} ${esc(name)}"><code>${esc(alg)}</code></button><button class="button secondary" data-tutorial="${i}">${tr("Xem chuyển động ↗", "Watch the moves ↗")}</button></article>`).join('') : `<p>${tr("Với", "For")} ${puzzle}${tr(", ưu tiên nhận diện tâm, cạnh và quỹ đạo trước khi áp dụng công thức. Theo lộ trình bên trên, luyện từng bước trên khối thật.", ", learn to recognize centers, edges, and piece orbits before applying algorithms. Practice each step above on a real puzzle.")}</p>${compactMode ? '' : `<a class="button primary" href="${lesson.source}" target="_blank" rel="noopener">${tr("Mở tài liệu", "Open the guide for")} ${puzzle} ↗</a>`}`}</section>`}
   </div></div></section>`;
   function openTutorial(index) {
     const [title, alg] = lesson.algs[index];
@@ -173,6 +204,10 @@ export function guide(root, params) {
 
   const grid = root.querySelector('#case-grid'), search = root.querySelector('#case-search'), group = root.querySelector('#case-group');
   const onlyNew = root.querySelector('#unlearned'), more = root.querySelector('#case-more'), tools = root.querySelector('#case-tools');
+  const f2lTabs = root.querySelector('#f2l-tabs');
+  const viewTabs = [...f2lTabs.querySelectorAll('[role="tab"]')];
+  const casePanel = root.querySelector('#case-panel');
+  const intuitivePanel = root.querySelector('#f2l-intuitive');
   let list = [], shown = 0;
   const find = id => cases.find(c => c.id === id);
 
@@ -226,8 +261,28 @@ export function guide(root, params) {
   }
   function render() {
     root.querySelectorAll('[data-phase]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.phase === phase)));
+    const isF2L = phase === 'f2l';
+    for (const tab of viewTabs) {
+      const selected = tab.dataset.f2lView === f2lView;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    }
+    f2lTabs.hidden = !isF2L;
+    const intuitive = isF2L && f2lView === 'intuitive';
+    intuitivePanel.hidden = !intuitive;
+    casePanel.hidden = intuitive;
+    if (isF2L) {
+      casePanel.setAttribute('role', 'tabpanel');
+      casePanel.setAttribute('aria-labelledby', 'f2l-algorithms-tab');
+      casePanel.tabIndex = 0;
+    } else {
+      casePanel.removeAttribute('role');
+      casePanel.removeAttribute('aria-labelledby');
+      casePanel.removeAttribute('tabindex');
+    }
+    if (intuitive) return;
     tools.hidden = phase === 'cross';
-    if (phase === 'cross') { list = []; shown = 0; grid.className = ''; grid.innerHTML = crossPanel(); counter(); return; }
+    if (phase === 'cross') { list = []; shown = 0; grid.className = ''; grid.innerHTML = crossPanel(compactMode); counter(); return; }
     const term = search.value.trim().toLowerCase();
     list = cases.filter(c => c.type === phase && (!group.value || c.group === group.value) && (!onlyNew.checked || !learned.includes(c.id)) &&
       `${c.name} ${c.short} ${c.group} ${c.group_vi} ${caseRecognition(c)} ${c.algs.map(a => a.alg).join(' ')}`.toLowerCase().includes(term));
@@ -241,6 +296,22 @@ export function guide(root, params) {
     group.innerHTML = tr('<option value="">Tất cả nhóm</option>', "<option value=\"\">All groups</option>") + [...new Set(cases.filter(c => c.type === phase).map(c => c.group))].map(g => `<option value="${esc(g)}">${esc(caseGroup(cases.find(c => c.group === g)))}</option>`).join('');
   }
   root.querySelectorAll('[data-phase]').forEach(b => { b.onclick = () => { phase = b.dataset.phase; search.value = ''; groups(); render(); }; });
+  viewTabs.forEach(tab => {
+    tab.onclick = () => { f2lView = tab.dataset.f2lView; render(); };
+    tab.onkeydown = event => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      const next = event.key === 'Home' ? viewTabs[0] : event.key === 'End' ? viewTabs.at(-1) : viewTabs.find(other => other !== tab);
+      next.click();
+      next.focus();
+    };
+  });
+  intuitivePanel.querySelectorAll('[data-f2l-demo]').forEach(button => {
+    button.onclick = () => {
+      const example = find(button.dataset.f2lDemo);
+      playCase({ ...example, algs: example.algs.slice(0, 1) });
+    };
+  });
   [search, group, onlyNew].forEach(el => el.addEventListener('input', render));
   const io = new IntersectionObserver(entries => { if (entries.some(e => e.isIntersecting)) appendPage(); }, { rootMargin: '600px' });
   io.observe(more);

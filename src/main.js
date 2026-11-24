@@ -4,6 +4,7 @@ import './app.css';
 import './mobile.css';
 import { landing } from './landing.js';
 import { initModal, closeModal } from './utils/ui.js';
+import { read, write } from './utils/storage.js';
 
 document.documentElement.lang = language;
 document.querySelectorAll('#site-language [data-language]').forEach(button => {
@@ -21,27 +22,52 @@ document.querySelector('.skip-link').onclick = e => { e.preventDefault(); const 
 initModal();
 let cleanup = () => {}, navigation = 0;
 
+const compactToggle = document.getElementById('compact-mode');
+const learnMenu = document.querySelector('.site-nav .nav-learn');
+const wordmark = document.querySelector('.site-nav .wordmark');
+let compactMode = read('sobik_compact_mode', false, value => typeof value === 'boolean');
+
+function updateCompactMode() {
+  compactToggle.checked = compactMode;
+  document.body.classList.toggle('compact-mode', compactMode);
+  wordmark.setAttribute('aria-label', compactMode ? 'SOBIK99' : tr('SOBIK99 Trang chủ', 'SOBIK99 home'));
+  if (compactMode) {
+    learnMenu.removeAttribute('href');
+    wordmark.removeAttribute('href');
+  } else {
+    learnMenu.setAttribute('href', '#/guide');
+    wordmark.setAttribute('href', '#/');
+  }
+}
+compactToggle.addEventListener('change', () => {
+  compactMode = compactToggle.checked;
+  write('sobik_compact_mode', compactMode);
+  updateCompactMode();
+  route();
+});
+updateCompactMode();
+
 const pages = {
-  '/workshop': [tr('Xưởng Rubik', 'Cube Workshop'), tr('Đang mở xưởng…', 'Opening the workshop…'), async root => (await import('./pages-workshop.js')).workshop(root)],
-  '/catalog': [tr('Thư viện Rubik', "Cube Library"), tr('Đang mở thư viện…', "Opening Cube Library…"), async (root, params) => (await import('./pages-catalog.js')).catalog(root, params)],
-  '/guide': [tr('Học cách xoay', "Learn"), tr('Đang mở lớp học…', "Opening the guide…"), async (root, params) => (await import('./pages-guide.js')).guide(root, params)],
-  '/solve': [tr('Giải Rubik', "Solve"), tr('Đang mở trình giải…', "Opening the solver…"), async (root, params) => (await import('./pages-solve.js')).solvePage(root, params)],
-  '/timer': ['Timer', tr('Đang mở phòng luyện tập…', "Opening the timer…"), async root => (await import('./pages-timer.js')).timerPage(root)],
-  '/sources': [tr('Nguồn hình ảnh', "Photo credits"), tr('Đang tải…', "Loading…"), async root => (await import('./pages-sources.js')).sourcesPage(root)],
+  '/workshop': [tr('Xưởng Rubik', 'Cube Workshop'), tr('Đang mở xưởng…', 'Opening the workshop…'), () => import('./pages-workshop.js'), 'workshop'],
+  '/catalog': [tr('Thư viện Rubik', 'Cube Library'), tr('Đang mở thư viện…', 'Opening Cube Library…'), () => import('./pages-catalog.js'), 'catalog'],
+  '/guide': [tr('Học cách xoay', 'Learn'), tr('Đang mở lớp học…', 'Opening the guide…'), () => import('./pages-guide.js'), 'guide'],
+  '/solve': [tr('Giải Rubik', 'Solve'), tr('Đang mở trình giải…', 'Opening the solver…'), () => import('./pages-solve.js'), 'solvePage'],
+  '/timer': ['Timer', tr('Đang mở phòng luyện tập…', 'Opening the timer…'), () => import('./pages-timer.js'), 'timerPage'],
+  '/sources': [tr('Nguồn hình ảnh', 'Photo credits'), tr('Đang tải…', 'Loading…'), () => import('./pages-sources.js'), 'sourcesPage'],
 };
-// '/blindfold': [tr('Rubik bịt mắt', "Blindfold Solving"), tr('Đang mở bài học…', "Opening the lesson…"), async root => (await import('./pages-blindfold.js')).blindfoldPage(root)],
 
 async function route() {
   const ticket = ++navigation;
   cleanup(); cleanup = () => {};
   closeModal();
-  const [path, query = ''] = (location.hash.slice(1) || '/').split('?');
-  const params = new URLSearchParams(query);
+  const [requestedPath, query = ''] = (location.hash.slice(1) || '/').split('?');
+  const path = compactMode ? '/guide' : requestedPath;
+  const params = new URLSearchParams(path === requestedPath ? query : '');
   const root = document.getElementById('main');
   window.scrollTo({ top: 0, behavior: 'instant' });
   const navPath = path.startsWith('/cube/') ? '/catalog' : path;
   document.querySelectorAll('.site-nav nav a').forEach(a => {
-    if (navPath === a.hash.slice(1)) a.setAttribute('aria-current', 'page');
+    if (navPath === (a === learnMenu ? '/guide' : a.hash.slice(1))) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   });
   try {
@@ -50,7 +76,7 @@ async function route() {
       const [, , brand, id] = path.split('/');
       root.innerHTML = `<section class="page-shell"><p>${tr('Đang mở mẫu…', 'Opening puzzle…')}</p></section>`;
       const { detail } = await import('./pages-catalog.js');
-      if (ticket === navigation) await detail(root, decodeURIComponent(brand || ''), decodeURIComponent(id || ''));
+      if (ticket === navigation) await detail(root, decodeURIComponent(brand || ''), decodeURIComponent(id || ''), () => ticket === navigation);
       return;
     }
     const page = pages[path];
@@ -59,15 +85,21 @@ async function route() {
       root.innerHTML = tr('<section class="page-shell"><small>404 / LẠC MỘT VÒNG XOAY</small><h1>Trang này chưa tồn tại.</h1><a class="button primary" href="#/">Về trang chủ ↗</a></section>', "<section class=\"page-shell\"><small>404 / PAGE NOT FOUND</small><h1>This page doesn't exist.</h1><a class=\"button primary\" href=\"#/\">Back to home ↗</a></section>");
       return;
     }
-    const [title, loading, open] = page;
+    const [title, loading, load, entry] = page;
     document.title = `${title} — SOBIK99`;
     root.innerHTML = `<section class="page-shell"><p>${loading}</p></section>`;
+    const module = await load();
     if (ticket !== navigation) return;
-    const dispose = await open(root, params);
+    const dispose = await module[entry](root, params, compactMode);
     if (ticket === navigation) cleanup = typeof dispose === 'function' ? dispose : () => {};
     else if (typeof dispose === 'function') dispose();
   } catch (error) {
+    if (ticket !== navigation) return;
     console.error(error);
+    if (compactMode) {
+      root.innerHTML = `<section class="page-shell"><h1>${tr('Chưa mở được bài học.', "Couldn't open the guide.")}</h1></section>`;
+      return;
+    }
     root.innerHTML = tr('<section class="page-shell"><h1>Chưa mở được trang.</h1><p>Hãy tải lại trang hoặc trở về trang chủ.</p><a href="#/" class="button primary">Về trang chủ</a></section>', "<section class=\"page-shell\"><h1>Couldn't open this page.</h1><p>Reload the page or return home.</p><a href=\"#/\" class=\"button primary\">Back to home</a></section>");
   }
 }

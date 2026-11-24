@@ -397,3 +397,24 @@ body:has(.solve-page[data-state="preview"]) > .site-footer { display: none; }
 @media (min-width: 761px) {
   .catalog-filters[open] > summary { display: none; }
 }
+
+.f2l-tabs { margin-top: -10px; }
+.f2l-tabs[hidden] { display: none; }
+.f2l-tabs button[aria-selected="true"] {
+  background: #7856df;
+  color: #fff;
+  box-shadow: 3px 3px 0 #292339;
+}
+
+.f2l-lesson article {
+  padding: clamp(16px, 3vw, 28px);
+  margin-bottom: 14px;
+  border: 1px solid #d8cfeb;
+  border-radius: 14px;
+  background: #fffdf8;
+}
+
+.f2l-lesson ol { padding-inline-start: 20px; }
+.f2l-lesson li + li { margin-top: 14px; }
+.f2l-lesson li button { display: flex; margin-top: 8px; }
+.f2l-lesson article > :last-child { margin-bottom: 0; }

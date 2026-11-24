@@ -192,10 +192,11 @@ async function findProduct(brandId, id) {
   return null;
 }
 
-export async function detail(root, brandId, id) {
+export async function detail(root, brandId, id, isCurrent) {
   root.innerHTML = tr('<section class="page-shell"><p>Đang mở mẫu…</p></section>', "<section class=\"page-shell\"><p>Opening puzzle…</p></section>");
   const b = brandById(brandId);
   const p = b ? await findProduct(brandId, id) : null;
+  if (!isCurrent()) return;
   if (!p) {
     root.innerHTML = tr('<section class="page-shell"><small>404 / KHÔNG TÌM THẤY</small><h1>Mẫu này chưa có trong thư viện.</h1><a class="button primary" href="#/catalog">Về Thư viện Rubik ↗</a></section>', "<section class=\"page-shell\"><small>404 / MODEL NOT FOUND</small><h1>This model isn't in the collection.</h1><a class=\"button primary\" href=\"#/catalog\">Back to Cube Library ↗</a></section>");
     return;
