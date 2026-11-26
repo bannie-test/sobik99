@@ -1,0 +1,30 @@
+{
+  "name": "YJ MGC3 Beta 3x3 (8-Magnet Ball-Core + UV Coated + MagLev)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "55.5 mm"
+  ],
+  "description": "The YJ MGC3 Beta is the latest 3x3 speedcube from YJ, featuring a brand new mechanism and philosophy. Designed by the same mind behind the legendary Alpha Cube, the Beta boasts a balanced magnetic feel, great corner cutting, and a wonderfully comfortable hand-feel. This version of the Beta has UV coating, maglev for extra speed, and an 8-magnet ball core for extra stability.",
+  "features": [
+    "Kích thước 55.5 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YJMGC3Beta_8-MagnetBall-Core_UVCoated_MagLev_copy.jpg?v=1741622241&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev",
+    "updated": "2026-11-17"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "GAN 328 3x3 Mini - 2.8cm, Keychain",
+  "tags": [],
+  "description": "GAN 328 3x3 Mini - 2.8cm, Keychain is perfect for on-the-go fun!",
+  "features": [
+    "Small 28mm size",
+    "Tiles rather than stickers",
+    "Clear clamshell case",
+    "Keychain attachment"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-328-3x3-mini-2_8cm-keychain-gray_28b8948f.jpg?v=1771619351&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-328-3x3-mini-2-8cm-keychain"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-328-3x3-mini-2-8cm-keychain"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-328-3x3-mini-2-8cm-keychain",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "The Caiden Cube 3x3",
+  "tags": [],
+  "description": "The Caiden Cube is the signature cube of competitive speedcuber and Cubing.gg coach Caiden Lee. This puzzle is a MoYu RS3 M V5 3x3 (Ball Core UV + Robot Cube Stand) that comes lubed with a balanced mixture of Angstrom Gravitas, Angstrom Dignitas and DNM-37. With this light Angstrom setup and slightly loose tensions, this puzzle is set up to be an exact replica of Caiden's main speedcube.",
+  "features": [
+    "The Caiden Cube",
+    "Greeting Card",
+    "Cubicle Cube Stand (Assorted Color)",
+    "Tensioning Accessories",
+    "Robot Cube Stand",
+    "Compression: 0"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/caidencube3x3.jpg?v=1748619568&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/the-caiden-cube"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/the-caiden-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "the-caiden-cube",
+    "updated": "2026-11-17"
+  }
+}

@@ -1,0 +1,99 @@
+// Builds src/cube-tools/data/algorithms.js from the sources in scripts/sources/.
+// Every algorithm is checked with the cube engine: it is kept only if it solves a real
+// F2L (front-right slot) / OLL / PLL case, and it is filed under the case it actually solves,
+// whatever case number a source claimed. Run: node scripts/build-algorithms.mjs
+import fs from 'node:fs';
+import { parse, format } from '../src/cube-tools/core/cube.js';
+import { caseOf, caseClass } from '../src/cube-tools/core/cfop.js';
+
+const read = f => JSON.parse(fs.readFileSync(new URL('./sources/' + f, import.meta.url)));
+const coach = read('cube-coach.json');
+const android = read('sobik-android.json');
+const modern = read('modern.json');
+const advancedF2L = read('advanced-f2l.json');
+const MAX_ALGS = 6;
+
+const GROUP_VI = {
+  'Basic Insert': 'Chèn cơ bản', 'Different Facing Up': 'Khác màu hướng lên', 'Same Facing Up': 'Cùng màu hướng lên',
+  'White Facing Up': 'Trắng hướng lên', 'Incorrectly Connected': 'Ghép sai cặp', 'Corner In Edge Out': 'Góc trong, cạnh ngoài',
+  'Edge In Corner Out': 'Cạnh trong, góc ngoài', 'Both In Slot': 'Cả hai ở trong khe', Dot: 'Chấm', 'Square Shape': 'Hình vuông',
+  'Small Lightning Bolt': 'Tia chớp nhỏ', 'Lightning Bolt': 'Tia chớp', 'Fish Shape': 'Hình cá', 'Knight Move Shape': 'Bước mã',
+  'T Shape': 'Hình T', 'C Shape': 'Hình C', 'W Shape': 'Hình W', 'P Shape': 'Hình P', 'I Shape': 'Đường thẳng',
+  'L Shape': 'Hình L', 'Big Lightning Bolt': 'Tia chớp lớn', 'Awkward Shape': 'Hình khó', Cross: 'Dấu thập',
+  'Corners Only': 'Chỉ đổi góc', 'Edges Only': 'Chỉ đổi cạnh', 'Adjacent Corner Swap': 'Đổi hai góc kề', 'Diagonal Corner Swap': 'Đổi hai góc chéo',
+};
+const SOURCE_LABEL = { advanced: 'Nâng cao', modern: 'Hiện đại', coach: 'Cube Coach', sobik: 'SOBIK' };
+
+const norm = alg => format(parse(alg));
+const sameClass = (a, b) => a.size === b.size && [...a].every(k => b.has(k));
+
+// Reference cases: Cube Coach numbering and groups.
+const cases = [];
+const report = { rejected: [], moved: [], duplicates: 0 };
+for (const c of coach) {
+  const id = `${c.type}-${c.name}`;
+  let cls = null;
+  for (const alg of c.moves) { cls = caseClass(c.type, alg); if (cls) break; }
+  if (!cls) throw new Error('No valid reference algorithm for ' + id);
+  cases.push({ id, type: c.type, name: `${c.type.toUpperCase()} ${c.name}`, short: c.name, group: c.group, group_vi: GROUP_VI[c.group] || c.group, recognition: '', cls, algs: [], seen: new Set() });
+}
+const byType = t => cases.filter(c => c.type === t);
+for (const t of ['f2l', 'oll', 'pll']) {
+  const list = byType(t);
+  for (let i = 0; i < list.length; i++) for (let j = i + 1; j < list.length; j++) {
+    if (sameClass(list[i].cls, list[j].cls)) throw new Error(`Cases ${list[i].id} and ${list[j].id} are identical`);
+  }
+}
+
+function add(type, alg, source, claimed) {
+  const cls = caseClass(type, alg);
+  if (!cls) { report.rejected.push(`${claimed || type}: ${alg} (${caseOf(type, alg).error})`); return null; }
+  const target = byType(type).find(c => sameClass(c.cls, cls));
+  if (!target) { report.rejected.push(`${claimed || type}: ${alg} (no matching case)`); return null; }
+  if (claimed && claimed !== target.id) report.moved.push(`${alg}: ${claimed} -> ${target.id}`);
+  // An algorithm that leaves the cube rotated gets the closing rotation written out.
+  const fix = caseOf(type, alg).fix;
+  const n = norm(fix ? `${alg} ${fix}` : alg);
+  if (target.seen.has(n)) { report.duplicates++; return target; }
+  target.seen.add(n);
+  target.algs.push({ alg: n, source });
+  return target;
+}
+
+for (const t of ['f2l', 'oll', 'pll']) for (const alg of modern[t]) add(t, alg, 'modern');
+for (const c of coach) for (const alg of c.moves) add(c.type, alg, 'coach', `${c.type}-${c.name}`);
+for (const a of android) {
+  const type = a.category.toLowerCase();
+  const target = add(type, a.notation, 'sobik');
+  if (target && a.recognition && !target.recognition) target.recognition = a.recognition;
+  if (target && a.explanation && !target.explanation) target.explanation = a.explanation;
+  for (const alt of a.alternatives) add(type, alt, 'sobik');
+}
+
+// Rotation-free algorithms first (stable, so the source order is kept otherwise).
+const rotationCount = alg => parse(alg).filter(m => 'xyz'.includes(m.base)).length;
+for (const c of cases) {
+  c.algs.sort((a, b) => (rotationCount(a.alg) > 0) - (rotationCount(b.alg) > 0));
+  c.algs = c.algs.slice(0, MAX_ALGS);
+}
+
+// Append practice variants after the existing choices.
+for (const alg of advancedF2L) add('f2l', alg, 'advanced');
+
+const out = cases.map(c => {
+  const algs = c.algs.map((a, i) => ({ ...a, label: i === 0 ? 'Khuyên dùng' : SOURCE_LABEL[a.source] }));
+  const setup = caseOf(c.type, algs[0].alg).setup;
+  return { id: c.id, type: c.type, name: c.name, short: c.short, group: c.group, group_vi: c.group_vi, recognition: c.recognition, explanation: c.explanation || '', setup, algs };
+});
+for (const c of out) if (!c.algs.length) throw new Error('No algorithm for ' + c.id);
+
+fs.writeFileSync(new URL('../src/cube-tools/data/algorithms.js', import.meta.url), '// Generated by scripts/build-algorithms.mjs — edit scripts/sources/ instead.\nexport default ' + JSON.stringify(out, null, 1) + ';\n');
+const total = out.reduce((n, c) => n + c.algs.length, 0);
+const modernCount = out.reduce((n, c) => n + c.algs.filter(a => a.source === 'modern').length, 0);
+console.log(`${out.length} cases, ${total} algorithms (${modernCount} hiện đại), ${report.duplicates} duplicates merged.`);
+for (const t of ['f2l', 'oll', 'pll']) {
+  const missing = out.filter(c => c.type === t && !c.algs.some(a => a.source === 'modern')).map(c => c.short);
+  console.log(`${t}: no modern algorithm for [${missing.join(', ')}]`);
+}
+if (report.moved.length) console.log('Filed under a different case than claimed:\n  ' + report.moved.join('\n  '));
+if (report.rejected.length) console.log('Rejected:\n  ' + report.rejected.join('\n  '));

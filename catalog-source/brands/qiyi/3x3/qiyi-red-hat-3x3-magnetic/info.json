@@ -1,0 +1,24 @@
+{
+  "name": "QiYi Red Hat 3x3 (Magnetic)",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "QiYi Red Hat 3x3 (Magnetic) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/6wuuzfJjeJUnpfu5kg1j1SkvgVY2_2FHT4EIbfInX2lxQRLBdbDX_2FQiYi_20Red_20Hat_203x3_20Magnetic.png?v=1791579795&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-red-hat-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-red-hat-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-red-hat-3x3-magnetic",
+    "updated": "2026-11-17"
+  }
+}

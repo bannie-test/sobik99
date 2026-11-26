@@ -1,0 +1,26 @@
+{
+  "name": "YJ Meta3 3x3 (Wing-Magnetic + 8-Magnet Ball-Core + UV)",
+  "tags": [
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "The YJ Meta3 3x3 (Wing-Magnetic + 8-Magnet Ball-Core + UV) is the flagship version of the Meta3. This cube combines center-to-edge foot magnets with an 8-magnet ball-core for extra stability, control, and tactility. The UV coating adds a premium glossy finish that can aid grip and resist wear.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/YJ_Meta3_3x3_Wing_Magnets.png?v=1756154500&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv",
+    "updated": "2026-11-17"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "MoYu AoLong 3x3 V5 (Magnetic, UV Coated)",
+  "tags": [
+    "UV"
+  ],
+  "description": "The MoYu AoLong 3x3 V5 (Magnetic, UV Coated) is the same dual-axis, 48-magnet spring setup as the standard Magnetic — with a UV Coated finish for cubers who want extra grip and a glossy surface feel. Same tuning range, different texture under your fingers.",
+  "features": [
+    "UV Coated finish: Super glossy plastic adds grip and a premium surface feel — a meaningful upgrade for cubers who find matte finishes too slick under pressure.",
+    "48-magnet system: Corner, edge, and core magnets provide consistent snap-to-alignment across every layer, every turn.",
+    "Carbon fiber core: Rigid and lightweight — keeps the structure stable without contributing unnecessary weight.",
+    "64 tuning combinations: 8 spring tension levels × 8 distance settings cover the full range from snappy competition feel to smooth, controlled turning.",
+    "Anti-corner-twist geometry: Outer right-angle corner design prevents twists under aggressive turning.",
+    "Dual adjustment system: Tension and distance are independently adjustable — change one without affecting the other."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-aolong-v5-3x3-magnetic-uv-coated_afb4d610.jpg?v=1782317787&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-aolong-v5-3x3-magnetic-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-aolong-v5-3x3-magnetic-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-aolong-v5-3x3-magnetic-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

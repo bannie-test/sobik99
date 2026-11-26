@@ -1,0 +1,30 @@
+{
+  "name": "ZePuzzles Squished 3x3 (Tiled)",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "Unleash your puzzling skills with the ZePuzzles Squished 3x3, an ingenious 3D printed shape mod designed for cubers who crave a new kind of challenge. Created by ZePuzzles, this shape mod takes the trusted 3x3 mechanism and transforms it—literally—by “squishing” the cube, resulting in an eccentric and fascinating silhouette that will test even the most seasoned solvers.",
+  "features": [
+    "Uniquely “squished” 3x3 cube shape mod by ZePuzzles",
+    "Precision 3D printed construction",
+    "Available in 6-color classic tiles or minimalist all-white tiles",
+    "Challenging and visually striking for cubers of all skill levels",
+    "Perfect for collectors and anyone seeking the next twisty puzzle challenge"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/ZePuzzles_20Squished_203x3_206-Color.png?v=1757135178&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/zepuzzles-squished-3x3-with-6-color-tiles"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/zepuzzles-squished-3x3-with-6-color-tiles"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "zepuzzles-squished-3x3-with-6-color-tiles",
+    "updated": "2026-11-17"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "MoYu Super AoLong AI 3x3 (8-Magnet Ball-Core + MagLev + UV)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "The MoYu Super AoLong AI 3x3 (8-Magnet Ball-Core + MagLev + UV) brings back the legendary AoLong series with cutting-edge design and tuning innovations, providing a next-level solving experience for today's cubers. This modern reimagining features an upgraded elasticity adjustment system that lets you fine-tune the cube's feel with a single button, offering eight unique levels of elasticity.",
+  "features": [
+    "Revolutionary 20-magnet ball-core for enhanced stability and alignment (8-magnet ball-core for AI version)",
+    "100 factory-installed magnets for consistent, precise turning (88 for AI version)",
+    "Selectable matte or UV-coated finishes for your preferred grip and appearance",
+    "Also available as an AI Smart Cube with UV coating for connected cubing"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/MoYu_20Super_20AoLong_20AI_203x3_81b2b5c5-04a7-43c3-b893-57fa7359916f.png?v=1762018249&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-super-aolong-ai-3x3-20-magnet-ball-core-maglev-uv"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-aolong-ai-3x3-20-magnet-ball-core-maglev-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "moyu-super-aolong-ai-3x3-20-magnet-ball-core-maglev-uv",
+    "updated": "2026-11-17"
+  }
+}

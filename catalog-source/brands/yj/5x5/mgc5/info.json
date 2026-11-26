@@ -1,0 +1,17 @@
+{
+  "name": "YJ MGC 5×5",
+  "description": "Rubik 5×5 từ tính; có tâm cố định để định hướng màu.",
+  "features": [
+    "Tâm giữa cố định",
+    "Thêm chiều sâu cho ghép cạnh"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-5x5-magnetic"
+    }
+  ],
+  "tags": [
+    "Magnetic"
+  ]
+}

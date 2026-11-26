@@ -1,0 +1,31 @@
+{
+  "name": "GAN 356 ME 3x3 (Magnetic, UV Coated)",
+  "tags": [
+    "UV"
+  ],
+  "description": "GAN 356 ME 3x3 (Magnetic, UV Coated) is a great compromise for performance, customization, and cost!",
+  "features": [
+    "Super glossy plastic, high grip",
+    "3 spring compression settings",
+    "Factory magnetized for smoother, more controllable turning",
+    "Smooth, controllable turning",
+    "Great corner-cutting",
+    "Storage box"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/GAN-356-ME-3x3-Magnetic-UV-Coated.jpg?v=1771619387&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-356-me-3x3-magnetic-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-356-me-3x3-magnetic-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-356-me-3x3-magnetic-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

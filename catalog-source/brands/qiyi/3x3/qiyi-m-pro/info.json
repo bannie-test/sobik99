@@ -1,0 +1,32 @@
+{
+  "name": "QiYi M Pro",
+  "tags": [
+    "Nam châm",
+    "56 mm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-m-pro-3x3-art-version"
+    }
+  ],
+  "description": "The QiYi M Pro 3x3 (Art Version) is a fully magnetic 3x3 with a unique look. It has tiles on top of a black plastic base and rounded-off corners that give it a smaller feel. If you're looking for modern performance with a classic look, this is the cube you want.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/QiYi_20M_20Pro_203x3_20_Art_20Version.jpg?v=1716494387&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-m-pro-3x3-art-version"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-m-pro-3x3-art-version"
+    ]
+  }
+}

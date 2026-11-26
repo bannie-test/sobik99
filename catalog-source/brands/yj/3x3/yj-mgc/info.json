@@ -1,0 +1,27 @@
+{
+  "name": "YJ MGC 3x3",
+  "tags": [
+    "Nam châm",
+    "55.5 mm"
+  ],
+  "description": "The YJ MGC is a new, high quality 3x3 speed cube by veteran cube producer, YJ. The MGC comes at a compact size of 55mm and features a magnetic positioning system, primary internals, and stellar all-around performance. The MGC has a smooth, bubbly feel and delivers many qualities typically attributed to flagship cubes at an economical price.",
+  "features": [
+    "Kích thước 55.5 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/yjmgcb1.jpg?v=1581454528&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yj-mgc"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yj-mgc"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "yj-mgc",
+    "updated": "2026-11-17"
+  }
+}

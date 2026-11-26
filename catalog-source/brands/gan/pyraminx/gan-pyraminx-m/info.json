@@ -1,0 +1,36 @@
+{
+  "name": "GAN Pyraminx M",
+  "tags": [
+    "Nam châm"
+  ],
+  "features": [
+    "Pyraminx từ tính, hợp luyện L4E"
+  ],
+  "sources": [
+    {
+      "name": "GANCUBE",
+      "url": "https://www.gancube.com/products/gan-pyraminx-m"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-pyraminx-m-enhanced"
+    }
+  ],
+  "description": "The GAN Pyraminx is a new pyraminx by famous speedcube manufacturer GAN. This puzzle is the world’s first pyraminx with GAN’s novel core-edge magnetic positioning system. In addition to this never-before-seen magnetic system, the GAN Pyraminx has GAN’s classic honeycomb design for smooth and comfortable turning.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/gan-pyraminx-enhanced.jpg?v=1689862709&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-pyraminx-m-enhanced"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-pyraminx-m-enhanced"
+    ]
+  }
+}

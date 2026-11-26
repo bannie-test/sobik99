@@ -1,0 +1,29 @@
+{
+  "name": "Rubik's Cube Hello Kitty Cuber",
+  "tags": [],
+  "description": "Add a dash of kawaii charm to your solves with the Rubik’s Cube Hello Kitty Cuber! This adorable take on the world’s most famous puzzle combines Hello Kitty’s signature style with the timeless Rubik’s 3×3 challenge.",
+  "features": [
+    "Adorable Design: Features Hello Kitty’s iconic ears and red bow for a cute, collectible look.",
+    "Solve & Display: Attach the character pieces to the stand to showcase your completed cube.",
+    "Classic Rubik’s Challenge: Twist, turn, and solve all six colorful sides like the original 3×3.",
+    "Kawaii Collectible: Part of the Rubik’s Cuber Series featuring Hello Kitty, Marvel, DC, and more.",
+    "Perfect Gift Idea: Great for Hello Kitty fans, Sanrio collectors, and puzzle lovers of all ages.",
+    "Official Rubik’s 3×3 format"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Rubiks-Cube-Hello-Kitty-Cuber.jpg?v=1771619298&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-cube-hello-kitty-cuber"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-cube-hello-kitty-cuber"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "rubiks-cube-hello-kitty-cuber",
+    "updated": "2026-11-16"
+  }
+}

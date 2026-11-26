@@ -1,0 +1,36 @@
+{
+  "name": "GAN 460 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "features": [
+    "4x4 nam châm"
+  ],
+  "reviews": [
+    "Ổn định khi ghép cạnh"
+  ],
+  "audience": "Người chơi 4x4 nghiêm túc",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-460"
+    }
+  ],
+  "description": "The GAN 460 M is the highly anticipated 4x4 from GAN featuring a new magnetic positioning system and rounded pieces. It has a crunchy and fast feel, which gives it tremendous speed and feel in its outer layers. The package contains the GAN 460 M in a plastic case, a GAN protective cube bag, and a GAN tensioning tool.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/gan4604x4M.jpg?v=1709914005&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-460"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-460"
+    ]
+  }
+}

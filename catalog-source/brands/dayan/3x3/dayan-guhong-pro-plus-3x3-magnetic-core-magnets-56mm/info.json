@@ -1,0 +1,29 @@
+{
+  "name": "DaYan GuHong Pro+ 3x3 (Magnetic, Core Magnets) - 56mm",
+  "tags": [],
+  "description": "The DaYan GuHong Pro+ 3x3 (Magnetic, Core Magnets) – 56mm is a competition-ready 3x3 speed cube that balances fast, accurate turning with excellent stability. Piece magnets help layers “click” into place, while corner-to-core magnets (core magnets) improve alignment control so solves feel smooth and predictable for both new solvers and seasoned competitors.",
+  "features": [
+    "Faster, more accurate turning from 64 total magnets (piece + core).",
+    "Core magnets add stability and tracking during high-TPS turns.",
+    "Big corner-cutting keeps solves flowing even with imperfect alignment.",
+    "Beginner-friendly setup with performance headroom for advanced cubers.",
+    "Numerical dual adjustment: 6 tension × 8 compression settings for precise, repeatable tuning.",
+    "Adjustable core magnets: 5 strength levels to fine-tune magnetic snap and overall stability."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/dayan-guhong-pro-3x3-magnetic-core-magnets-56mm_3528dde7.jpg?v=1771619477&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/dayan-guhong-pro-plus-3x3-magnetic-core-magnets-56mm"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/dayan-guhong-pro-plus-3x3-magnetic-core-magnets-56mm"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "dayan-guhong-pro-plus-3x3-magnetic-core-magnets-56mm",
+    "updated": "2026-11-16"
+  }
+}

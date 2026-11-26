@@ -1,0 +1,29 @@
+{
+  "name": "MoYu MeiLong 5 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-5x5-magnetic"
+    }
+  ],
+  "description": "MoYu MeiLong 5x5 Magnetic has remained one of the most popular 5x5s since its release in 2020.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-meilong-5x5-magnetic-stickerless.jpg?v=1771619518&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-5x5-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-meilong-5x5-magnetic"
+    ]
+  }
+}

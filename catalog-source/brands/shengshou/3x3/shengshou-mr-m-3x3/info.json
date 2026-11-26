@@ -1,0 +1,29 @@
+{
+  "name": "ShengShou Mr. M 3x3",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/shengshou-mr-m-3x3"
+    }
+  ],
+  "description": "The ShengShou Mr. M 3x3 is ShengShou's first magnetic cube release. It features vibrant stickerless shades and a unique bumpy texture on the exterior. The magnets are placed inside designated slots inside the cube, and they give the cube a snappy and tactile feeling. Out of the box, the cube is loose and fast.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/ssmrm3x3b1_8538face-3732-4c71-9c7b-23f636fe9c67.jpg?v=1581454428&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/shengshou-mr-m-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/shengshou-mr-m-3x3"
+    ]
+  }
+}

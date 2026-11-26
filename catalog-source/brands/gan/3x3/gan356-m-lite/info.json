@@ -1,0 +1,29 @@
+{
+  "name": "GAN356 M Lite 3x3",
+  "tags": [
+    "Nam châm",
+    "56 mm"
+  ],
+  "description": "The GAN 356 M Lite is a modern, mid-range magnetic 3x3 speed cube by popular manufacturer GAN. This version comes with GAN’s unique hand adjustable Numerical IPG Core and blue GES nuts installed. Out of the box, the GAN 356 M Lite has a fast, stable feel that is very reminiscent of a mix between the GAN XS and GAN X V2, two of GAN's most famous flagships.",
+  "features": [
+    "Kích thước 56 mm",
+    "GAN 356 M Lite 3x3 speedcube",
+    "GAN pamphlet"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN356MLite3x3.png?v=1794265960&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan356-m-lite"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-m-lite"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan356-m-lite",
+    "updated": "2026-11-17"
+  }
+}

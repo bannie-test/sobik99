@@ -1,0 +1,66 @@
+{
+  "name": "GAN 356 ME 3x3 (Magnetic)",
+  "tags": [
+    "Nam châm",
+    "Bản đặc biệt"
+  ],
+  "description": "GAN 356 ME 3x3 (Magnetic) is a great compromise for performance, customization, and cost!",
+  "features": [
+    "3 spring compression settings",
+    "Factory magnetized for smoother, more controllable turning",
+    "Smooth, controllable turning",
+    "Great corner-cutting",
+    "Storage box",
+    "Adjustment tool"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-356-me-3x3-magnetic-stickerless.jpg?v=1771619454&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-356-me-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-356-me-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-356-m-e-3x3"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-me-3x3-2025-lunar-new-year-edition"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-me-3x3-jurassic-world-edition"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-me-3x3-jurassic-world-edition-egg-case"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-me-3x3-minions-edition-frosted"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-356-me-3x3-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "Bản đặc biệt"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-356-m-e-3x3",
+      "https://www.thecubicle.com/products/gan356-me-3x3-2025-lunar-new-year-edition",
+      "https://www.thecubicle.com/products/gan356-me-3x3-jurassic-world-edition",
+      "https://www.thecubicle.com/products/gan356-me-3x3-jurassic-world-edition-egg-case",
+      "https://www.thecubicle.com/products/gan356-me-3x3-minions-edition-frosted"
+    ]
+  }
+}

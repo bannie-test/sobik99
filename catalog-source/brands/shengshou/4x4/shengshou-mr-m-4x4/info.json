@@ -1,0 +1,29 @@
+{
+  "name": "ShengShou Mr. M 4x4",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/shengshou-mr-m-4x4"
+    }
+  ],
+  "description": "The ShengShou Mr. M 4x4 is a budget friendly, factory magnetized 4x4 speed cube. This puzzle has a stronger magnetic feel on the inner layers than on the outers. It is naturally fast out of the box and, at this price point, is sure to impress beginners and advanced solvers alike.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/shengshoumrm4x4bl.jpg?v=1581457892&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/shengshou-mr-m-4x4"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/shengshou-mr-m-4x4"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "GAN V100 3x3 (Magnetic, MagLev, Core Magnets)",
+  "tags": [
+    "MagLev"
+  ],
+  "description": "The GAN V100 3x3 (Magnetic, MagLev, Core Magnets) is a superlight 55 mm speed cube built for fast, accurate turning with simple, repeatable tuning. Piece magnets give precise layer “clicks,” MagLev replaces springs with repelling magnets for a low-friction feel, and core magnets (corner-to-core) add stability so layers realign quickly during high-TPS solves—all at just ~ 64 g.",
+  "features": [
+    "Fast, low-friction feel: MagLev elasticity removes spring noise and wear for smoother, quicker turns.",
+    "Stable alignment: Core magnets pull layers into place for cleaner execution and fewer lockups.",
+    "Light and agile: ~64 g superlight build reduces hand fatigue during long practice sessions.",
+    "Confident control: 76 total magnets provide consistent, accurate feedback on every move.",
+    "Easy, repeatable setup: 72 tension/compression combinations let you dial in from soft and fast to firm and controlled—no guesswork.",
+    "Everyday durable: Frosted exterior resists smudges and keeps grip consistent over time."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-v100-3x3-magnetic-maglev-core-magnets_61ac01e2.jpg?v=1771619419&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-v100-3x3-magnetic-maglev-core-magnets-1"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-v100-3x3-magnetic-maglev-core-magnets-1"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-v100-3x3-magnetic-maglev-core-magnets-1",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "QiYi Chips Cube 3x3 (Magnetic)",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "The QiYi Chips Cube 3x3 (Magnetic) is a beginner-friendly magnetic speed cube from QiYi's children's series, built around a bold two-tone chip-style pattern that makes it easy to track your turns while you learn. Magnetic positioning gives it a stable, controlled feel that traditional non-magnetic kids' cubes can't match.",
+  "features": [
+    "Built for first-time cubers: A simplified, bold chip-style color pattern lowers the learning threshold so kids can follow their turns without getting lost.",
+    "Sized for small hands: At 55.5 mm, it's easy for little hands to grip and turn comfortably.",
+    "Fun to look at: The two-tone chip grouping and bright, easy-to-distinguish colors keep kids engaged while they practice.",
+    "Magnetic positioning: Adds stability to each turn and helps the cube align so it doesn't wobble or catch mid-solve.",
+    "Frosted surface: A matte finish that resists scratches, cuts glare, and stays fingerprint-free through heavy play.",
+    "Bright color scheme: Colors are vivid and clearly separated, making it simple for children to tell pieces apart at a glance."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/36ce1ef6-811b-4ad8-b014-9d107517c55f.jpg?v=1792878535&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/chips-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/chips-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-chips-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "chips-3x3-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-chips-3x3-magnetic"
+    ]
+  }
+}

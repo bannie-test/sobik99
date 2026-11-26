@@ -1,0 +1,27 @@
+{
+  "name": "X-Man Ambition 4x4",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/x-man-ambition-4x4-m"
+    }
+  ],
+  "description": "The X-Man Ambition 4x4 M is a magnetic 4x4 designed by Jim Zhang of X-Man Design. Compact and light, the Ambition feels smooth and soft to turn while retaining high stability.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/xmanambition.jpg?v=1620243949&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/x-man-ambition-4x4-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/x-man-ambition-4x4-m"
+    ]
+  }
+}

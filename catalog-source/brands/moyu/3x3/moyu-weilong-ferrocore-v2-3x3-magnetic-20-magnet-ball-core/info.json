@@ -1,0 +1,31 @@
+{
+  "name": "MoYu WeiLong Ferrocore V2 3x3 (Magnetic, 20-Magnet Ball-Core)",
+  "tags": [
+    "Ball-core"
+  ],
+  "description": "The MoYu WeiLong Ferrocore V2 3x3 (Magnetic, 20-Magnet Ball-Core) is CubeHead's Ferrocore, rebuilt on the MoYu WeiLong V11. Strong magnets, a flexible core, and a matte frosted finish make it a cube that feels balanced at speed and stays easy to set up.",
+  "features": [
+    "Matte, low-shine finish: Frosted plastic gives the cube a matte look with less shine than a UV coating.",
+    "CubeHead collector packaging: Comes in a custom CubeHead-designed box with a collectible CubeHead card.",
+    "Tension, 1 to 8: Controls how tightly the pieces are held. Lower settings turn lighter; higher settings feel more locked in.",
+    "Compression, 1 to 8: Controls how firm the springs are, so you can make each turn feel softer or snappier.",
+    "Adjustment tool in the box: One tool handles both settings.",
+    "Fixed magnet strength: The magnets come set from the factory, which leaves two simple settings to tune instead of a long list."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-Weilong-V11-Ferrocore-3x3-V2-_Magnetic_6040.jpg?v=1790816774&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-ferrocore-v2-3x3-magnetic-20-magnet-ball-core"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-ferrocore-v2-3x3-magnetic-20-magnet-ball-core"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-weilong-ferrocore-v2-3x3-magnetic-20-magnet-ball-core",
+    "updated": "2026-11-16"
+  }
+}

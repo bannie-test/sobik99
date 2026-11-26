@@ -1,0 +1,24 @@
+{
+  "name": "QiYi Speed Void Cube 3x3",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "The QiYi Speed Void Cube is a unique twist on the classic 3x3 puzzle – literally! Unlike a standard 3x3 Cube, the Void Cube has no centerpieces, creating a hollow, ring-like appearance that’s both visually striking and mechanically intriguing.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/QiYiSpeedVoidCube3x3.jpg?v=1742502954&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-void-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-void-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-void-cube-3x3",
+    "updated": "2026-11-17"
+  }
+}

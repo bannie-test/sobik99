@@ -1,0 +1,26 @@
+{
+  "name": "FanXin Hollow 3x3",
+  "tags": [
+    "55 mm"
+  ],
+  "description": "The FanXin Hollow 3x3 is a non-magnetic puzzle made from a lattice-like structure on the outside. This allows you to see through the puzzle (making it illegal in WCA competitions) which is a very cool-looking effect.",
+  "features": [
+    "Kích thước 55 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/FanXin_20Hollow_203x3_02b5403e-9e25-4100-88af-22dfa3e51edd.jpg?v=1723837054&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/fanxin-hollow-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/fanxin-hollow-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "fanxin-hollow-3x3",
+    "updated": "2026-11-17"
+  }
+}

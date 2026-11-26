@@ -1,0 +1,29 @@
+{
+  "name": "GAN 251 M Leap",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-251-m-leap"
+    }
+  ],
+  "description": "The GAN 251 M Leap is an updated 2x2 mechanism which features corner/core and traditional magnets just like the GAN 11 M Pro. This version also utilizes large angle magnetic alignment technology, an internal magnet design that helps the cube snap into place easier and faster. This technology, combined with the 51mm size, makes this an extremely maneuverable puzzle.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan251mleap.jpg?v=1636478376&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-251-m-leap"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-251-m-leap"
+    ]
+  }
+}

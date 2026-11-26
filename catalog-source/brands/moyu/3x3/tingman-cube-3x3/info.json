@@ -1,0 +1,24 @@
+{
+  "name": "Tingman Cube 3x3",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "The Tingman Cube is a WeiLong V10 that is already lubed, tensioned, compressed, and ready to go! This 20-magnet ball core 3x3 was tediously tested by Tingman himself over weeks to get the set-up just right. This is the cube he settled on, and he gave us specific instructions on how to set it up. If you want the top-of-the-line Tingman puzzle, look no further.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/tingmancubesolidbg.jpg?v=1720227319&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/tingman-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/tingman-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "tingman-cube-3x3",
+    "updated": "2026-11-17"
+  }
+}

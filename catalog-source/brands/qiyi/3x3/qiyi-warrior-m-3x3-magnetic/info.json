@@ -1,0 +1,43 @@
+{
+  "name": "QiYi Warrior 3x3 (Magnetic)",
+  "tags": [
+    "Nam châm",
+    "56 mm"
+  ],
+  "description": "QiYi Warrior 3x3 (Magnetic) strives to be the best entry-level speed cube while providing high-end features!",
+  "features": [
+    "Faster, more accurate turning that “clicks” into place.",
+    "Small magnets installed inside edge and corner pieces.",
+    "Anti-stick piece design"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-warrior-m-3x3-magnetic_41277884.jpg?v=1771619512&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-warrior-m-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-warrior-m-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-warrior-m-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-warrior-m-3x3-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-warrior-m-3x3-magnetic"
+    ]
+  }
+}

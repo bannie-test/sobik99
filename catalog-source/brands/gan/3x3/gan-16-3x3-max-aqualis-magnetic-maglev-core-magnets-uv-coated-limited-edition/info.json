@@ -1,0 +1,32 @@
+{
+  "name": "GAN 16 3x3 Max Aqualis (Magnetic, MagLev, Core Magnets) - Limited Edition",
+  "tags": [
+    "MagLev",
+    "Bản đặc biệt"
+  ],
+  "description": "GAN's flagship 3x3 just got a summer edition! The GAN 16 3x3 Max Aqualis (Magnetic, MagLev, Core Magnets) - Limited Edition is a flagship magnetic speed cube that wraps the same top-of-class Max hardware (MagLev core, corner-to-core magnets, and 72 tuning combinations) in an iridescent pink-violet pearl shell exclusive to this limited release.",
+  "features": [
+    "Flagship feel, limited look: the same elite Max performance serious solvers rely on, in an Aqualis colorway you won't find in the standard lineup.",
+    "Fast now, tunable for life: factory-magnetized and quick out of the box, with 72 setting combinations so the cube grows with you instead of being replaced.",
+    "A collectible you actually solve with: themed Aqualis packaging and an exclusive sticker set, on hardware built to compete.",
+    "72 setting combinations: GAN's adjustment system tunes magnet strength and tension together, taking the cube from loose-and-fast to tight-and-controlled.",
+    "Adjustable magnets: set how firmly each layer clicks into place to match your turning style.",
+    "MagLev tensioning: repelling magnets replace the springs for a smoother, more consistent feel as you dial in your setup."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-16-aqualis-sku.jpg?v=1782922416&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-16-3x3-max-aqualis-magnetic-maglev-core-magnets-uv-coated-limited-edition"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-16-3x3-max-aqualis-magnetic-maglev-core-magnets-uv-coated-limited-edition"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-16-3x3-max-aqualis-magnetic-maglev-core-magnets-uv-coated-limited-edition",
+    "updated": "2026-11-16"
+  }
+}

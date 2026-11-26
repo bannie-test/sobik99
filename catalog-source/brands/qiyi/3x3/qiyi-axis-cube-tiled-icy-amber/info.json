@@ -1,0 +1,24 @@
+{
+  "name": "QiYi Axis Cube (Tiled - Icy Amber)",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "The QiYi Axis Cube (Tiled – Icy Amber) is a stylish take on a classic 3x3 shape mod. With its offset axis and twisted cuts, this puzzle offers a fun and challenging spatial experience, transforming into wild shapes as you scramble it. The semi-transparent icy amber tiles, laid out in a full traditional color scheme, give it a shimmering, crystal-like appearance that looks fantastic from any angle.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/axis1.jpg?v=1743529213&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-axis-cube-tiled-icy-amber"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-axis-cube-tiled-icy-amber"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-axis-cube-tiled-icy-amber",
+    "updated": "2026-11-17"
+  }
+}

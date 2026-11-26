@@ -1,0 +1,29 @@
+{
+  "name": "YJ YuPo V2 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-yupo-2x2-v2-magnetic"
+    }
+  ],
+  "description": "The YuPo 2x2 used to dominate the budget market, so we are excited that the YuPo received a refresh! The YJ YuPo 2x2 V2 (Magnetic) retains a similar feel to the original but feels slightly more flexible. The addition of light-strength magnets improves turning and stability.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yj-yupo-2x2-v2-magnetic-stickerless.jpg?v=1765325925&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yj-yupo-2x2-v2-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yj-yupo-2x2-v2-magnetic"
+    ]
+  }
+}

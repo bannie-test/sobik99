@@ -1,0 +1,39 @@
+{
+  "name": "GAN 11 M Pro",
+  "tags": [
+    "Nam châm",
+    "UV",
+    "56 mm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-11-m-pro-3x3-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-11-m-pro-3x3"
+    }
+  ],
+  "description": "The GAN 11 M Pro (UV Coated) is a special edition of GAN’s top flagship, the GAN 11 M Pro.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan11mpro3x3uvcoated.jpg?v=1606146393&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-11-m-pro-3x3-uv-coated"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "UV",
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-11-m-pro-3x3-uv-coated",
+      "https://www.thecubicle.com/products/gan-11-m-pro-3x3"
+    ]
+  }
+}

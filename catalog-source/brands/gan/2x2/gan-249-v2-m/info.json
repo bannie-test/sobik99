@@ -1,0 +1,29 @@
+{
+  "name": "GAN 249 V2 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-249-v2-m"
+    }
+  ],
+  "description": "The GAN 249 V2 M the magnetized version of the GAN 249 V2. This 2x2 speed cube features a honeycomb design on the corner contact points and an overall smooth feel. The Stickerless version features a bright stickerless color scheme, primary plastic internals, while the black plastic version features the GAN Full Bright color scheme and black plastic internals.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/gan249v2mb11_e66d8fbb-3ce0-4957-af13-fca968a63356.jpg?v=1581453480&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-249-v2-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan-249-v2-m"
+    ]
+  }
+}

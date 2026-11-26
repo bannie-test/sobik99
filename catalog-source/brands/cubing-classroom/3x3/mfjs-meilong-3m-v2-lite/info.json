@@ -1,0 +1,27 @@
+{
+  "name": "MFJS MeiLong 3M V2 3x3 Lite",
+  "tags": [
+    "Nam châm",
+    "55.5 mm"
+  ],
+  "description": "The MFJS MeiLong 3M V2 Lite is a super budget-friendly, magnetic 3x3 that offers amazing performance at a very low price. It is fully magnetized and comes with a solving guide.",
+  "features": [
+    "Kích thước 55.5 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/meilong3mlite.jpg?v=1725991037&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/mfjs-meilong-3m-v2-lite"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/mfjs-meilong-3m-v2-lite"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "mfjs-meilong-3m-v2-lite",
+    "updated": "2026-11-17"
+  }
+}

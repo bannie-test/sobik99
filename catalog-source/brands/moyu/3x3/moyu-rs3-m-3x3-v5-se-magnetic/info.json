@@ -1,0 +1,31 @@
+{
+  "name": "MoYu RS3 M 3x3 V5 SE (Magnetic)",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "MoYu RS3 M 3x3 V5 SE (Magnetic) is the successor to the legendary RS3 M 2020 that took the cubing community by storm—now in a Special Edition look with a black logo and matching black packaging. The turning feel and performance are the same as the Standard version; SE is all about the cleaner, stealthier presentation.",
+  "features": [
+    "Black logo for a cleaner, stealth look",
+    "Black Special Edition packaging",
+    "Classic screw/spring design",
+    "Circular core design for increased stability",
+    "Micro strong magnets",
+    "Anti-pop mechanism"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-rs3-m-3x3-v5-se-magnetic.jpg?v=1771619417&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-se-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-se-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-rs3-m-3x3-v5-se-magnetic",
+    "updated": "2026-11-16"
+  }
+}

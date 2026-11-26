@@ -1,0 +1,30 @@
+{
+  "name": "MoYu Super RS3 M 2022 3x3",
+  "tags": [
+    "Nam châm",
+    "56 mm"
+  ],
+  "description": "rs3m super, superrs3, rs3msuper, rs3super, moyu rs3 super",
+  "features": [
+    "Kích thước 56 mm",
+    "MoYu Super RS3 M 2022 3x3 (current product)",
+    "MoYu Super RS3 M 2022 3x3 (MagLev)",
+    "MoYu Super RS3 M 2022 3x3 Ball-Core (Magnetic Core + MagLev)"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/moyu-super-rs3m-standard.jpg?v=1698783519&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-super-rs3-m-2022-3x3"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-super-rs3-m-2022-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "moyu-super-rs3-m-2022-3x3",
+    "updated": "2026-11-17"
+  }
+}

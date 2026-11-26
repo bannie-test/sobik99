@@ -1,0 +1,24 @@
+{
+  "name": "MFJS 3x3 Magic Bead Cube",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "The MFJS 3x3 Magic Bead Cube reimagines the classic 3x3 with an innovative twist. Each face features a track of multi-colored beads arranged in a circle, adding a unique layer to both scrambling and solving. Not only do you need to match the cube’s stickers, but you also get to mix up and align the colorful beads, elevating the challenge and enjoyment of your solve.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/mfjs3x3magicbeadcube.jpg?v=1775228595&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-3x3-magic-bead-cube"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-3x3-magic-bead-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "moyu-3x3-magic-bead-cube",
+    "updated": "2026-11-17"
+  }
+}

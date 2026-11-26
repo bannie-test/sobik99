@@ -1,0 +1,32 @@
+{
+  "name": "MoYu WeiLong WR M 2021",
+  "tags": [
+    "Nam châm",
+    "MagLev"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-wr-m-2021-3x3-magnetic-maglev"
+    }
+  ],
+  "description": "MoYu WeiLong WR M 2021 3x3 (Magnetic, MagLev) offers new updates over the 2020 version, for less!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-weilong-wr-m-2021-3x3-magnetic-maglev-stickerless.jpg?v=1771619413&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-wr-m-2021-3x3-magnetic-maglev"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "MagLev"
+    ],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-weilong-wr-m-2021-3x3-magnetic-maglev"
+    ]
+  }
+}

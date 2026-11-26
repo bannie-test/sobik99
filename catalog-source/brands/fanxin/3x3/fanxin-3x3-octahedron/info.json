@@ -1,0 +1,24 @@
+{
+  "name": "FanXin 3x3 Octahedron",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "The FanXin 3x3 Octahedron is a striking twist on the classic cube, transforming the familiar 3x3 mechanism into an angular, geometric form. Its bold, tiled surfaces and eye-catching silhouette make it stand out on any shelf. Though it may look intimidating, it functions just like a standard 3x3, making it a great shape mod for solvers of all levels.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/FanXin_20Hexagonal_20Prism.jpg?v=1749829154&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/fanxin-3x3-octahedron"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/fanxin-3x3-octahedron"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "fanxin-3x3-octahedron",
+    "updated": "2026-11-17"
+  }
+}

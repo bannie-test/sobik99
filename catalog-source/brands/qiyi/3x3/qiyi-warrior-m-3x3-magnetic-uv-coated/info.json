@@ -1,0 +1,45 @@
+{
+  "name": "QiYi Warrior 3x3 (Magnetic, UV Coated)",
+  "tags": [
+    "UV",
+    "Nam châm",
+    "56 mm"
+  ],
+  "description": "QiYi Warrior 3x3 (Magnetic, UV Coated) strives to be the best entry-level speed cube while providing high-end features!",
+  "features": [
+    "Super glossy plastic, high grip",
+    "Faster, more accurate turning that “clicks” into place.",
+    "Small magnets installed inside edge and corner pieces.",
+    "Anti-stick piece design"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/qiyi-warrior-m-3x3-magnetic-uv-coated_915d5204.jpg?v=1771619518&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/qiyi-warrior-m-3x3-magnetic-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/qiyi-warrior-m-3x3-magnetic-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-warrior-m-3x3-magnetic-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "qiyi-warrior-m-3x3-magnetic-uv-coated",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "56 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-warrior-m-3x3-magnetic-uv-coated"
+    ]
+  }
+}

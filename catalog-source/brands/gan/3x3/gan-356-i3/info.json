@@ -1,0 +1,27 @@
+{
+  "name": "GAN 356 i3",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan356-i3-v2-3x3"
+    }
+  ],
+  "description": "Redefine the smart cubing experience with the GAN356 i3 V2 3x3—the latest evolution of the iconic GAN Bluetooth smart cube. Designed for dedicated speedcubers and data-driven solvers, the i3 V2 combines next-level hardware with elite software integration for total control over your solves. Key Features: Bluetooth-Enabled, Competition Ready: Track every move in real-time with ultra-precise Smart Core 3.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN356_20i3_20V2.png?v=1756411745&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan356-i3-v2-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/gan356-i3-v2-3x3"
+    ]
+  }
+}

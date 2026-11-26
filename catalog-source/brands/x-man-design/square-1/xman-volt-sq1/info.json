@@ -1,0 +1,36 @@
+{
+  "name": "X-Man Volt Square-1",
+  "tags": [
+    "Nam châm"
+  ],
+  "features": [
+    "Square-1 nam châm"
+  ],
+  "reviews": [
+    "Cảm giác 'giòn', cắt góc tốt"
+  ],
+  "audience": "Trung cấp trở lên",
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/x-man-volt-square-1"
+    }
+  ],
+  "description": "The X-Man Volt Square-1 by X-Man Designs and QiYi MoFangGe is the latest Square-1 to hit the market. It features a variety of improvements and tweaks on the original QiYi Square-1, including a widened middle layer, a 6-color assembly design, and an improved anti-pop mechanism.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/xmanvoltb1.jpg?v=1569142070&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/x-man-volt-square-1"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/x-man-volt-square-1"
+    ]
+  }
+}

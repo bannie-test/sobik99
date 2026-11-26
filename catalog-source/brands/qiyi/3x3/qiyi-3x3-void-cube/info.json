@@ -1,0 +1,27 @@
+{
+  "name": "QiYi Tori Cube 3x3",
+  "tags": [
+    "Biến thể",
+    "74 mm"
+  ],
+  "description": "You've never seen a void cube like this! The QiYi Tori Cube 3x3 is a fresh look at a puzzle we all know and love. This void cube has very large \"centers\" and you only turn the outermost part of the puzzle. But in the end, it functions just like a 3x3! Give this one a try!",
+  "features": [
+    "Kích thước 74 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/QiYi_203x3_20Void_20Cube.jpg?v=1701889983&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-3x3-void-cube"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-3x3-void-cube"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-3x3-void-cube",
+    "updated": "2026-11-17"
+  }
+}

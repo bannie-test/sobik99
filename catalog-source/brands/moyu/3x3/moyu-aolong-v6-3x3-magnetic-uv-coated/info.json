@@ -1,0 +1,31 @@
+{
+  "name": "MoYu AoLong 3x3 V6 (Magnetic, UV Coated)",
+  "tags": [
+    "UV"
+  ],
+  "description": "The MoYu AoLong 3x3 V6 (Magnetic, UV Coated) pairs a lightweight carbon fiber core with a high-grip UV coated finish and dual 8-level tuning, so you can dial in exactly the control-to-speed balance you want. A 48-magnet setup with spring tension keeps the turning accurate and snappy without stepping up to the MagLev tiers.",
+  "features": [
+    "High-grip UV coated finish: A super glossy, wear-resistant surface that adds grip and holds up to long solve sessions.",
+    "Accurate magnetic turning: 48 magnets give the cube a clean, positive click into place on every turn.",
+    "Tune it your way: Dual 8-level tuning unlocks 64 feel configurations, so you can match the cube to how you actually solve.",
+    "Light and stable: The carbon fiber core keeps weight down while locking the structure in at speed.",
+    "8-level spring elasticity: The spring adjusts across eight distinct, precise mechanical levels.",
+    "8-level tension: Set the balance between looseness and tightness for your preferred corner-cutting, control and stability."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-Aolong-V6-_Magnetic_-UV_6853.jpg?v=1794002003&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-aolong-v6-3x3-magnetic-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-aolong-v6-3x3-magnetic-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-aolong-v6-3x3-magnetic-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

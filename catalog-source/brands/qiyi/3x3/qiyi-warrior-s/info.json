@@ -1,0 +1,31 @@
+{
+  "name": "QiYi Warrior S",
+  "tags": [
+    "55.5 mm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-warrior-s-3x3"
+    }
+  ],
+  "description": "The QiYI Warrior S is a new budget friendly 3x3 speed cube from QiYi MoFangGe. An updated version of the Warrior W, the Warrior S features an upgraded mechanism for better performance.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/mCnAXUcP119r3.jpg?v=1581458322&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-warrior-s-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "55.5 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/qiyi-warrior-s-3x3"
+    ]
+  }
+}

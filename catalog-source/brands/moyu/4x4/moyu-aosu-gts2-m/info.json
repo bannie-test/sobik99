@@ -1,0 +1,29 @@
+{
+  "name": "MoYu AoSu GTS2 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aosu-4x4-gts2-m"
+    }
+  ],
+  "description": "The AoSu GTS2 M is MoYu's successor and upgrade to the AoSu GTS M 4x4. The AoSu GTS2 M comes in a more compact 61mm size and features a new designs to minimize catching and lockups. The result is a highly competitive, compact 4x4 with quick and clean turning.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/moyuaosu4x4gts2mb1.jpg?v=1581454690&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-aosu-4x4-gts2-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-aosu-4x4-gts2-m"
+    ]
+  }
+}

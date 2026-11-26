@@ -1,0 +1,26 @@
+{
+  "name": "YuXin Digital Puzzle Cube 3x3",
+  "tags": [],
+  "description": "YuXin Digital Puzzle Cube 3x3 is an interesting take on the traditional Rubik's Cube 3x3 that offers new functionality!",
+  "features": [
+    "Numbers on each face are held on by magnets",
+    "Solve by color",
+    "Remove one of the magnetic number \"tiles\" to also shuffle the numbers to increase the challenge!"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yuxin-digital-puzzle-cube-3x3-stickerless.jpg?v=1765326463&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yuxin-digital-puzzle-cube-3x3"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yuxin-digital-puzzle-cube-3x3"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "yuxin-digital-puzzle-cube-3x3",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "MoYu RS3 M 3x3 V5 (Magnetic, MagLev, Ball-Core, UV Coated) + Robot Box",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm"
+  ],
+  "description": "MoYu RS3 M 3x3 V5 (Magnetic, MagLev, Ball-Core, UV Coated) + Robot Box is the successor to the legendary RS3 M 2020 that took the cubing community by storm!",
+  "features": [
+    "Corner-to-core magnets for a better, more controllable turning feel",
+    "Auto-alignment 2.0",
+    "Dual-adjustment system (9 settings)",
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/MoYu-RS3-M-3x3-V5-Magnetic-MagLev-Ball-Core-UV-Coated-Robot-Box.jpg?v=1771619474&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-magnetic-maglev-ball-core-uv-coated-robot-box"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs3-m-3x3-v5-magnetic-maglev-ball-core-uv-coated-robot-box"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-rs3-m-3x3-v5-magnetic-maglev-ball-core-uv-coated-robot-box",
+    "updated": "2026-11-16"
+  }
+}

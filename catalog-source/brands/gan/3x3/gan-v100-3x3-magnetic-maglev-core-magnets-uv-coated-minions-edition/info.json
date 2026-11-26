@@ -1,0 +1,33 @@
+{
+  "name": "GAN V100 3x3 (Magnetic, MagLev, Core Magnets, UV Coated) - Minions Edition",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Bản đặc biệt"
+  ],
+  "description": "The GAN V100 3x3 (Magnetic, MagLev, Core Magnets, UV Coated) - Minions Edition brings a fully licensed Illumination's Minions makeover to GAN's flagship V100 platform: a custom 6-color exterior, a banana-yellow interior, and a Stuart center cap, wrapped around a dual-maglev speed cube built to turn as fast as it looks.",
+  "features": [
+    "Fast right out of the tin: A dual-maglev magnetic system with 76 magnets does the alignment work for you, so turns settle into place instead of catching.",
+    "Dial it to your hands: 6 center-travel settings times 12 tension levels give 72 distinct handfeels, so one cube covers a lot of preferences.",
+    "Complete themed kit: Ships with a special GAN BOX, Minions packaging, a DIY sticker sheet, a themed cube bag, a tuning tool, and the manual.",
+    "72-gear numerical tuning: 6 center-travel settings combine with 12 tension levels for 72 custom handfeels, all set with the numbered dial.",
+    "Auto-aligning maglev: The dual-maglev system corrects up to 35 degrees, pulling near-misses into a clean layer.",
+    "Tool-assisted adjustment: The included custom tuning tool makes tension and travel changes repeatable, not guesswork."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/a81d0c71-cd37-458e-92e2-cee6fb365460.jpg?v=1783615198&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-v100-3x3-magnetic-maglev-core-magnets-uv-coated-minions-edition"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-v100-3x3-magnetic-maglev-core-magnets-uv-coated-minions-edition"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-v100-3x3-magnetic-maglev-core-magnets-uv-coated-minions-edition",
+    "updated": "2026-11-16"
+  }
+}

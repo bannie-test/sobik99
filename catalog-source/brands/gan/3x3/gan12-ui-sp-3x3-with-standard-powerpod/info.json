@@ -1,0 +1,27 @@
+{
+  "name": "GAN12 ui SP 3x3 (UV Coated, with Power Bank)",
+  "tags": [
+    "UV",
+    "Nam châm"
+  ],
+  "description": "Experience the future of speedcubing with the revolutionary GAN12 ui SP 3x3, the latest smart cube from the renowned GAN brand. Engineered for peak performance and unrivaled accuracy, this next-generation 3x3 smart cube brings together cutting-edge technology and groundbreaking design upgrades—all crafted to elevate your solving experience to new heights.",
+  "features": [
+    "GAN Robot V2 Arthur Compatible: Seamlessly integrate with the GAN Robot V2 Arthur for automated solving, scrambling, and hands-free training sessions."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN12_ui_SP-stdpowerpod.png?v=1754687702&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan12-ui-sp-3x3-with-standard-powerpod"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan12-ui-sp-3x3-with-standard-powerpod"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan12-ui-sp-3x3-with-standard-powerpod",
+    "updated": "2026-11-17"
+  }
+}

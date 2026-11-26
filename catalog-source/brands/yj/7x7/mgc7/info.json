@@ -1,0 +1,17 @@
+{
+  "name": "YJ MGC 7×7",
+  "description": "Rubik 7×7 từ tính, mở rộng hành trình reduction với các tâm và cánh cạnh.",
+  "features": [
+    "Tâm giữa cố định",
+    "Nhiều thử thách luyện nhận diện"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yj-mgc-7x7-magnetic"
+    }
+  ],
+  "tags": [
+    "Magnetic"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "MoYu PB WR 3x3 (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV"
+  ],
+  "description": "The MoYu PB WR 3x3 (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated) is the same-edition cube Wang Yiheng used to set the 3x3 average world record at 3.51 seconds. It pairs a lightweight carbon fiber core with a 100-magnet configuration and one-button triple adjustment, so you can dial in a champion's feel and then keep tuning until it's yours.",
+  "features": [
+    "Lightweight and fast: An upgraded carbon fiber core keeps the cube light at roughly 72g while holding up to explosive, high-speed solving.",
+    "8-level MagLev elasticity: Magnetic springs deliver low-resistance, quiet turning with a light, consistent return.",
+    "8-level precision tension: Fine digital tension steps let you control tightness and looseness in small increments.",
+    "8-level edge & corner magnetic force: Adjust magnetic spacing across multiple levels to match your turning style.",
+    "Wang Yiheng's WR setup: Out of the box it ships at his world-record tuning — Tension 1, Elasticity 1, Magnetic Strength 8 — as a proven starting point.",
+    "20-Magnet Ball-Core: Ball-Core Positioning 3.0 flagship configuration with a full 100-magnet count for auto-alignment and stability through the whole turn."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/6c55767f-0d9e-454e-ae78-2dc7bd7cf4a4.jpg?v=1788281886&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/pb-wr-3x3-magnetic-maglev-20-magnet-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/pb-wr-3x3-magnetic-maglev-20-magnet-ball-core-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "pb-wr-3x3-magnetic-maglev-20-magnet-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

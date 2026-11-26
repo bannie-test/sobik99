@@ -1,0 +1,27 @@
+{
+  "name": "GAN V100 MagLev UV 3x3 (Minions Edition)",
+  "tags": [
+    "MagLev",
+    "UV",
+    "Nam châm",
+    "Bản đặc biệt"
+  ],
+  "description": "GAN V100 MagLev UV 3x3 (Minions Edition) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_20V100_20Minions.png?v=1782526204&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3-minions-edition"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3-minions-edition"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-v100-maglev-uv-3x3-minions-edition",
+    "updated": "2026-11-17"
+  }
+}

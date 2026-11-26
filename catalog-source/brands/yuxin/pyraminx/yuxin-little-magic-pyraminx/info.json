@@ -1,0 +1,36 @@
+{
+  "name": "YuXin Little Magic Pyraminx",
+  "tags": [
+    "Giá rẻ"
+  ],
+  "features": [
+    "Pyraminx giá rẻ"
+  ],
+  "reviews": [
+    "Mượt và nhanh"
+  ],
+  "audience": "Người mới",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/yuxin-little-magic-pyraminx"
+    }
+  ],
+  "description": "It's here! After a lot of anticipation, the YuXin Little Magic Pyraminx has arrived. The Little Magic series features introductory-level puzzles that offer amazing performance that rivals some higher-end competitors!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/yuxin-little-magic-pyraminx-stickerless.jpg?v=1765412239&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/yuxin-little-magic-pyraminx"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/yuxin-little-magic-pyraminx"
+    ]
+  }
+}

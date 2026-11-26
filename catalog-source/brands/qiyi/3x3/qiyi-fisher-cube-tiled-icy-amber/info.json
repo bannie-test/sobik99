@@ -1,0 +1,24 @@
+{
+  "name": "QiYi Fisher Cube (Tiled - Icy Amber)",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "The QiYi Fisher Cube (Tiled – Icy Amber) takes the classic 3x3 design and adds a unique twist with its rotated layers. This shape-mod puzzle shifts the standard cube into a diagonal, jumbled configuration, creating an exciting challenge for solvers. The semi-transparent icy amber tiles give it a captivating, crystal-clear appearance, while maintaining a traditional color scheme for easy identification of pieces.",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/fishericyamber1.jpg?v=1743529130&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-fisher-cube-tiled-icy-amber"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-fisher-cube-tiled-icy-amber"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-fisher-cube-tiled-icy-amber",
+    "updated": "2026-11-17"
+  }
+}

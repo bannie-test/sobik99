@@ -1,0 +1,33 @@
+{
+  "name": "GAN 17 MagDrive 3x3 (Magnetic, MagLev, Ball-Core) - Jurassic World Edition",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "Bản đặc biệt"
+  ],
+  "description": "The GAN 17 MagDrive 3x3 Jurassic World is a licensed flagship collaboration that wraps GAN's MagDrive core system in a textured, movie-inspired dinosaur-skin finish, packaged inside a collectible hatching dino egg. It's a magnetic speed cube built for serious solving that also doubles as a display piece for Jurassic World fans.",
+  "features": [
+    "Officially licensed collector piece: A genuine Jurassic World collaboration, numbered and themed down to the center cap logos, egg case, and dino-print bag.",
+    "Textured, movie-inspired finish: Dinosaur-skin surface detailing across every face gives it a look and feel no plain stickerless cube offers.",
+    "Gift-ready out of the box: Arrives inside a hatching dino egg case with a themed drawstring bag, so it's ready to give with no extra wrapping.",
+    "MagDrive core system: GAN's MagDrive architecture anchors the mechanism for stable, controlled turning.",
+    "MagLev feel: Repelling magnets replace springs for a smooth, consistent push through each turn.",
+    "Ball-core stability: The ball-core setup aids auto-alignment and keeps the cube planted during fast solves."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-17-jurassic-sku-2.jpg?v=1792001593&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-17-magdrive-3x3-magnetic-maglev-ball-core-jurassic-world-edition"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-17-magdrive-3x3-magnetic-maglev-ball-core-jurassic-world-edition"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-17-magdrive-3x3-magnetic-maglev-ball-core-jurassic-world-edition",
+    "updated": "2026-11-16"
+  }
+}

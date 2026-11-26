@@ -1,0 +1,33 @@
+{
+  "name": "Swift Block 355S",
+  "tags": [
+    "Nam châm",
+    "55 mm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/swift-block-355s-3x3"
+    }
+  ],
+  "description": "The Swift 355S 3x3 is a new cube from the GAN sub-brand Swift Block. This puzzle is magnetic, has hand-adjustable compressions, and has a frosty outer texture.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/swiftblocks3x3.jpg?v=1682620626&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/swift-block-355s-3x3"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "Nam châm",
+      "55 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/swift-block-355s-3x3"
+    ]
+  }
+}

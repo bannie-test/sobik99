@@ -1,0 +1,25 @@
+{
+  "name": "GAN V100 Leap Frosted 3x3 (PiCube 20-Magnet Ball-Core Mod)",
+  "tags": [
+    "Ball-core",
+    "Nam châm"
+  ],
+  "description": "GAN V100 Leap Frosted 3x3 (PiCube 20-Magnet Ball-Core Mod) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/GAN_V100_MagLev_Frosted_PiCube_Mod_1.png?v=1783717902&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/gan-v100-leap-3x3-frosted-picube-20-magnet-ball-core-mod"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/gan-v100-leap-3x3-frosted-picube-20-magnet-ball-core-mod"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "gan-v100-leap-3x3-frosted-picube-20-magnet-ball-core-mod",
+    "updated": "2026-11-17"
+  }
+}

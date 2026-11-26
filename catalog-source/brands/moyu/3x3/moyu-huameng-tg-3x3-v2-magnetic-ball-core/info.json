@@ -1,0 +1,31 @@
+{
+  "name": "MoYu HuaMeng TG 3x3 V2 (Magnetic, Ball-Core)",
+  "tags": [
+    "Ball-core"
+  ],
+  "description": "The MoYu HuaMeng TG 3x3 V2 (Magnetic, Ball-Core) is the 8-Magnet Ball-Core build of HuaMeng's gear-driven flagship 3x3 — a magnetic speed cube designed to make tuning audible, repeatable, and precise. Each gear click moves a magnet by 0.1mm, so dialing in a feel stops being guesswork.",
+  "features": [
+    "Elasticity, 9 levels: Quantified core elasticity lets you tune rebound speed and strength on a clear scale.",
+    "Tension, 6 levels: Defined tension steps replace half-turns and feel; pick a number, lock it in, repeat it.",
+    "Cube Torch tool included: One double-ended tool — handle adjusts magnets, head adjusts elasticity.",
+    "Core Positioning 1.0 architecture: 8 Ball-Core magnets plus 8 corner foot magnets focus on stable, reliable acceleration.",
+    "Integrated friction surface: Reinforced internal contact surfaces resist cracking and separation under speed-solve stress.",
+    "Internal anti-twist feet: Seamless interlocking pieces help prevent pops at high speed."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-huameng-tg-3x3-v2-magnetic-ball-core_49d4de99.jpg?v=1778861756&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-huameng-tg-3x3-v2-magnetic-ball-core"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-huameng-tg-3x3-v2-magnetic-ball-core"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-huameng-tg-3x3-v2-magnetic-ball-core",
+    "updated": "2026-11-16"
+  }
+}

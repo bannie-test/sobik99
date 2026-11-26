@@ -1,0 +1,58 @@
+{
+  "name": "MoYu WeiLong AI 3x3 V11 (Magnetic, MagLev, Ball-Core, UV Coated)",
+  "tags": [
+    "MagLev",
+    "Ball-core",
+    "UV",
+    "Nam châm",
+    "Thông minh",
+    "Bản đặc biệt",
+    "55.5 mm"
+  ],
+  "description": "MoYu WeiLong 3x3 V11 (Magnetic, MagLev, 20-Magnet Ball-Core, UV Coated) is a spectacular release that was used to break the 3x3 speed solve average World Record!",
+  "features": [
+    "Solving assistant",
+    "AI tutorials",
+    "Skill predictions",
+    "Comprehensive metrics",
+    "Timed races",
+    "Multiplayer events"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-weilong-ai-3x3-v11-magnetic-maglev-ball-core-uv-coated-stickerless.jpg?v=1771619300&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-ai-3x3-v11-magnetic-maglev-ball-core-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-ai-3x3-v11-magnetic-maglev-ball-core-uv-coated"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-v11-ai-3x3-smart-cube-guided-recovery-edition"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weilong-v11-ai-3x3-maglev-uv"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-weilong-ai-3x3-v11-magnetic-maglev-ball-core-uv-coated",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm",
+      "Thông minh",
+      "Bản đặc biệt",
+      "55.5 mm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-weilong-v11-ai-3x3-smart-cube-guided-recovery-edition",
+      "https://www.thecubicle.com/products/moyu-weilong-v11-ai-3x3-maglev-uv"
+    ]
+  }
+}

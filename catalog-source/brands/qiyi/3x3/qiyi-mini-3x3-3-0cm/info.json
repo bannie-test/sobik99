@@ -1,0 +1,26 @@
+{
+  "name": "QiYi Mini 3x3 (3.0cm)",
+  "tags": [
+    "30 mm"
+  ],
+  "description": "The QiYi Mini 3x3 is a 30mm, fully functional puzzle with very smooth turning. Throw it in your pocket or purse and have a puzzle with you all the time!",
+  "features": [
+    "Kích thước 30 mm"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/QiYi_20Mini_203x3_20_3.0cm.jpg?v=1624388466&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/qiyi-mini-3x3-3-0cm"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/qiyi-mini-3x3-3-0cm"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "qiyi-mini-3x3-3-0cm",
+    "updated": "2026-11-17"
+  }
+}

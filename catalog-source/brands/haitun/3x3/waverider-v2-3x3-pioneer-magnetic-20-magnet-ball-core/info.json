@@ -1,0 +1,31 @@
+{
+  "name": "HaiTun WaveRider 3x3 V2 Pioneer (Magnetic, 20-Magnet Ball-Core)",
+  "tags": [
+    "Ball-core"
+  ],
+  "description": "The HaiTun WaveRider 3x3 V2 Pioneer is a fully tunable magnetic speed cube built around a spherical ball-core with 20 core magnets and 6 magnetic rings, adding up to 82 magnets across the puzzle. The Pioneer trim leans into acceleration — the extra ring magnets converge force at the core edges and disperse it at the corners, so every turn gets a noticeable magnetic push.",
+  "features": [
+    "Quiet enough for anywhere: Full lubrication and high-precision processing keep noise down, whether you're practicing at your desk or on the couch.",
+    "Numerical micro-setting: Compression and tension are both set on numbered dials, so replicating a top cuber's feel is as simple as matching the numbers.",
+    "26-point core positioning: Up to 26 magnets in the core work with the 20 corner-foot magnets to produce diverse positioning effects across the whole cube.",
+    "Auto-assisted homing: Magnetic repulsion combined with inertia adds acceleration and helps the cube settle into place, keeping operation smooth and stable.",
+    "Spherical ball-core: An integrated maglev core drives auto-alignment and adds stability, so layers snap true and stay planted.",
+    "Great corner-cutting: Rounded gradient curves, structural optimization, and anti-corner-twist geometry cut down on lock-ups."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Haitun-WaveRider-V2-3x3---0034766.jpg?v=1783786365&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/waverider-v2-3x3-pioneer-magnetic-20-magnet-ball-core"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/waverider-v2-3x3-pioneer-magnetic-20-magnet-ball-core"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "waverider-v2-3x3-pioneer-magnetic-20-magnet-ball-core",
+    "updated": "2026-11-16"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "MoYu WeiLong Skewb Maglev",
+  "tags": [
+    "Maglev"
+  ],
+  "features": [
+    "Skewb có maglev"
+  ],
+  "reviews": [
+    "Được giới thiệu là lựa chọn tốt trong tầm giá"
+  ],
+  "audience": "Mọi trình độ",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-weilong-skewb-magnetic-maglev"
+    }
+  ],
+  "description": "MoYu WeiLong Skewb (Magnetic, MagLev) includes popular features found in modern speed cubes which separate this skewb from the rest!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-weilong-skewb-magnetic-maglev-stickerless.jpg?v=1771619511&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-weilong-skewb-magnetic-maglev"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-weilong-skewb-magnetic-maglev"
+    ]
+  }
+}

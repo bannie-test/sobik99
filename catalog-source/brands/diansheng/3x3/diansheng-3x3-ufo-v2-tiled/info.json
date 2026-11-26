@@ -1,0 +1,24 @@
+{
+  "name": "DianSheng 3x3 UFO V2 (Tiled)",
+  "tags": [
+    "Biến thể"
+  ],
+  "description": "DianSheng 3x3 UFO V2 (Tiled) - more details coming soon!",
+  "features": [],
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/DianSheng_203x3_20UFO_20Cube.png?v=1781044600&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/diansheng-3x3-ufo-v2-tiled"
+  },
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/diansheng-3x3-ufo-v2-tiled"
+    }
+  ],
+  "importedFrom": {
+    "shop": "www.thecubicle.com",
+    "handle": "diansheng-3x3-ufo-v2-tiled",
+    "updated": "2026-11-17"
+  }
+}

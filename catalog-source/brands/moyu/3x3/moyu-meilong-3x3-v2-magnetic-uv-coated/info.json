@@ -1,0 +1,31 @@
+{
+  "name": "MoYu MeiLong 3x3 V2 (Magnetic, UV Coated)",
+  "tags": [
+    "UV"
+  ],
+  "description": "MoYu MeiLong 3x3 V2 (Magnetic, UV Coated) is a lightweight upgrade to one of the most popular entry-level cubes ever.",
+  "features": [
+    "Super glossy plastic, high grip",
+    "\"Dragon scale\" piece design for smoother turning",
+    "Factory-installed magnets for more control",
+    "Reinforced core design",
+    "Super fast turning feel",
+    "Lightweight"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-meilong-3x3-v2-magnetic-uv-coated-stickerless.jpg?v=1771619441&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic-uv-coated"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic-uv-coated"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-meilong-3x3-v2-magnetic-uv-coated",
+    "updated": "2026-11-16"
+  }
+}

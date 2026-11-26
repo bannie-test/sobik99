@@ -1,0 +1,29 @@
+{
+  "name": "Rubik's Minnie Mouse Cuber",
+  "tags": [],
+  "description": "Add a touch of Disney charm to your solves with the Rubik’s Cube Minnie Mouse Cuber — a stylish twist on the classic 3×3 puzzle. Featuring Minnie Mouse’s signature look, this collectible cube lets you enjoy the challenge of solving while celebrating one of Disney’s most iconic characters.",
+  "features": [
+    "Classic Disney Design: Showcases Minnie Mouse’s iconic style and signature bow",
+    "Solve & Display: Attach the head and bow to create a fun, display-ready collectible",
+    "Timeless 3×3 Challenge: Twist and turn to solve all six sides",
+    "Collector’s Favorite: Part of the Rubik’s Cuber Series featuring beloved characters",
+    "Perfect Gift Idea: Great for Disney fans, puzzle lovers, and collectors of all ages",
+    "Official Rubik’s 3×3 format"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/rubiks-minnie-mouse-cuber.jpg?v=1776961134&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-minnie-mouse-cuber"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-minnie-mouse-cuber"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "rubiks-minnie-mouse-cuber",
+    "updated": "2026-11-16"
+  }
+}

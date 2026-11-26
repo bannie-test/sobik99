@@ -1,0 +1,32 @@
+{
+  "name": "GAN V100 3x3 (Magnetic, MagLev, Core Magnets, UV Coated)",
+  "tags": [
+    "MagLev",
+    "UV"
+  ],
+  "description": "The GAN V100 3x3 (Magnetic, MagLev, Core Magnets, UV Coated) is a superlight 55 mm speed cube built for fast, accurate turning with simple, repeatable tuning. Piece magnets give precise layer “clicks,” MagLev removes spring friction for a low-drag glide, and core magnets (corner-to-core) add stability so layers realign quickly at high TPS—now with a UV coated exterior for durable, high-grip gloss at just ~64 g.",
+  "features": [
+    "Fast, low-friction feel: MagLev elasticity eliminates spring noise and wear for quicker, smoother turns.",
+    "Stable alignment: Core magnets pull layers into place for cleaner execution and fewer lockups.",
+    "Light and agile: ~64 g superlight build reduces hand fatigue during long practice sessions.",
+    "UV coated grip: Glossy, hard-wearing finish provides confident hold and long-lasting shine.",
+    "Easy, repeatable setup: 72 tension/compression combinations let you dial in from soft and fast to firm and controlled—no guesswork.",
+    "Consistent feedback: 76 total magnets keep alignment crisp on every move."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-v100-3x3-magnetic-maglev-core-magnets-uv-coated.jpg?v=1771619420&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-v100-3x3-magnetic-maglev-core-magnets"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-v100-3x3-magnetic-maglev-core-magnets"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-v100-3x3-magnetic-maglev-core-magnets",
+    "updated": "2026-11-16"
+  }
+}

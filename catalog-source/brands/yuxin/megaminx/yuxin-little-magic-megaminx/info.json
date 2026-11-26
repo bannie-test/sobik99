@@ -1,0 +1,27 @@
+{
+  "name": "YuXin Little Magic Megaminx",
+  "tags": [],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/yuxin-little-magic-megaminx"
+    }
+  ],
+  "description": "The YuXin Little Magic Megaminx is the first megaminx ever released by YuXin. As a budget-friendly megaminx, the YuXin Megaminx is surprisingly advanced. It features highly rounded pieces for enhanced corner-cutting and a ridged design along the edges to help with grip. Additionally, the YuXin Megaminx is the lightest megaminx on the market.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/yuxinsculptedmegaminxb1_544528e7-05dc-4b0c-bd7e-700f6cbd6408.jpg?v=1581455234&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/yuxin-little-magic-megaminx"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/yuxin-little-magic-megaminx"
+    ]
+  }
+}

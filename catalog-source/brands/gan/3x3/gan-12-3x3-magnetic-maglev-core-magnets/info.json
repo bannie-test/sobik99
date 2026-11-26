@@ -1,0 +1,31 @@
+{
+  "name": "GAN 12 3x3 (Magnetic, MagLev, Core Magnets)",
+  "tags": [
+    "MagLev"
+  ],
+  "description": "GAN 12 3x3 (Magnetic, MagLev) is here to refine the way that you speed solve. With two different versions to choose from (Leap or MagLev), the GAN 12 includes lots of new features.",
+  "features": [
+    "Fastest turning feel",
+    "Spring replaced by repelling magnets",
+    "Magnetic levitation technology",
+    "Storage bag ($3 value)",
+    "Storage box (version 8)",
+    "Adjustment components"
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/gan-12-3x3-magnetic-maglev-core-magnets-stickerless.jpg?v=1771619356&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/gan-12-3x3-magnetic-maglev-core-magnets"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/gan-12-3x3-magnetic-maglev-core-magnets"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "gan-12-3x3-magnetic-maglev-core-magnets",
+    "updated": "2026-11-16"
+  }
+}

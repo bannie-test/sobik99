@@ -1,0 +1,44 @@
+{
+  "name": "MoYu AoLong 3x3 V5 (Magnetic)",
+  "tags": [
+    "Nam châm"
+  ],
+  "description": "The MoYu AoLong 3x3 V5 (Magnetic) brings a carbon fiber core, dual-axis tuning, and a full 48-magnet setup to one of the most approachable price points in MoYu's lineup. It's a competition-ready 3x3 that doesn't ask you to choose between affordability and serious adjustability.",
+  "features": [
+    "Carbon fiber core: Lightweight and rigid. The carbon fiber construction keeps the core structure stable across high-speed solves without adding weight.",
+    "64 tuning combinations: 8 spring tension levels × 8 distance settings give you a wide tuning range — from tight and controlled to fast and free-flowing.",
+    "Anti-corner-twist design: Outer right-angle geometry on the corners prevents twists even under aggressive, fast turning.",
+    "Dragon scale texture: The tactile surface treatment gives consistent grip across the whole cube without feeling rough.",
+    "Dual adjustment system: Independent control over tension and distance — two separate axes of adjustment that don't interfere with each other.",
+    "8 spring tension levels: Dial in elasticity from snappy and responsive to smooth and gliding."
+  ],
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-aolong-v5-3x3-magnetic_90c2bb1e.jpg?v=1782317793&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-aolong-v5-3x3-magnetic"
+  },
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-aolong-v5-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aolong-v5-3x3-magnetic"
+    }
+  ],
+  "importedFrom": {
+    "shop": "speedcubeshop.com",
+    "handle": "moyu-aolong-v5-3x3-magnetic",
+    "updated": "2026-11-16"
+  },
+  "imported": {
+    "fields": [],
+    "tags": [
+      "Nam châm"
+    ],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-aolong-v5-3x3-magnetic"
+    ]
+  }
+}

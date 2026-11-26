@@ -1,0 +1,29 @@
+{
+  "name": "MoYu RS4 M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/moyu-rs4-m-4x4-magnetic"
+    }
+  ],
+  "description": "MoYu RS4 M 4x4 Magnetic is here! Considering the RS3 M 2020 essentially redefined what a budget cube is, an RS4 only made sense!",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/moyu-rs4-m-4x4-magnetic-stickerless.jpg?v=1771619365&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/moyu-rs4-m-4x4-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://speedcubeshop.com/products/moyu-rs4-m-4x4-magnetic"
+    ]
+  }
+}

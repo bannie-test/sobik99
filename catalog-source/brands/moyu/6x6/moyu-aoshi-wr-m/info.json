@@ -1,0 +1,29 @@
+{
+  "name": "MoYu AoShi WR M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-aoshi-6x6-wr-m"
+    }
+  ],
+  "description": "The MoYu AoShi 6x6 WR M is the latest in the WR line from MoYu. This puzzle has over 140 magnets, great corner cutting, improved anti-lock mechanism, and much more! If you do this event, or if you're just curious about it, the AoShi WR M is a great choice!",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/moyu-aoshi-wr-m-6x6.jpg?v=1677872852&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-aoshi-6x6-wr-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-aoshi-6x6-wr-m"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "MoYu WeiPo WR M",
+  "tags": [
+    "Nam châm"
+  ],
+  "sources": [
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/moyu-weipo-2x2-wr-m"
+    }
+  ],
+  "description": "The WeiPo WR M is MoYu’s first magnetic 2x2. This 2x2 features a new lightweight design to improve performance. There are slots fitted with medium/strong magnets to make this puzzle more stable, and an upgraded mechanism to make sure you never miss a turn! Also, the stickerless bright version features an updated color scheme to improve contrast and make recognition easier.",
+  "image": "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/cjsZBHLhbavSz.jpg?v=1569400026&width=800",
+  "imageCredit": {
+    "name": "The Cubicle",
+    "url": "https://www.thecubicle.com/products/moyu-weipo-2x2-wr-m"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [],
+    "sources": [
+      "https://www.thecubicle.com/products/moyu-weipo-2x2-wr-m"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Rubik's Cube 3x3 (bản gốc)",
+  "tags": [
+    "Kinh điển",
+    "Nam châm",
+    "55 mm"
+  ],
+  "features": [
+    "Thiết kế gốc"
+  ],
+  "reviews": [
+    "Bền, mang tính biểu tượng",
+    "Xoay nặng hơn speedcube"
+  ],
+  "audience": "Người chơi giải trí",
+  "sources": [
+    {
+      "name": "SpeedCubeShop",
+      "url": "https://speedcubeshop.com/products/rubiks-speed-cube-3x3-magnetic"
+    },
+    {
+      "name": "The Cubicle",
+      "url": "https://www.thecubicle.com/products/rubiks-magnetic-speed-cube-3x3"
+    }
+  ],
+  "description": "Designed for speedcubers, the Rubik’s Speed Cube 3x3 is an upgraded version of the classic Rubik’s Cube. Its strong internal magnets enhance stability, aligning layers for smoother, faster, and more accurate turns.",
+  "image": "https://cdn.shopify.com/s/files/1/0978/8602/files/Rubiks-Speed-Cube-3x3-Magnetic.jpg?v=1771619509&width=800",
+  "imageCredit": {
+    "name": "SpeedCubeShop",
+    "url": "https://speedcubeshop.com/products/rubiks-speed-cube-3x3-magnetic"
+  },
+  "imported": {
+    "fields": [
+      "description",
+      "image",
+      "imageCredit"
+    ],
+    "tags": [
+      "Nam châm",
+      "55 mm"
+    ],
+    "sources": [
+      "https://speedcubeshop.com/products/rubiks-speed-cube-3x3-magnetic",
+      "https://www.thecubicle.com/products/rubiks-magnetic-speed-cube-3x3"
+    ]
+  }
+}
