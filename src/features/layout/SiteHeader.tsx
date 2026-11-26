@@ -6,6 +6,7 @@ const NAV_LINKS = [
   ['/solve', t('Giải Rubik', 'Solve')],
   ['/guide', t('Học cách xoay', 'Learn')],
   ['/workshop', t('Xưởng Rubik', 'Workshop')],
+  ['/simulator', t('Rubik 3D', '3D Cube')],
   ['/timer', 'Timer'],
 ] as const;
 

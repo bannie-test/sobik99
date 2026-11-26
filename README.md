@@ -22,6 +22,7 @@ npm run preview
 - **Học cách xoay** gồm tám loại puzzle, thư viện CFOP 119 case, F2L tự nghiệm, học giải bịt mắt và bài luyện Cross. Các thẻ dùng sơ đồ trải 2D theo cách giải đã chọn. Trình phát 3D tải khi mở “Xem cách xoay”.
 - **Giải Rubik** nhận scramble hoặc trạng thái tô màu, giải CFOP từng bước hoặc dùng thuật toán hai pha. Mục tiêu từng phần có thể giải tiếp đến khi xong.
 - **Xưởng Rubik** mô phỏng lắp linh kiện 3×3, thử cơ chế tâm và xoay các tầng sau khi lắp.
+- **Rubik 3D** (`#/simulator`) nhận cử chỉ chụm–kéo–thả từ một tay, phím xoay tùy chỉnh và công thức. Webcam cần localhost hoặc HTTPS. Các phiên giải từ scramble được lưu trên trình duyệt để phát lại, xem khoảng dừng và rút gọn nước xoay.
 - **Timer** dùng scramble random-state, giữ Space 350 ms rồi nhả hoặc chạm để bắt đầu. Lịch sử lưu trong trình duyệt, hỗ trợ +2/DNF, Ao5/Ao12 và CSV.
 - **Thu gọn** mở riêng phần Học cách xoay. Lựa chọn ngôn ngữ và chế độ hiển thị được lưu trong trình duyệt.
 

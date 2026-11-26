@@ -13,9 +13,11 @@ export interface PlayRequest {
   title?: string;
   setup?: string;
   maskLastLayer?: boolean;
+  turnTimes?: readonly number[];
+  formatNotation?: (text: string) => string;
 }
 
-function PlaybackModel({ alg, puzzle = '3x3', setup, maskLastLayer }: PlayRequest) {
+function PlaybackModel({ alg, puzzle = '3x3', setup, maskLastLayer, turnTimes, formatNotation }: PlayRequest) {
   const ref = useRef<HTMLDivElement>(null);
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   useEffect(() => {
@@ -36,6 +38,8 @@ function PlaybackModel({ alg, puzzle = '3x3', setup, maskLastLayer }: PlayReques
           puzzle: puzzleId(puzzle),
           setup: setup ?? new Alg(alg).invert().toString(),
           maskLastLayer,
+          turnTimes,
+          formatNotation,
         });
         if (!active) player?.destroy();
         else {
@@ -51,7 +55,7 @@ function PlaybackModel({ alg, puzzle = '3x3', setup, maskLastLayer }: PlayReques
       dispose?.();
       stage.remove();
     };
-  }, [alg, maskLastLayer, puzzle, setup]);
+  }, [alg, maskLastLayer, puzzle, setup, turnTimes, formatNotation]);
 
   return <div id="player-mount" className="player-box">
     {status === 'loading' && <p role="status">{t('Đang tải mô hình…', 'Loading cube…')}</p>}
@@ -84,8 +88,8 @@ function Playback({ request, previous, next, children }: {
       <details className="playback-formula">
         <summary>{t('Công thức', 'Algorithm')}</summary>
         <div className="formula-row">
-          <code>{alg}</code>
-          <button className="small-button" onClick={() => copy(alg)}>{t('Sao chép', 'Copy')}</button>
+          <code>{request.formatNotation?.(alg) ?? alg}</code>
+          <button className="small-button" onClick={() => copy(request.formatNotation?.(alg) ?? alg)}>{t('Sao chép', 'Copy')}</button>
         </div>
       </details>
     </section>

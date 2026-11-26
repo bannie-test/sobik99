@@ -40,6 +40,8 @@ export default defineConfig({
   server: {
     fs: { deny: ['.env', '.env.*', '*.{crt,pem}', '**/.git/**', '**/catalog-source/**'] },
   },
+  // Prebundle the lazy camera worker dependency before a user grants camera access.
+  optimizeDeps: { include: ['@mediapipe/tasks-vision'] },
   worker: { format: 'es' },
   build: {
     target: 'es2022',

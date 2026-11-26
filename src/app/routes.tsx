@@ -9,6 +9,7 @@ const CatalogPage = lazy(() => import('../features/catalog/InteractiveCatalog'))
 const SolvePage = lazy(() => import('../features/solve/SolvePage'));
 const WorkshopPage = lazy(() => import('../features/workshop/WorkshopPage'));
 const SourcesPage = lazy(() => import('../features/sources/PhotoCredits'));
+const SimulatorPage = lazy(() => import('../features/simulator/SimulatorPage'));
 const TimerPage = lazy(() => import('../features/timer/TimerPage'));
 
 interface RouteContext {
@@ -44,6 +45,7 @@ export const ROUTES: RouteDef[] = [
   },
   { path: '/solve', title: t('Giải Rubik', 'Solve'), render: ({ query }) => <SolvePage query={query} /> },
   { path: '/workshop', title: t('Xưởng Rubik', 'Cube Workshop'), render: () => <WorkshopPage /> },
+  { path: '/simulator', title: t('Rubik 3D', '3D Cube'), render: () => <SimulatorPage /> },
   { path: '/timer', title: 'Timer', render: () => <TimerPage /> },
   { path: '/sources', title: t('Nguồn hình ảnh', 'Photo credits'), render: () => <SourcesPage /> },
 ];

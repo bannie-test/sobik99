@@ -4,6 +4,7 @@ import { Alg } from 'cubing/alg';
 import { escapeHTML as esc } from '../utils/ui.js';
 import { read, write } from '../utils/storage.js';
 import { createGanFactory } from '../core/cube-shape.js';
+import { createCubeGesture } from './cube-gesture.js';
 
 const KEY = 'sobik_player';
 const SPEEDS = [0.5, 1, 1.5, 2];
@@ -98,7 +99,7 @@ const FACE = {
   z: ['z', null, -1]
 };
 
-function parseMove(raw, size, coordinates) {
+export function parseMove(raw, size, coordinates) {
   const match =
     /^(\d+)?([URFDLBMESxyzurfdlb])(w)?(2)?(')?$/.exec(raw);
 
@@ -142,7 +143,12 @@ function parseMove(raw, size, coordinates) {
   };
 }
 
-function createCube(stage, size) {
+/**
+ * @param {HTMLElement} stage
+ * @param {number} size
+ * @param {{gesture?: boolean, onViewChange?: (orientation: THREE.Quaternion) => void}} [options]
+ */
+export function createCube(stage, size, { gesture = false, onViewChange } = {}) {
   const outer = (size - 1) / 2;
   const coordinates = Array.from({ length: size }, (_, i) => i - outer);
   const snap = coordinate => Math.round(coordinate + outer) - outer;
@@ -159,7 +165,7 @@ function createCube(stage, size) {
   function minDistance() {
     const halfVertical = THREE.MathUtils.degToRad(camera.fov / 2);
     const halfHorizontal = Math.atan(Math.tan(halfVertical) * camera.aspect);
-    const fit = 2.65 / Math.sin(Math.min(halfVertical, halfHorizontal) * 0.9);
+    const fit = (gesture ? 3.1 : 2.65) / Math.sin(Math.min(halfVertical, halfHorizontal) * 0.9);
     return Math.max(smallScreen.matches ? 8.5 : 6, fit);
   }
 
@@ -210,6 +216,7 @@ function createCube(stage, size) {
   } catch (error) {
     renderer.dispose();
     renderer.forceContextLoss();
+    renderer.domElement.remove();
     throw error;
   }
 
@@ -236,16 +243,28 @@ function createCube(stage, size) {
   let currentAnimation = null;
   let disposed = false;
   let raf = 0;
+  let needsRender = true;
 
-  let distance = 9.2;
-  camera.position.setFromSphericalCoords(distance, 1.15, 0.5);
-  camera.lookAt(0, 0, 0);
+  let distance = gesture ? 11.25 : 9.2;
+  function resetView() {
+    // Keep left/right columns aligned with L/R in the simulator's reference view.
+    camera.position.setFromSphericalCoords(distance, gesture ? 1.4 : 1.15, gesture ? 0 : 0.5);
+    camera.up.set(0, 1, 0);
+    camera.lookAt(0, 0, 0);
+    needsRender = true;
+    onViewChange?.(camera.quaternion);
+  }
+  resetView();
+  const gestureGuide = gesture && size === 3
+    ? createCubeGesture(camera, root, (move) => parseMove(move, size, coordinates), () => { needsRender = true; })
+    : null;
 
   const dragAxis = new THREE.Vector3();
   const dragRotation = new THREE.Quaternion();
 
   function orbitCamera() {
     camera.position.set(0, 0, distance).applyQuaternion(camera.quaternion);
+    needsRender = true;
   }
 
   function resize() {
@@ -274,6 +293,8 @@ function createCube(stage, size) {
       return;
     }
     raf = requestAnimationFrame(render);
+    if (gestureGuide && !needsRender && !currentAnimation && !floating) return;
+    needsRender = false;
     if (floating && !reducedMotion.matches) {
       const seconds = now / 1000;
       display.position.y = Math.sin(seconds * 1.65) * 0.19;
@@ -307,6 +328,10 @@ function createCube(stage, size) {
     pointer.x = e.clientX;
     pointer.y = e.clientY;
 
+    orbit(dx, dy);
+  }
+
+  function orbit(dx, dy) {
     const movement = Math.hypot(dx, dy);
     if (!movement) return;
     // Rotate around screen-relative axes so dragging stays responsive at either pole.
@@ -315,6 +340,7 @@ function createCube(stage, size) {
     camera.quaternion.multiply(dragRotation).normalize();
 
     orbitCamera();
+    onViewChange?.(camera.quaternion);
   }
 
   function up(e) {
@@ -340,6 +366,8 @@ function createCube(stage, size) {
   );
 
   function reset() {
+    needsRender = true;
+    gestureGuide?.preview(null);
     if (currentAnimation) {
       currentAnimation.cancelled = true;
       currentAnimation = null;
@@ -369,6 +397,7 @@ function createCube(stage, size) {
     }
 
     function finish() {
+      needsRender = true;
       pivot.rotation[move.axis] = move.angle;
       pivot.updateMatrixWorld(true);
 
@@ -451,6 +480,7 @@ function createCube(stage, size) {
     renderer.domElement.removeEventListener('lostpointercapture', up);
     renderer.domElement.removeEventListener('wheel', wheel);
 
+    gestureGuide?.dispose();
     factory.dispose();
     renderer.dispose();
     renderer.forceContextLoss();
@@ -458,7 +488,7 @@ function createCube(stage, size) {
   }
 
   return {
-    reset, rotate, dispose,
+    reset, resetView, rotate, orbit, dispose, gesture: gestureGuide,
     setFloating(enabled) { floating = enabled; },
     maskLastLayer: enabled => pieces.forEach(piece => factory.maskLastLayer(piece, enabled)),
   };
@@ -495,6 +525,10 @@ async function mountFallback(el, { setup, alg, puzzle, maskLastLayer, floating, 
   return player;
 }
 
+/**
+ * @param {HTMLElement} el
+ * @param {{setup?: string, alg?: string, puzzle?: string, tempo?: number, maskLastLayer?: boolean, floating?: boolean, turnTimes?: readonly number[], formatNotation?: (text: string) => string}} [options]
+ */
 export async function mountPlayer(
   el,
   {
@@ -503,7 +537,9 @@ export async function mountPlayer(
     puzzle = '3x3x3',
     tempo,
     maskLastLayer = false,
-    floating = false
+    floating = false,
+    turnTimes,
+    formatNotation = (text) => text
   } = {}
 ) {
   if (tempo !== undefined && SPEEDS.includes(tempo)) {
@@ -551,12 +587,14 @@ export async function mountPlayer(
   let token = 0;
   let destroyed = false;
   let centered = -1;
+  let timestamps;
+  let cancelWait;
 
   function refresh() {
     count.textContent = `${tr("Bước", "Step")} ${index} / ${moves.length}`;
 
     now.textContent = index
-      ? `${tr("Vừa xoay", "Last move:")} ${moves[index - 1]}`
+      ? `${tr("Vừa xoay", "Last move:")} ${formatNotation(moves[index - 1])}`
       : moves.length
         ? tr('Trạng thái đầu', "Starting state")
         : tr('Không có bước nào', "No moves");
@@ -599,6 +637,7 @@ export async function mountPlayer(
   function stop() {
     playing = false;
     token++;
+    cancelWait?.();
     refresh();
   }
 
@@ -646,9 +685,30 @@ export async function mountPlayer(
     const t = ++token;
     refresh();
 
+    const tempo = prefs.tempo;
+    const timelineStart = timestamps ? performance.now() - timestamps[index] / tempo : 0;
     while (playing && token === t && index < moves.length) {
+      let duration = 320 / prefs.tempo;
+      if (timestamps) {
+        const nextAt = timestamps[index + 1];
+        const currentAt = timestamps[index];
+        const delay = timelineStart + currentAt / tempo - performance.now();
+        if (delay > 0) {
+          await new Promise(resolve => {
+            const done = () => {
+              clearTimeout(timer);
+              cancelWait = undefined;
+              resolve();
+            };
+            const timer = setTimeout(done, delay);
+            cancelWait = done;
+          });
+          if (!playing || token !== t) break;
+        }
+        duration = (nextAt > currentAt ? Math.min(320, nextAt - currentAt) : 320) / tempo;
+      }
       const ok = await cube.rotate(
-        moves[index], true, 320 / prefs.tempo
+        moves[index], true, duration
       );
 
       if (!ok || token !== t) break;
@@ -719,6 +779,7 @@ export async function mountPlayer(
 
       setupMoves = expandMoves(next.setup || '');
       moves = expandMoves(next.alg || '');
+      timestamps = next.turnTimes?.length === moves.length ? next.turnTimes : undefined;
       cube.maskLastLayer(next.maskLastLayer === true);
 
       centered = -1;
@@ -731,8 +792,8 @@ export async function mountPlayer(
         <button type="button"
           class="fp-frame"
           data-frame="${i + 1}"
-          title="${tr("Bước", "Step")} ${i + 1}: ${esc(m)}">
-          <small>${i + 1}</small>${esc(m)}
+          title="${tr("Bước", "Step")} ${i + 1}: ${esc(formatNotation(m))}">
+          <small>${i + 1}</small>${esc(formatNotation(m))}
         </button>
       `).join('');
 
@@ -755,7 +816,7 @@ export async function mountPlayer(
   };
 
   instances.set(api, api);
-  api.setAlgorithm({ setup, alg, maskLastLayer, floating });
+  api.setAlgorithm({ setup, alg, maskLastLayer, floating, turnTimes });
 
   return api;
 }
